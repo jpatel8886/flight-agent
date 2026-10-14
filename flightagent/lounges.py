@@ -158,11 +158,27 @@ class Lounges:
         cached["complete"] = all(lg["airside"] is not None for lg in cached["lounges"] if lg["category"] == "LOUNGE")
         return cached
 
-    def summary(self, iata: str) -> dict | None:
+    def _country(self, iata: str) -> str | None:
+        e = self.cache["index"].get("airports", {}).get(iata)
+        return e["path"].split("/")[2] if e else None
+
+    def summary(self, iata: str, next_iata: str | None = None) -> dict | None:
+        """Lounges usable while connecting at `iata` onto a flight to `next_iata`."""
         a = self._airport(iata)
         if not a:
             return None
-        usable = [l for l in a["lounges"] if l["category"] == "LOUNGE" and l["airside"] is not False]
+        # You wait on the departure side of the onward flight, so its type decides
+        # which lounges you can reach. Unknown next airport: assume international.
+        nxt = self._country(next_iata) if next_iata else None
+        domestic_next = nxt is not None and nxt == self._country(iata)
+        def reachable(l):
+            text = " ".join((l.get("location", ""), l.get("name", ""), l.get("terminal", ""))).lower()
+            if re.search(r"\bdomestic\b", text) and not re.search(r"\binternational\b", text):
+                return domestic_next
+            if re.search(r"\binternational (departures|flights|terminal|lounge|and in transit)|\binternational\b[^.]*\bonly\b", text) and "domestic" not in text:
+                return not domestic_next
+            return True
+        usable = [l for l in a["lounges"] if l["category"] == "LOUNGE" and l["airside"] is not False and reachable(l)]
         if not usable:
             return None
         top = max(usable, key=lambda l: ((l["rating"] or 0), l["ratings_count"]))
@@ -180,14 +196,15 @@ class Lounges:
         if not self.enabled:
             return
         self._ensure_index()
-        seen: dict[str, dict | None] = {}
+        seen: dict[tuple, dict | None] = {}
         for o in options:
             found = {}
-            for code in dict.fromkeys(o["layovers"]):
-                if code not in seen:
-                    seen[code] = self.summary(code)
-                if seen[code]:
-                    found[code] = seen[code]
+            for seg in o["segments"][1:]:  # each layover = origin of a later segment
+                k = (seg["origin"], seg["destination"])
+                if k not in seen:
+                    seen[k] = self.summary(*k)
+                if seen[k]:
+                    found[seg["origin"]] = seen[k]
             o["lounges"] = found
 
     def save(self) -> None:

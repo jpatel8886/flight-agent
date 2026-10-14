@@ -131,10 +131,11 @@ class Searcher:
 
         return self.ranker.rank(merge(found)), self.stats
 
-    def _fits(self, items: list[Itinerary], slack_min: float = 0) -> list[Itinerary]:
-        """Drop itineraries over max_trip_hours (minus slack reserved for a later leg)."""
+    def _fits(self, items: list[Itinerary], slack_min: float = 0, slack_stops: int = 0) -> list[Itinerary]:
+        """Drop itineraries over max_trip_hours / max_layovers, minus what a later leg will add."""
         limit = float(self.cfg.get("max_trip_hours", 40)) * 60 - slack_min
-        return [i for i in items if i.total_minutes <= limit]
+        stops = int(self.cfg.get("max_layovers", 2)) - slack_stops
+        return [i for i in items if i.total_minutes <= limit and i.stops <= stops]
 
     def _hub(self, h: str) -> dict:
         return self.stats.hubs.setdefault(h, {"forced": None, "self_transfer": None, "skipped": False})
@@ -146,7 +147,7 @@ class Searcher:
         n = int(st.get("legs_per_hub", 6))
         out = []
         for h in hubs:
-            leg1 = self.ranker.rank(merge(self._fits(self._call(google_flights, o, h, day), slack_min=min_conn)), n)
+            leg1 = self.ranker.rank(merge(self._fits(self._call(google_flights, o, h, day), slack_min=min_conn, slack_stops=1)), n)
             if not leg1:
                 continue
             # Lower bound for any pairing: leg 1 plus the hub stop, the separate-ticket
@@ -159,7 +160,7 @@ class Searcher:
             # Second-leg dates follow from when the first leg actually lands.
             arrivals = sorted({i.segments[-1].arrive[:10] for i in leg1})
             days2 = sorted(set(arrivals) | {str(Date.fromisoformat(arrivals[-1]) + timedelta(days=1))})[:3]
-            leg2 = self.ranker.rank(merge([i for d2 in days2 for i in self._call(google_flights, h, d, d2)]), n * 2)
+            leg2 = self.ranker.rank(merge(self._fits([i for d2 in days2 for i in self._call(google_flights, h, d, d2)], slack_stops=1)), n * 2)
             combos = []
             for a, b in product(leg1, leg2):
                 if a.destination != b.origin:

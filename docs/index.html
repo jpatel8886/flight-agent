@@ -43,6 +43,9 @@
   .overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-bottom: 26px; }
   .ov { padding: 16px 18px; text-decoration: none; color: inherit; position: relative; transition: transform .12s ease; }
   .ov:hover { transform: translateY(-2px); }
+  .ov.active { border: 2px solid var(--accent); padding: 15px 17px; }
+  .ov:not(.active) { opacity: .8; }
+  .ov:not(.active):hover { opacity: 1; }
   .ov .k { color: var(--text-2); font-size: 13px; }
   .ov .price { font-size: 30px; font-weight: 700; letter-spacing: -.02em; margin: 2px 0; }
   .ov .meta { color: var(--text-2); font-size: 13px; }
@@ -125,10 +128,6 @@
   th { text-align: left; color: var(--text-2); font-weight: 500; border-bottom: 1px solid var(--border); padding: 5px 8px; }
   td { border-bottom: 1px solid var(--border); padding: 5px 8px; }
 
-  .hubs { display: flex; flex-wrap: wrap; gap: 8px; }
-  .hub { background: var(--surface-2); border-radius: 10px; padding: 7px 11px; font-size: 13px; }
-  .hub b { margin-right: 6px; }
-  .hub.dim { opacity: .6; }
   footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 28px; }
   .empty { padding: 40px; text-align: center; color: var(--text-2); }
 </style>
@@ -165,7 +164,6 @@ const stopsText = n => n === 0 ? "nonstop" : `${n} stop${n === 1 ? "" : "s"}`;
 const ago = iso => { const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "just now" : m < 60 ? `${m} min ago` : m < 1440 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} d ago`; };
 let CUR = "USD";
 const money = v => v == null ? "–" : new Intl.NumberFormat(undefined, { style: "currency", currency: CUR, maximumFractionDigits: 0 }).format(v);
-const STRAT = { "direct": "Single ticket", "forced-hub": "Single ticket via hub", "self-transfer": "2 separate tickets", "hidden-city": "Hidden-city" };
 // "AMD → KWI (4h 50m) → IST (3h 10m) → IAD"
 const routeLay = o => [o.segments[0].origin, ...o.segments.slice(0, -1).map((s, i) => `${s.destination} (${fmtMin(minsBetween(s.arrive, o.segments[i + 1].depart))})`), o.segments.at(-1).destination].join(" → ");
 const stars = r => `${Number(r).toFixed(1)}★`;
@@ -196,18 +194,8 @@ function timeline(o) {
 function chips(o, cheapestKey) {
   const c = $("div", { class: "chips" });
   if (o.key === cheapestKey) c.append($("span", { class: "chip cheap", text: "Cheapest" }));
-  c.append($("span", { class: "chip", text: STRAT[o.strategy] || o.strategy }));
-  if (o.via && o.strategy !== "direct") c.append($("span", { class: "chip", text: `via ${o.via}` }));
-  if (o.separate_tickets) c.append($("span", { class: "chip warn", text: "separate tickets" }));
   if (o.hidden_city) c.append($("span", { class: "chip warn", text: "hidden-city: carry-on only" }));
-  for (const [code, l] of Object.entries(o.lounges || {})) {
-    const u = safeUrl(l.url);
-    c.append($(u ? "a" : "span", { class: "chip pp", href: u, target: u ? "_blank" : null, rel: u ? "noopener noreferrer" : null,
-      text: `${code}: ${l.count} PP lounge${l.count === 1 ? "" : "s"}${l.best.rating ? ` · top ${stars(l.best.rating)}` : ""}` }));
-  }
-  const seen = Object.entries(o.also_seen || {});
-  if (seen.length) c.append($("span", { class: "chip", text: `also on ${seen.map(([k, v]) => `${k} ${money(v)}`).join(", ")}` }));
-  return c;
+  return c.childNodes.length ? c : null;
 }
 
 function booking(o, primary) {
@@ -244,7 +232,6 @@ function loungePanel(o) {
     box.append($("div", { class: "lg" }, $("b", { text: `Priority Pass · ${l.airport} (${code})` }),
       $("span", { class: "muted", text: ` · ${l.count} lounge${l.count === 1 ? "" : "s"}${l.sleep_pods ? ` + ${l.sleep_pods} rest/sleep` : ""}` }), ul));
   }
-  if (o.separate_tickets) box.append($("div", { class: "muted", text: "Separate tickets: you may need to exit and re-clear security, so use a lounge on the departures side of your second flight." }));
   return box;
 }
 
@@ -292,10 +279,9 @@ function chart(points) {
 
 function historyTable(points) {
   const det = $("details", {}, $("summary", { text: "Price history table" }));
-  const t = $("table", {}, $("tr", {}, $("th", { text: "Checked" }), $("th", { text: "Best value" }), $("th", { text: "Cheapest" }), $("th", { text: "Single ticket" }), $("th", { text: "Via hub" }), $("th", { text: "2 tickets" })));
+  const t = $("table", {}, $("tr", {}, $("th", { text: "Checked" }), $("th", { text: "Best value" }), $("th", { text: "Cheapest" })));
   for (const p of points.slice().reverse().slice(0, 72)) {
-    const b = p.by_strategy || {};
-    t.append($("tr", {}, $("td", { text: new Date(p.t).toLocaleString() }), $("td", { class: "num", text: money(p.best) }), $("td", { class: "num", text: money(p.cheapest) }), $("td", { class: "num", text: money(b["direct"]) }), $("td", { class: "num", text: money(b["forced-hub"]) }), $("td", { class: "num", text: money(b["self-transfer"]) })));
+    t.append($("tr", {}, $("td", { text: new Date(p.t).toLocaleString() }), $("td", { class: "num", text: money(p.best) }), $("td", { class: "num", text: money(p.cheapest) })));
   }
   det.append(t);
   return det;
@@ -323,15 +309,12 @@ function renderSearch(s, history) {
         $("div", { class: "rl", text: routeLay(best) })),
       $("div", {}, booking(best, true))),
     timeline(best), chips(best, s.cheapest_key),
-    ...best.notes.map(n => $("div", { class: "muted", style: "margin-top:6px", text: n })),
     cheapest && cheapest.key !== best.key ? $("div", { class: "muted", style: "margin-top:6px", text: `Cheapest is ${money(cheapest.price)} but takes ${fmtMin(cheapest.total_minutes)} with ${stopsText(cheapest.stops)}.` }) : null,
     loungePanel(best)));
 
-  const bs = s.best_by_strategy || {};
   const tile = (k, v) => $("div", { class: "tile" }, $("div", { class: "k", text: k }), $("div", { class: "v num", text: v }));
   sec.append($("div", { class: "tiles" }, tile("Cheapest", money(cheapest && cheapest.price)), tile("All-time low", money(s.all_time_low)),
-    s.target_price ? tile("Your target", money(s.target_price)) : null,
-    tile("Single ticket", money(bs["direct"])), tile("Via hub", money(bs["forced-hub"])), tile("2 tickets", money(bs["self-transfer"]))));
+    s.target_price ? tile("Your target", money(s.target_price)) : null));
 
   const pts = history[s.key] || [];
   sec.append($("h3", { text: "Best-value price over time" }), chart(pts), historyTable(pts));
@@ -347,17 +330,6 @@ function renderSearch(s, history) {
     sec.append($("details", { class: "more" }, $("summary", { text: `Show ${rest.length - 6} more` }), more));
   }
 
-  const hubs = Object.entries(s.hubs || {});
-  if (hubs.length) {
-    sec.append($("h3", { text: "Layover cities tried" }));
-    const box = $("div", { class: "hubs" });
-    const val = v => Math.min(v.forced ?? Infinity, v.self_transfer ?? Infinity);
-    for (const [h, v] of hubs.sort((a, b) => val(a[1]) - val(b[1]))) {
-      const parts = [v.forced != null ? `1 ticket ${money(v.forced)}` : null, v.self_transfer != null ? `2 tickets ${money(v.self_transfer)}` : null].filter(Boolean);
-      box.append($("div", { class: "hub" + (parts.length ? "" : " dim") }, $("b", { text: h }), $("span", { class: "num", text: parts.join(" · ") || (v.skipped ? "skipped, can't beat best" : "no fares") })));
-    }
-    sec.append(box);
-  }
   if (s.errors && s.errors.length) sec.append($("details", {}, $("summary", { text: `${s.errors.length} lookup issue(s)` }), ...s.errors.map(e => $("div", { text: e }))));
   return sec;
 }
@@ -373,23 +345,26 @@ function render(latest, history) {
     $("span", { text: `${new Date(latest.generated_at).toLocaleString()} · refreshes hourly` }));
 
   const ov = document.getElementById("overview");
-  ov.replaceChildren();
+  const app = document.getElementById("app");
+  if (!searches.length) { ov.replaceChildren(); app.replaceChildren($("div", { class: "card empty", text: "No active searches." })); return; }
   const withBest = searches.filter(s => s.options.length);
   const top = withBest.reduce((a, b) => (!a || b.options[0].score < a.options[0].score) ? b : a, null);
-  for (const s of searches) {
-    const b = s.options[0];
-    ov.append($("a", { class: "ov card", href: `#s-${s.key}` },
-      top === s && withBest.length > 1 ? $("span", { class: "ribbon", text: "Best overall" }) : null,
-      $("div", { class: "k", text: longDate(s.date, { weekday: "long", month: "short", day: "numeric" }) }),
-      $("div", { class: "price num", text: b ? money(b.price) : "–" }),
-      b ? $("div", { class: "rl", text: routeLay(b) }) : null,
-      $("div", { class: "meta", text: b ? `${fmtMin(b.total_minutes)} total · ${stopsText(b.stops)}` : "No fares found" })));
-  }
-
-  const app = document.getElementById("app");
-  app.replaceChildren();
-  if (!searches.length) app.append($("div", { class: "card empty", text: "No active searches." }));
-  for (const s of searches) app.append(renderSearch(s, history));
+  const show = key => {
+    const sel = searches.find(s => s.key === key) || top || searches[0];
+    ov.replaceChildren(...searches.map(s => {
+      const b = s.options[0];
+      return $("a", { class: "ov card" + (s === sel ? " active" : ""), href: `#${s.date}`, "aria-current": s === sel ? "page" : null },
+        top === s && withBest.length > 1 ? $("span", { class: "ribbon", text: "Best overall" }) : null,
+        $("div", { class: "k", text: longDate(s.date, { weekday: "long", month: "short", day: "numeric" }) }),
+        $("div", { class: "price num", text: b ? money(b.price) : "–" }),
+        b ? $("div", { class: "rl", text: routeLay(b) }) : null,
+        $("div", { class: "meta", text: b ? `${fmtMin(b.total_minutes)} total · ${stopsText(b.stops)}` : "No fares found" }));
+    }));
+    app.replaceChildren(renderSearch(sel, history));
+  };
+  const fromHash = () => { const d = decodeURIComponent(location.hash.slice(1)); show((searches.find(s => s.date === d) || {}).key); };
+  window.onhashchange = fromHash;
+  fromHash();
 }
 
 Promise.all([fetch("data/latest.json", { cache: "no-store" }).then(r => r.json()), fetch("data/history.json", { cache: "no-store" }).then(r => r.json()).catch(() => ({}))])

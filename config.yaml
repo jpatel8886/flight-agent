@@ -47,6 +47,7 @@ ranking:
   hidden_city_penalty: 50
 
 max_trip_hours: 40       # drop itineraries longer than this door-to-door
+max_layovers: 2          # drop itineraries with more stops (a 2-ticket trip's change airport counts)
 # Priority Pass lounges at layover airports (cached in docs/data/lounges.json).
 lounges:
   enabled: true

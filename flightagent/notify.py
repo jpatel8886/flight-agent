@@ -76,8 +76,6 @@ def render_digest(searches: list[dict], site_url: str | None) -> tuple[str, str,
             links = o["links"] or [l for t in o.get("ticket_links", []) for l in t["links"]]
             link_html = " · ".join(f'<a href="{escape(l["url"])}">{escape(l["name"])}</a>' for l in links[:4])
             flags = []
-            if o["separate_tickets"]:
-                flags.append("separate tickets")
             if o["hidden_city"]:
                 flags.append("hidden-city")
             for code, l in (o.get("lounges") or {}).items():
