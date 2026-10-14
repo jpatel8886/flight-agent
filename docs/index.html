@@ -167,32 +167,35 @@ function render(latest, history) {
     const bs = s.best_by_strategy || {};
     const tiles = $("div", { class: "tiles" });
     const tile = (k, v, small) => $("div", { class: "tile" }, $("div", { class: "k", text: k }), $("div", { class: "v" + (small ? " small" : ""), text: v }));
-    tiles.append(tile("Best today", money(best && best.price)), tile("All-time low", money(s.all_time_low), true));
+    const cheapest = s.options.find(o => o.key === s.cheapest_key);
+    const brief = o => o ? `${fmtMin(o.total_minutes)} · ${o.stops} stop${o.stops === 1 ? "" : "s"}` : "";
+    tiles.append(tile("Best value", money(best && best.price)), tile("Cheapest", money(cheapest && cheapest.price), true), tile("All-time low", money(s.all_time_low), true));
     if (s.target_price) tiles.append(tile("Your target", money(s.target_price), true));
     tiles.append(tile("Direct search", money(bs["direct"]), true), tile("Via hub (1 ticket)", money(bs["forced-hub"]), true), tile("Self-transfer", money(bs["self-transfer"]), true));
     sec.append(tiles);
 
     if (best) {
       sec.append($("div", { class: "best" },
-        $("div", { class: "route", text: `${routeText(best)} · ${money(best.price)}` }),
+        $("div", { class: "meta", text: "Best value: ranked by price plus travel time and layovers" }),
+        $("div", { class: "route", text: `${routeText(best)} · ${money(best.price)} · ${brief(best)}` }),
         $("div", { class: "meta", text: `${best.airlines.join(", ")} · ${fmtMin(best.total_minutes)} · departs ${fmtTime(best.segments[0].depart)} · arrives ${fmtTime(best.segments.at(-1).arrive)} (local) · found on ${best.source}` }),
-        badges(best), ...best.notes.map(n => $("div", { class: "meta", text: n })), $("div", { class: "meta", text: "Book: " }, bookingEl(best))));
+        badges(best), cheapest && cheapest.key !== best.key ? $("div", { class: "meta", text: `Cheapest is ${money(cheapest.price)} but takes ${brief(cheapest)}. See the table below.` }) : null, ...best.notes.map(n => $("div", { class: "meta", text: n })), $("div", { class: "meta", text: "Book: " }, bookingEl(best))));
     } else {
       sec.append($("p", { text: "No fares found on the last run." }));
     }
 
     const pts = history[s.key] || [];
-    sec.append($("h3", { text: "Best price over time" }), chart(pts), historyTable(pts));
+    sec.append($("h3", { text: "Best-value price over time" }), chart(pts), historyTable(pts));
 
-    sec.append($("h3", { text: "Top options" }));
+    sec.append($("h3", { text: "Top options (best value first)" }));
     const t = $("table", {}, $("tr", {}, $("th", { text: "Price" }), $("th", { text: "Itinerary" }), $("th", { text: "Type" }), $("th", { text: "Book" })));
     for (const o of s.options) {
       const seen = Object.entries(o.also_seen || {}).map(([k, v]) => `${k} ${money(v)}`).join(", ");
       t.append($("tr", {},
         $("td", { class: "price", text: money(o.price) }),
-        $("td", {}, $("div", { class: "route", text: routeText(o) }), $("div", { class: "meta", text: `${o.airlines.join(", ")} · ${fmtMin(o.total_minutes)} · ${fmtTime(o.segments[0].depart)} → ${fmtTime(o.segments.at(-1).arrive)}` }),
+        $("td", {}, $("div", { class: "route", text: routeText(o) }), $("div", { class: "meta", text: `${o.airlines.join(", ")} · ${brief(o)} · ${fmtTime(o.segments[0].depart)} → ${fmtTime(o.segments.at(-1).arrive)}` }),
           seen ? $("div", { class: "meta", text: `Also on ${seen}` }) : null),
-        $("td", {}, badges(o), $("div", { class: "meta", text: o.source })),
+        $("td", {}, badges(o), o.key === s.cheapest_key ? $("span", { class: "badge", text: "cheapest" }) : null, $("div", { class: "meta", text: o.source })),
         $("td", {}, bookingEl(o))));
     }
     sec.append(t);

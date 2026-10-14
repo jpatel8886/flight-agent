@@ -51,6 +51,7 @@ class Itinerary:
     notes: list[str] = field(default_factory=list)
     also_seen: dict[str, float] = field(default_factory=dict)  # other sources -> price
     tickets: list["Itinerary"] = field(default_factory=list)  # for self-transfer
+    score: float = 0.0  # ranking cost: price plus time/stop penalties (lower is better)
 
     @property
     def origin(self) -> str:

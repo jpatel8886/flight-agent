@@ -46,7 +46,8 @@ def fmt_minutes(m: int) -> str:
 def render(search: dict, options: list[dict], reason: str, site_url: str | None) -> tuple[str, str, str]:
     best = options[0]
     cur = best["currency"]
-    subject = f"✈ {search['name']}: {cur} {best['price']:.0f} ({reason})"
+    stops = f"{best['stops']} stop{'s' if best['stops'] != 1 else ''}"
+    subject = f"✈ {search['name']}: {cur} {best['price']:.0f}, {fmt_minutes(best['total_minutes'])}, {stops} ({reason})"
 
     def route(o):
         return " → ".join([o["segments"][0]["origin"]] + [s["destination"] for s in o["segments"]])
@@ -64,7 +65,7 @@ def render(search: dict, options: list[dict], reason: str, site_url: str | None)
             "<tr>"
             f"<td style='padding:6px 10px'><b>{escape(cur)} {o['price']:.0f}</b></td>"
             f"<td style='padding:6px 10px'>{escape(route(o))}<br><small>{escape(', '.join(o['airlines']))}"
-            f" · {fmt_minutes(o['total_minutes'])} · departs {escape(o['segments'][0]['depart'].replace('T', ' '))}"
+            f" · {fmt_minutes(o['total_minutes'])} · {o['stops']} stop(s) · departs {escape(o['segments'][0]['depart'].replace('T', ' '))}"
             f"{' · ' + escape(', '.join(flags)) if flags else ''}</small></td>"
             f"<td style='padding:6px 10px'><small>{escape(o['strategy'])} via {escape(o['source'])}</small><br>{link_html}</td>"
             "</tr>"
@@ -73,7 +74,7 @@ def render(search: dict, options: list[dict], reason: str, site_url: str | None)
     site = f'<p><a href="{escape(site_url)}">Open dashboard</a></p>' if site_url else ""
     html = (
         f"<div style='font-family:system-ui,sans-serif'><h2 style='margin:0'>{escape(search['name'])}</h2>"
-        f"<p>{escape(reason)} · {escape(str(search['date']))}</p>"
+        f"<p>{escape(reason)} · {escape(str(search['date']))} · ranked by price + travel time + layovers</p>"
         f"<table style='border-collapse:collapse'>{''.join(rows)}</table>{site}"
         "<p style='color:#666;font-size:12px'>Prices change quickly; confirm on the booking site.</p></div>"
     )

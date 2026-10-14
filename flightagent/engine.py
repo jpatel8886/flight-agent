@@ -23,6 +23,34 @@ from .providers import google_flights, serpapi, skiplagged
 log = logging.getLogger(__name__)
 
 
+class Ranker:
+    """Ranks by "effective cost": price plus what travel time, stops and risk are worth to you.
+
+    With the defaults, a 26h one-stop fare at 900 beats a 40h two-stop fare at 820.
+    """
+
+    def __init__(self, cfg: dict):
+        r = cfg.get("ranking", {})
+        self.per_hour = float(r.get("value_per_hour", 15))
+        self.per_stop = float(r.get("per_stop_penalty", 40))
+        self.separate = float(r.get("separate_ticket_penalty", 75))
+        self.hidden = float(r.get("hidden_city_penalty", 50))
+
+    def score(self, i: Itinerary) -> float:
+        return (
+            i.price
+            + self.per_hour * i.total_minutes / 60
+            + self.per_stop * i.stops
+            + (self.separate if i.separate_tickets else 0)
+            + (self.hidden if i.hidden_city else 0)
+        )
+
+    def rank(self, items: list[Itinerary], n: int | None = None) -> list[Itinerary]:
+        for i in items:
+            i.score = round(self.score(i), 1)
+        return sorted(items, key=lambda i: (i.score, i.price))[:n]
+
+
 @dataclass
 class RunStats:
     requests: int = 0
@@ -36,6 +64,7 @@ class Searcher:
         self.common = dict(currency=cfg.get("currency", "USD"), adults=cfg.get("adults", 1), cabin=cfg.get("cabin", "economy"))
         self.delay = float(cfg.get("request_delay_seconds", 1.5))
         self.stats = RunStats()
+        self.ranker = Ranker(cfg)
         self._cache: dict[tuple, list[Itinerary]] = {}
 
     def _call(self, provider, origin, dest, day, **kw) -> list[Itinerary]:
@@ -97,9 +126,10 @@ class Searcher:
                 found += res
         if strat.get("self_transfer", True):
             for o, d in product(origins, dests):
-                found += self._self_transfer(o, d, day, hubs, best_so_far=min((i.price for i in found), default=float("inf")))
+                best = self.ranker.rank(found, 1)
+                found += self._self_transfer(o, d, day, hubs, best_score=best[0].score if best else float("inf"))
 
-        return merge(found), self.stats
+        return self.ranker.rank(merge(found)), self.stats
 
     def _fits(self, items: list[Itinerary], slack_min: float = 0) -> list[Itinerary]:
         """Drop itineraries over max_trip_hours (minus slack reserved for a later leg)."""
@@ -109,24 +139,27 @@ class Searcher:
     def _hub(self, h: str) -> dict:
         return self.stats.hubs.setdefault(h, {"forced": None, "self_transfer": None, "skipped": False})
 
-    def _self_transfer(self, o: str, d: str, day: str, hubs: list[str], best_so_far: float) -> list[Itinerary]:
+    def _self_transfer(self, o: str, d: str, day: str, hubs: list[str], best_score: float) -> list[Itinerary]:
         st = self.cfg.get("self_transfer", {})
         min_conn = int(st.get("min_connection_minutes", 180))
         max_lay = float(st.get("max_layover_hours", 24)) * 60
         n = int(st.get("legs_per_hub", 6))
         out = []
         for h in hubs:
-            leg1 = _cheapest(self._fits(self._call(google_flights, o, h, day), slack_min=min_conn), n)
+            leg1 = self.ranker.rank(merge(self._fits(self._call(google_flights, o, h, day), slack_min=min_conn)), n)
             if not leg1:
                 continue
-            if leg1[0].price >= best_so_far:
+            # Lower bound for any pairing: leg 1 plus the hub stop, the separate-ticket
+            # penalty and the minimum connection time (leg 2 only adds to it).
+            bound = leg1[0].score + self.ranker.per_stop + self.ranker.separate + self.ranker.per_hour * min_conn / 60
+            if bound >= best_score:
                 self._hub(h)["skipped"] = True
-                log.info("self-transfer via %s skipped: first leg %.0f >= best %.0f", h, leg1[0].price, best_so_far)
+                log.info("self-transfer via %s skipped: lower bound %.0f >= best %.0f", h, bound, best_score)
                 continue
             # Second-leg dates follow from when the first leg actually lands.
             arrivals = sorted({i.segments[-1].arrive[:10] for i in leg1})
             days2 = sorted(set(arrivals) | {str(Date.fromisoformat(arrivals[-1]) + timedelta(days=1))})[:3]
-            leg2 = _cheapest([i for d2 in days2 for i in self._call(google_flights, h, d, d2)], n * 2)
+            leg2 = self.ranker.rank(merge([i for d2 in days2 for i in self._call(google_flights, h, d, d2)]), n * 2)
             combos = []
             for a, b in product(leg1, leg2):
                 if a.destination != b.origin:
@@ -134,10 +167,10 @@ class Searcher:
                 gap = (b.segments[0].depart_dt - a.segments[-1].arrive_dt).total_seconds() / 60
                 if min_conn <= gap <= max_lay:
                     combos.append(_combine(a, b, h, gap))
-            combos = _cheapest(self._fits(combos), n)
-            self._hub(h)["self_transfer"] = combos[0].price if combos else None
+            combos = self.ranker.rank(self._fits(combos), n)
+            self._hub(h)["self_transfer"] = min((c.price for c in combos), default=None)
             if combos:
-                best_so_far = min(best_so_far, combos[0].price)
+                best_score = min(best_score, combos[0].score)
             out += combos
         return out
 
@@ -177,10 +210,6 @@ def merge(items: list[Itinerary]) -> list[Itinerary]:
         lo.airlines = lo.airlines or hi.airlines
         best[it.key] = lo
     return sorted(best.values(), key=lambda i: (i.price, i.total_minutes))
-
-
-def _cheapest(items: list[Itinerary], n: int) -> list[Itinerary]:
-    return sorted(merge(items), key=lambda i: i.price)[:n]
 
 
 def _as_list(v) -> list[str]:

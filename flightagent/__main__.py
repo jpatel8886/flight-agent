@@ -44,17 +44,24 @@ def serialize(it) -> dict:
     return d
 
 
-def decide_alert(s: dict, best: float, st: dict, alerts: dict, now: datetime) -> str | None:
-    prev = st.get("best_price")
+def summary(o: dict) -> str:
+    stops = o["stops"]
+    return f"{o['price']:.0f}, {o['total_minutes'] // 60}h, {stops} stop{'s' if stops != 1 else ''}"
+
+
+def decide_alert(s: dict, best: dict, cheapest: dict, st: dict, alerts: dict, now: datetime) -> str | None:
+    """`best` is the top-ranked (best value) option; alerts track its score, not raw price."""
+    prev = st.get("best_score")
     target = s.get("target_price")
     today = now.date().isoformat()
     if prev is None:
         return "first result"
-    if best <= prev - float(alerts.get("min_drop", 10)):
-        return f"new low, down {prev - best:.0f} from {prev:.0f}"
-    if target and best <= target and st.get("last_target_alert") != today:
+    if best["score"] <= prev - float(alerts.get("min_drop", 10)):
+        was = f" (was {st['best_summary']})" if st.get("best_summary") else ""
+        return f"better option: {summary(best)}{was}"
+    if target and cheapest["price"] <= target and st.get("last_target_alert") != today:
         st["last_target_alert"] = today
-        return f"at/below your target of {target}"
+        return f"{cheapest['price']:.0f} is at/below your target of {target}"
     hour = alerts.get("daily_digest_utc_hour")
     if hour is not None and now.hour >= int(hour) and st.get("last_digest") != today:
         st["last_digest"] = today
@@ -90,8 +97,11 @@ def main() -> None:
         log.info("searching %s", meta["name"])
         results, stats = searcher.run(s)
         options = [serialize(i) for i in results[: int(cfg.get("top_n", 20))]]
+        cheapest = min(results, key=lambda i: i.price, default=None)
+        if cheapest is not None and all(o["key"] != cheapest.key for o in options):
+            options.append(serialize(cheapest))  # always show the cheapest, even if it ranks low
         by_strategy = {}
-        for i in results:
+        for i in sorted(results, key=lambda i: i.price):
             by_strategy.setdefault(i.strategy, i.price)
         entry = {
             **meta,
@@ -107,17 +117,19 @@ def main() -> None:
             log.warning("no results for %s (%d errors)", meta["name"], len(stats.errors))
             continue
 
-        best = options[0]["price"]
+        best = options[0]
+        low = min(options, key=lambda o: o["price"])
+        entry["cheapest_key"] = low["key"]
         hist = history.setdefault(key, [])
-        hist.append({"t": latest["generated_at"], "best": best, "by_strategy": by_strategy})
+        hist.append({"t": latest["generated_at"], "best": best["price"], "cheapest": low["price"], "by_strategy": by_strategy})
         del hist[:-HISTORY_POINTS]
         st = state.setdefault(key, {})
-        entry["all_time_low"] = min(best, st.get("best_price", best))
+        entry["all_time_low"] = min(low["price"], st.get("lowest_price", low["price"]))
 
-        reason = decide_alert(s, best, st, alerts, now)
-        if best < st.get("best_price", float("inf")):
-            st["best_price"] = best
-            st["best_seen_at"] = latest["generated_at"]
+        reason = decide_alert(s, best, low, st, alerts, now)
+        if best["score"] < st.get("best_score", float("inf")):
+            st.update(best_score=best["score"], best_summary=summary(best), best_seen_at=latest["generated_at"])
+        st["lowest_price"] = entry["all_time_low"]
         if reason and alerts.get("email", True) and not args.no_email:
             try:
                 notify.send(*notify.render(meta, options, reason, site_url))

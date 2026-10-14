@@ -37,6 +37,14 @@ alerts:
   min_drop: 10                  # send "new low" alert when best drops by >= this amount
   daily_digest_utc_hour: 14     # one summary email per day on the first run at/after this hour; null to disable
 
+# Results are ranked by "effective cost" = price + these penalties, so a slightly
+# pricier but much shorter / fewer-stop itinerary ranks first. Set all to 0 for cheapest-first.
+ranking:
+  value_per_hour: 15            # what an hour of total travel time is worth to you
+  per_stop_penalty: 40          # extra cost per layover
+  separate_ticket_penalty: 75   # risk of self-transfer (no protection if leg 1 is late)
+  hidden_city_penalty: 50
+
 max_trip_hours: 40       # drop itineraries longer than this door-to-door
 top_n: 20
 request_delay_seconds: 1.5
