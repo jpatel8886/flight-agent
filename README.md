@@ -56,6 +56,13 @@ each hour of travel + `per_stop_penalty` per layover + extra for separate ticket
 or hidden-city. Tune it under `ranking:` in `config.yaml` (all zeros = cheapest first).
 The cheapest fare is always shown too, tagged "Cheapest".
 
+## Avoiding regions
+
+Every route is still searched, but layovers in `avoid_countries` (Middle East by
+default) are hidden by the dashboard's **"Avoid Middle East layovers"** switch,
+which is on by default and remembered per browser. Turn it off to see those fares.
+Emails always use the filtered set.
+
 ## Emails
 
 The search runs **hourly**, but email goes out at most **4 times a day**: one

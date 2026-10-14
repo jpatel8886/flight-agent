@@ -16,7 +16,25 @@ searches:
     # target_price: 750
 
 # Layover cities tried for forced-hub and self-transfer combinations.
-hubs: [DXB, DOH, AUH, IST, RUH, JED, BAH, MCT, KWI, AMM, CAI, SHJ, DEL, BOM]
+hubs: [DXB, DOH, AUH, RUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
+
+# Layovers in these countries are still searched, but hidden on the dashboard (toggle
+# "Avoid Middle East layovers") and left out of emails. Remove one to allow it again.
+avoid_countries:
+  - United Arab Emirates
+  - Qatar
+  - Saudi Arabia
+  - Bahrain
+  - Oman
+  - Kuwait
+  - Jordan
+  - Israel
+  - Lebanon
+  - Iraq
+  - Iran
+  - Syria
+  - Yemen
+  - Egypt
 
 strategies:
   forced_hub: true        # single ticket, Google Flights constrained to connect via hub

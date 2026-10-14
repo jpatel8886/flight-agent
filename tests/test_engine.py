@@ -30,6 +30,14 @@ class EngineTest(unittest.TestCase):
         self.assertEqual(c.layovers, ["DXB"])
 
 
+class AvoidCountriesTest(unittest.TestCase):
+    def test_flags_layover_in_avoided_country(self):
+        from flightagent.__main__ import avoided
+        o = {"layovers": ["DEL", "RUH"]}
+        self.assertTrue(avoided(o, {"saudi arabia"}))
+        self.assertFalse(avoided({"layovers": ["DEL", "LHR"]}, {"saudi arabia"}))
+
+
 class RankerTest(unittest.TestCase):
     def test_shorter_fewer_stops_beats_slightly_cheaper(self):
         r = Ranker({})

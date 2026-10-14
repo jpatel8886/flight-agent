@@ -18,6 +18,7 @@ import yaml
 
 from . import notify
 from .engine import Searcher
+from .geo import country
 from .lounges import Lounges
 
 log = logging.getLogger("flightagent")
@@ -43,6 +44,11 @@ def serialize(it) -> dict:
         {"leg": f"{t.origin} → {t.destination}", "price": t.price, "links": [l.__dict__ for l in t.links]} for t in it.tickets
     ]
     return d
+
+
+def avoided(o: dict, avoid: set[str]) -> bool:
+    """True if any layover is in a country from avoid_countries (lowercased)."""
+    return any((country(c) or "").lower() in avoid for c in o["layovers"])
 
 
 def summary(o: dict) -> str:
@@ -96,7 +102,9 @@ def main() -> None:
     searcher = Searcher(cfg)
     lounges = Lounges(data_dir / "lounges.json", cfg)
     digest: list[dict] = []
-    latest = {"generated_at": now.isoformat(timespec="seconds"), "currency": cfg.get("currency", "USD"), "searches": []}
+    avoid = {c.lower() for c in cfg.get("avoid_countries", [])}
+    latest = {"generated_at": now.isoformat(timespec="seconds"), "currency": cfg.get("currency", "USD"),
+              "avoid_countries": cfg.get("avoid_countries", []), "searches": []}
 
     for s in cfg["searches"]:
         key = search_key(s)
@@ -106,10 +114,19 @@ def main() -> None:
             continue
         log.info("searching %s", meta["name"])
         results, stats = searcher.run(s)
-        options = [serialize(i) for i in results[: int(cfg.get("top_n", 20))]]
-        cheapest = min(results, key=lambda i: i.price, default=None)
-        if cheapest is not None and all(o["key"] != cheapest.key for o in options):
-            options.append(serialize(cheapest))  # always show the cheapest, even if it ranks low
+        # Keep the top N overall *and* the top N outside avoid_countries, so the
+        # dashboard's "avoid" toggle still has a full list either way.
+        n = int(cfg.get("top_n", 20))
+        ranked = [serialize(i) for i in results]
+        for o in ranked:
+            o["layover_countries"] = [country(c) or "" for c in o["layovers"]]
+            o["avoid"] = avoided(o, avoid)
+        ok = [o for o in ranked if not o["avoid"]]
+        keep = {o["key"] for o in ranked[:n]} | {o["key"] for o in ok[:n]}
+        for group in (ranked, ok):  # always include the cheapest of each set
+            if group:
+                keep.add(min(group, key=lambda o: o["price"])["key"])
+        options = [o for o in ranked if o["key"] in keep]
         try:
             lounges.annotate(options)
         except Exception as e:  # lounge info is a nice-to-have; never fail the run over it
@@ -132,11 +149,18 @@ def main() -> None:
             log.warning("no results for %s (%d errors)", meta["name"], len(stats.errors))
             continue
 
-        best = options[0]
-        low = min(options, key=lambda o: o["price"])
-        entry["cheapest_key"] = low["key"]
+        # Emails and alert tracking use the preferred set (outside avoid_countries) when it has fares.
+        pref = [o for o in options if not o["avoid"]] or options
+        best, low = pref[0], min(pref, key=lambda o: o["price"])
+        entry["cheapest_key"] = min(options, key=lambda o: o["price"])["key"]
         hist = history.setdefault(key, [])
-        hist.append({"t": latest["generated_at"], "best": best["price"], "cheapest": low["price"], "by_strategy": by_strategy})
+        hist.append({
+            "t": latest["generated_at"],
+            "best": options[0]["price"],
+            "cheapest": min(o["price"] for o in options),
+            "best_ok": best["price"] if pref is not options else None,
+            "cheapest_ok": low["price"] if pref is not options else None,
+        })
         del hist[:-HISTORY_POINTS]
         st = state.setdefault(key, {})
         entry["all_time_low"] = min(low["price"], st.get("lowest_price", low["price"]))
@@ -144,7 +168,7 @@ def main() -> None:
         if best["score"] < st.get("best_score", float("inf")):
             st.update(best_score=best["score"], best_summary=summary(best), best_seen_at=latest["generated_at"])
         st["lowest_price"] = entry["all_time_low"]
-        digest.append({**meta, "options": options, "change": change_note(best, low, s, st), "st": st})
+        digest.append({**meta, "options": pref, "change": change_note(best, low, s, st), "st": st})
 
     # Emails go out at most once per send window (default 4/day), however often the search runs.
     slot = email_slot(now, alerts)
