@@ -1,0 +1,3651 @@
+{
+ "generated_at": "2026-10-14T19:31:59+00:00",
+ "currency": "USD",
+ "searches": [
+  {
+   "key": "HSRAMD-IADDCA-2027-01-08",
+   "name": "Rajkot/Ahmedabad to Washington DC, Jan 8",
+   "origin": [
+    "HSR",
+    "AMD"
+   ],
+   "destination": [
+    "IAD",
+    "DCA"
+   ],
+   "date": "2027-01-08",
+   "target_price": null,
+   "options": [
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1159.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "PNQ",
+       "depart": "2027-01-08T17:30",
+       "arrive": "2027-01-08T18:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 75
+      },
+      {
+       "origin": "PNQ",
+       "destination": "DXB",
+       "depart": "2027-01-09T00:20",
+       "arrive": "2027-01-09T02:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 205
+      },
+      {
+       "origin": "DXB",
+       "destination": "CDG",
+       "depart": "2027-01-09T07:50",
+       "arrive": "2027-01-09T12:25",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 455
+      },
+      {
+       "origin": "CDG",
+       "destination": "YUL",
+       "depart": "2027-01-09T14:00",
+       "arrive": "2027-01-09T15:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 460
+      },
+      {
+       "origin": "YUL",
+       "destination": "DCA",
+       "depart": "2027-01-09T20:00",
+       "arrive": "2027-01-09T21:59",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 119
+      }
+     ],
+     "airlines": [
+      "Air Canada",
+      "Emirates",
+      "IndiGo"
+     ],
+     "via": "DXB",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 5.6h at DXB. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "bb2456fa9528",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 4,
+     "total_minutes": 2339,
+     "layovers": [
+      "PNQ",
+      "DXB",
+      "CDG",
+      "YUL"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DXB",
+       "price": 324.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RYQkIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/dxb/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DXB,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DXB/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DXB/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DXB \u2192 DCA",
+       "price": 835.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDRFhCcgUSA0RDQUIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/dxb/dca/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DXB,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DXB-DCA/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DXB/DCA/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1218.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "KWI",
+       "depart": "2027-01-08T02:00",
+       "arrive": "2027-01-08T03:55",
+       "carrier": "KU",
+       "flight_number": "KU346",
+       "duration_min": 265
+      },
+      {
+       "origin": "KWI",
+       "destination": "IST",
+       "depart": "2027-01-08T08:45",
+       "arrive": "2027-01-08T13:00",
+       "carrier": "TK",
+       "flight_number": "TK8585",
+       "duration_min": 255
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-08T16:10",
+       "arrive": "2027-01-08T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Kuwait Airways",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "c5dfcb5338aa",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1675,
+     "layovers": [
+      "KWI",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1280.62,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "BOM",
+       "depart": "2027-01-08T21:00",
+       "arrive": "2027-01-08T22:40",
+       "carrier": "AI",
+       "flight_number": "AI2494",
+       "duration_min": 100
+      },
+      {
+       "origin": "BOM",
+       "destination": "JFK",
+       "depart": "2027-01-09T00:25",
+       "arrive": "2027-01-09T06:55",
+       "carrier": "AI",
+       "flight_number": "AI119",
+       "duration_min": 1020
+      },
+      {
+       "origin": "JFK",
+       "destination": "DCA",
+       "depart": "2027-01-09T21:29",
+       "arrive": "2027-01-09T22:55",
+       "carrier": "B6",
+       "flight_number": "B62587",
+       "duration_min": 86
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "JetBlue Airways"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "a7f573e4521c",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 2,
+     "total_minutes": 2185,
+     "layovers": [
+      "BOM",
+      "JFK"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1280.62,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "BOM",
+       "depart": "2027-01-08T17:30",
+       "arrive": "2027-01-08T19:05",
+       "carrier": "AI",
+       "flight_number": "AI2446",
+       "duration_min": 95
+      },
+      {
+       "origin": "BOM",
+       "destination": "JFK",
+       "depart": "2027-01-09T00:25",
+       "arrive": "2027-01-09T06:55",
+       "carrier": "AI",
+       "flight_number": "AI119",
+       "duration_min": 1020
+      },
+      {
+       "origin": "JFK",
+       "destination": "DCA",
+       "depart": "2027-01-09T21:29",
+       "arrive": "2027-01-09T22:55",
+       "carrier": "B6",
+       "flight_number": "B62587",
+       "duration_min": 86
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "JetBlue Airways"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "d978403fdece",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 2,
+     "total_minutes": 2395,
+     "layovers": [
+      "BOM",
+      "JFK"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1306.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "PNQ",
+       "depart": "2027-01-08T17:30",
+       "arrive": "2027-01-08T18:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 75
+      },
+      {
+       "origin": "PNQ",
+       "destination": "DXB",
+       "depart": "2027-01-09T00:20",
+       "arrive": "2027-01-09T02:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 205
+      },
+      {
+       "origin": "DXB",
+       "destination": "AMM",
+       "depart": "2027-01-09T06:45",
+       "arrive": "2027-01-09T09:20",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 215
+      },
+      {
+       "origin": "AMM",
+       "destination": "JFK",
+       "depart": "2027-01-09T11:50",
+       "arrive": "2027-01-09T16:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 745
+      },
+      {
+       "origin": "JFK",
+       "destination": "DCA",
+       "depart": "2027-01-09T17:44",
+       "arrive": "2027-01-09T19:37",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 113
+      }
+     ],
+     "airlines": [
+      "American",
+      "IndiGo",
+      "Royal Jordanian"
+     ],
+     "via": "DXB",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 4.5h at DXB. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "d48a197a7a36",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 4,
+     "total_minutes": 2197,
+     "layovers": [
+      "PNQ",
+      "DXB",
+      "AMM",
+      "JFK"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DXB",
+       "price": 324.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RYQkIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/dxb/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DXB,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DXB/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DXB/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DXB \u2192 DCA",
+       "price": 982.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDRFhCcgUSA0RDQUIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/dxb/dca/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DXB,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DXB-DCA/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DXB/DCA/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1306.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "PNQ",
+       "depart": "2027-01-08T17:30",
+       "arrive": "2027-01-08T18:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 75
+      },
+      {
+       "origin": "PNQ",
+       "destination": "DXB",
+       "depart": "2027-01-09T00:20",
+       "arrive": "2027-01-09T02:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 205
+      },
+      {
+       "origin": "DXB",
+       "destination": "MUC",
+       "depart": "2027-01-09T09:20",
+       "arrive": "2027-01-09T13:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 405
+      },
+      {
+       "origin": "MUC",
+       "destination": "YUL",
+       "depart": "2027-01-09T16:05",
+       "arrive": "2027-01-09T18:20",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 495
+      },
+      {
+       "origin": "YUL",
+       "destination": "DCA",
+       "depart": "2027-01-09T20:00",
+       "arrive": "2027-01-09T21:59",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 119
+      }
+     ],
+     "airlines": [
+      "Air Canada",
+      "IndiGo",
+      "Lufthansa"
+     ],
+     "via": "DXB",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 7.1h at DXB. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "00d613c1eb4b",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 4,
+     "total_minutes": 2339,
+     "layovers": [
+      "PNQ",
+      "DXB",
+      "MUC",
+      "YUL"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DXB",
+       "price": 324.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RYQkIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/dxb/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DXB,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DXB/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DXB/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DXB \u2192 DCA",
+       "price": 982.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDRFhCcgUSA0RDQUIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/dxb/dca/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DXB,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DXB-DCA/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DXB/DCA/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1344.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T20:00",
+       "arrive": "2027-01-08T21:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "MUC",
+       "depart": "2027-01-09T01:55",
+       "arrive": "2027-01-09T06:00",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 515
+      },
+      {
+       "origin": "MUC",
+       "destination": "IAD",
+       "depart": "2027-01-09T16:50",
+       "arrive": "2027-01-09T20:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 555
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Lufthansa"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 4.2h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {
+      "Skiplagged": 1388.0
+     },
+     "key": "1d89ee1e2f82",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2075,
+     "layovers": [
+      "DEL",
+      "MUC"
+     ],
+     "ticket_links": [
+      {
+       "leg": "HSR \u2192 DEL",
+       "price": 95.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/hsr/del/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/HSR-DEL/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/HSR/DEL/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1249.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1354.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-08T16:55",
+       "arrive": "2027-01-08T18:25",
+       "carrier": "6E",
+       "flight_number": "6E1477",
+       "duration_min": 180
+      },
+      {
+       "origin": "DXB",
+       "destination": "IST",
+       "depart": "2027-01-09T02:50",
+       "arrive": "2027-01-09T06:55",
+       "carrier": "TK",
+       "flight_number": "TK761",
+       "duration_min": 305
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T08:30",
+       "arrive": "2027-01-09T11:45",
+       "carrier": "TK",
+       "flight_number": "TK187",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "IndiGo",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "ed3ca43792a9",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1760,
+     "layovers": [
+      "DXB",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1355.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T11:00",
+       "arrive": "2027-01-08T12:50",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 110
+      },
+      {
+       "origin": "DEL",
+       "destination": "MUC",
+       "depart": "2027-01-09T01:55",
+       "arrive": "2027-01-09T06:00",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 515
+      },
+      {
+       "origin": "MUC",
+       "destination": "VIE",
+       "depart": "2027-01-09T08:00",
+       "arrive": "2027-01-09T09:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 65
+      },
+      {
+       "origin": "VIE",
+       "destination": "IAD",
+       "depart": "2027-01-09T10:35",
+       "arrive": "2027-01-09T14:10",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 575
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Austrian",
+      "Lufthansa"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 13.1h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "577a3b3e3106",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 3,
+     "total_minutes": 2260,
+     "layovers": [
+      "DEL",
+      "MUC",
+      "VIE"
+     ],
+     "ticket_links": [
+      {
+       "leg": "HSR \u2192 DEL",
+       "price": 93.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/hsr/del/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/HSR-DEL/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/HSR/DEL/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1262.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1357.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T20:00",
+       "arrive": "2027-01-08T21:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "MUC",
+       "depart": "2027-01-09T01:55",
+       "arrive": "2027-01-09T06:00",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 515
+      },
+      {
+       "origin": "MUC",
+       "destination": "VIE",
+       "depart": "2027-01-09T08:00",
+       "arrive": "2027-01-09T09:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 65
+      },
+      {
+       "origin": "VIE",
+       "destination": "IAD",
+       "depart": "2027-01-09T10:35",
+       "arrive": "2027-01-09T14:10",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 575
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Austrian",
+      "Lufthansa"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 4.2h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "9c56414a1284",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 3,
+     "total_minutes": 1720,
+     "layovers": [
+      "DEL",
+      "MUC",
+      "VIE"
+     ],
+     "ticket_links": [
+      {
+       "leg": "HSR \u2192 DEL",
+       "price": 95.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/hsr/del/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/HSR-DEL/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/HSR/DEL/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1262.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1373.76,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-08T03:40",
+       "arrive": "2027-01-08T05:25",
+       "carrier": "EK",
+       "flight_number": "EK2131",
+       "duration_min": 195
+      },
+      {
+       "origin": "DXB",
+       "destination": "IAD",
+       "depart": "2027-01-09T02:25",
+       "arrive": "2027-01-09T08:35",
+       "carrier": "EK",
+       "flight_number": "EK231",
+       "duration_min": 910
+      }
+     ],
+     "airlines": [
+      "Emirates"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {
+      "Google Flights": 1427.0
+     },
+     "key": "de5378a4deaf",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 1,
+     "total_minutes": 2365,
+     "layovers": [
+      "DXB"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1396.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "AUH",
+       "depart": "2027-01-08T21:00",
+       "arrive": "2027-01-08T22:40",
+       "carrier": "EY",
+       "flight_number": "EY241",
+       "duration_min": 190
+      },
+      {
+       "origin": "AUH",
+       "destination": "IST",
+       "depart": "2027-01-09T02:35",
+       "arrive": "2027-01-09T07:00",
+       "carrier": "TK",
+       "flight_number": "TK869",
+       "duration_min": 325
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T08:30",
+       "arrive": "2027-01-09T11:45",
+       "carrier": "TK",
+       "flight_number": "TK187",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Etihad Airways",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "95e64db1958f",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1515,
+     "layovers": [
+      "AUH",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1397.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "NMI",
+       "depart": "2027-01-08T08:50",
+       "arrive": "2027-01-08T10:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 85
+      },
+      {
+       "origin": "NMI",
+       "destination": "DEL",
+       "depart": "2027-01-08T17:10",
+       "arrive": "2027-01-08T19:20",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 130
+      },
+      {
+       "origin": "DEL",
+       "destination": "MUC",
+       "depart": "2027-01-09T01:55",
+       "arrive": "2027-01-09T06:00",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 515
+      },
+      {
+       "origin": "MUC",
+       "destination": "VIE",
+       "depart": "2027-01-09T08:00",
+       "arrive": "2027-01-09T09:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 65
+      },
+      {
+       "origin": "VIE",
+       "destination": "IAD",
+       "depart": "2027-01-09T10:35",
+       "arrive": "2027-01-09T14:10",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 575
+      }
+     ],
+     "airlines": [
+      "Austrian",
+      "IndiGo",
+      "Lufthansa"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 6.6h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "0139071e4be5",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 4,
+     "total_minutes": 2390,
+     "layovers": [
+      "NMI",
+      "DEL",
+      "MUC",
+      "VIE"
+     ],
+     "ticket_links": [
+      {
+       "leg": "HSR \u2192 DEL",
+       "price": 135.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/hsr/del/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/HSR-DEL/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/HSR/DEL/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1262.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1406.45,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-08T00:20",
+       "arrive": "2027-01-08T01:55",
+       "carrier": "TK",
+       "flight_number": "TK7779",
+       "duration_min": 95
+      },
+      {
+       "origin": "DEL",
+       "destination": "IST",
+       "depart": "2027-01-08T07:20",
+       "arrive": "2027-01-08T12:55",
+       "carrier": "TK",
+       "flight_number": "TK7751",
+       "duration_min": 485
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-08T16:10",
+       "arrive": "2027-01-08T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "c4814aecc137",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1775,
+     "layovers": [
+      "DEL",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1406.45,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-08T22:30",
+       "arrive": "2027-01-09T00:05",
+       "carrier": "TK",
+       "flight_number": "TK7778",
+       "duration_min": 95
+      },
+      {
+       "origin": "DEL",
+       "destination": "IST",
+       "depart": "2027-01-09T07:20",
+       "arrive": "2027-01-09T12:55",
+       "carrier": "TK",
+       "flight_number": "TK7751",
+       "duration_min": 485
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T16:10",
+       "arrive": "2027-01-09T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {
+      "Google Flights": 1426.0
+     },
+     "key": "59bfc76f4f95",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1885,
+     "layovers": [
+      "DEL",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1432.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "AUH",
+       "depart": "2027-01-08T06:05",
+       "arrive": "2027-01-08T07:50",
+       "carrier": "3L",
+       "flight_number": "3L112",
+       "duration_min": 195
+      },
+      {
+       "origin": "AUH",
+       "destination": "CAI",
+       "depart": "2027-01-08T17:55",
+       "arrive": "2027-01-08T20:10",
+       "carrier": "3L",
+       "flight_number": "3L431",
+       "duration_min": 255
+      },
+      {
+       "origin": "CAI",
+       "destination": "IAD",
+       "depart": "2027-01-08T23:55",
+       "arrive": "2027-01-09T05:00",
+       "carrier": "MS",
+       "flight_number": "MS981",
+       "duration_min": 725
+      }
+     ],
+     "airlines": [
+      "EgyptAir",
+      "InterSky"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "8acaf356bcf6",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2005,
+     "layovers": [
+      "AUH",
+      "CAI"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1435.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "BOM",
+       "depart": "2027-01-08T08:30",
+       "arrive": "2027-01-08T09:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 75
+      },
+      {
+       "origin": "BOM",
+       "destination": "IST",
+       "depart": "2027-01-08T13:40",
+       "arrive": "2027-01-08T18:30",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 440
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T08:30",
+       "arrive": "2027-01-09T11:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "IndiGo",
+      "Turkish Airlines"
+     ],
+     "via": "BOM",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 3.9h at BOM. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "99bd4bce88b2",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2265,
+     "layovers": [
+      "BOM",
+      "IST"
+     ],
+     "ticket_links": [
+      {
+       "leg": "HSR \u2192 BOM",
+       "price": 70.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0JPTUIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/hsr/bom/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:BOM,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/HSR-BOM/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/HSR/BOM/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "BOM \u2192 IAD",
+       "price": 1365.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQk9NcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/bom/iad/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:BOM,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/BOM-IAD/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/BOM/IAD/2027-01-08"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1471.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-08T03:40",
+       "arrive": "2027-01-08T05:25",
+       "carrier": "FZ",
+       "flight_number": "FZ438",
+       "duration_min": 195
+      },
+      {
+       "origin": "DXB",
+       "destination": "IST",
+       "depart": "2027-01-08T08:35",
+       "arrive": "2027-01-08T12:45",
+       "carrier": "TK",
+       "flight_number": "TK763",
+       "duration_min": 310
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-08T16:10",
+       "arrive": "2027-01-08T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "FlyDubai",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "d85a8508e8d2",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1575,
+     "layovers": [
+      "DXB",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1472.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "BOM",
+       "depart": "2027-01-08T08:30",
+       "arrive": "2027-01-08T09:50",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 80
+      },
+      {
+       "origin": "BOM",
+       "destination": "IST",
+       "depart": "2027-01-08T13:40",
+       "arrive": "2027-01-08T18:30",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 440
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T08:30",
+       "arrive": "2027-01-09T11:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "IndiGo",
+      "Turkish Airlines"
+     ],
+     "via": "BOM",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 3.8h at BOM. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "962266bbe256",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2265,
+     "layovers": [
+      "BOM",
+      "IST"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 BOM",
+       "price": 107.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0JPTUIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/bom/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:BOM,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-BOM/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/BOM/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "BOM \u2192 IAD",
+       "price": 1365.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQk9NcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/bom/iad/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:BOM,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/BOM-IAD/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/BOM/IAD/2027-01-08"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1473.17,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-08T20:20",
+       "arrive": "2027-01-08T22:05",
+       "carrier": "AI",
+       "flight_number": "AI1121",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "JFK",
+       "depart": "2027-01-09T00:05",
+       "arrive": "2027-01-09T06:55",
+       "carrier": "AI",
+       "flight_number": "AI101",
+       "duration_min": 1040
+      },
+      {
+       "origin": "JFK",
+       "destination": "DCA",
+       "depart": "2027-01-09T21:29",
+       "arrive": "2027-01-09T22:55",
+       "carrier": "B6",
+       "flight_number": "B62587",
+       "duration_min": 86
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "JetBlue Airways"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "86004f9e4603",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 2,
+     "total_minutes": 2225,
+     "layovers": [
+      "DEL",
+      "JFK"
+     ],
+     "ticket_links": []
+    }
+   ],
+   "best_by_strategy": {
+    "self-transfer": 1159.0,
+    "direct": 1218.0
+   },
+   "hubs": {
+    "DXB": {
+     "forced": null,
+     "self_transfer": 1159.0,
+     "skipped": false
+    },
+    "DOH": {
+     "forced": null,
+     "self_transfer": 1954.0,
+     "skipped": false
+    },
+    "AUH": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "IST": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "RUH": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "JED": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "BAH": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "MCT": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "KWI": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "AMM": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "CAI": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "SHJ": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "DEL": {
+     "forced": null,
+     "self_transfer": 1549.0,
+     "skipped": false
+    },
+    "BOM": {
+     "forced": null,
+     "self_transfer": 1813.0,
+     "skipped": false
+    }
+   },
+   "requests": 110,
+   "errors": [],
+   "all_time_low": 1159.0
+  },
+  {
+   "key": "HSRAMD-IADDCA-2027-01-09",
+   "name": "Rajkot/Ahmedabad to Washington DC, Jan 9",
+   "origin": [
+    "HSR",
+    "AMD"
+   ],
+   "destination": [
+    "IAD",
+    "DCA"
+   ],
+   "date": "2027-01-09",
+   "target_price": null,
+   "options": [
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 781.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T14:00",
+       "arrive": "2027-01-09T15:45",
+       "carrier": "AI",
+       "flight_number": "AI2716",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "RUH",
+       "depart": "2027-01-09T18:30",
+       "arrive": "2027-01-09T21:25",
+       "carrier": "SV",
+       "flight_number": "SV761",
+       "duration_min": 325
+      },
+      {
+       "origin": "RUH",
+       "destination": "IAD",
+       "depart": "2027-01-10T08:15",
+       "arrive": "2027-01-10T14:45",
+       "carrier": "SV",
+       "flight_number": "SV37",
+       "duration_min": 870
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Saudi Arabian Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "ae80bc6ce23c",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2115,
+     "layovers": [
+      "DEL",
+      "RUH"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 781.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T12:45",
+       "arrive": "2027-01-09T14:25",
+       "carrier": "AI",
+       "flight_number": "AI2522",
+       "duration_min": 100
+      },
+      {
+       "origin": "DEL",
+       "destination": "RUH",
+       "depart": "2027-01-09T18:30",
+       "arrive": "2027-01-09T21:25",
+       "carrier": "SV",
+       "flight_number": "SV761",
+       "duration_min": 325
+      },
+      {
+       "origin": "RUH",
+       "destination": "IAD",
+       "depart": "2027-01-10T08:15",
+       "arrive": "2027-01-10T14:45",
+       "carrier": "SV",
+       "flight_number": "SV37",
+       "duration_min": 870
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Saudi Arabian Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "5e3b1fdc1be6",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2190,
+     "layovers": [
+      "DEL",
+      "RUH"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 785.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T11:40",
+       "arrive": "2027-01-09T13:25",
+       "carrier": "QP",
+       "flight_number": "QP1204",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "RUH",
+       "depart": "2027-01-09T18:30",
+       "arrive": "2027-01-09T21:25",
+       "carrier": "SV",
+       "flight_number": "SV761",
+       "duration_min": 325
+      },
+      {
+       "origin": "RUH",
+       "destination": "IAD",
+       "depart": "2027-01-10T08:15",
+       "arrive": "2027-01-10T14:45",
+       "carrier": "SV",
+       "flight_number": "SV37",
+       "duration_min": 870
+      }
+     ],
+     "airlines": [
+      "Saudi Arabian Airlines",
+      "Starlight Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "120bad639a7b",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2255,
+     "layovers": [
+      "DEL",
+      "RUH"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 802.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-09T11:00",
+       "arrive": "2027-01-09T12:50",
+       "carrier": "AI",
+       "flight_number": "AI1823",
+       "duration_min": 80
+      },
+      {
+       "origin": "DEL",
+       "destination": "RUH",
+       "depart": "2027-01-09T18:30",
+       "arrive": "2027-01-09T21:25",
+       "carrier": "SV",
+       "flight_number": "SV761",
+       "duration_min": 325
+      },
+      {
+       "origin": "RUH",
+       "destination": "IAD",
+       "depart": "2027-01-10T08:15",
+       "arrive": "2027-01-10T14:45",
+       "carrier": "SV",
+       "flight_number": "SV37",
+       "duration_min": 870
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Saudi Arabian Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "c5ab4af74b30",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2265,
+     "layovers": [
+      "DEL",
+      "RUH"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 833.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "KWI",
+       "depart": "2027-01-09T06:00",
+       "arrive": "2027-01-09T07:55",
+       "carrier": "KU",
+       "flight_number": "KU348",
+       "duration_min": 265
+      },
+      {
+       "origin": "KWI",
+       "destination": "AMM",
+       "depart": "2027-01-09T20:10",
+       "arrive": "2027-01-09T22:45",
+       "carrier": "RJ",
+       "flight_number": "RJ641",
+       "duration_min": 215
+      },
+      {
+       "origin": "AMM",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T07:25",
+       "carrier": "RJ",
+       "flight_number": "RJ281",
+       "duration_min": 720
+      }
+     ],
+     "airlines": [
+      "Kuwait Airways",
+      "Royal Jordanian"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "7cf072fe6f9d",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2155,
+     "layovers": [
+      "KWI",
+      "AMM"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 863.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "KWI",
+       "depart": "2027-01-09T05:20",
+       "arrive": "2027-01-09T07:00",
+       "carrier": "J9",
+       "flight_number": "J9408",
+       "duration_min": 250
+      },
+      {
+       "origin": "KWI",
+       "destination": "AMM",
+       "depart": "2027-01-09T20:10",
+       "arrive": "2027-01-09T22:45",
+       "carrier": "RJ",
+       "flight_number": "RJ641",
+       "duration_min": 215
+      },
+      {
+       "origin": "AMM",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T07:25",
+       "carrier": "RJ",
+       "flight_number": "RJ281",
+       "duration_min": 720
+      }
+     ],
+     "airlines": [
+      "Jazeera Airways",
+      "Royal Jordanian"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "f3f59d365a18",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2195,
+     "layovers": [
+      "KWI",
+      "AMM"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1060.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-09T16:55",
+       "arrive": "2027-01-09T18:25",
+       "carrier": "6E",
+       "flight_number": "6E1477",
+       "duration_min": 180
+      },
+      {
+       "origin": "DXB",
+       "destination": "AMM",
+       "depart": "2027-01-09T22:45",
+       "arrive": "2027-01-10T01:20",
+       "carrier": "RJ",
+       "flight_number": "RJ615",
+       "duration_min": 275
+      },
+      {
+       "origin": "AMM",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T07:25",
+       "carrier": "RJ",
+       "flight_number": "RJ281",
+       "duration_min": 720
+      }
+     ],
+     "airlines": [
+      "IndiGo",
+      "Royal Jordanian"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "f0aa1d244bea",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1500,
+     "layovers": [
+      "DXB",
+      "AMM"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1138.08,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-09T09:45",
+       "arrive": "2027-01-09T11:25",
+       "carrier": "EK",
+       "flight_number": "EK541",
+       "duration_min": 190
+      },
+      {
+       "origin": "DXB",
+       "destination": "AMM",
+       "depart": "2027-01-09T13:45",
+       "arrive": "2027-01-09T16:20",
+       "carrier": "RJ",
+       "flight_number": "RJ611",
+       "duration_min": 275
+      },
+      {
+       "origin": "AMM",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T07:25",
+       "carrier": "RJ",
+       "flight_number": "RJ281",
+       "duration_min": 720
+      }
+     ],
+     "airlines": [
+      "Emirates",
+      "Royal Jordanian"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "38c90ccd5009",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1930,
+     "layovers": [
+      "DXB",
+      "AMM"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1142.47,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-09T09:45",
+       "arrive": "2027-01-09T11:25",
+       "carrier": "EK",
+       "flight_number": "EK541",
+       "duration_min": 190
+      },
+      {
+       "origin": "DXB",
+       "destination": "AMM",
+       "depart": "2027-01-09T22:45",
+       "arrive": "2027-01-10T01:20",
+       "carrier": "RJ",
+       "flight_number": "RJ615",
+       "duration_min": 275
+      },
+      {
+       "origin": "AMM",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T07:25",
+       "carrier": "RJ",
+       "flight_number": "RJ281",
+       "duration_min": 720
+      }
+     ],
+     "airlines": [
+      "Emirates",
+      "Royal Jordanian"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "db7875b456d5",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1930,
+     "layovers": [
+      "DXB",
+      "AMM"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1268.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "KWI",
+       "depart": "2027-01-09T06:00",
+       "arrive": "2027-01-09T07:55",
+       "carrier": "KU",
+       "flight_number": "KU348",
+       "duration_min": 265
+      },
+      {
+       "origin": "KWI",
+       "destination": "IST",
+       "depart": "2027-01-09T08:45",
+       "arrive": "2027-01-09T13:00",
+       "carrier": "KU",
+       "flight_number": "KU155",
+       "duration_min": 255
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T16:10",
+       "arrive": "2027-01-09T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Kuwait Airways",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "a38040ac7437",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1435,
+     "layovers": [
+      "KWI",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1289.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T22:30",
+       "arrive": "2027-01-10T00:05",
+       "carrier": "TK",
+       "flight_number": "TK7778",
+       "duration_min": 95
+      },
+      {
+       "origin": "DEL",
+       "destination": "IST",
+       "depart": "2027-01-10T07:20",
+       "arrive": "2027-01-10T12:55",
+       "carrier": "TK",
+       "flight_number": "TK7751",
+       "duration_min": 485
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-10T16:10",
+       "arrive": "2027-01-10T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "84c44a2bf793",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1885,
+     "layovers": [
+      "DEL",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1318.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "AUH",
+       "depart": "2027-01-09T21:00",
+       "arrive": "2027-01-09T22:40",
+       "carrier": "EY",
+       "flight_number": "EY241",
+       "duration_min": 190
+      },
+      {
+       "origin": "AUH",
+       "destination": "IST",
+       "depart": "2027-01-10T08:45",
+       "arrive": "2027-01-10T12:50",
+       "carrier": "EY",
+       "flight_number": "EY541",
+       "duration_min": 305
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-10T16:10",
+       "arrive": "2027-01-10T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "Etihad Airways",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "c21729f579fd",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1975,
+     "layovers": [
+      "AUH",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1353.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "JED",
+       "depart": "2027-01-09T22:40",
+       "arrive": "2027-01-10T01:40",
+       "carrier": "6E",
+       "flight_number": "6E75",
+       "duration_min": 330
+      },
+      {
+       "origin": "JED",
+       "destination": "IST",
+       "depart": "2027-01-10T06:35",
+       "arrive": "2027-01-10T10:45",
+       "carrier": "TK",
+       "flight_number": "TK97",
+       "duration_min": 250
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-10T16:10",
+       "arrive": "2027-01-10T19:25",
+       "carrier": "TK",
+       "flight_number": "TK7",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "IndiGo",
+      "Turkish Airlines"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "8f995f82519d",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1875,
+     "layovers": [
+      "JED",
+      "IST"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1357.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-09T04:30",
+       "arrive": "2027-01-09T06:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 195
+      },
+      {
+       "origin": "DXB",
+       "destination": "MCT",
+       "depart": "2027-01-09T11:00",
+       "arrive": "2027-01-09T12:10",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 70
+      },
+      {
+       "origin": "MCT",
+       "destination": "AMM",
+       "depart": "2027-01-09T20:10",
+       "arrive": "2027-01-09T23:10",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 240
+      },
+      {
+       "origin": "AMM",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T07:25",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 780
+      }
+     ],
+     "airlines": [
+      "Emirates",
+      "Oman Air",
+      "Royal Jordanian"
+     ],
+     "via": "DXB",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 4.8h at DXB. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "15601e4ba622",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 3,
+     "total_minutes": 2245,
+     "layovers": [
+      "DXB",
+      "MCT",
+      "AMM"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DXB",
+       "price": 680.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQU1EcgUSA0RYQkIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/dxb/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DXB,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DXB/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DXB/2027-01-09"
+        }
+       ]
+      },
+      {
+       "leg": "DXB \u2192 IAD",
+       "price": 677.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDRFhCcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/dxb/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DXB,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DXB-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DXB/IAD/2027-01-09"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1383.65,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-09T04:30",
+       "arrive": "2027-01-09T06:15",
+       "carrier": "EK",
+       "flight_number": "EK539",
+       "duration_min": 195
+      },
+      {
+       "origin": "DXB",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T08:35",
+       "carrier": "EK",
+       "flight_number": "EK231",
+       "duration_min": 910
+      }
+     ],
+     "airlines": [
+      "Emirates"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "26056840b243",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 1,
+     "total_minutes": 2315,
+     "layovers": [
+      "DXB"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1409.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-09T20:00",
+       "arrive": "2027-01-09T21:45",
+       "carrier": "AI",
+       "flight_number": "AI2538",
+       "duration_min": 75
+      },
+      {
+       "origin": "DEL",
+       "destination": "ZRH",
+       "depart": "2027-01-10T01:45",
+       "arrive": "2027-01-10T06:20",
+       "carrier": "LX",
+       "flight_number": "LX147",
+       "duration_min": 545
+      },
+      {
+       "origin": "ZRH",
+       "destination": "IAD",
+       "depart": "2027-01-10T13:15",
+       "arrive": "2027-01-10T17:00",
+       "carrier": "LX",
+       "flight_number": "LX72",
+       "duration_min": 585
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Swiss"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "key": "b4226c3bba3b",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1860,
+     "layovers": [
+      "DEL",
+      "ZRH"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1427.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DXB",
+       "depart": "2027-01-09T09:45",
+       "arrive": "2027-01-09T11:25",
+       "carrier": "EK",
+       "flight_number": "EK541",
+       "duration_min": 190
+      },
+      {
+       "origin": "DXB",
+       "destination": "IAD",
+       "depart": "2027-01-10T02:25",
+       "arrive": "2027-01-10T08:35",
+       "carrier": "EK",
+       "flight_number": "EK231",
+       "duration_min": 910
+      }
+     ],
+     "airlines": [
+      "Emirates"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {
+      "Google Flights": 1427.0
+     },
+     "key": "504b294b3ceb",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 1,
+     "total_minutes": 2000,
+     "layovers": [
+      "DXB"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1427.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-09T20:00",
+       "arrive": "2027-01-09T21:45",
+       "carrier": "AI",
+       "flight_number": "AI2538",
+       "duration_min": 75
+      },
+      {
+       "origin": "DEL",
+       "destination": "MUC",
+       "depart": "2027-01-10T01:55",
+       "arrive": "2027-01-10T06:00",
+       "carrier": "LH",
+       "flight_number": "LH763",
+       "duration_min": 515
+      },
+      {
+       "origin": "MUC",
+       "destination": "IAD",
+       "depart": "2027-01-10T16:50",
+       "arrive": "2027-01-10T20:05",
+       "carrier": "LH",
+       "flight_number": "LH414",
+       "duration_min": 555
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Lufthansa"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-09"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "key": "77fdde5281fb",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2045,
+     "layovers": [
+      "DEL",
+      "MUC"
+     ],
+     "ticket_links": []
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1430.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T20:20",
+       "arrive": "2027-01-09T22:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "LHR",
+       "depart": "2027-01-10T03:20",
+       "arrive": "2027-01-10T07:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 590
+      },
+      {
+       "origin": "LHR",
+       "destination": "IAD",
+       "depart": "2027-01-10T12:15",
+       "arrive": "2027-01-10T15:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 505
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "British Airways"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 5.2h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "07f94943b42f",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1790,
+     "layovers": [
+      "DEL",
+      "LHR"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DEL",
+       "price": 76.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/del/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-09"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1354.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270110/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/10/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-10/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-10"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1430.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T15:25",
+       "arrive": "2027-01-09T17:10",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "LHR",
+       "depart": "2027-01-10T03:20",
+       "arrive": "2027-01-10T07:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 590
+      },
+      {
+       "origin": "LHR",
+       "destination": "IAD",
+       "depart": "2027-01-10T12:15",
+       "arrive": "2027-01-10T15:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 505
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "British Airways"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 10.2h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "key": "9a5ef7ed3a75",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 2085,
+     "layovers": [
+      "DEL",
+      "LHR"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DEL",
+       "price": 76.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/del/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-09"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1354.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270110/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/10/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-10/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-10"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "best_by_strategy": {
+    "direct": 781.0,
+    "self-transfer": 1357.0
+   },
+   "hubs": {
+    "DXB": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "DOH": {
+     "forced": null,
+     "self_transfer": 1723.0,
+     "skipped": false
+    },
+    "AUH": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "IST": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "RUH": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "JED": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "BAH": {
+     "forced": null,
+     "self_transfer": 3628.0,
+     "skipped": false
+    },
+    "MCT": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "KWI": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "AMM": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "CAI": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "SHJ": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": false
+    },
+    "DEL": {
+     "forced": null,
+     "self_transfer": 1539.0,
+     "skipped": false
+    },
+    "BOM": {
+     "forced": null,
+     "self_transfer": 1606.0,
+     "skipped": false
+    }
+   },
+   "requests": 86,
+   "errors": [],
+   "all_time_low": 781.0
+  }
+ ]
+}
