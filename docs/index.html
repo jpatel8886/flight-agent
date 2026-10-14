@@ -227,7 +227,8 @@ function booking(o, primary) {
 }
 
 function loungePanel(o) {
-  const entries = Object.entries(o.lounges || {});
+  if (!o.lounges) return null;  // not looked up yet (data from before lounge support, or lookup failed)
+  const entries = Object.entries(o.lounges);
   if (!entries.length) return o.stops ? $("div", { class: "muted", style: "margin-top:12px", text: "No Priority Pass lounges at the layover airports." }) : null;
   const box = $("div", { class: "lounges" });
   for (const [code, l] of entries) {
