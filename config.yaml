@@ -4,14 +4,19 @@ adults: 1
 cabin: economy            # economy | premium-economy | business | first
 
 searches:
-  - name: Seattle to Mumbai
-    origin: SEA           # string or list, e.g. [JFK, EWR]
-    destination: BOM      # string or list
-    date: 2026-12-15
-    target_price: 1100    # optional: alert whenever price is at/below this
+  - name: Rajkot/Ahmedabad to Washington DC, Jan 8
+    origin: [HSR, AMD]
+    destination: [IAD, DCA]
+    date: 2027-01-08
+    # target_price: 750    # optional: alert whenever price is at/below this
+  - name: Rajkot/Ahmedabad to Washington DC, Jan 9
+    origin: [HSR, AMD]
+    destination: [IAD, DCA]
+    date: 2027-01-09
+    # target_price: 750
 
 # Layover cities tried for forced-hub and self-transfer combinations.
-hubs: [DXB, DOH, AUH, IST, RUH, JED, BAH, MCT, KWI, AMM, CAI, SHJ]
+hubs: [DXB, DOH, AUH, IST, RUH, JED, BAH, MCT, KWI, AMM, CAI, SHJ, DEL, BOM]
 
 strategies:
   forced_hub: true        # single ticket, Google Flights constrained to connect via hub

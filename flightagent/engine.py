@@ -79,11 +79,17 @@ class Searcher:
         strat = self.cfg.get("strategies", {})
         found: list[Itinerary] = []
 
+        google_pairs = set()  # pairs Google can route at all; forced-hub is pointless elsewhere
         for o, d in product(origins, dests):
             for prov in self._providers():
-                found += self._fits(self._call(prov, o, d, day))
+                res = self._call(prov, o, d, day)
+                if prov is google_flights and res:
+                    google_pairs.add((o, d))
+                found += self._fits(res)
         if self.cfg.get("providers", {}).get("google_flights", True) and strat.get("forced_hub", True):
             for o, d, h in product(origins, dests, hubs):
+                if (o, d) not in google_pairs:
+                    continue
                 res = self._call(google_flights, o, d, day, via=[h], strategy="forced-hub")
                 # Google treats the hub as a preference; keep only true matches.
                 res = self._fits([i for i in res if h in i.layovers])
