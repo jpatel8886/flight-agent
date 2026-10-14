@@ -1,0 +1,37 @@
+# Flight monitor configuration. Edit, commit, and the next scheduled run picks it up.
+currency: USD
+adults: 1
+cabin: economy            # economy | premium-economy | business | first
+
+searches:
+  - name: Seattle to Mumbai
+    origin: SEA           # string or list, e.g. [JFK, EWR]
+    destination: BOM      # string or list
+    date: 2026-12-15
+    target_price: 1100    # optional: alert whenever price is at/below this
+
+# Layover cities tried for forced-hub and self-transfer combinations.
+hubs: [DXB, DOH, AUH, IST, RUH, JED, BAH, MCT, KWI, AMM, CAI, SHJ]
+
+strategies:
+  forced_hub: true        # single ticket, Google Flights constrained to connect via hub
+  self_transfer: true     # two separate tickets: origin->hub + hub->destination
+
+self_transfer:
+  min_connection_minutes: 180   # separate tickets: allow time to re-check bags
+  max_layover_hours: 24
+  legs_per_hub: 6               # cheapest N legs on each side to pair up
+
+providers:
+  google_flights: true
+  skiplagged: true
+  serpapi: auto           # 'auto' = use if SERPAPI_KEY env var is set
+
+alerts:
+  email: true
+  min_drop: 10                  # send "new low" alert when best drops by >= this amount
+  daily_digest_utc_hour: 14     # one summary email per day on the first run at/after this hour; null to disable
+
+max_trip_hours: 40       # drop itineraries longer than this door-to-door
+top_n: 20
+request_delay_seconds: 1.5

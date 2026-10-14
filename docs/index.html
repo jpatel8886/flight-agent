@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Flight price monitor</title>
+<style>
+  :root {
+    --surface: #fcfcfb; --surface-2: #f3f2ef; --grid: #e4e3df;
+    --text: #0b0b0b; --text-2: #52514e; --muted: #77766f;
+    --series: #2a78d6; --good: #0ca30c; --warn: #fab219; --border: #e4e3df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface: #1a1a19; --surface-2: #242423; --grid: #34342f;
+      --text: #f0efec; --text-2: #c3c2b7; --muted: #9b9a91;
+      --series: #3987e5; --border: #34342f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; background: var(--surface); color: var(--text); }
+  main { max-width: 1080px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 0; }
+  .sub { color: var(--text-2); margin: 0 0 20px; }
+  section.search { border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 28px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .tiles { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+  .tile { background: var(--surface-2); border-radius: 10px; padding: 12px 16px; min-width: 150px; }
+  .tile .k { color: var(--text-2); font-size: 13px; }
+  .tile .v { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .tile .v.small { font-size: 18px; }
+  .best { background: var(--surface-2); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  .route { font-weight: 600; }
+  .meta { color: var(--text-2); font-size: 13px; }
+  .badge { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 99px; border: 1px solid var(--border); color: var(--text-2); margin-right: 4px; white-space: nowrap; }
+  .badge.warn::before { content: "⚠ "; }
+  .links a { margin-right: 10px; color: var(--series); text-decoration: none; white-space: nowrap; }
+  .links a:hover { text-decoration: underline; }
+  .legs { margin-top: 6px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; color: var(--text-2); font-weight: 500; border-bottom: 1px solid var(--border); padding: 6px 8px; }
+  td { border-bottom: 1px solid var(--border); padding: 8px; vertical-align: top; }
+  td.price { font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .chart { position: relative; margin: 8px 0 4px; }
+  .chart svg { display: block; width: 100%; height: 200px; overflow: visible; }
+  .tip { position: absolute; pointer-events: none; background: var(--text); color: var(--surface); font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, -120%); display: none; }
+  details { margin: 6px 0 14px; color: var(--text-2); font-size: 13px; }
+  .hubs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .hub { background: var(--surface-2); border-radius: 8px; padding: 6px 10px; font-size: 13px; }
+  .hub b { font-variant-numeric: tabular-nums; }
+  .err { color: var(--muted); font-size: 12px; }
+  h3 { font-size: 15px; margin: 18px 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Flight price monitor</h1>
+  <p class="sub" id="updated">Loading…</p>
+  <div id="app"></div>
+</main>
+<script>
+const $ = (tag, attrs = {}, ...kids) => {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") el.className = v; else if (k === "text") el.textContent = v; else el.setAttribute(k, v);
+  }
+  for (const k of kids) if (k != null) el.append(k);
+  return el;
+};
+const safeUrl = u => { try { const p = new URL(u); return ["http:", "https:"].includes(p.protocol) ? p.href : null; } catch { return null; } };
+const fmtMin = m => `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`;
+const fmtTime = s => s.replace("T", " ");
+let CUR = "USD";
+const money = v => v == null ? "–" : new Intl.NumberFormat(undefined, { style: "currency", currency: CUR, maximumFractionDigits: 0 }).format(v);
+const STRAT = { "direct": "Direct search", "forced-hub": "Single ticket via hub", "self-transfer": "Self-transfer (2 tickets)", "hidden-city": "Hidden-city" };
+
+function routeText(o) { return [o.segments[0].origin, ...o.segments.map(s => s.destination)].join(" → "); }
+
+function linksEl(links) {
+  const box = $("span", { class: "links" });
+  for (const l of links) { const u = safeUrl(l.url); if (u) box.append($("a", { href: u, target: "_blank", rel: "noopener noreferrer", text: l.name })); }
+  return box;
+}
+
+function bookingEl(o) {
+  if (o.ticket_links && o.ticket_links.length) {
+    const wrap = $("div", { class: "legs" });
+    o.ticket_links.forEach((t, i) => wrap.append($("div", {}, $("span", { text: `Ticket ${i + 1}: ${t.leg} (${money(t.price)}) ` }), linksEl(t.links))));
+    return wrap;
+  }
+  return linksEl(o.links);
+}
+
+function badges(o) {
+  const b = $("div");
+  b.append($("span", { class: "badge", text: STRAT[o.strategy] || o.strategy }));
+  if (o.via) b.append($("span", { class: "badge", text: `via ${o.via}` }));
+  if (o.separate_tickets) b.append($("span", { class: "badge warn", text: "separate tickets" }));
+  if (o.hidden_city) b.append($("span", { class: "badge warn", text: "hidden-city: no checked bags" }));
+  return b;
+}
+
+function chart(points) {
+  const wrap = $("div", { class: "chart" });
+  if (points.length < 2) { wrap.append($("p", { class: "meta", text: "Price history appears after a few runs." })); return wrap; }
+  const W = 1000, H = 200, L = 56, R = 70, T = 12, B = 26;
+  const xs = points.map(p => new Date(p.t).getTime()), ys = points.map(p => p.best);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs);
+  let y0 = Math.min(...ys), y1 = Math.max(...ys); const pad = Math.max(10, (y1 - y0) * 0.15); y0 -= pad; y1 += pad;
+  const X = t => L + (t - x0) / (x1 - x0 || 1) * (W - L - R), Y = v => T + (1 - (v - y0) / (y1 - y0)) * (H - T - B);
+  const NS = "http://www.w3.org/2000/svg";
+  const s = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, preserveAspectRatio: "none", role: "img", "aria-label": "Best price over time" });
+  for (let i = 0; i <= 3; i++) {
+    const v = y0 + (y1 - y0) * i / 3, y = Y(v);
+    svg.append(s("line", { x1: L, x2: W - R, y1: y, y2: y, stroke: "var(--grid)", "stroke-width": 1, "vector-effect": "non-scaling-stroke" }));
+    const lbl = s("text", { x: L - 8, y: y + 4, "text-anchor": "end", "font-size": 12, fill: "var(--muted)" }); lbl.textContent = money(v); svg.append(lbl);
+  }
+  [x0, x1].forEach((t, i) => { const lbl = s("text", { x: X(t), y: H - 6, "text-anchor": i ? "end" : "start", "font-size": 12, fill: "var(--muted)" }); lbl.textContent = new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" }); svg.append(lbl); });
+  const d = points.map((p, i) => `${i ? "L" : "M"}${X(xs[i]).toFixed(1)},${Y(p.best).toFixed(1)}`).join("");
+  svg.append(s("path", { d, fill: "none", stroke: "var(--series)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", "vector-effect": "non-scaling-stroke" }));
+  const last = points[points.length - 1];
+  const endLbl = s("text", { x: X(xs[xs.length - 1]) + 8, y: Y(last.best) + 4, "font-size": 13, "font-weight": 600, fill: "var(--text)" }); endLbl.textContent = money(last.best); svg.append(endLbl);
+  const cross = s("line", { y1: T, y2: H - B, stroke: "var(--muted)", "stroke-width": 1, "vector-effect": "non-scaling-stroke", visibility: "hidden" });
+  const dot = s("circle", { r: 5, fill: "var(--series)", stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" });
+  svg.append(cross, dot);
+  const tip = $("div", { class: "tip" });
+  const hit = s("rect", { x: L, y: 0, width: W - L - R, height: H, fill: "transparent" });
+  hit.addEventListener("pointermove", e => {
+    const r = svg.getBoundingClientRect(), vx = (e.clientX - r.left) / r.width * W;
+    let i = 0; xs.forEach((t, j) => { if (Math.abs(X(t) - vx) < Math.abs(X(xs[i]) - vx)) i = j; });
+    const px = X(xs[i]), py = Y(points[i].best);
+    cross.setAttribute("x1", px); cross.setAttribute("x2", px); dot.setAttribute("cx", px); dot.setAttribute("cy", py);
+    cross.setAttribute("visibility", "visible"); dot.setAttribute("visibility", "visible");
+    tip.textContent = `${money(points[i].best)} · ${new Date(points[i].t).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}`;
+    tip.style.left = `${px / W * r.width}px`; tip.style.top = `${py / H * r.height}px`; tip.style.display = "block";
+  });
+  hit.addEventListener("pointerleave", () => { tip.style.display = "none"; cross.setAttribute("visibility", "hidden"); dot.setAttribute("visibility", "hidden"); });
+  svg.append(hit);
+  wrap.append(svg, tip);
+  return wrap;
+}
+
+function historyTable(points) {
+  const det = $("details", {}, $("summary", { text: "Price history table" }));
+  const t = $("table", {}, $("tr", {}, $("th", { text: "Checked" }), $("th", { text: "Best" }), $("th", { text: "Direct" }), $("th", { text: "Via hub" }), $("th", { text: "Self-transfer" })));
+  for (const p of points.slice().reverse().slice(0, 60)) {
+    const b = p.by_strategy || {};
+    t.append($("tr", {}, $("td", { text: new Date(p.t).toLocaleString() }), $("td", { text: money(p.best) }), $("td", { text: money(b["direct"]) }), $("td", { text: money(b["forced-hub"]) }), $("td", { text: money(b["self-transfer"]) })));
+  }
+  det.append(t);
+  return det;
+}
+
+function render(latest, history) {
+  CUR = latest.currency || "USD";
+  document.getElementById("updated").textContent = `Last checked ${new Date(latest.generated_at).toLocaleString()} · one-way prices in ${CUR}; fares change fast. Confirm on the booking site.`;
+  const app = document.getElementById("app");
+  app.replaceChildren();
+  if (!latest.searches.length) app.append($("p", { text: "No active searches." }));
+  for (const s of latest.searches) {
+    const sec = $("section", { class: "search" });
+    sec.append($("div", { class: "head" }, $("h2", { text: s.name }), $("span", { class: "meta", text: `${[].concat(s.origin).join("/")} → ${[].concat(s.destination).join("/")} · ${s.date} · ${s.requests} lookups` })));
+    const best = s.options[0];
+    const bs = s.best_by_strategy || {};
+    const tiles = $("div", { class: "tiles" });
+    const tile = (k, v, small) => $("div", { class: "tile" }, $("div", { class: "k", text: k }), $("div", { class: "v" + (small ? " small" : ""), text: v }));
+    tiles.append(tile("Best today", money(best && best.price)), tile("All-time low", money(s.all_time_low), true));
+    if (s.target_price) tiles.append(tile("Your target", money(s.target_price), true));
+    tiles.append(tile("Direct search", money(bs["direct"]), true), tile("Via hub (1 ticket)", money(bs["forced-hub"]), true), tile("Self-transfer", money(bs["self-transfer"]), true));
+    sec.append(tiles);
+
+    if (best) {
+      sec.append($("div", { class: "best" },
+        $("div", { class: "route", text: `${routeText(best)} · ${money(best.price)}` }),
+        $("div", { class: "meta", text: `${best.airlines.join(", ")} · ${fmtMin(best.total_minutes)} · departs ${fmtTime(best.segments[0].depart)} · arrives ${fmtTime(best.segments.at(-1).arrive)} (local) · found on ${best.source}` }),
+        badges(best), ...best.notes.map(n => $("div", { class: "meta", text: n })), $("div", { class: "meta", text: "Book: " }, bookingEl(best))));
+    } else {
+      sec.append($("p", { text: "No fares found on the last run." }));
+    }
+
+    const pts = history[s.key] || [];
+    sec.append($("h3", { text: "Best price over time" }), chart(pts), historyTable(pts));
+
+    sec.append($("h3", { text: "Top options" }));
+    const t = $("table", {}, $("tr", {}, $("th", { text: "Price" }), $("th", { text: "Itinerary" }), $("th", { text: "Type" }), $("th", { text: "Book" })));
+    for (const o of s.options) {
+      const seen = Object.entries(o.also_seen || {}).map(([k, v]) => `${k} ${money(v)}`).join(", ");
+      t.append($("tr", {},
+        $("td", { class: "price", text: money(o.price) }),
+        $("td", {}, $("div", { class: "route", text: routeText(o) }), $("div", { class: "meta", text: `${o.airlines.join(", ")} · ${fmtMin(o.total_minutes)} · ${fmtTime(o.segments[0].depart)} → ${fmtTime(o.segments.at(-1).arrive)}` }),
+          seen ? $("div", { class: "meta", text: `Also on ${seen}` }) : null),
+        $("td", {}, badges(o), $("div", { class: "meta", text: o.source })),
+        $("td", {}, bookingEl(o))));
+    }
+    sec.append(t);
+
+    const hubs = Object.entries(s.hubs || {});
+    if (hubs.length) {
+      sec.append($("h3", { text: "Layover cities tried" }));
+      const box = $("div", { class: "hubs" });
+      for (const [h, v] of hubs.sort((a, b) => (Math.min(a[1].forced ?? 1e9, a[1].self_transfer ?? 1e9)) - Math.min(b[1].forced ?? 1e9, b[1].self_transfer ?? 1e9))) {
+        const txt = v.skipped && v.forced == null ? "pruned" : `1 ticket ${money(v.forced)} · 2 tickets ${v.skipped ? "pruned" : money(v.self_transfer)}`;
+        box.append($("div", { class: "hub" }, $("b", { text: h + " " }), $("span", { text: txt })));
+      }
+      sec.append(box);
+    }
+    if (s.errors && s.errors.length) sec.append($("details", { class: "err" }, $("summary", { text: `${s.errors.length} lookup issue(s)` }), ...s.errors.map(e => $("div", { text: e }))));
+    app.append(sec);
+  }
+}
+
+Promise.all([fetch("data/latest.json", { cache: "no-store" }).then(r => r.json()), fetch("data/history.json", { cache: "no-store" }).then(r => r.json()).catch(() => ({}))])
+  .then(([l, h]) => render(l, h))
+  .catch(() => { document.getElementById("updated").textContent = "No data yet. The first scheduled run will populate this page."; });
+</script>
+</body>
+</html>
