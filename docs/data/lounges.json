@@ -132,6 +132,110 @@
    "name": "Mumbai Chhatrapati Shivaji Intl",
    "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international"
   },
+  "CAI": {
+   "complete": true,
+   "fetched": "2026-10-14T20:26:32+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI21",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - 1st Floor, above Immigration. International and in transit flights only.",
+     "name": "AHLEIN Emerald Lounge",
+     "rating": 4.29,
+     "ratings_count": 253,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai21-ahlein-emerald-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - 1st Floor, after Immigration. Follow signs to the lounge. International flights only. ",
+     "name": "CAC Lounge by Plaza Premium Lounge & EAS",
+     "rating": 3.5,
+     "ratings_count": 589,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai5-cac-lounge-by-plaza-premium-lounge-and-eas"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI7",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Security Checks, turn right before the Duty Free Shops and the lounge is located past the Egypt Airways Lounges. International flights only.",
+     "name": "AHLEIN Premium Lounge",
+     "rating": 4.2,
+     "ratings_count": 1338,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai7-ahlein-premium-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "CAI23",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "CAC Lounge by Plaza Premium Lounge & EAS",
+     "rating": 4.33,
+     "ratings_count": 3,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai23-cac-lounge-by-plaza-premium-lounge-and-eas-t3-lounge-new"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI24",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Security Checks, proceed approximately 20 metres to the lounge. International flights only.",
+     "name": "CAC Lounge by Plaza Premium Lounge & EAS",
+     "rating": 2,
+     "ratings_count": 1,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai24-cac-lounge-by-plaza-premium-lounge-and-eas"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located on the 3rd Floor in the Departure Hall. After Passport Control, turn left to Zone E and proceed to the end of the corridor. International flights only. ",
+     "name": "CAC Lounge by Plaza Premium Lounge & EAS",
+     "rating": 2.8,
+     "ratings_count": 1720,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai-cac-lounge-by-plaza-premium-lounge-and-eas"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI19",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Departure Level, near Gates G and F. International and in transit flights only.",
+     "name": "AHLEIN Premium Lounge",
+     "rating": 3.59,
+     "ratings_count": 793,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai19-ahlein-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CAI4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located on both the 1st and 2nd Floors, after Security and Passport Control. Take the stairs or escalator and follow signs to the First Class lounge area.",
+     "name": "CAC Lounge by Plaza Premium Lounge & EAS",
+     "rating": 3.3,
+     "ratings_count": 443,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/egypt/cairo-international/cai4-cac-lounge-by-plaza-premium-lounge-and-eas"
+    }
+   ],
+   "name": "Cairo International",
+   "url": "https://www.prioritypass.com/lounges/egypt/cairo-international"
+  },
   "CDG": {
    "complete": true,
    "fetched": "2026-10-14T20:11:37+00:00",
@@ -475,6 +579,50 @@
    ],
    "name": "Istanbul",
    "url": "https://www.prioritypass.com/lounges/turkey/istanbul"
+  },
+  "JED": {
+   "complete": true,
+   "fetched": "2026-10-14T20:37:04+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JED1",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Security Checks and Passport Control, the lounge is located immediately after the Immigration counters on the left. North Terminal international flights only (no access for Saudia Airlines flights).",
+     "name": "First Class Lounge",
+     "rating": 3.59,
+     "ratings_count": 606,
+     "terminal": "North Terminal",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed1-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JED6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - near Gate 39. International and in transit flights only.",
+     "name": "Plaza Premium Lounge (International Departures)",
+     "rating": 3.8,
+     "ratings_count": 1433,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed6-plaza-premium-lounge-international-departures"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JED5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - 1st Floor. Domestic flights only. ",
+     "name": "naSmiles Lounge",
+     "rating": 4.09,
+     "ratings_count": 402,
+     "terminal": "Domestic Terminal",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed5-nasmiles-lounge"
+    }
+   ],
+   "name": "Jeddah King A Aziz Intl",
+   "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international"
   },
   "JFK": {
    "complete": true,
@@ -867,6 +1015,50 @@
    ],
    "name": "Montreal Pierre E.Trudeau Intl",
    "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international"
+  },
+  "ZRH": {
+   "complete": true,
+   "fetched": "2026-10-14T20:37:16+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ZUR",
+     "hours": "05:15 - 20:00",
+     "location": "Airside - Airside Center, after Security Control Check-in 1 or Check-in 2, turn left towards B-Gates. Take the lift or stairs to the 2nd Floor and follow signs to the lounges.",
+     "name": "Marhaba Lounge",
+     "rating": 3.79,
+     "ratings_count": 2726,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zur-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ZRH6",
+     "hours": "06:00 - 22:30",
+     "location": "Airside - Gates E after Security Control, take the lift or stairs from the 2nd Floor Departures Level up to the 3rd Floor. Follow signs to the lounge which is located by Gate E46. International and Transit passengers may access the lounge. Non-Schengen flights only.",
+     "name": "Primeclass Lounge",
+     "rating": 4.2,
+     "ratings_count": 4439,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh6-primeclass-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ZRH4",
+     "hours": "05:15 - 21:00",
+     "location": "Airside - Airside Centre, 3rd Floor, after Security Control in Check-in 1 or Check-in 2, turn left towards B-Gates and follows signs for the lounge. The lounge is not accessible to transit passengers.",
+     "name": "Aspire Lounge",
+     "rating": 3.8,
+     "ratings_count": 9446,
+     "terminal": "Terminal A",
+     "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh4-aspire-lounge"
+    }
+   ],
+   "name": "Zurich",
+   "url": "https://www.prioritypass.com/lounges/switzerland/zurich"
   }
  },
  "index": {
