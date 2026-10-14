@@ -2,7 +2,7 @@ name: Monitor flight prices
 
 on:
   schedule:
-    - cron: "17 */4 * * *"   # every 4 hours (6x/day), UTC
+    - cron: "7 * * * *"      # hourly (runs take ~20 min; concurrency below prevents overlap)
   workflow_dispatch: {}       # "Run workflow" button for manual checks
 
 permissions:

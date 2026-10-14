@@ -11,13 +11,14 @@ import logging
 import os
 import re
 from datetime import date as Date
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import yaml
 
 from . import notify
 from .engine import Searcher
+from .lounges import Lounges
 
 log = logging.getLogger("flightagent")
 HISTORY_POINTS = 600
@@ -49,24 +50,31 @@ def summary(o: dict) -> str:
     return f"{o['price']:.0f}, {o['total_minutes'] // 60}h, {stops} stop{'s' if stops != 1 else ''}"
 
 
-def decide_alert(s: dict, best: dict, cheapest: dict, st: dict, alerts: dict, now: datetime) -> str | None:
-    """`best` is the top-ranked (best value) option; alerts track its score, not raw price."""
-    prev = st.get("best_score")
-    target = s.get("target_price")
-    today = now.date().isoformat()
+def email_slot(now: datetime, alerts: dict) -> str:
+    """Identify the current send window, e.g. "2026-10-15T12" = the window that opened at 12:00 local."""
+    local = now + timedelta(hours=float(alerts.get("utc_offset_hours", 0)))
+    hours = sorted(int(h) for h in alerts.get("send_hours_local", [7, 12, 17, 21]))
+    passed = [h for h in hours if h <= local.hour]
+    if passed:
+        return f"{local.date().isoformat()}T{passed[-1]:02d}"
+    return f"{(local.date() - timedelta(days=1)).isoformat()}T{hours[-1]:02d}"
+
+
+def change_note(best: dict, cheapest: dict, s: dict, st: dict) -> str:
+    """Describe what moved since the last email for this search."""
+    notes = []
+    prev = st.get("emailed_score")
     if prev is None:
-        return "first result"
-    if best["score"] <= prev - float(alerts.get("min_drop", 10)):
-        was = f" (was {st['best_summary']})" if st.get("best_summary") else ""
-        return f"better option: {summary(best)}{was}"
-    if target and cheapest["price"] <= target and st.get("last_target_alert") != today:
-        st["last_target_alert"] = today
-        return f"{cheapest['price']:.0f} is at/below your target of {target}"
-    hour = alerts.get("daily_digest_utc_hour")
-    if hour is not None and now.hour >= int(hour) and st.get("last_digest") != today:
-        st["last_digest"] = today
-        return "daily summary"
-    return None
+        notes.append("first result")
+    elif best["score"] < prev - 1:
+        notes.append(f"better than last email (was {st.get('emailed_summary', '?')})")
+    elif best["score"] > prev + 1:
+        notes.append(f"worse than last email (was {st.get('emailed_summary', '?')})")
+    else:
+        notes.append("no change since last email")
+    if s.get("target_price") and cheapest["price"] <= s["target_price"]:
+        notes.append(f"cheapest {cheapest['price']:.0f} is at/below your target of {s['target_price']}")
+    return "; ".join(notes)
 
 
 def main() -> None:
@@ -86,6 +94,8 @@ def main() -> None:
     site_url = os.environ.get("SITE_URL")
     now = datetime.now(timezone.utc)
     searcher = Searcher(cfg)
+    lounges = Lounges(data_dir / "lounges.json", cfg)
+    digest: list[dict] = []
     latest = {"generated_at": now.isoformat(timespec="seconds"), "currency": cfg.get("currency", "USD"), "searches": []}
 
     for s in cfg["searches"]:
@@ -100,6 +110,11 @@ def main() -> None:
         cheapest = min(results, key=lambda i: i.price, default=None)
         if cheapest is not None and all(o["key"] != cheapest.key for o in options):
             options.append(serialize(cheapest))  # always show the cheapest, even if it ranks low
+        try:
+            lounges.annotate(options)
+        except Exception as e:  # lounge info is a nice-to-have; never fail the run over it
+            log.warning("lounge lookup failed: %s: %s", type(e).__name__, e)
+            stats.errors.append(f"lounges: {type(e).__name__}")
         by_strategy = {}
         for i in sorted(results, key=lambda i: i.price):
             by_strategy.setdefault(i.strategy, i.price)
@@ -126,20 +141,28 @@ def main() -> None:
         st = state.setdefault(key, {})
         entry["all_time_low"] = min(low["price"], st.get("lowest_price", low["price"]))
 
-        reason = decide_alert(s, best, low, st, alerts, now)
         if best["score"] < st.get("best_score", float("inf")):
             st.update(best_score=best["score"], best_summary=summary(best), best_seen_at=latest["generated_at"])
         st["lowest_price"] = entry["all_time_low"]
-        if reason and alerts.get("email", True) and not args.no_email:
-            try:
-                notify.send(*notify.render(meta, options, reason, site_url))
-            except Exception as e:  # don't lose the run's data because SMTP failed
-                log.error("email failed: %s", type(e).__name__)
-                entry["errors"].append(f"email: {type(e).__name__}")
+        digest.append({**meta, "options": options, "change": change_note(best, low, s, st), "st": st})
+
+    # Emails go out at most once per send window (default 4/day), however often the search runs.
+    slot = email_slot(now, alerts)
+    mail = state.setdefault("_email", {})
+    if digest and alerts.get("email", True) and not args.no_email and mail.get("last_slot") != slot:
+        try:
+            if notify.send(*notify.render_digest(digest, site_url)):
+                mail["last_slot"] = slot
+                for d in digest:
+                    d["st"].update(emailed_score=d["options"][0]["score"], emailed_summary=summary(d["options"][0]))
+        except Exception as e:  # don't lose the run's data because SMTP failed
+            log.error("email failed: %s", type(e).__name__)
+            latest["searches"][0]["errors"].append(f"email: {type(e).__name__}")
 
     (data_dir / "latest.json").write_text(json.dumps(latest, indent=1))
     (data_dir / "history.json").write_text(json.dumps(history))
     (data_dir / "state.json").write_text(json.dumps(state, indent=1))
+    lounges.save()
     log.info("wrote %s", data_dir)
 
 

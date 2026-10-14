@@ -43,19 +43,35 @@ you can check the fare there and book.
    It will be at `https://<user>.github.io/<repo>/`.
 5. **Edit `config.yaml`** (origin, destination, date, target price) and push.
 6. Actions tab → *Monitor flight prices* → **Run workflow** to do the first check now.
-   After that it runs every 4 hours (`cron` in `.github/workflows/monitor.yml`).
+   After that it runs hourly (`cron` in `.github/workflows/monitor.yml`).
 
 > **Privacy:** GitHub Pages sites are public. The page is marked `noindex`, but
 > anyone with the URL can see the route and date you're watching. On a free plan,
 > Pages requires a public repo, so the config is public too. Secrets stay private.
 
+## Ranking
+
+Options are ranked by **best value**, not raw price: price + `value_per_hour` for
+each hour of travel + `per_stop_penalty` per layover + extra for separate tickets
+or hidden-city. Tune it under `ranking:` in `config.yaml` (all zeros = cheapest first).
+The cheapest fare is always shown too, tagged "Cheapest".
+
 ## Emails
 
-You get an email when:
-- the first result for a search comes in,
-- the best price drops by at least `alerts.min_drop` versus the lowest seen so far,
-- the price is at or below `target_price` (at most once a day),
-- once per day as a summary (`alerts.daily_digest_utc_hour`, set `null` to disable).
+The search runs **hourly**, but email goes out at most **4 times a day**: one
+combined email on the first run after each `alerts.send_hours_local` time
+(default 7:00, 12:00, 17:00, 21:00 in `utc_offset_hours`, which is set to IST).
+Each email says whether the best option got better or worse since the last one,
+and flags any fare at or below `target_price`.
+
+## Priority Pass lounges
+
+For every layover airport, the dashboard and emails show Priority Pass lounges:
+name, terminal, hours and member star rating (Priority Pass publishes ratings and
+rating counts, not written reviews). Landside lounges, which you can't reach on a
+connection, are excluded. Data comes from prioritypass.com and is cached in
+`docs/data/lounges.json` (airport list 90 days, lounge details 30 days), so
+normal runs make few or no extra requests.
 
 ## Run locally
 

@@ -34,8 +34,9 @@ providers:
 
 alerts:
   email: true
-  min_drop: 10                  # send "new low" alert when best drops by >= this amount
-  daily_digest_utc_hour: 14     # one summary email per day on the first run at/after this hour; null to disable
+  # One combined email per window, sent on the first run after each of these local times.
+  send_hours_local: [7, 12, 17, 21]
+  utc_offset_hours: 5.5         # India (IST); use -5 for US Eastern, etc.
 
 # Results are ranked by "effective cost" = price + these penalties, so a slightly
 # pricier but much shorter / fewer-stop itinerary ranks first. Set all to 0 for cheapest-first.
@@ -46,5 +47,10 @@ ranking:
   hidden_city_penalty: 50
 
 max_trip_hours: 40       # drop itineraries longer than this door-to-door
+# Priority Pass lounges at layover airports (cached in docs/data/lounges.json).
+lounges:
+  enabled: true
+  max_fetches_per_run: 80       # page fetches per run; a cold cache fills over a couple of runs
+
 top_n: 20
 request_delay_seconds: 1.5

@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime, timezone
 
-from flightagent.__main__ import decide_alert
+from flightagent.__main__ import change_note, email_slot
 from flightagent.engine import Ranker, _combine, merge
 from flightagent.models import Itinerary, Segment
 
@@ -41,26 +41,37 @@ class RankerTest(unittest.TestCase):
         self.assertEqual(r.rank([long_, short])[0], short)
 
 
-class AlertTest(unittest.TestCase):
-    now = datetime(2026, 10, 14, 15, tzinfo=timezone.utc)
-    opt = {"price": 900, "score": 1300, "total_minutes": 1560, "stops": 1}
+class EmailScheduleTest(unittest.TestCase):
+    alerts = {"utc_offset_hours": 5.5, "send_hours_local": [7, 12, 17, 21]}
 
-    def test_better_option_requires_min_drop(self):
-        st = {"best_score": 1305, "last_digest": "2026-10-14"}
-        self.assertIsNone(decide_alert({}, self.opt, self.opt, st, {"min_drop": 10}, self.now))
-        st["best_score"] = 1400
-        self.assertIn("better option", decide_alert({}, self.opt, self.opt, st, {"min_drop": 10}, self.now))
+    def slot(self, h, m=0):
+        return email_slot(datetime(2026, 10, 15, h, m, tzinfo=timezone.utc), self.alerts)
 
-    def test_target_uses_cheapest(self):
-        st = {"best_score": 1300, "last_digest": "2026-10-14"}
-        cheap = {**self.opt, "price": 700}
-        self.assertIn("target", decide_alert({"target_price": 750}, self.opt, cheap, st, {}, self.now))
+    def test_four_windows_per_day(self):
+        # 06:30 UTC = 12:00 IST opens the 12:00 window; 11:00 UTC = 16:30 IST is still in it.
+        self.assertEqual(self.slot(6, 30), "2026-10-15T12")
+        self.assertEqual(self.slot(11, 0), "2026-10-15T12")
+        self.assertEqual(self.slot(11, 30), "2026-10-15T17")
+        # 00:00 UTC = 05:30 IST: still yesterday's 21:00 window.
+        self.assertEqual(self.slot(0, 0), "2026-10-14T21")
+        hours = {self.slot(h, m) for h in range(24) for m in (0, 30)}
+        self.assertEqual(len(hours), 5)  # 4 windows today + the tail of yesterday's last one
 
-    def test_digest_once_per_day(self):
-        st = {"best_score": 1300}
-        alerts = {"daily_digest_utc_hour": 14}
-        self.assertEqual(decide_alert({}, self.opt, self.opt, st, alerts, self.now), "daily summary")
-        self.assertIsNone(decide_alert({}, self.opt, self.opt, st, alerts, self.now))
+    def test_change_note(self):
+        o = {"price": 900, "score": 1300, "total_minutes": 1560, "stops": 1}
+        self.assertEqual(change_note(o, o, {}, {}), "first result")
+        self.assertIn("better", change_note(o, o, {}, {"emailed_score": 1400}))
+        self.assertIn("target", change_note(o, o, {"target_price": 950}, {"emailed_score": 1300}))
+
+
+class LoungeParseTest(unittest.TestCase):
+    def test_payload_and_objects(self):
+        import json
+        from flightagent import lounges
+        data = '{"key":1,"name":"Marhaba","terminalName":"T3","loungeCode":"DXB3","outletCategory":"LOUNGE","ratings":{"average":3.8,"count":10}}'
+        html = '<script>self.__next_f.push([1,' + json.dumps("x" + data + "y") + '])</script>'
+        objs = lounges._objects(lounges._payload(html), '{"key":', "loungeCode")
+        self.assertEqual(objs[0]["ratings"]["average"], 3.8)
 
 
 if __name__ == "__main__":
