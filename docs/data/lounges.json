@@ -524,6 +524,62 @@
    "name": "Dubai Intl",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international"
   },
+  "FRA": {
+   "complete": true,
+   "fetched": "2026-10-14T21:18:42+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "FRA17",
+     "hours": "05:00 - 20:00",
+     "location": "",
+     "name": "Air France Lounge",
+     "rating": 4.57,
+     "ratings_count": 7,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra17-air-france-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "FRA16",
+     "hours": "06:30 - 22:00",
+     "location": "",
+     "name": "SkyTeam Lounge ",
+     "rating": 4.9,
+     "ratings_count": 10,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra16-skyteam-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "FRA15",
+     "hours": "06:15 - 21:15",
+     "location": "",
+     "name": "Priority Lounge",
+     "rating": 4.33,
+     "ratings_count": 24,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra15-priority-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "FRA3",
+     "hours": "06:30 - 21:30",
+     "location": "Landside - before Passport and Security Controls, Departure Level. The lounge is located between Halls B and C , Gallery Level near to the Travel Market. Transit passengers must leave the transit area and go through immigration and customs to access the lounge.  ",
+     "name": "LuxxLounge",
+     "rating": 2.99,
+     "ratings_count": 10049,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra3-luxxlounge"
+    }
+   ],
+   "name": "Frankfurt",
+   "url": "https://www.prioritypass.com/lounges/germany/frankfurt"
+  },
   "IST": {
    "complete": true,
    "fetched": "2026-10-14T20:09:16+00:00",
@@ -808,6 +864,134 @@
    "name": "Kuwait International",
    "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international"
   },
+  "LHR": {
+   "complete": true,
+   "fetched": "2026-10-14T21:08:45+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR33",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - after passing through Security Checks and Duty Free. Take the lifts adjacent to Gate A18 to the lower Ground Level, to where the lounge is located.",
+     "name": "No.1 Lounge",
+     "rating": 4,
+     "ratings_count": 3313,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR11",
+     "hours": "05:00 - 21:30",
+     "location": "Airside - Level 4, Departures, next to the Terminal Transfer area. International and in transit flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.8,
+     "ratings_count": 11818,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr11-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR25",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - after Security, follow the walkway to the left of World Duty Free and follow signs for 'Lounge F' and Gates 13-22. The lounge is located one floor up and is accessible via lifts or stairs.  ",
+     "name": "No1 Lounge Heathrow",
+     "rating": 3.8,
+     "ratings_count": 8338,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr25-no1-lounge-heathrow"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR16",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - after Security. Follow signs to Gates 1-42 and for 'All Airline Lounges'. Bear left and continue to follow signs for \u2018All Airline Lounges\u2019. Turn left and follow signs to Gates 1-22 and 'Airline Lounges B-J', then turn left towards Gate 9. The lounge is signposted as \u2018Lounge D\u2019 and is locat",
+     "name": "My Lounge",
+     "rating": 3.7,
+     "ratings_count": 8605,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr16-my-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR34",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - after Security, follow the walkway to the left of World Duty Free and follow signs for 'Lounge F' and Gates 13-22. The lounge is located one floor up and is accessible via lifts or stairs.  ",
+     "name": "Clubrooms Heathrow - Additional Fee Applies",
+     "rating": 4,
+     "ratings_count": 749,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr34-clubrooms-lhr-terminal-3-additional-fee-applies"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "LHR35",
+     "hours": "06:00 - 14:00",
+     "location": "",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.48,
+     "ratings_count": 48,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr35-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR14",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - after Passport Control and Immigration, the lounge is located to the left of Gate A18 in the Main Departure Terminal. Passengers departing from the Satellites will need to access the lounge before proceeding to the Satellite Gates.",
+     "name": "Club Aspire Lounge",
+     "rating": 3.2,
+     "ratings_count": 23931,
+     "terminal": "Terminal 5",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr14-club-aspire-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR30",
+     "hours": "05:30 - 21:30",
+     "location": "Airside - next to Gate A7.",
+     "name": "Plaza Premium Lounge",
+     "rating": 2.9,
+     "ratings_count": 12277,
+     "terminal": "Terminal 5",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr30-plaza-premium-lounge-terminal-5-departures"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR31",
+     "hours": "07:00 - 10:30",
+     "location": "Airside - after Security Checks, Level 2, near Gate 2. International and in transit flights only.",
+     "name": "Blush Lounge by Plaza Premium Group",
+     "rating": 3.2,
+     "ratings_count": 2449,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr31-blush-lounge-by-plaza-premium-group"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR13",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - 2nd Floor, opposite Gates A10 and B10. International and in transit flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.7,
+     "ratings_count": 3516,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr13-plaza-premium-lounge"
+    }
+   ],
+   "name": "Heathrow",
+   "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow"
+  },
   "MUC": {
    "complete": true,
    "fetched": "2026-10-14T20:11:55+00:00",
@@ -939,6 +1123,26 @@
    ],
    "name": "King Khalid International",
    "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-khalid-international"
+  },
+  "SHJ": {
+   "complete": true,
+   "fetched": "2026-10-14T21:08:39+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SHJ",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - turn left after the Dufry Store and proceed to the 1st Floor. The lounge is located opposite the transfer desk, near the Visa and Information Help Desk. ",
+     "name": "The Lounge",
+     "rating": 4,
+     "ratings_count": 1275,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international/shj-the-lounge"
+    }
+   ],
+   "name": "Sharjah International",
+   "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international"
   },
   "VIE": {
    "complete": true,
