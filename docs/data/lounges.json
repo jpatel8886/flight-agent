@@ -132,6 +132,38 @@
    "name": "Mumbai Chhatrapati Shivaji Intl",
    "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international"
   },
+  "BOS": {
+   "complete": true,
+   "fetched": "2026-10-15T00:03:01+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOS10",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - 1st Floor, Concourse Level across from Gate C19. The lounge is not accessible from Gates 40 - 42.",
+     "name": "The Lounge",
+     "rating": 3.9,
+     "ratings_count": 10357,
+     "terminal": "Terminal C",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international/bos10-the-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOS8",
+     "hours": "08:00 - 13:30",
+     "location": "Airside - after Security, turn right towards Gate 4. Take the dedicated lounge lift or stairs to where the lounge is located.",
+     "name": "Air France Lounge",
+     "rating": 3.6,
+     "ratings_count": 6592,
+     "terminal": "Terminal E",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international/bos8-air-france-lounge"
+    }
+   ],
+   "name": "Boston MA Logan International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international"
+  },
   "CAI": {
    "complete": true,
    "fetched": "2026-10-14T20:26:32+00:00",
