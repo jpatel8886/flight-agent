@@ -5,8 +5,8 @@
   "best_score": 1933.8,
   "best_summary": "1360, 27h, 2 stops",
   "lowest_price": 1194.0,
-  "emailed_score": 1933.8,
-  "emailed_summary": "1360, 27h, 2 stops"
+  "emailed_score": 1952.8,
+  "emailed_summary": "1429, 29h, 2 stops"
  },
  "HSRAMD-IADDCA-2027-01-09": {
   "best_price": 781.0,
@@ -14,10 +14,10 @@
   "best_score": 1464.8,
   "best_summary": "781, 35h, 2 stops",
   "lowest_price": 781.0,
-  "emailed_score": 1464.8,
-  "emailed_summary": "781, 35h, 2 stops"
+  "emailed_score": 1844.2,
+  "emailed_summary": "1293, 31h, 2 stops"
  },
  "_email": {
-  "last_slot": "2026-10-14T21"
+  "last_slot": "2026-10-15T07"
  }
 }
