@@ -16,7 +16,7 @@ searches:
     # target_price: 750
 
 # Layover cities tried for forced-hub and self-transfer combinations.
-hubs: [DXB, DOH, AUH, RUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
+hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
 
 # Layovers in these countries are still searched, but hidden on the dashboard (toggle
 # "Avoid Middle East layovers") and left out of emails. Remove one to allow it again.
@@ -42,7 +42,7 @@ strategies:
 
 self_transfer:
   min_connection_minutes: 180   # separate tickets: allow time to re-check bags
-  max_layover_hours: 24
+  max_layover_hours: 8
   legs_per_hub: 6               # cheapest N legs on each side to pair up
 
 providers:
@@ -51,7 +51,7 @@ providers:
   serpapi: auto           # 'auto' = use if SERPAPI_KEY env var is set
 
 alerts:
-  email: true
+  email: false                  # dashboard only; set true to get emails again
   # One combined email per window, sent on the first run after each of these local times.
   send_hours_local: [7, 12, 17, 21]
   utc_offset_hours: 5.5         # India (IST); use -5 for US Eastern, etc.
@@ -66,6 +66,8 @@ ranking:
 
 max_trip_hours: 40       # drop itineraries longer than this door-to-door
 max_layovers: 2          # drop itineraries with more stops (a 2-ticket trip's change airport counts)
+max_layover_hours: 8     # every layover (incl. a 2-ticket change) must be shorter than this
+exclude_airports: [RUH]  # never connect through these airports
 # Priority Pass lounges at layover airports (cached in docs/data/lounges.json).
 lounges:
   enabled: true

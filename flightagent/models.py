@@ -74,6 +74,10 @@ class Itinerary:
         return total
 
     @property
+    def layover_minutes(self) -> list[int]:
+        return [int((b.depart_dt - a.arrive_dt).total_seconds() // 60) for a, b in zip(self.segments, self.segments[1:])]
+
+    @property
     def layovers(self) -> list[str]:
         return [s.destination for s in self.segments[:-1]]
 

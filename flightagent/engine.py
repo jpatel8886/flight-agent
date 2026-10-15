@@ -104,7 +104,8 @@ class Searcher:
         origins = _as_list(search["origin"])
         dests = _as_list(search["destination"])
         day = str(search["date"])
-        hubs = [h for h in self.cfg.get("hubs", []) if h not in origins + dests]
+        banned = {a.upper() for a in self.cfg.get("exclude_airports", [])}
+        hubs = [h for h in self.cfg.get("hubs", []) if h not in origins + dests and h not in banned]
         strat = self.cfg.get("strategies", {})
         found: list[Itinerary] = []
 
@@ -135,7 +136,15 @@ class Searcher:
         """Drop itineraries over max_trip_hours / max_layovers, minus what a later leg will add."""
         limit = float(self.cfg.get("max_trip_hours", 40)) * 60 - slack_min
         stops = int(self.cfg.get("max_layovers", 2)) - slack_stops
-        return [i for i in items if i.total_minutes <= limit and i.stops <= stops]
+        max_lay = float(self.cfg.get("max_layover_hours", 24)) * 60
+        banned = {a.upper() for a in self.cfg.get("exclude_airports", [])}
+        return [
+            i for i in items
+            if i.total_minutes <= limit
+            and i.stops <= stops
+            and all(m < max_lay for m in i.layover_minutes)
+            and not banned & set(i.layovers)
+        ]
 
     def _hub(self, h: str) -> dict:
         return self.stats.hubs.setdefault(h, {"forced": None, "self_transfer": None, "skipped": False})
@@ -143,7 +152,8 @@ class Searcher:
     def _self_transfer(self, o: str, d: str, day: str, hubs: list[str], best_score: float) -> list[Itinerary]:
         st = self.cfg.get("self_transfer", {})
         min_conn = int(st.get("min_connection_minutes", 180))
-        max_lay = float(st.get("max_layover_hours", 24)) * 60
+        # The ticket change is a layover too, so it obeys the global cap as well.
+        max_lay = min(float(st.get("max_layover_hours", 24)), float(self.cfg.get("max_layover_hours", 24))) * 60
         n = int(st.get("legs_per_hub", 6))
         out = []
         for h in hubs:

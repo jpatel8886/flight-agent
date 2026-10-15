@@ -38,6 +38,19 @@ class AvoidCountriesTest(unittest.TestCase):
         self.assertFalse(avoided({"layovers": ["DEL", "LHR"]}, {"saudi arabia"}))
 
 
+class LayoverFilterTest(unittest.TestCase):
+    def test_long_layover_and_excluded_airport_dropped(self):
+        from flightagent.engine import Searcher
+        s = Searcher({"max_layover_hours": 8, "exclude_airports": ["RUH"]})
+        short = it(900, [("AMD", "DEL", "2027-01-09T04:00", "2027-01-09T06:00"),
+                         ("DEL", "IAD", "2027-01-09T09:00", "2027-01-09T20:00")])
+        long_ = it(800, [("AMD", "DEL", "2027-01-09T04:00", "2027-01-09T06:00"),
+                         ("DEL", "IAD", "2027-01-09T15:00", "2027-01-10T02:00")])
+        via_ruh = it(700, [("AMD", "RUH", "2027-01-09T04:00", "2027-01-09T06:00"),
+                           ("RUH", "IAD", "2027-01-09T08:00", "2027-01-09T20:00")])
+        self.assertEqual(s._fits([short, long_, via_ruh]), [short])
+
+
 class RankerTest(unittest.TestCase):
     def test_shorter_fewer_stops_beats_slightly_cheaper(self):
         r = Ranker({})
