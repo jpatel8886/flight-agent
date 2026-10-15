@@ -288,6 +288,38 @@
    "name": "Paris Charles De Gaulle",
    "url": "https://www.prioritypass.com/lounges/france/paris-charles-de-gaulle"
   },
+  "CMN": {
+   "complete": true,
+   "fetched": "2026-10-15T15:58:44+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CMN8",
+     "hours": "04:00 - 22:00",
+     "location": "Airside - the lounge is located on the right hand side on the 1st Floor. The lounge can also be reached from the 2nd Floor via their dedicated lift or from the entrance opposite Gate F4. International and in transit flights only.",
+     "name": "Casablanca Aspire Lounge",
+     "rating": 3.32,
+     "ratings_count": 238,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl/cmn8-casablanca-aspire-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CMN7",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located on the 1st Floor. The lounge can also be reached from the 2nd Floor via their dedicated lift or from the entrance opposite Gate A8. International and in transit flights only.",
+     "name": "Aspire Executive Lounge Casablanca",
+     "rating": 3.2,
+     "ratings_count": 222,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl/cmn7-aspire-executive-lounge-casablanca"
+    }
+   ],
+   "name": "Casablanca Mohammed V Intl",
+   "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl"
+  },
   "DEL": {
    "complete": true,
    "fetched": "2026-10-14T20:10:26+00:00",
@@ -556,6 +588,26 @@
    "name": "Dubai Intl",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international"
   },
+  "EWR": {
+   "complete": true,
+   "fetched": "2026-10-15T15:59:25+00:00",
+   "lounges": [
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "EWR13R",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 3.6,
+     "ratings_count": 36,
+     "terminal": "Terminal C",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/newark-liberty-international/ewr13r-minute-suites"
+    }
+   ],
+   "name": "Newark Liberty International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/newark-liberty-international"
+  },
   "FCO": {
    "complete": true,
    "fetched": "2026-10-15T15:02:02+00:00",
@@ -679,6 +731,134 @@
    ],
    "name": "Frankfurt",
    "url": "https://www.prioritypass.com/lounges/germany/frankfurt"
+  },
+  "ICN": {
+   "complete": true,
+   "fetched": "2026-10-15T15:58:52+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN18",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Passport Control and Security Checks, 4th Floor, near Gate 247.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.49,
+     "ratings_count": 1888,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn18-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN14",
+     "hours": "00:00 - 21:30",
+     "location": "Airside - International Departures, East Wing. The lounge is located on the 4th Floor, near Gate 268.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.4,
+     "ratings_count": 2496,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn14-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN13",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - International and in transit Departures. Take the escalator near Gate 252 to the 4th Floor and walk across the bridge.",
+     "name": "Matina",
+     "rating": 4.4,
+     "ratings_count": 5968,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn13-matina"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN16",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - International Departures, 4th Floor, near Gate 26. The lounge is only accessible when flying with Asiana Airlines and Star Alliance operated flights.",
+     "name": "Asiana Business Lounge Central",
+     "rating": 4.5,
+     "ratings_count": 1591,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn16-asiana-business-lounge-central"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN17",
+     "hours": "06:00 - 00:30",
+     "location": "Airside - International Departures, 4th Floor, near Gate 42. The lounge is only accessible when flying with Asiana Airlines and Star Alliance operated flights.",
+     "name": "Asiana Business Lounge West",
+     "rating": 4.5,
+     "ratings_count": 997,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn17-asiana-business-lounge-west"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN3",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - West Wing. After Passport Control, take the escalator opposite Gate 43 to the 4th Floor. ",
+     "name": "Matina Lounge",
+     "rating": 4.1,
+     "ratings_count": 2585,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn3-matina"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN2",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - East Wing. After Passport Control, take the escalator opposite Gate 11 to the 4th Floor. Follow signs 'Transit Hotel' to where the lounge is located.",
+     "name": "Matina",
+     "rating": 4.2,
+     "ratings_count": 2426,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn2-matina"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN9",
+     "hours": "00:00 - 21:30",
+     "location": "Airside - West Wing. After Passport Control, on the 4th Floor. The lounge is located opposite the Information Desk, near Gate 29.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.1,
+     "ratings_count": 2962,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn9-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN8",
+     "hours": "00:00 - 21:30",
+     "location": "Airside - East Wing. After Passport Control, on the 4th Floor. The lounge is located opposite the Information Desk, near Gate 25.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.1,
+     "ratings_count": 1950,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn8-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN10",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - International Departures. After Passport Control and Security Checks, 4th Floor, opposite Gate 115.",
+     "name": "Sky Hub Lounge",
+     "rating": 4,
+     "ratings_count": 1407,
+     "terminal": "Terminal 1 Concourse",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn10-sky-hub-lounge"
+    }
+   ],
+   "name": "Seoul Incheon Intl",
+   "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international"
   },
   "IST": {
    "complete": true,
