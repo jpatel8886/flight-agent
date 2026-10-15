@@ -556,6 +556,74 @@
    "name": "Dubai Intl",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international"
   },
+  "FCO": {
+   "complete": true,
+   "fetched": "2026-10-15T15:02:02+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO7",
+     "hours": "05:15 - 21:45",
+     "location": "Airside - Schengen Area, Boarding Gate A, Mezzanine Level. Schengen flights only.",
+     "name": "Prima Vista Lounge",
+     "rating": 4.27,
+     "ratings_count": 868,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco7-prima-vista-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO3",
+     "hours": "05:30 - 22:00",
+     "location": "Airside - Boarding Area A, Gates 61 - 83. Take the elevator from Level One Departures to Level Two Mezzanine.\r\n ",
+     "name": "TAV Primeclass FCO",
+     "rating": 4.1,
+     "ratings_count": 5988,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco3-tav-primeclass-fco"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO4",
+     "hours": "04:30 - 21:30",
+     "location": "Airside - Schengen Area, Departures. The lounge is located on the Mezzanine Level.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.09,
+     "ratings_count": 4332,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco4-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO6",
+     "hours": "05:45 - 22:45",
+     "location": "Airside - Non-Schengen Area, Ground Floor, Departure Hall, Transit Area,  close to E51 - 61 Gate area. Non-Schengen flights only.",
+     "name": "Prima Vista Lounge - Portus",
+     "rating": 4.3,
+     "ratings_count": 2666,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO2",
+     "hours": "05:00 - 22:30",
+     "location": "Airside - Area E (Upper Level) - Extra Schengen flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.2,
+     "ratings_count": 6828,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco2-plaza-premium-lounge"
+    }
+   ],
+   "name": "Rome Fiumicino",
+   "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino"
+  },
   "FRA": {
    "complete": true,
    "fetched": "2026-10-14T21:18:42+00:00",
