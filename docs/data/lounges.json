@@ -40,6 +40,218 @@
    "name": "Abu Dhabi International",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international"
   },
+  "BKK": {
+   "complete": true,
+   "fetched": "2026-10-16T15:50:53+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "BKK27",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.33,
+     "ratings_count": 9,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk27-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, opposite Gate 2 (West Side). ",
+     "name": "Miracle Business Class Lounge",
+     "rating": 4.1,
+     "ratings_count": 2480,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk5-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, opposite Gate 2 (West Side).  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.11,
+     "ratings_count": 271,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk4-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK2",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3 (West Side).  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.1,
+     "ratings_count": 2623,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk2-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK26",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, near Gate S113.",
+     "name": "Miracle Business Class Lounge",
+     "rating": 4.4,
+     "ratings_count": 1370,
+     "terminal": "Satellite 1",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk26-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK24",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, near Gate S113.",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.5,
+     "ratings_count": 2064,
+     "terminal": "Satellite 1",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk24-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK25",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, 3rd Floor, near Gate C1.",
+     "name": "The Coral Finest Business Class Lounge (Cocoon)",
+     "rating": 4.5,
+     "ratings_count": 1325,
+     "terminal": "International Concourse C",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk25-the-coral-finest-business-class-lounge-cocoon"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK3",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3 (East Side).  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 3.5,
+     "ratings_count": 1662,
+     "terminal": "International Concourse C",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk3-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK23",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Post Security Hold Area, 3rd Floor. The lounge is located near Gate C2.",
+     "name": "The Coral Finest Business Class Lounge",
+     "rating": 4.5,
+     "ratings_count": 856,
+     "terminal": "International Concourse C",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk23-the-coral-finest-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK17",
+     "hours": "05:30 - 22:00",
+     "location": "Airside - Domestic Departures. Level 2, turn left and proceed approximately 60 metres and the lounge is located on the left hand side.",
+     "name": "Miracle Lounge",
+     "rating": 4.1,
+     "ratings_count": 1319,
+     "terminal": "Domestic Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk17-miracle-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3 (West Side).   ",
+     "name": "Miracle Business Class Lounge",
+     "rating": 3.7,
+     "ratings_count": 2204,
+     "terminal": "International Concourse F",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk6-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK10",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, opposite Gate D6.  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.4,
+     "ratings_count": 5542,
+     "terminal": "International Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk10-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, opposite Gate D5.  \r\n\r\n",
+     "name": "Miracle Business Class Lounge",
+     "rating": 4.3,
+     "ratings_count": 4425,
+     "terminal": "International Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk9-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK20",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, Gate D1.",
+     "name": "The Coral Finest Business Class Lounge",
+     "rating": 4.5,
+     "ratings_count": 4202,
+     "terminal": "International Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk20-the-coral-finest-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK1",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Block 2, Level 3 (East Side). ",
+     "name": "Miracle First Class Lounge",
+     "rating": 3.9,
+     "ratings_count": 330,
+     "terminal": "International Concourse A",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk1-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK11",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, Block 2 (East side).",
+     "name": "Miracle First Class Lounge",
+     "rating": 4,
+     "ratings_count": 689,
+     "terminal": "International Concourse A",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk11-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK19",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - Domestic Departures, Level 2, near luggage checkpoint.",
+     "name": "The Coral Executive Lounge",
+     "rating": 4.4,
+     "ratings_count": 3876,
+     "terminal": "Domestic Concourse A",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk19-the-coral-executive-lounge"
+    }
+   ],
+   "name": "Bangkok Suvarnabhumi Intl",
+   "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi"
+  },
   "BLR": {
    "complete": true,
    "fetched": "2026-10-15T19:10:13+00:00",
@@ -1566,6 +1778,74 @@
    ],
    "name": "Sharjah International",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international"
+  },
+  "TPE": {
+   "complete": true,
+   "fetched": "2026-10-16T15:52:12+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, Departure Hall.  ",
+     "name": "Oriental Club Lounge",
+     "rating": 4.6,
+     "ratings_count": 14098,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe9-oriental-club-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE7",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - International Departures. Level 4, Departure Hall. ",
+     "name": "Plaza Premium Lounge The Crest (Zone A1)",
+     "rating": 4.2,
+     "ratings_count": 1745,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe7-plaza-premium-lounge-zone-a1"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE8",
+     "hours": "05:00 - 23:00",
+     "location": "Airside - International Departures. Level 4, Departure Hall.     ",
+     "name": "Plaza Premium Lounge The Terroir (Zone A)",
+     "rating": 4.3,
+     "ratings_count": 5546,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe8-plaza-premium-lounge-zone-a"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, Departure Hall.      ",
+     "name": "Plaza Premium Lounge The Blossom  (Zone D)",
+     "rating": 4.1,
+     "ratings_count": 5813,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe6-plaza-premium-lounge-zone-d"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE5",
+     "hours": "05:00 - 23:00",
+     "location": "Airside - International Departures, Level 4, Departure Hall.",
+     "name": "Plaza Premium Lounge The Jade (Zone C)",
+     "rating": 4.1,
+     "ratings_count": 3272,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe5-plaza-premium-lounge-zone-c"
+    }
+   ],
+   "name": "Taipei Taiwan Taoyuan Intl",
+   "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international"
   },
   "VIE": {
    "complete": true,
