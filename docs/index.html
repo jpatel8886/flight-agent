@@ -355,7 +355,7 @@ function renderSearch(s, history) {
     loungePanel(best)));
 
   const tile = (k, v) => $("div", { class: "tile" }, $("div", { class: "k", text: k }), $("div", { class: "v num", text: v }));
-  const pts = (history[s.key] || []).map(p => ({ t: p.t, best: AVOID ? p.best_ok : p.best, cheapest: AVOID ? p.cheapest_ok : p.cheapest })).filter(p => p.best != null);
+  const pts = (history[s.key] || []).map(p => ({ t: p.t, best: AVOID ? (p.best_ok ?? p.best) : p.best, cheapest: AVOID ? (p.cheapest_ok ?? p.cheapest) : p.cheapest })).filter(p => p.best != null);
   const lows = pts.map(p => p.cheapest).filter(v => v != null);
   const allTimeLow = lows.length ? Math.min(...lows, cheapest.price) : cheapest.price;
   sec.append($("div", { class: "tiles" }, tile("Cheapest", money(cheapest.price)), tile("All-time low", money(allTimeLow)),
