@@ -812,6 +812,62 @@
    "name": "Frankfurt",
    "url": "https://www.prioritypass.com/lounges/germany/frankfurt"
   },
+  "HAN": {
+   "complete": true,
+   "fetched": "2026-10-16T11:17:12+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "HAN6",
+     "hours": "06:00 - 23:59",
+     "location": "",
+     "name": "SH Premium Lounge Ha Noi 3",
+     "rating": 4.67,
+     "ratings_count": 33,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han6-sh-premium-lounge-west-wing"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HAN3",
+     "hours": "06:30 - 02:00",
+     "location": "Airside - International Departures. After Security Checks, 4th Floor, East Wing, near Gates 21-22.",
+     "name": "SH Premium Lounge Ha Noi",
+     "rating": 4.5,
+     "ratings_count": 6003,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han3-sh-premium-lounge-ha-noi"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "HAN5",
+     "hours": "",
+     "location": "",
+     "name": "ASG Sky Lounge",
+     "rating": 4.12,
+     "ratings_count": 94,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han5-asg-sky-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HAN4",
+     "hours": "04:30 - 23:00",
+     "location": "Airside - Domestic Departures. After Security Checks, the lounge is located on the 3rd Floor and follow signs to the lounge entrance.\r\n ",
+     "name": "SH Premium Lounge Ha Noi",
+     "rating": 4.5,
+     "ratings_count": 2608,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han4-sh-premium-lounge-ha-noi"
+    }
+   ],
+   "name": "Hanoi Noi Bai Intl",
+   "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international"
+  },
   "ICN": {
    "complete": true,
    "fetched": "2026-10-15T15:58:52+00:00",
