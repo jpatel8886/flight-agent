@@ -5,12 +5,12 @@ cabin: economy            # economy | premium-economy | business | first
 
 searches:
   - name: Rajkot/Ahmedabad to Washington DC, Jan 8
-    origin: [HSR, AMD]
+    origin: [HSR, BOM, DEL, AMD]
     destination: [IAD, DCA]
     date: 2027-01-08
     # target_price: 750    # optional: alert whenever price is at/below this
   - name: Rajkot/Ahmedabad to Washington DC, Jan 9
-    origin: [HSR, AMD]
+    origin: [HSR, BOM, DEL, AMD]
     destination: [IAD, DCA]
     date: 2027-01-09
     # target_price: 750

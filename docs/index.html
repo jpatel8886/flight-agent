@@ -384,7 +384,7 @@ function render(latest, history) {
   toggle.checked = AVOID;
   toggle.addEventListener("change", () => { AVOID = toggle.checked; localStorage.setItem("avoidME", AVOID ? "1" : "0"); render(latest, history); });
   document.getElementById("updated").replaceChildren(...[
-    $("span", { class: "pill" }, $("span", { class: "dot" }), (t => t[0].toUpperCase() + t.slice(1))(ago(latest.generated_at))),
+    $("span", { class: "pill" }, $("span", { class: "dot" }), (t => t[0].toUpperCase() + t.slice(1))(ago(latest.generated_at).replace(/^checked checked/, "checked"))),
     $("label", { class: "switch", title: (latest.avoid_countries || []).join(", ") }, toggle, "Avoid Middle East layovers"),
     // Data from before the filter existed has no per-option country tags.
     AVOID && searches.some(s => s.options.some(o => !("avoid" in o))) ? $("span", { class: "pill", text: "Filter applies after the next refresh" }) : null,
