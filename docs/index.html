@@ -424,13 +424,27 @@ const gh = (path, opts = {}) => fetch(GH + path, { ...opts, headers: { Accept: "
 function askPanel() {
   const box = document.getElementById("ask");
   if (!ghToken()) {
+    // No token in this browser: hand the request to GitHub's own new-issue page (uses your GitHub login).
+    const ta = $("textarea", { placeholder: "e.g. Show the airline logo on each option, or add Jan 10 as a date", "aria-label": "Request" });
+    const send = $("button", { class: "btn primary", type: "button", text: "Send via GitHub" });
+    send.onclick = () => {
+      const text = ta.value.trim();
+      if (!text) return;
+      const q = new URLSearchParams({ title: `[agent] ${text.replace(/\s+/g, " ").slice(0, 70)}`, body: text });
+      window.open(`https://github.com/${REPO}/issues/new?${q}`, "_blank", "noopener");
+      box.classList.remove("open");
+      setTimeout(pollAgent, 20000);  // the status bar appears once the issue is submitted
+    };
     const input = $("input", { type: "password", placeholder: "github_pat_…", autocomplete: "off", "aria-label": "GitHub token" });
-    const save = $("button", { class: "btn primary", type: "button", text: "Save" });
+    const save = $("button", { class: "btn", type: "button", text: "Save" });
     save.onclick = () => { if (input.value.trim()) { localStorage.setItem("ghToken", input.value.trim()); askPanel(); } };
-    box.replaceChildren($("h4", { text: "Connect GitHub once" }),
-      $("p", { class: "muted" }, "Create a ", $("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer", text: "fine-grained token" }),
-        ` with access to only ${REPO} and Issues: read and write. It stays in this browser.`),
-      input, $("div", { class: "row" }, $("span"), save));
+    box.replaceChildren($("h4", { text: "Ask the agent to change something" }), ta,
+      $("div", { class: "row" }, $("span", { class: "muted", text: "Opens GitHub; tap Submit there." }), send),
+      $("details", { class: "muted", style: "margin-top:10px" }, $("summary", { text: "Send directly from this page instead" }),
+        $("p", {}, "Paste a ", $("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer", text: "fine-grained token" }),
+          ` with access to only ${REPO} and Issues: read and write. It stays in this browser.`),
+        input, $("div", { class: "row" }, $("span"), save)));
+    setTimeout(() => ta.focus(), 0);
     return;
   }
   const ta = $("textarea", { placeholder: "e.g. Show the airline logo on each option, or add Jan 10 as a date", "aria-label": "Request" });
