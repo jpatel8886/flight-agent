@@ -456,6 +456,38 @@
    "name": "Boston MA Logan International",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international"
   },
+  "BRU": {
+   "complete": true,
+   "fetched": "2026-10-16T19:04:53+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BRU1",
+     "hours": "04:30 - 21:00",
+     "location": "Airside - 2nd Floor, opposite Gate A42. Schengen flights only.",
+     "name": "Diamond Lounge",
+     "rating": 4.2,
+     "ratings_count": 6659,
+     "terminal": "Terminal A",
+     "url": "https://www.prioritypass.com/lounges/belgium/brussels-zaventem/bru1-diamond-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BRU3",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - take the lift or stairs located near Gate B04 to the 4th Floor and the lounge is located on the left hand side. Non-Schengen flights only.",
+     "name": "The View Lounge",
+     "rating": 4.7,
+     "ratings_count": 934,
+     "terminal": "Terminal B",
+     "url": "https://www.prioritypass.com/lounges/belgium/brussels-zaventem/bru3-the-view-lounge"
+    }
+   ],
+   "name": "Brussels (Zaventem)",
+   "url": "https://www.prioritypass.com/lounges/belgium/brussels-zaventem"
+  },
   "CAI": {
    "complete": true,
    "fetched": "2026-10-14T20:26:32+00:00",
@@ -691,6 +723,86 @@
    ],
    "name": "Indira Gandhi International",
    "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international"
+  },
+  "DOH": {
+   "complete": true,
+   "fetched": "2026-10-16T19:04:41+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DOH7",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - proceed towards C-Gates. The lounge is located on the 1st Floor, near Gates C1 - 4. International and in transit flights only.",
+     "name": "Al Maha Lounge (Southeast)",
+     "rating": 4,
+     "ratings_count": 455,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh7-al-maha-lounge-southeast"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DOH6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Level 1, near Gate C14. International and in transit flights only. ",
+     "name": "Al Maha Lounge (North/Orchard)",
+     "rating": 4.1,
+     "ratings_count": 2027,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh6-al-maha-lounge-north-node"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DOH2",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Level 2 of Duty Free South. From the Teddy Bear Area, walk straight ahead and take the lift or escalator on the left. The lounge is located near Gates A, B and C.\r\n\r\n",
+     "name": "Al Maha Lounge (South Node)",
+     "rating": 4,
+     "ratings_count": 29076,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh2-al-maha-lounge-south-node"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DOH5",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Sleepover (North Node, Gate C30)",
+     "rating": 4.3,
+     "ratings_count": 258,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh5-sleepover-north-node"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DOH3",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Sleepover (South Node)",
+     "rating": 4.4,
+     "ratings_count": 78,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh3-sleepover-south-node"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DOH8R",
+     "hours": "20:00 - 23:59",
+     "location": "",
+     "name": "Sleepover Doha North Node, Gate C40",
+     "rating": null,
+     "ratings_count": 0,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh8r-sleepover-doha-north-node-gate-c40"
+    }
+   ],
+   "name": "Doha Hamad International",
+   "url": "https://www.prioritypass.com/lounges/qatar/hamad-international"
   },
   "DXB": {
    "complete": true,
