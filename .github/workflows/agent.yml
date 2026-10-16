@@ -62,7 +62,7 @@ jobs:
             echo '{"status":"failed","title":"","summary":"","changed":[],"error":"GEMINI_API_KEY secret is not set. Create a key at https://aistudio.google.com/apikey and add it under Settings > Secrets and variables > Actions."}' > out/result.json
           else
             printf '%s' "$REQUEST" > "$RUNNER_TEMP/prompt.txt"
-            python -m flightagent.agent --prompt-file "$RUNNER_TEMP/prompt.txt" --out out/result.json
+            python -u -m flightagent.agent --prompt-file "$RUNNER_TEMP/prompt.txt" --out out/result.json
           fi
           git add -A -- . ':!out'
           git diff --cached --binary > out/change.patch
@@ -95,7 +95,8 @@ jobs:
       - name: Open pull request or report
         run: |
           P="$RUNNER_TEMP/proposal"; R="$P/result.json"
-          [ -f "$R" ] || echo '{"status":"failed","summary":"","error":"The agent run crashed before producing a result; see the Actions log."}' > "$R"
+          mkdir -p "$P"   # the artifact is missing if the propose job was cancelled or crashed
+          [ -f "$R" ] || echo '{"status":"failed","summary":"","error":"The agent run stopped before producing a result (time limit or crash); see the Actions log. Retry from the dashboard."}' > "$R"
           status=$(jq -r .status "$R"); summary=$(jq -r .summary "$R"); err=$(jq -r .error "$R")
           gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --remove-label "agent: working"
           if [ "$status" = ok ] && [ -s "$P/change.patch" ]; then

@@ -32,6 +32,17 @@ EDITABLE_GLOBS = ["flightagent/*.py", "flightagent/providers/*.py", "tests/*.py"
 PROTECTED = {"flightagent/agent.py"}
 MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]  # free-tier models, first to answer wins
 API = "https://generativelanguage.googleapis.com/v1beta"
+REQUEST_TIMEOUT = 120  # seconds per model request
+DEADLINE = 14 * 60     # give up (and report) well inside the workflow's 20-minute job limit
+_START = time.monotonic()
+
+
+def _left() -> float:
+    return DEADLINE - (time.monotonic() - _START)
+
+
+def _log(msg: str) -> None:
+    print(f"[agent {int(time.monotonic() - _START):4d}s] {msg}", file=sys.stderr, flush=True)
 
 SYSTEM = """You maintain a small flight-price monitor. Python (flightagent/) searches Google Flights
 and Skiplagged hourly in GitHub Actions and writes docs/data/latest.json; docs/index.html is a
@@ -94,7 +105,7 @@ def _generate_content(client, key: str, model: str, prompt: str) -> str:
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }
-    r = client.post(f"{API}/models/{model}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=300)
+    r = client.post(f"{API}/models/{model}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=min(REQUEST_TIMEOUT, max(5, _left())))
     if r.status_code != 200:
         raise RuntimeError(f"HTTP {r.status_code} {r.text[:300]}")
     parts = r.json()["candidates"][0]["content"]["parts"]
@@ -104,7 +115,7 @@ def _generate_content(client, key: str, model: str, prompt: str) -> str:
 def _interactions(client, key: str, model: str, prompt: str) -> str:
     """Google's newer API; new models may only be served here."""
     body = {"model": model, "input": prompt, "system_instruction": SYSTEM}
-    r = client.post(f"{API}/interactions", headers={"x-goog-api-key": key}, json=body, timeout=300)
+    r = client.post(f"{API}/interactions", headers={"x-goog-api-key": key}, json=body, timeout=min(REQUEST_TIMEOUT, max(5, _left())))
     if r.status_code != 200:
         raise RuntimeError(f"HTTP {r.status_code} {r.text[:300]}")
     data = r.json()
@@ -126,14 +137,24 @@ def call_model(prompt: str) -> dict:
     # wait and go round again (about 8 minutes in total) before giving up.
     for wait in (0, 30, 60, 120, 240):
         if wait:
+            if _left() < wait + 30:
+                errors.append(f"stopped retrying: {DEADLINE // 60}-minute time limit reached")
+                break
+            _log(f"models busy; waiting {wait}s")
             time.sleep(wait)
         busy = False
         for model in models:
             for api in (_generate_content, _interactions):
+                if _left() < 10:
+                    raise RuntimeError("no model answered in time:\n" + "\n".join(errors[-6:]))
+                _log(f"asking {model} via {api.__name__.strip('_')}")
                 try:
-                    return _parse_json(api(client, key, model, prompt))
+                    reply = _parse_json(api(client, key, model, prompt))
+                    _log("got a reply")
+                    return reply
                 except Exception as e:  # report every attempt; the last one alone hides the real cause
                     msg = str(e)
+                    _log(f"failed: {type(e).__name__}: {msg[:150]}")
                     errors.append(f"{model} via {api.__name__.strip('_')}: {type(e).__name__}: {msg[:200]}")
                     if msg.startswith(("HTTP 503", "HTTP 429")):
                         busy = True
@@ -221,6 +242,9 @@ def main() -> None:
     result = {"status": "failed", "title": "", "summary": "", "changed": [], "error": ""}
     feedback = None
     for _ in range(2):
+        if _left() < 60:
+            result["error"] = (result["error"] + "\n" if result["error"] else "") + "ran out of time"
+            break
         try:
             reply = call_model(build_prompt(request, feedback))
         except Exception as e:
@@ -237,6 +261,7 @@ def main() -> None:
         except (ValueError, OSError) as e:
             feedback = result["error"] = str(e)
             continue
+        _log(f"checking edits to {', '.join(changed)}")
         problems = check(changed)
         if problems is None:
             result.update(status="ok", changed=changed, error="")
