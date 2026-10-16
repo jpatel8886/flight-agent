@@ -9,7 +9,7 @@ name: Agent
 #   publish - fresh runner: apply the patch (no code executed), open the PR, report back
 on:
   issues:
-    types: [opened]
+    types: [opened, reopened]   # reopen a failed request to retry it
 
 permissions: {}
 
@@ -34,7 +34,8 @@ jobs:
           for l in "agent: working" "agent: proposal" "agent: failed" "agent: no change"; do
             gh label create "$l" --repo "$GITHUB_REPOSITORY" --color ededed --force >/dev/null
           done
-          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: working"
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: working" \
+            --remove-label "agent: failed" --remove-label "agent: no change" --remove-label "agent: proposal"
 
   propose:
     needs: start

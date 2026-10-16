@@ -29,8 +29,8 @@ ROOT = Path(__file__).resolve().parent.parent
 EDITABLE = ["config.yaml", "docs/index.html", "README.md"]
 EDITABLE_GLOBS = ["flightagent/*.py", "flightagent/providers/*.py", "tests/*.py"]
 PROTECTED = {"flightagent/agent.py"}
-MODELS = ["gemini-3.8-flash", "gemini-2.5-flash"]  # first one that answers wins
-URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]  # free-tier models, first to answer wins
+API = "https://generativelanguage.googleapis.com/v1beta"
 
 SYSTEM = """You maintain a small flight-price monitor. Python (flightagent/) searches Google Flights
 and Skiplagged hourly in GitHub Actions and writes docs/data/latest.json; docs/index.html is a
@@ -78,26 +78,56 @@ def build_prompt(request: str, feedback: str | None) -> str:
     return "".join(parts)
 
 
-def call_model(prompt: str) -> dict:
-    from primp import Client  # imported here so allowed_path() works without dependencies
+def _parse_json(text: str) -> dict:
+    text = re.sub(r"^```(?:json)?|```$", "", text.strip()).strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        start, end = text.find("{"), text.rfind("}")  # tolerate prose around the object
+        return json.loads(text[start:end + 1])
 
-    key = os.environ["GEMINI_API_KEY"]
-    models = [os.environ["GEMINI_MODEL"]] if os.environ.get("GEMINI_MODEL") else MODELS
+
+def _generate_content(client, key: str, model: str, prompt: str) -> str:
     body = {
         "systemInstruction": {"parts": [{"text": SYSTEM}]},
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }
-    client, last = Client(), ""
+    r = client.post(f"{API}/models/{model}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=300)
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code} {r.text[:300]}")
+    parts = r.json()["candidates"][0]["content"]["parts"]
+    return "".join(p.get("text", "") for p in parts if not p.get("thought"))
+
+
+def _interactions(client, key: str, model: str, prompt: str) -> str:
+    """Google's newer API; new models may only be served here."""
+    body = {"model": model, "input": prompt, "system_instruction": SYSTEM}
+    r = client.post(f"{API}/interactions", headers={"x-goog-api-key": key}, json=body, timeout=300)
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code} {r.text[:300]}")
+    data = r.json()
+    texts = [c.get("text", "") for st in data.get("steps", []) if st.get("type") == "model_output"
+             for c in st.get("content", []) if c.get("type", "text") == "text"]
+    text = "".join(texts) or data.get("output_text", "")
+    if not text:
+        raise RuntimeError(f"no text in response (status {data.get('status')})")
+    return text
+
+
+def call_model(prompt: str) -> dict:
+    from primp import Client  # imported here so allowed_path() works without dependencies
+
+    key = os.environ["GEMINI_API_KEY"]
+    models = [os.environ["GEMINI_MODEL"]] if os.environ.get("GEMINI_MODEL") else MODELS
+    client, errors = Client(), []
     for model in models:
-        r = client.post(URL.format(model=model), headers={"x-goog-api-key": key}, json=body, timeout=300)
-        if r.status_code != 200:
-            last = f"{model}: HTTP {r.status_code} {r.text[:300]}"
-            continue
-        parts = r.json()["candidates"][0]["content"]["parts"]
-        text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
-        return json.loads(re.sub(r"^```(?:json)?|```$", "", text.strip()).strip())
-    raise RuntimeError(f"no model answered ({last})")
+        for api in (_generate_content, _interactions):
+            try:
+                return _parse_json(api(client, key, model, prompt))
+            except Exception as e:  # report every attempt; the last one alone hides the real cause
+                errors.append(f"{model} via {api.__name__.strip('_')}: {type(e).__name__}: {str(e)[:300]}")
+    raise RuntimeError("no model answered:\n" + "\n".join(errors))
 
 
 def apply_edits(edits: list[dict]) -> list[str]:
