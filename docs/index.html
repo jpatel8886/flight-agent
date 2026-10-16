@@ -384,7 +384,7 @@ function render(latest, history) {
   toggle.checked = AVOID;
   toggle.addEventListener("change", () => { AVOID = toggle.checked; localStorage.setItem("avoidME", AVOID ? "1" : "0"); render(latest, history); });
   document.getElementById("updated").replaceChildren(...[
-    $("span", { class: "pill" }, $("span", { class: "dot" }), `Checked ${ago(latest.generated_at)}`),
+    $("span", { class: "pill" }, $("span", { class: "dot" }), (t => t[0].toUpperCase() + t.slice(1))(ago(latest.generated_at))),
     $("label", { class: "switch", title: (latest.avoid_countries || []).join(", ") }, toggle, "Avoid Middle East layovers"),
     // Data from before the filter existed has no per-option country tags.
     AVOID && searches.some(s => s.options.some(o => !("avoid" in o))) ? $("span", { class: "pill", text: "Filter applies after the next refresh" }) : null,
@@ -477,7 +477,7 @@ function setStatus(kind, ...kids) {
   const bar = document.getElementById("agent-status");
   if (!kind) { bar.className = "status"; bar.replaceChildren(); return; }
   bar.className = "status show" + (kind === "bad" ? " bad" : "");
-  bar.replaceChildren(...kids);
+  bar.replaceChildren(...kids.filter(Boolean));
 }
 
 let pollTimer = null;
@@ -504,7 +504,21 @@ async function pollAgent() {
     } else if (issue.state === "open") {
       setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Agent is working on ${what}…` }));
     } else if (labels.includes("agent: failed") || labels.includes("agent: no change")) {
-      setStatus("bad", $("span", { class: "grow", text: `${labels.includes("agent: failed") ? "Couldn't make" : "No change for"} ${what}.` }), issueLink(), dismiss);
+      const failed = labels.includes("agent: failed");
+      // Reopening the issue re-runs the agent (e.g. after Gemini's free tier was too busy).
+      const retry = $("button", { class: "btn primary", type: "button", text: "Retry" });
+      retry.onclick = async () => {
+        localStorage.setItem("agentIssue", n);
+        if (!ghToken()) { window.open(issue.html_url, "_blank", "noopener"); setTimeout(pollAgent, 20000); return; }
+        retry.disabled = true; retry.textContent = "Retrying…";
+        try {
+          await gh(`/repos/${REPO}/issues/${n}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ state: "open" }) });
+          setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Retrying ${what}…` }));
+          pollTimer = setTimeout(pollAgent, 15000);
+        } catch (e) { retry.disabled = false; retry.textContent = "Retry"; }
+      };
+      setStatus("bad", $("span", { class: "grow", text: `${failed ? "Couldn't make" : "No change for"} ${what}.` }),
+        issueLink(), failed ? retry : null, dismiss);
       return;
     } else {
       // Closed by the merged PR: GitHub Pages redeploys in about a minute.
