@@ -123,6 +123,8 @@ jobs:
             gh pr merge "$url" --squash --delete-branch --auto 2>/dev/null \
               || gh pr merge "$url" --squash --delete-branch
             gh workflow run monitor.yml --repo "$GITHUB_REPOSITORY" --ref main
+            # "Closes #N" isn't applied when this workflow's token merges, so close the request explicitly.
+            gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --reason completed || true
           elif [ "$status" = no_change ]; then
             gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "No change made. $summary"
             gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: no change"
