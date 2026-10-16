@@ -357,15 +357,16 @@ function renderSearch(s, history) {
 
   sec.append($("h3", { text: "Best-value price over time" }), chart(pts), historyTable(pts));
 
-  sec.append($("h3", { text: "More options" }));
   const rest = opts.slice(1);
-  const list = $("div", { class: "opts" });
-  rest.slice(0, 6).forEach(o => list.append(optionCard(o, cheapestKey)));
-  sec.append(list);
-  if (rest.length > 6) {
-    const more = $("div", { class: "opts", style: "margin-top:10px" });
-    rest.slice(6).forEach(o => more.append(optionCard(o, cheapestKey)));
-    sec.append($("details", { class: "more" }, $("summary", { text: `Show ${rest.length - 6} more` }), more));
+  if (rest.length > 0) {
+    const list = $("div", { class: "opts" });
+    rest.slice(0, 6).forEach(o => list.append(optionCard(o, cheapestKey)));
+    if (rest.length > 6) {
+      const more = $("div", { class: "opts", style: "margin-top:10px" });
+      rest.slice(6).forEach(o => more.append(optionCard(o, cheapestKey)));
+      list.append($("details", { class: "more" }, $("summary", { text: `Show ${rest.length - 6} more` }), more));
+    }
+    sec.append($("details", { class: "more", style: "margin-top:20px" }, $("summary", { text: `More options (${rest.length})` }), list));
   }
 
   if (hidden) sec.append($("div", { class: "muted", style: "margin-top:12px", text: `${hidden} option${hidden === 1 ? "" : "s"} with layovers in avoided countries hidden.` }));
