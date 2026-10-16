@@ -1224,6 +1224,13 @@
    "name": "Kuwait International",
    "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international"
   },
+  "LGA": {
+   "complete": true,
+   "fetched": "2026-10-16T05:56:20+00:00",
+   "lounges": [],
+   "name": "New York NY LaGuardia",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/laguardia"
+  },
   "LHR": {
    "complete": true,
    "fetched": "2026-10-14T21:08:45+00:00",
