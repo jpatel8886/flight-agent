@@ -384,7 +384,7 @@ function render(latest, history) {
   toggle.checked = AVOID;
   toggle.addEventListener("change", () => { AVOID = toggle.checked; localStorage.setItem("avoidME", AVOID ? "1" : "0"); render(latest, history); });
   document.getElementById("updated").replaceChildren(...[
-    $("span", { class: "pill" }, $("span", { class: "dot" }), (t => t[0].toUpperCase() + t.slice(1))(ago(latest.generated_at).replace(/^checked checked/, "checked"))),
+    $("span", { class: "pill" }, $("span", { class: "dot" }), (t => t[0].toUpperCase() + t.slice(1))(ago(latest.generated_at))),
     $("label", { class: "switch", title: (latest.avoid_countries || []).join(", ") }, toggle, "Avoid Middle East layovers"),
     // Data from before the filter existed has no per-option country tags.
     AVOID && searches.some(s => s.options.some(o => !("avoid" in o))) ? $("span", { class: "pill", text: "Filter applies after the next refresh" }) : null,
@@ -497,8 +497,16 @@ async function pollAgent() {
     dismiss.onclick = () => { localStorage.removeItem("agentIssue"); setStatus(null); };
     const issueLink = () => $("a", { href: issue.html_url, target: "_blank", rel: "noopener noreferrer", text: "details" });
     if (issue.state === "open" && labels.includes("agent: proposal")) {
-      const prs = await gh(`/repos/${REPO}/pulls?state=open&head=${REPO.split("/")[0]}:agent/issue-${n}`);
-      const pr = prs[0];
+      const prs = await gh(`/repos/${REPO}/pulls?state=all&head=${REPO.split("/")[0]}:agent/issue-${n}`);
+      const pr = prs.find(p => p.state === "open") || prs[0];
+      if (pr && pr.merged_at) {
+        // Merged by the workflow's token: GitHub doesn't auto-close the issue then, so do it here if we can.
+        if (ghToken()) gh(`/repos/${REPO}/issues/${n}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ state: "closed", state_reason: "completed" }) }).catch(() => {});
+        localStorage.removeItem("agentIssue");
+        setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Applied ${what}. Refreshing the page…` }));
+        setTimeout(() => location.reload(), new Date() - new Date(pr.merged_at) > 120000 ? 3000 : 90000);
+        return;
+      }
       setStatus("info", $("span", { class: "grow", text: `Change ready for review: ${what}` }),
         pr ? $("a", { class: "btn primary", href: pr.html_url, target: "_blank", rel: "noopener noreferrer", text: "Review & merge" }) : issueLink());
     } else if (issue.state === "open") {
