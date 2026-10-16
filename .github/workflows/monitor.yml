@@ -39,6 +39,17 @@ jobs:
         run: |
           git config user.name "flight-monitor[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data
-          git diff --cached --quiet || git commit -m "Price check $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase --autostash && git push
+          # Another run may have committed data while this one searched: rebuild on the
+          # latest main, keep this run's results, and combine price history from both.
+          cp -r docs/data "$RUNNER_TEMP/ours"
+          for attempt in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            python -m flightagent.mergedata "$RUNNER_TEMP/ours" docs/data
+            git add docs/data
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Price check $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
