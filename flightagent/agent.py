@@ -22,6 +22,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 from datetime import date
 from pathlib import Path
 
@@ -121,13 +122,25 @@ def call_model(prompt: str) -> dict:
     key = os.environ["GEMINI_API_KEY"]
     models = [os.environ["GEMINI_MODEL"]] if os.environ.get("GEMINI_MODEL") else MODELS
     client, errors = Client(), []
-    for model in models:
-        for api in (_generate_content, _interactions):
-            try:
-                return _parse_json(api(client, key, model, prompt))
-            except Exception as e:  # report every attempt; the last one alone hides the real cause
-                errors.append(f"{model} via {api.__name__.strip('_')}: {type(e).__name__}: {str(e)[:300]}")
-    raise RuntimeError("no model answered:\n" + "\n".join(errors))
+    # Free-tier capacity comes and goes: on "busy" (503) or rate-limit (429) answers,
+    # wait and go round again (about 8 minutes in total) before giving up.
+    for wait in (0, 30, 60, 120, 240):
+        if wait:
+            time.sleep(wait)
+        busy = False
+        for model in models:
+            for api in (_generate_content, _interactions):
+                try:
+                    return _parse_json(api(client, key, model, prompt))
+                except Exception as e:  # report every attempt; the last one alone hides the real cause
+                    msg = str(e)
+                    errors.append(f"{model} via {api.__name__.strip('_')}: {type(e).__name__}: {msg[:200]}")
+                    if msg.startswith(("HTTP 503", "HTTP 429")):
+                        busy = True
+                        break  # the other API serves the same capacity; move to the next model
+        if not busy:
+            break  # a real error (bad key, bad request), so retrying won't help
+    raise RuntimeError("no model answered:\n" + "\n".join(errors[-6:]))
 
 
 def apply_edits(edits: list[dict]) -> list[str]:
