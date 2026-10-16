@@ -1,0 +1,129 @@
+name: Agent
+
+# Owner opens an issue titled "[agent] ..." (the dashboard's prompt box does this).
+# The agent proposes a change as a pull request; nothing reaches main until it's merged.
+#
+# Jobs are split so proposed code never runs where a write token exists:
+#   start   - label the issue "working"
+#   propose - read-only: ask the model, apply and check edits, upload a patch
+#   publish - fresh runner: apply the patch (no code executed), open the PR, report back
+on:
+  issues:
+    types: [opened]
+
+permissions: {}
+
+concurrency:
+  group: agent
+  cancel-in-progress: false
+
+env:
+  ISSUE: ${{ github.event.issue.number }}
+
+jobs:
+  start:
+    # Only the repo owner can drive the agent; anyone can open issues on a public repo.
+    if: startsWith(github.event.issue.title, '[agent]') && github.event.issue.author_association == 'OWNER'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - run: |
+          for l in "agent: working" "agent: proposal" "agent: failed" "agent: no change"; do
+            gh label create "$l" --repo "$GITHUB_REPOSITORY" --color ededed --force >/dev/null
+          done
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: working"
+
+  propose:
+    needs: start
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Propose and check a change
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          REQUEST: ${{ github.event.issue.body }}   # passed as data, never interpolated into the script
+        run: |
+          mkdir -p out
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo '{"status":"failed","title":"","summary":"","changed":[],"error":"GEMINI_API_KEY secret is not set. Create a key at https://aistudio.google.com/apikey and add it under Settings > Secrets and variables > Actions."}' > out/result.json
+          else
+            printf '%s' "$REQUEST" > "$RUNNER_TEMP/prompt.txt"
+            python -m flightagent.agent --prompt-file "$RUNNER_TEMP/prompt.txt" --out out/result.json
+          fi
+          git add -A -- . ':!out'
+          git diff --cached --binary > out/change.patch
+      - uses: actions/upload-artifact@v4
+        with:
+          name: proposal
+          path: out/
+          retention-days: 7
+
+  publish:
+    needs: [start, propose]
+    if: always() && needs.start.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: proposal
+          path: ${{ runner.temp }}/proposal
+      - name: Open pull request or report
+        run: |
+          P="$RUNNER_TEMP/proposal"; R="$P/result.json"
+          [ -f "$R" ] || echo '{"status":"failed","summary":"","error":"The agent run crashed before producing a result; see the Actions log."}' > "$R"
+          status=$(jq -r .status "$R"); summary=$(jq -r .summary "$R"); err=$(jq -r .error "$R")
+          gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --remove-label "agent: working"
+          if [ "$status" = ok ] && [ -s "$P/change.patch" ]; then
+            # Re-check every touched path with main's (trusted) rules before publishing.
+            files=$(git apply --numstat "$P/change.patch" | cut -f3)
+            bad=$(python3 -c 'import sys; sys.path.insert(0, "."); from flightagent.agent import allowed_path
+          print(" ".join(f for f in sys.argv[1:] if not allowed_path(f)))' $files)
+            if [ -n "$bad" ]; then status=failed; err="Refused: the proposal touched files the agent may not edit: $bad"; fi
+          fi
+          if [ "$status" = ok ] && [ -s "$P/change.patch" ]; then
+            git apply "$P/change.patch"
+            branch="agent/issue-$ISSUE"
+            title=$(jq -r '.title // empty' "$R"); title=${title:-"Agent change for #$ISSUE"}
+            git -c core.hooksPath=/dev/null checkout -b "$branch"
+            git add -- $files
+            git -c core.hooksPath=/dev/null -c user.name="flight-agent[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -m "$title" -m "Requested in #$ISSUE"
+            git -c core.hooksPath=/dev/null push --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
+            body=$(printf '%s\n\nCloses #%s\n\nFiles: %s\n\nReview the diff, then merge to apply. The dashboard updates a minute or two after merging.' \
+              "$summary" "$ISSUE" "$(echo $files | sed 's/ /, /g')")
+            url=$(gh pr create --repo "$GITHUB_REPOSITORY" --head "$branch" --base main --title "$title" --body "$body")
+            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "Proposed change: $url"$'\n\n'"$summary"
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: proposal"
+          elif [ "$status" = no_change ]; then
+            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "No change made. $summary"
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: no change"
+            gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          else
+            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "Couldn't make this change. ${summary}"$'\n\n```\n'"${err:0:3000}"$'\n```'
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label "agent: failed"
+            gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY"
+          fi

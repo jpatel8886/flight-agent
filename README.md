@@ -80,6 +80,29 @@ connection, are excluded. Data comes from prioritypass.com and is cached in
 `docs/data/lounges.json` (airport list 90 days, lounge details 30 days), so
 normal runs make few or no extra requests.
 
+## Ask the agent (from the dashboard)
+
+The **Ask agent** button on the dashboard turns a free-text request ("show airline
+logos", "add Jan 10", "hide hidden-city fares") into a pull request. A status bar
+shows while it works and when the change is ready; after you merge, the page
+refreshes itself.
+
+How it works: the button opens an issue titled `[agent] ...`. The **Agent** workflow
+(only for issues you open) sends the request and the project files to Google's
+Gemini free tier, applies the edits, runs the tests, and opens a PR. The checks run
+in a job with read-only permissions; a separate job applies the resulting patch and
+opens the PR. The agent can't edit `.github/`, `docs/data/` or itself.
+
+One-time setup:
+1. **Gemini key**: https://aistudio.google.com/apikey (personal Google account) and
+   add it as repo secret `GEMINI_API_KEY`.
+2. **Let Actions open PRs**: Settings, then Actions, then General, then Workflow permissions, and tick
+   *Allow GitHub Actions to create and approve pull requests*.
+3. **Dashboard token**: create a fine-grained token at
+   https://github.com/settings/personal-access-tokens/new with *Only select
+   repositories*: this repo, and *Issues: Read and write* (nothing else). Paste it
+   into the Ask agent panel the first time; it's stored only in that browser.
+
 ## Run locally
 
 ```bash

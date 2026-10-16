@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "7 * * * *"      # hourly (runs take ~20 min; concurrency below prevents overlap)
   workflow_dispatch: {}       # "Run workflow" button for manual checks
+  push:                       # refresh right after a merged change to search settings or code
+    branches: [main]
+    paths: ["config.yaml", "flightagent/**"]
 
 permissions:
   contents: write             # commit refreshed docs/data for the dashboard

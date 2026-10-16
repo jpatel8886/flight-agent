@@ -136,9 +136,28 @@
 
   footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 28px; }
   .empty { padding: 40px; text-align: center; color: var(--text-2); }
+
+  /* agent: prompt box + status bar */
+  .ask-btn { position: fixed; right: 20px; bottom: 20px; z-index: 20; border: 0; border-radius: 99px; padding: 11px 18px; background: var(--accent); color: var(--accent-ink); font: 600 14px/1 inherit; box-shadow: var(--shadow); cursor: pointer; }
+  .ask { position: fixed; right: 20px; bottom: 72px; z-index: 20; width: min(420px, calc(100vw - 40px)); padding: 16px; display: none; }
+  .ask.open { display: block; }
+  .ask h4 { margin: 0 0 8px; font-size: 15px; }
+  .ask textarea, .ask input { width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 9px 10px; font: inherit; background: var(--card); color: var(--text); }
+  .ask textarea { min-height: 96px; resize: vertical; }
+  .ask .row { display: flex; gap: 8px; align-items: center; justify-content: space-between; margin-top: 10px; flex-wrap: wrap; }
+  .ask .muted a { color: var(--accent); }
+  .ask button { cursor: pointer; }
+  .status { position: sticky; top: 0; z-index: 15; display: none; align-items: center; gap: 10px; padding: 10px 16px; font-size: 14px; background: var(--accent-soft); color: var(--text); border-bottom: 1px solid var(--border); }
+  .status.show { display: flex; }
+  .status.bad { background: var(--warn-soft); }
+  .status .grow { flex: 1; }
+  .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--accent); border-right-color: transparent; animation: spin .8s linear infinite; flex: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
 </style>
 </head>
 <body>
+<div class="status" id="agent-status" role="status" aria-live="polite"></div>
 <header class="hero">
   <div class="wrap">
     <h1>Flight Watch <span id="route"></span></h1>
@@ -148,6 +167,8 @@
 <main class="wrap">
   <div class="overview" id="overview"></div>
   <div id="app"></div>
+  <button class="ask-btn" id="ask-btn" type="button">Ask agent</button>
+  <div class="ask card" id="ask" role="dialog" aria-label="Ask the agent"></div>
   <footer>One-way fares, ranked by price + travel time + layovers. Prices change fast; confirm on the booking site. Lounge data from Priority Pass.</footer>
 </main>
 <script>
@@ -361,12 +382,12 @@ function render(latest, history) {
   const toggle = $("input", { type: "checkbox", "aria-label": "Avoid Middle East layovers" });
   toggle.checked = AVOID;
   toggle.addEventListener("change", () => { AVOID = toggle.checked; localStorage.setItem("avoidME", AVOID ? "1" : "0"); render(latest, history); });
-  document.getElementById("updated").replaceChildren(
+  document.getElementById("updated").replaceChildren(...[
     $("span", { class: "pill" }, $("span", { class: "dot" }), `Checked ${ago(latest.generated_at)}`),
     $("label", { class: "switch", title: (latest.avoid_countries || []).join(", ") }, toggle, "Avoid Middle East layovers"),
     // Data from before the filter existed has no per-option country tags.
     AVOID && searches.some(s => s.options.some(o => !("avoid" in o))) ? $("span", { class: "pill", text: "Filter applies after the next refresh" }) : null,
-    $("span", { text: "refreshes hourly" }));
+    $("span", { text: "refreshes hourly" })].filter(Boolean));
 
   const ov = document.getElementById("overview");
   const app = document.getElementById("app");
@@ -390,6 +411,104 @@ function render(latest, history) {
   window.onhashchange = fromHash;
   fromHash();
 }
+
+// ---- Agent: free-text requests become "[agent]" issues; the Agent workflow proposes a PR. ----
+const REPO = location.hostname.endsWith(".github.io")
+  ? `${location.hostname.split(".")[0]}/${location.pathname.split("/")[1]}`
+  : "jpatel8886/flight-agent";
+const GH = "https://api.github.com";
+const ghToken = () => localStorage.getItem("ghToken") || "";
+const gh = (path, opts = {}) => fetch(GH + path, { ...opts, headers: { Accept: "application/vnd.github+json", ...(ghToken() ? { Authorization: `Bearer ${ghToken()}` } : {}), ...(opts.headers || {}) } })
+  .then(r => r.ok ? r.json() : r.json().catch(() => ({})).then(b => Promise.reject(new Error(b.message || `GitHub ${r.status}`))));
+
+function askPanel() {
+  const box = document.getElementById("ask");
+  if (!ghToken()) {
+    const input = $("input", { type: "password", placeholder: "github_pat_…", autocomplete: "off", "aria-label": "GitHub token" });
+    const save = $("button", { class: "btn primary", type: "button", text: "Save" });
+    save.onclick = () => { if (input.value.trim()) { localStorage.setItem("ghToken", input.value.trim()); askPanel(); } };
+    box.replaceChildren($("h4", { text: "Connect GitHub once" }),
+      $("p", { class: "muted" }, "Create a ", $("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer", text: "fine-grained token" }),
+        ` with access to only ${REPO} and Issues: read and write. It stays in this browser.`),
+      input, $("div", { class: "row" }, $("span"), save));
+    return;
+  }
+  const ta = $("textarea", { placeholder: "e.g. Show the airline logo on each option, or add Jan 10 as a date", "aria-label": "Request" });
+  const send = $("button", { class: "btn primary", type: "button", text: "Send" });
+  const forget = $("a", { href: "#", class: "muted", text: "Forget token" });
+  forget.onclick = e => { e.preventDefault(); localStorage.removeItem("ghToken"); askPanel(); };
+  send.onclick = async () => {
+    const text = ta.value.trim();
+    if (!text) return;
+    send.disabled = true; send.textContent = "Sending…";
+    try {
+      const issue = await gh(`/repos/${REPO}/issues`, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title: `[agent] ${text.replace(/\s+/g, " ").slice(0, 70)}`, body: text }) });
+      localStorage.setItem("agentIssue", String(issue.number));
+      box.classList.remove("open");
+      pollAgent();
+    } catch (e) {
+      send.disabled = false; send.textContent = "Send";
+      box.append($("p", { class: "muted", text: `Couldn't send: ${e.message}` }));
+    }
+  };
+  box.replaceChildren($("h4", { text: "Ask the agent to change something" }), ta,
+    $("div", { class: "row" }, forget, send),
+    $("p", { class: "muted", style: "margin:8px 0 0", text: "It opens a pull request; you review and merge it on GitHub." }));
+  setTimeout(() => ta.focus(), 0);
+}
+
+function setStatus(kind, ...kids) {
+  const bar = document.getElementById("agent-status");
+  if (!kind) { bar.className = "status"; bar.replaceChildren(); return; }
+  bar.className = "status show" + (kind === "bad" ? " bad" : "");
+  bar.replaceChildren(...kids);
+}
+
+let pollTimer = null;
+async function pollAgent() {
+  clearTimeout(pollTimer);
+  let n = localStorage.getItem("agentIssue");
+  try {
+    if (!n) {  // pick up a request sent from another device
+      const open = (await gh(`/repos/${REPO}/issues?state=open&per_page=20`)).filter(i => !i.pull_request && i.title.startsWith("[agent]"));
+      if (!open.length) return setStatus(null);
+      n = String(open[0].number);
+    }
+    const issue = await gh(`/repos/${REPO}/issues/${n}`);
+    const labels = issue.labels.map(l => l.name);
+    const what = `“${issue.title.replace(/^\[agent\]\s*/, "")}”`;
+    const dismiss = $("button", { class: "btn", type: "button", text: "Dismiss" });
+    dismiss.onclick = () => { localStorage.removeItem("agentIssue"); setStatus(null); };
+    const issueLink = () => $("a", { href: issue.html_url, target: "_blank", rel: "noopener noreferrer", text: "details" });
+    if (issue.state === "open" && labels.includes("agent: proposal")) {
+      const prs = await gh(`/repos/${REPO}/pulls?state=open&head=${REPO.split("/")[0]}:agent/issue-${n}`);
+      const pr = prs[0];
+      setStatus("info", $("span", { class: "grow", text: `Change ready for review: ${what}` }),
+        pr ? $("a", { class: "btn primary", href: pr.html_url, target: "_blank", rel: "noopener noreferrer", text: "Review & merge" }) : issueLink());
+    } else if (issue.state === "open") {
+      setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Agent is working on ${what}…` }));
+    } else if (labels.includes("agent: failed") || labels.includes("agent: no change")) {
+      setStatus("bad", $("span", { class: "grow", text: `${labels.includes("agent: failed") ? "Couldn't make" : "No change for"} ${what}.` }), issueLink(), dismiss);
+      return;
+    } else {
+      // Closed by the merged PR: GitHub Pages redeploys in about a minute.
+      localStorage.removeItem("agentIssue");
+      setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Applied ${what}. Refreshing the page…` }));
+      setTimeout(() => location.reload(), 90000);
+      return;
+    }
+  } catch (e) {
+    setStatus(null);
+  }
+  pollTimer = setTimeout(pollAgent, ghToken() ? 15000 : 60000);  // unauthenticated API allows 60 calls/hour
+}
+
+document.getElementById("ask-btn").onclick = () => {
+  const box = document.getElementById("ask");
+  if (box.classList.toggle("open")) askPanel();
+};
+pollAgent();
 
 Promise.all([fetch("data/latest.json", { cache: "no-store" }).then(r => r.json()), fetch("data/history.json", { cache: "no-store" }).then(r => r.json()).catch(() => ({}))])
   .then(([l, h]) => render(l, h))
