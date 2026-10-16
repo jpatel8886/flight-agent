@@ -481,12 +481,17 @@ function setStatus(kind, ...kids) {
 }
 
 let pollTimer = null;
+// Requests already shown as applied; never reload for these again (the issue may stay open).
+const doneIssues = () => JSON.parse(localStorage.getItem("agentDone") || "[]");
+const markDone = n => localStorage.setItem("agentDone", JSON.stringify([...new Set([...doneIssues(), String(n)])].slice(-50)));
+
 async function pollAgent() {
   clearTimeout(pollTimer);
   let n = localStorage.getItem("agentIssue");
   try {
     if (!n) {  // pick up a request sent from another device
-      const open = (await gh(`/repos/${REPO}/issues?state=open&per_page=20`)).filter(i => !i.pull_request && i.title.startsWith("[agent]"));
+      const open = (await gh(`/repos/${REPO}/issues?state=open&per_page=20`))
+        .filter(i => !i.pull_request && i.title.startsWith("[agent]") && !doneIssues().includes(String(i.number)));
       if (!open.length) return setStatus(null);
       n = String(open[0].number);
     }
@@ -503,8 +508,10 @@ async function pollAgent() {
         // Merged by the workflow's token: GitHub doesn't auto-close the issue then, so do it here if we can.
         if (ghToken()) gh(`/repos/${REPO}/issues/${n}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ state: "closed", state_reason: "completed" }) }).catch(() => {});
         localStorage.removeItem("agentIssue");
+        markDone(n);
+        if (Date.now() - new Date(pr.merged_at) > 180000) return setStatus(null);  // merged a while ago: page is already current
         setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Applied ${what}. Refreshing the page…` }));
-        setTimeout(() => location.reload(), new Date() - new Date(pr.merged_at) > 120000 ? 3000 : 90000);
+        setTimeout(() => location.reload(), 90000);
         return;
       }
       setStatus("info", $("span", { class: "grow", text: `Change ready for review: ${what}` }),
@@ -517,6 +524,7 @@ async function pollAgent() {
       const retry = $("button", { class: "btn primary", type: "button", text: "Retry" });
       retry.onclick = async () => {
         localStorage.setItem("agentIssue", n);
+        localStorage.setItem("agentDone", JSON.stringify(doneIssues().filter(x => x !== String(n))));
         if (!ghToken()) { window.open(issue.html_url, "_blank", "noopener"); setTimeout(pollAgent, 20000); return; }
         retry.disabled = true; retry.textContent = "Retrying…";
         try {
@@ -531,6 +539,7 @@ async function pollAgent() {
     } else {
       // Closed by the merged PR: GitHub Pages redeploys in about a minute.
       localStorage.removeItem("agentIssue");
+      markDone(n);
       setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Applied ${what}. Refreshing the page…` }));
       setTimeout(() => location.reload(), 90000);
       return;
