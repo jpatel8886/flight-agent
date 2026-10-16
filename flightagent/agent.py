@@ -203,8 +203,7 @@ def check(changed: list[str]) -> str | None:
         cfg = yaml.safe_load((ROOT / "config.yaml").read_text())
         for s in cfg["searches"]:
             assert s["origin"] and s["destination"], "each search needs origin and destination"
-            for d in (s["arrive"] if "arrive" in s else [s["date"]]):  # reverse searches use "arrive" dates
-                date.fromisoformat(str(d))
+            date.fromisoformat(str(s["date"]))
     except Exception as e:
         errors.append(f"config.yaml invalid: {type(e).__name__}: {e}")
     py = [p for p in changed if p.endswith(".py")]

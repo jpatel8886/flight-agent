@@ -79,7 +79,7 @@ class Searcher:
         self._lock = threading.Lock()
 
     def _call(self, provider, origin, dest, day, **kw) -> list[Itinerary]:
-        ck = (provider.NAME, origin, dest, day, tuple(kw.get("via") or ()), kw.get("max_stops"))
+        ck = (provider.NAME, origin, dest, day, tuple(kw.get("via") or ()))
         if ck in self._cache:
             return self._cache[ck]
         with self._limits.get(provider.NAME, threading.Semaphore(1)):
@@ -158,63 +158,6 @@ class Searcher:
                 found += self._self_transfer(o, d, day, hubs, best_score=best[0].score if best else float("inf"))
 
         return self.ranker.rank(merge(found)), self.stats
-
-    def reverse(self, search: dict) -> tuple[list[Itinerary], RunStats]:
-        """Work backwards from the final flight.
-
-        1. Price nonstop flights from each gateway into the destination that land on
-           one of the `arrive` dates.
-        2. For the cheapest gateways, find flights from the origin that reach the
-           gateway in time for those departures (a safe connection, but not more
-           than max_layover_hours early) and pair them as two tickets.
-        """
-        self.stats = RunStats()
-        origins = _as_list(search["origin"])
-        dests = _as_list(search["destination"])
-        arrive = sorted(str(d) for d in _as_list_raw(search["arrive"]))
-        rc = self.cfg.get("reverse", {})
-        banned = {a.upper() for a in self.cfg.get("exclude_airports", [])}
-        gateways = [g for g in _as_list(rc.get("gateways", [])) if g not in origins + dests and g not in banned]
-        min_conn = int(self.cfg.get("self_transfer", {}).get("min_connection_minutes", 180))
-        max_lay = float(self.cfg.get("max_layover_hours", 24)) * 60
-        legs_per_gateway = int(rc.get("legs_per_gateway", 4))
-        top_gateways = int(rc.get("top_gateways", 6))
-
-        # Departures the day before also land on an arrival date (overnight flights).
-        dep_days = sorted({str(Date.fromisoformat(a) - timedelta(days=k)) for a in arrive for k in (0, 1)})
-        final: dict[str, list[Itinerary]] = {}
-        self._prefetch([(google_flights, g, d, day, (("max_stops", 0),)) for g, d in product(gateways, dests) for day in dep_days])
-        for g, d in product(gateways, dests):
-            legs = [i for day in dep_days for i in self._call(google_flights, g, d, day, max_stops=0)]
-            legs = [i for i in legs if i.stops == 0 and i.segments[-1].arrive[:10] in arrive]
-            if legs:
-                final.setdefault(g, []).extend(legs)
-                self._hub(g)["final_leg"] = min(i.price for i in legs)
-        ranked = sorted(final, key=lambda g: min(i.price for i in final[g]))[:top_gateways]
-
-        found: list[Itinerary] = []
-        first = []
-        for g in ranked:
-            legs2 = sorted(merge(final[g]), key=lambda i: i.price)[:legs_per_gateway]
-            first += [(google_flights, o, g, str(b.segments[0].depart_dt.date() - timedelta(days=k)), ())
-                      for b in legs2 for k in (0, 1) for o in origins]
-        self._prefetch(first)
-        for g in ranked:
-            legs2 = sorted(merge(final[g]), key=lambda i: i.price)[:legs_per_gateway]
-            # Origin -> gateway must land between (departure - max layover) and (departure - min connection).
-            days1 = sorted({str(b.segments[0].depart_dt.date() - timedelta(days=k)) for b in legs2 for k in (0, 1)})
-            for o in origins:
-                legs1 = [i for day in days1 for i in self._call(google_flights, o, g, day)]
-                legs1 = self._fits(merge(legs1), slack_min=min_conn, slack_stops=1)
-                for a, b in product(legs1, legs2):
-                    gap = (b.segments[0].depart_dt - a.segments[-1].arrive_dt).total_seconds() / 60
-                    if min_conn <= gap < max_lay:
-                        c = _combine(a, b, g, gap)
-                        c.strategy = "reverse"
-                        found.append(c)
-            best = min((c.price for c in found if c.via == g), default=None)
-            self._hub(g)["self_transfer"] = best
-        return self.ranker.rank(self._fits(merge(found))), self.stats
 
     def _fits(self, items: list[Itinerary], slack_min: float = 0, slack_stops: int = 0) -> list[Itinerary]:
         """Drop itineraries over max_trip_hours / max_layovers, minus what a later leg will add."""
@@ -313,10 +256,6 @@ def merge(items: list[Itinerary]) -> list[Itinerary]:
         lo.airlines = lo.airlines or hi.airlines
         best[it.key] = lo
     return sorted(best.values(), key=lambda i: (i.price, i.total_minutes))
-
-
-def _as_list_raw(v) -> list:
-    return v if isinstance(v, list) else [v]
 
 
 def _as_list(v) -> list[str]:
