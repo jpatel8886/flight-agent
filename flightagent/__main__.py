@@ -26,7 +26,8 @@ HISTORY_POINTS = 600
 
 
 def search_key(s: dict) -> str:
-    raw = f"{s['origin']}-{s['destination']}-{s['date']}"
+    when = f"arrive{s['arrive']}" if "arrive" in s else s["date"]
+    raw = f"{s['origin']}-{s['destination']}-{when}"
     return re.sub(r"[^A-Za-z0-9-]+", "", raw.replace(",", "_"))
 
 
@@ -108,12 +109,15 @@ def main() -> None:
 
     for s in cfg["searches"]:
         key = search_key(s)
-        meta = {"key": key, "name": s.get("name", key), "origin": s["origin"], "destination": s["destination"], "date": str(s["date"])}
-        if Date.fromisoformat(str(s["date"])) < now.date():
+        reverse = "arrive" in s  # "arrive" = work backwards from flights landing on these dates
+        days = sorted(str(d) for d in (s["arrive"] if isinstance(s.get("arrive"), list) else [s.get("arrive", s.get("date"))]))
+        meta = {"key": key, "name": s.get("name", key), "origin": s["origin"], "destination": s["destination"],
+                "date": days[0], "arrive": days if reverse else None}
+        if Date.fromisoformat(days[-1]) < now.date():
             log.info("skipping %s: date has passed", meta["name"])
             continue
         log.info("searching %s", meta["name"])
-        results, stats = searcher.run(s)
+        results, stats = searcher.reverse(s) if reverse else searcher.run(s)
         # Keep the top N overall *and* the top N outside avoid_countries, so the
         # dashboard's "avoid" toggle still has a full list either way.
         n = int(cfg.get("top_n", 20))

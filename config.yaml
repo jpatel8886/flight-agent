@@ -14,6 +14,17 @@ searches:
     destination: [IAD, DCA]
     date: 2027-01-09
     # target_price: 750
+  - name: Arrive DC Jan 9 or 10 (reverse search)
+    origin: [HSR, AMD]
+    destination: [IAD]          # DCA has no international nonstops
+    arrive: [2027-01-09, 2027-01-10]
+
+# Reverse search: start from nonstop flights into the destination, cheapest gateways first,
+# then find flights from the origin that make the connection (under max_layover_hours).
+reverse:
+  gateways: [LHR, CDG, FRA, MUC, ZRH, AMS, BRU, VIE, CPH, IST, DOH, DXB, AUH, ADD, ICN, HND]
+  top_gateways: 6               # how many of the cheapest gateways to build trips through
+  legs_per_gateway: 4           # cheapest final flights per gateway to connect to
 
 # Layover cities tried for forced-hub and self-transfer combinations.
 hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
@@ -75,3 +86,6 @@ lounges:
 
 top_n: 20
 request_delay_seconds: 1.5
+parallel:                 # lookups running at the same time per site (higher = faster, more throttling risk)
+  google_flights: 3
+  skiplagged: 2

@@ -55,6 +55,7 @@
   .ov .k { color: var(--text-2); font-size: 13px; }
   .ov .price { font-size: 30px; font-weight: 700; letter-spacing: -.02em; margin: 2px 0; }
   .ov .meta { color: var(--text-2); font-size: 13px; }
+  .ribbon.sep { background: var(--warn-soft); color: var(--warn-ink); }
   .ribbon { position: absolute; top: 14px; right: 14px; background: var(--good-soft); color: var(--good); font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 99px; }
 
   section.search { padding: 22px; margin-bottom: 26px; }
@@ -187,6 +188,10 @@ const minsBetween = (a, b) => Math.round((new Date(b) - new Date(a)) / 60000);
 const hhmm = s => s.slice(11, 16);
 const dayLabel = s => new Date(s.slice(0, 10) + "T00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
 const longDate = (d, opts) => new Date(d + "T00:00").toLocaleDateString(undefined, opts);
+// "Friday, Jan 8" for departure searches; "Arriving Jan 9–10" for reverse (arrival-date) searches.
+const whenLabel = (s, opts) => s.arrive
+  ? `Arriving ${s.arrive.map(d => longDate(d, { month: "short", day: "numeric" })).join(" or ")}`
+  : longDate(s.date, opts);
 const stopsText = n => n === 0 ? "nonstop" : `${n} stop${n === 1 ? "" : "s"}`;
 const ago = iso => { const d = (Date.now() - new Date(iso)) / 86400000; return d < 1 ? `checked today at ${new Date(iso).toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}` : `checked ${Math.round(d)} d ago`; };
 let CUR = "USD";
@@ -327,7 +332,7 @@ function optionCard(o, cheapestKey) {
 function renderSearch(s, history) {
   const sec = $("section", { class: "search card", id: `s-${s.key}` });
   sec.append($("div", { class: "head" }, $("h2", { text: s.name }),
-    $("span", { class: "muted", text: `${[].concat(s.origin).join(" / ")} → ${[].concat(s.destination).join(" / ")} · ${longDate(s.date, { weekday: "short", month: "short", day: "numeric", year: "numeric" })} · ${s.requests} lookups` })));
+    $("span", { class: "muted", text: `${[].concat(s.origin).join(" / ")} → ${[].concat(s.destination).join(" / ")} · ${whenLabel(s, { weekday: "short", month: "short", day: "numeric", year: "numeric" })} · ${s.requests} lookups` })));
   const opts = visible(s);
   const hidden = s.options.length - opts.length;
   const best = opts[0];
@@ -337,6 +342,7 @@ function renderSearch(s, history) {
   }
   const cheapest = cheapestOf(opts);
   const cheapestKey = cheapest.key;
+  if (s.arrive) sec.append($("p", { class: "muted", style: "margin:-6px 0 14px", text: "Each trip here is two tickets booked separately. If the first is late, the second airline won't rebook you, so keep the connection buffer." }));
 
   sec.append($("div", { class: "best" },
     $("div", { class: "top" },
@@ -393,22 +399,24 @@ function render(latest, history) {
   const ov = document.getElementById("overview");
   const app = document.getElementById("app");
   if (!searches.length) { ov.replaceChildren(); app.replaceChildren($("div", { class: "card empty", text: "No active searches." })); return; }
-  const withBest = searches.filter(s => visible(s).length);
+  // "Best overall" compares single-ticket searches only; the reverse tab is stitched separate tickets.
+  const withBest = searches.filter(s => visible(s).length && !s.arrive);
   const top = withBest.reduce((a, b) => (!a || visible(b)[0].score < visible(a)[0].score) ? b : a, null);
   const show = key => {
     const sel = searches.find(s => s.key === key) || top || searches[0];
     ov.replaceChildren(...searches.map(s => {
       const b = visible(s)[0];
-      return $("a", { class: "ov card" + (s === sel ? " active" : ""), href: `#${s.date}`, "aria-current": s === sel ? "page" : null },
+      return $("a", { class: "ov card" + (s === sel ? " active" : ""), href: `#${s.key}`, "aria-current": s === sel ? "page" : null },
         top === s && withBest.length > 1 ? $("span", { class: "ribbon", text: "Best overall" }) : null,
-        $("div", { class: "k", text: longDate(s.date, { weekday: "long", month: "short", day: "numeric" }) }),
+        s.arrive ? $("span", { class: "ribbon sep", text: "Separate tickets" }) : null,
+        $("div", { class: "k", text: whenLabel(s, { weekday: "long", month: "short", day: "numeric" }) }),
         $("div", { class: "price num", text: b ? money(b.price) : "–" }),
         b ? $("div", { class: "rl", text: routeLay(b) }) : null,
         $("div", { class: "meta", text: b ? `${fmtMin(b.total_minutes)} total · ${stopsText(b.stops)}` : "No fares found" }));
     }));
     app.replaceChildren(renderSearch(sel, history));
   };
-  const fromHash = () => { const d = decodeURIComponent(location.hash.slice(1)); show((searches.find(s => s.date === d) || {}).key); };
+  const fromHash = () => { const h = decodeURIComponent(location.hash.slice(1)); show((searches.find(s => s.key === h || (!s.arrive && s.date === h)) || {}).key); };
   window.onhashchange = fromHash;
   fromHash();
 }
