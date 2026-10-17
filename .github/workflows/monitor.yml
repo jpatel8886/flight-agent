@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}       # "Run workflow" button for manual checks
   push:                       # refresh right after a merged change to search settings or code
     branches: [main]
-    paths: ["config.yaml", "flightagent/**"]
+    paths: ["config.yaml", "config-bhaarat.yaml", "flightagent/**"]
 
 permissions:
   contents: write             # commit refreshed docs/data for the dashboard
@@ -33,20 +33,23 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python -m flightagent
+        run: |
+          SITE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/jay/" python -m flightagent --config config.yaml --data docs/jay/data
+          SITE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/bhaarat/" python -m flightagent --config config-bhaarat.yaml --data docs/bhaarat/data
       - name: Commit results
         run: |
           git config user.name "flight-monitor[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Another run may have committed data while this one searched: rebuild on the
           # latest main, keep this run's results, and combine price history from both.
-          cp -r docs/data "$RUNNER_TEMP/ours"
+          cp -r docs/jay/data "$RUNNER_TEMP/jay"
+          cp -r docs/bhaarat/data "$RUNNER_TEMP/bhaarat"
           for attempt in 1 2 3; do
             git fetch -q origin main
             git reset -q --hard origin/main
-            python -m flightagent.mergedata "$RUNNER_TEMP/ours" docs/data
-            git add docs/data
+            python -m flightagent.mergedata "$RUNNER_TEMP/jay" docs/jay/data
+            python -m flightagent.mergedata "$RUNNER_TEMP/bhaarat" docs/bhaarat/data
+            git add docs/jay/data docs/bhaarat/data
             git diff --cached --quiet && exit 0
             git commit -q -m "Price check $(date -u +%Y-%m-%dT%H:%MZ)"
             git push -q origin HEAD:main && exit 0
