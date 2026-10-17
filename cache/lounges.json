@@ -1,5 +1,25 @@
 {
  "airports": {
+  "AMM": {
+   "complete": true,
+   "fetched": "2026-10-17T21:30:44+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "AMM1",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after clearing Immigration and x-ray machines, proceed past the Aldeasa Duty Free Shop. The dedicated lounge entrance lift is situated straight ahead and the lounge is located on Level 4. International flights only. ",
+     "name": "Crown Lounge",
+     "rating": 4.4,
+     "ratings_count": 2481,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international/amm1-crown-lounge"
+    }
+   ],
+   "name": "Amman Queen Alia International",
+   "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international"
+  },
   "AUH": {
    "complete": true,
    "fetched": "2026-10-17T20:00:07+00:00",
@@ -592,6 +612,94 @@
    "name": "Dubai Intl",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international"
   },
+  "EWR": {
+   "complete": true,
+   "fetched": "2026-10-17T21:27:03+00:00",
+   "lounges": [
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "EWR13R",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 3.6,
+     "ratings_count": 36,
+     "terminal": "Terminal C",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/newark-liberty-international/ewr13r-minute-suites"
+    }
+   ],
+   "name": "Newark Liberty International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/newark-liberty-international"
+  },
+  "FCO": {
+   "complete": true,
+   "fetched": "2026-10-17T21:26:45+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO7",
+     "hours": "05:15 - 21:45",
+     "location": "Airside - Schengen Area, Boarding Gate A, Mezzanine Level. Schengen flights only.",
+     "name": "Prima Vista Lounge",
+     "rating": 4.27,
+     "ratings_count": 871,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco7-prima-vista-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO3",
+     "hours": "05:30 - 22:00",
+     "location": "Airside - Boarding Area A, Gates 61 - 83. Take the elevator from Level One Departures to Level Two Mezzanine.\r\n ",
+     "name": "TAV Primeclass FCO",
+     "rating": 4.1,
+     "ratings_count": 5989,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco3-tav-primeclass-fco"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO4",
+     "hours": "04:30 - 21:30",
+     "location": "Airside - Schengen Area, Departures. The lounge is located on the Mezzanine Level.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.09,
+     "ratings_count": 4332,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco4-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO6",
+     "hours": "05:45 - 22:45",
+     "location": "Airside - Non-Schengen Area, Ground Floor, Departure Hall, Transit Area,  close to E51 - 61 Gate area. Non-Schengen flights only.",
+     "name": "Prima Vista Lounge - Portus",
+     "rating": 4.3,
+     "ratings_count": 2667,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "FCO2",
+     "hours": "05:00 - 23:00",
+     "location": "Airside - Area E (Upper Level) - Extra Schengen flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.2,
+     "ratings_count": 6829,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco2-plaza-premium-lounge"
+    }
+   ],
+   "name": "Rome Fiumicino",
+   "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino"
+  },
   "FRA": {
    "complete": true,
    "fetched": "2026-10-17T20:01:17+00:00",
@@ -947,6 +1055,166 @@
    "name": "New York NY LaGuardia",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/laguardia"
   },
+  "LHR": {
+   "complete": true,
+   "fetched": "2026-10-17T21:27:06+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR33",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - after passing through Security Checks and Duty Free. Take the lifts adjacent to Gate A18 to the lower Ground Level, to where the lounge is located.",
+     "name": "No.1 Lounge",
+     "rating": 4,
+     "ratings_count": 3317,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR11",
+     "hours": "05:00 - 21:30",
+     "location": "Airside - Level 4, Departures, next to the Terminal Transfer area. International and in transit flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.8,
+     "ratings_count": 11819,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr11-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR25",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - after Security, follow the walkway to the left of World Duty Free and follow signs for 'Lounge F' and Gates 13-22. The lounge is located one floor up and is accessible via lifts or stairs.  ",
+     "name": "No1 Lounge Heathrow",
+     "rating": 3.8,
+     "ratings_count": 8338,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr25-no1-lounge-heathrow"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR16",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - after Security. Follow signs to Gates 1-42 and for 'All Airline Lounges'. Bear left and continue to follow signs for \u2018All Airline Lounges\u2019. Turn left and follow signs to Gates 1-22 and 'Airline Lounges B-J', then turn left towards Gate 9. The lounge is signposted as \u2018Lounge D\u2019 and is locat",
+     "name": "My Lounge",
+     "rating": 3.7,
+     "ratings_count": 8607,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr16-my-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR34",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - after Security, follow the walkway to the left of World Duty Free and follow signs for 'Lounge F' and Gates 13-22. The lounge is located one floor up and is accessible via lifts or stairs.  ",
+     "name": "Clubrooms Heathrow - Additional Fee Applies",
+     "rating": 4,
+     "ratings_count": 749,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr34-clubrooms-lhr-terminal-3-additional-fee-applies"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "LHR35",
+     "hours": "06:00 - 14:00",
+     "location": "",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.48,
+     "ratings_count": 48,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr35-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR14",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - after Passport Control and Immigration, the lounge is located to the left of Gate A18 in the Main Departure Terminal. Passengers departing from the Satellites will need to access the lounge before proceeding to the Satellite Gates.",
+     "name": "Club Aspire Lounge",
+     "rating": 3.2,
+     "ratings_count": 23932,
+     "terminal": "Terminal 5",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr14-club-aspire-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR30",
+     "hours": "05:30 - 21:30",
+     "location": "Airside - next to Gate A7.",
+     "name": "Plaza Premium Lounge",
+     "rating": 2.9,
+     "ratings_count": 12285,
+     "terminal": "Terminal 5",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr30-plaza-premium-lounge-terminal-5-departures"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR31",
+     "hours": "07:00 - 17:30",
+     "location": "Airside - after Security Checks, Level 2, near Gate 2. International and in transit flights only.",
+     "name": "Blush Lounge by Plaza Premium Group",
+     "rating": 3.2,
+     "ratings_count": 2449,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr31-blush-lounge-by-plaza-premium-group"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "LHR13",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - 2nd Floor, opposite Gates A10 and B10. International and in transit flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.7,
+     "ratings_count": 3516,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr13-plaza-premium-lounge"
+    }
+   ],
+   "name": "Heathrow",
+   "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow"
+  },
+  "MUC": {
+   "complete": true,
+   "fetched": "2026-10-17T21:31:02+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MUC2",
+     "hours": "05:00 - 22:15",
+     "location": "Airside - Module B, after Security Checks take the lift to Level 6 and the lounge is located by B-Gates. Non-Schengen flights only.",
+     "name": "Airport Lounge World",
+     "rating": 4.6,
+     "ratings_count": 6290,
+     "terminal": "Terminal 1 Pier",
+     "url": "https://www.prioritypass.com/lounges/germany/munich/muc2-airport-lounge-world"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MUNE",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - Module D, Level 5 (Schengen Area). Take the lift or stairs to the transfer corridor and follow signs to where the lounge is located. Schengen flights only. ",
+     "name": "Airport Lounge Europe",
+     "rating": 4,
+     "ratings_count": 3659,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/germany/munich/mune-airport-lounge-europe"
+    }
+   ],
+   "name": "Munich Franz-Josef Strauss",
+   "url": "https://www.prioritypass.com/lounges/germany/munich"
+  },
   "SHJ": {
    "complete": true,
    "fetched": "2026-10-17T20:00:46+00:00",
@@ -966,6 +1234,118 @@
    ],
    "name": "Sharjah International",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international"
+  },
+  "TPE": {
+   "complete": true,
+   "fetched": "2026-10-17T21:26:27+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, Departure Hall.  ",
+     "name": "Oriental Club Lounge",
+     "rating": 4.6,
+     "ratings_count": 14101,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe9-oriental-club-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE7",
+     "hours": "05:00 - 21:00",
+     "location": "Airside - International Departures. Level 4, Departure Hall. ",
+     "name": "Plaza Premium Lounge The Crest (Zone A1)",
+     "rating": 4.2,
+     "ratings_count": 1745,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe7-plaza-premium-lounge-zone-a1"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE8",
+     "hours": "05:00 - 23:00",
+     "location": "Airside - International Departures. Level 4, Departure Hall.     ",
+     "name": "Plaza Premium Lounge The Terroir (Zone A)",
+     "rating": 4.3,
+     "ratings_count": 5548,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe8-plaza-premium-lounge-zone-a"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, Departure Hall.      ",
+     "name": "Plaza Premium Lounge The Blossom  (Zone D)",
+     "rating": 4.1,
+     "ratings_count": 5813,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe6-plaza-premium-lounge-zone-d"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "TPE5",
+     "hours": "05:00 - 23:00",
+     "location": "Airside - International Departures, Level 4, Departure Hall.",
+     "name": "Plaza Premium Lounge The Jade (Zone C)",
+     "rating": 4.1,
+     "ratings_count": 3273,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe5-plaza-premium-lounge-zone-c"
+    }
+   ],
+   "name": "Taipei Taiwan Taoyuan Intl",
+   "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international"
+  },
+  "YUL": {
+   "complete": true,
+   "fetched": "2026-10-17T21:30:50+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "YUL10",
+     "hours": "04:00 - 22:00",
+     "location": "Airside - Level 2, near Gate 52. International flights only.",
+     "name": "National Bank Lounge",
+     "rating": 3.44,
+     "ratings_count": 207,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul10-montreal-aspire-international-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "YUL9",
+     "hours": "14:00 - 22:00",
+     "location": "Airside - Level 2. After Security Checkpoint A, proceed towards Gate 1 and the lounge is located behind 'Starbucks' and 'YUL Pizza'. Domestic flights only.  ",
+     "name": "Aspire Domestic Lounge - YUL",
+     "rating": 4.13,
+     "ratings_count": 200,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul9-aspire-domestic-lounge-yul"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "YUL8",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - International Concourse, near Gate 57. International flights only.",
+     "name": "Air France lounge: Montreal",
+     "rating": 4.19,
+     "ratings_count": 1083,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal"
+    }
+   ],
+   "name": "Montreal Pierre E.Trudeau Intl",
+   "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international"
   },
   "ZRH": {
    "complete": true,
