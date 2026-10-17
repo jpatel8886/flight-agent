@@ -1,0 +1,77 @@
+# Flight monitor configuration. Edit, commit, and the next scheduled run picks it up.
+currency: USD
+adults: 1
+cabin: economy            # economy | premium-economy | business | first
+
+searches:
+  - name: Phoenix to San Francisco, Nov 24
+    origin: [PHX]
+    destination: [SFO]
+    date: 2026-11-24
+  - name: San Francisco to Phoenix, Nov 29 (return)
+    origin: [SFO]
+    destination: [PHX]
+    date: 2026-11-29
+# Layover cities tried for forced-hub and self-transfer combinations.
+hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
+
+# Layovers in these countries are still searched, but hidden on the dashboard (toggle
+# "Avoid Middle East layovers") and left out of emails. Remove one to allow it again.
+avoid_countries:
+  - United Arab Emirates
+  - Qatar
+  - Saudi Arabia
+  - Bahrain
+  - Oman
+  - Kuwait
+  - Jordan
+  - Israel
+  - Lebanon
+  - Iraq
+  - Iran
+  - Syria
+  - Yemen
+  - Egypt
+
+strategies:
+  forced_hub: true        # single ticket, Google Flights constrained to connect via hub
+  self_transfer: true     # two separate tickets: origin->hub + hub->destination
+
+self_transfer:
+  min_connection_minutes: 180   # separate tickets: allow time to re-check bags
+  max_layover_hours: 8
+  legs_per_hub: 6               # cheapest N legs on each side to pair up
+
+providers:
+  google_flights: true
+  skiplagged: true
+  serpapi: auto           # 'auto' = use if SERPAPI_KEY env var is set
+
+alerts:
+  email: false                  # dashboard only; set true to get emails again
+  # One combined email per window, sent on the first run after each of these local times.
+  send_hours_local: [7, 12, 17, 21]
+  utc_offset_hours: 5.5         # India (IST); use -5 for US Eastern, etc.
+
+# Results are ranked by "effective cost" = price + these penalties, so a slightly
+# pricier but much shorter / fewer-stop itinerary ranks first. Set all to 0 for cheapest-first.
+ranking:
+  value_per_hour: 15            # what an hour of total travel time is worth to you
+  per_stop_penalty: 40          # extra cost per layover
+  separate_ticket_penalty: 75   # risk of self-transfer (no protection if leg 1 is late)
+  hidden_city_penalty: 50
+
+max_trip_hours: 40       # drop itineraries longer than this door-to-door
+max_layovers: 2          # drop itineraries with more stops (a 2-ticket trip's change airport counts)
+max_layover_hours: 8     # every layover (incl. a 2-ticket change) must be shorter than this
+exclude_airports: [RUH]  # never connect through these airports
+# Priority Pass lounges at layover airports (cached in docs/data/lounges.json).
+lounges:
+  enabled: true
+  max_fetches_per_run: 80       # page fetches per run; a cold cache fills over a couple of runs
+
+top_n: 20
+request_delay_seconds: 1.5
+parallel:                 # lookups running at the same time per site (higher = faster, more throttling risk)
+  google_flights: 3
+  skiplagged: 2
