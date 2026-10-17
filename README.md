@@ -76,9 +76,10 @@ and flags any fare at or below `target_price`.
 For every layover airport, the dashboard and emails show Priority Pass lounges:
 name, terminal, hours and member star rating (Priority Pass publishes ratings and
 rating counts, not written reviews). Landside lounges, which you can't reach on a
-connection, are excluded. Data comes from prioritypass.com and is cached in
-`docs/data/lounges.json` (airport list 90 days, lounge details 30 days), so
-normal runs make few or no extra requests.
+connection, are excluded. Data comes from prioritypass.com and is cached in the repository at
+`cache/lounges.json` (airport index 90 days, lounge details 30 days). Jay and
+Bhaarat share this single cache, so when either route has already fetched lounge
+data the other route reuses it instead of requesting the same pages again.
 
 ## Ask the agent (from the dashboard)
 

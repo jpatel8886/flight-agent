@@ -1,4 +1,4 @@
-"""Priority Pass lounge lookup for layover airports, cached in docs/data/lounges.json.
+"""Priority Pass lounge lookup for layover airports, cached in cache/lounges.json, shared by all route dashboards.
 
 Data comes from the public prioritypass.com pages (robots.txt allows these;
 the /api paths it disallows are not used). Priority Pass publishes member
@@ -58,6 +58,7 @@ def _stale(ts: str | None, days: int) -> bool:
 class Lounges:
     def __init__(self, path: Path, cfg: dict):
         self.path = path
+        self.path.parent.mkdir(parents=True, exist_ok=True)
         c = cfg.get("lounges", {})
         self.enabled = c.get("enabled", True)
         self.budget = int(c.get("max_fetches_per_run", 80))
