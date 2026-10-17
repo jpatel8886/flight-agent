@@ -1,0 +1,4337 @@
+{
+ "airports": {
+  "AUH": {
+   "complete": true,
+   "fetched": "2026-10-17T19:34:40+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "AUH12",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Security Checks, Level 1, near Gate D43.\r\n",
+     "name": "Pearl Lounge",
+     "rating": 4,
+     "ratings_count": 9093,
+     "terminal": "Terminal A",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge"
+    }
+   ],
+   "name": "Abu Dhabi International",
+   "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international"
+  },
+  "BKK": {
+   "complete": true,
+   "fetched": "2026-10-17T19:36:58+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "BKK27",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.3,
+     "ratings_count": 10,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk27-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, opposite Gate 2 (West Side). ",
+     "name": "Miracle Business Class Lounge",
+     "rating": 4.1,
+     "ratings_count": 2481,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk5-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, opposite Gate 2 (West Side).  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.11,
+     "ratings_count": 271,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk4-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK2",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3 (West Side).  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.1,
+     "ratings_count": 2623,
+     "terminal": "International Concourse G",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk2-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK26",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, near Gate S113.",
+     "name": "Miracle Business Class Lounge",
+     "rating": 4.4,
+     "ratings_count": 1370,
+     "terminal": "Satellite 1",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk26-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK24",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 4, near Gate S113.",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.5,
+     "ratings_count": 2064,
+     "terminal": "Satellite 1",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk24-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK25",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, 3rd Floor, near Gate C1.",
+     "name": "The Coral Finest Business Class Lounge (Cocoon)",
+     "rating": 4.5,
+     "ratings_count": 1325,
+     "terminal": "International Concourse C",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk25-the-coral-finest-business-class-lounge-cocoon"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK3",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3 (East Side).  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 3.5,
+     "ratings_count": 1662,
+     "terminal": "International Concourse C",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk3-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK23",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Post Security Hold Area, 3rd Floor. The lounge is located near Gate C2.",
+     "name": "The Coral Finest Business Class Lounge",
+     "rating": 4.5,
+     "ratings_count": 856,
+     "terminal": "International Concourse C",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk23-the-coral-finest-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK17",
+     "hours": "05:30 - 22:00",
+     "location": "Airside - Domestic Departures. Level 2, turn left and proceed approximately 60 metres and the lounge is located on the left hand side.",
+     "name": "Miracle Lounge",
+     "rating": 4.1,
+     "ratings_count": 1322,
+     "terminal": "Domestic Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk17-miracle-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3 (West Side).   ",
+     "name": "Miracle Business Class Lounge",
+     "rating": 3.7,
+     "ratings_count": 2204,
+     "terminal": "International Concourse F",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk6-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK10",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, opposite Gate D6.  ",
+     "name": "Miracle First Class Lounge",
+     "rating": 4.4,
+     "ratings_count": 5543,
+     "terminal": "International Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk10-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, opposite Gate D5.  \r\n\r\n",
+     "name": "Miracle Business Class Lounge",
+     "rating": 4.3,
+     "ratings_count": 4426,
+     "terminal": "International Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk9-miracle-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK20",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, Gate D1.",
+     "name": "The Coral Finest Business Class Lounge",
+     "rating": 4.5,
+     "ratings_count": 4202,
+     "terminal": "International Concourse D",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk20-the-coral-finest-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK1",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Block 2, Level 3 (East Side). ",
+     "name": "Miracle First Class Lounge",
+     "rating": 3.9,
+     "ratings_count": 330,
+     "terminal": "International Concourse A",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk1-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK11",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Level 3, Block 2 (East side).",
+     "name": "Miracle First Class Lounge",
+     "rating": 4,
+     "ratings_count": 689,
+     "terminal": "International Concourse A",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk11-miracle-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BKK19",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - Domestic Departures, Level 2, near luggage checkpoint.",
+     "name": "The Coral Executive Lounge",
+     "rating": 4.4,
+     "ratings_count": 3876,
+     "terminal": "Domestic Concourse A",
+     "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk19-the-coral-executive-lounge"
+    }
+   ],
+   "name": "Bangkok Suvarnabhumi Intl",
+   "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi"
+  },
+  "BOM": {
+   "complete": true,
+   "fetched": "2026-10-17T19:34:57+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "BOM27",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Aviserv Lounge - West",
+     "rating": null,
+     "ratings_count": 0,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom27-aviserv-lounge-west"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "BOM26",
+     "hours": "12:00 - 23:59",
+     "location": "",
+     "name": "Adani Silver Lounge",
+     "rating": 3.81,
+     "ratings_count": 17,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOM20",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, Level 4, near Gates 45 and 46. The lounge is located next to McDonald\u2019s.",
+     "name": "Adani Silver International Lounge",
+     "rating": 3.49,
+     "ratings_count": 1315,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom20-adani-lounge-east"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "BOM16",
+     "hours": "12:00 - 00:00",
+     "location": "Landside - Level 2 (Arrivals Level). Proceed through Customs and Baggage Claim, turn right and the lounge is located next to Gate C.",
+     "name": "Aviserv Lounge (East)",
+     "rating": 3.54,
+     "ratings_count": 84,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom16-aviserv-lounge-east"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOM10",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic transit and Domestic departures only. The lounge is located opposite Gate 44.",
+     "name": "Travel Club",
+     "rating": 4,
+     "ratings_count": 3044,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom10-travel-club"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOM21",
+     "hours": "12:00 - 00:00",
+     "location": "Airside - Domestic Departures. Proceed through the Security Hold Area, Mezzanine Floor, near Gate No. 9.",
+     "name": "Adani Lounge",
+     "rating": 3.4,
+     "ratings_count": 151,
+     "terminal": "Terminal 1B",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom21-adani-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOM13",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. The lounge is located on the 3rd Floor opposite gate 44.",
+     "name": "Travel Club",
+     "rating": 3.6,
+     "ratings_count": 955,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom13-travel-club"
+    }
+   ],
+   "name": "Mumbai Chhatrapati Shivaji Intl",
+   "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international"
+  },
+  "DEL": {
+   "complete": true,
+   "fetched": "2026-10-17T19:36:03+00:00",
+   "lounges": [
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "DEL20",
+     "hours": "00:00 - 23:59",
+     "location": "Landside - located prior to the exit gates, near the Food Court. ",
+     "name": "Encalm Lounge - DEL Arrivals",
+     "rating": 4.1,
+     "ratings_count": 700,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del20-encalm-lounge-del-arrivals"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DEL14",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. The lounge is located in the Security Hold Area, Food Court Level, Mezzanine Floor.",
+     "name": "Domestic Lounge - New Delhi T3",
+     "rating": 3.8,
+     "ratings_count": 1613,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del14-domestic-lounge-new-delhi-t3"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DEL19",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures, Security Hold Area, Food Court Level.",
+     "name": "Encalm Lounge - Delhi Domestic T3",
+     "rating": 3.8,
+     "ratings_count": 1097,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del19-encalm-lounge-delhi-domestic-t3"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DEL15",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. The lounge is located in the Security Hold Area, Food Court Level, next to the Encalm Spa.",
+     "name": "Encalm Lounge",
+     "rating": 3.89,
+     "ratings_count": 6498,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DEL18",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures, Security Hold Area, Food Court Level.",
+     "name": "Encalm Lounge - Delhi Domestic T2",
+     "rating": 3.49,
+     "ratings_count": 1013,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del18-encalm-lounge-delhi-domestic-t2"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DEL12",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. The lounge is accessible via Level 4 and Level 5.",
+     "name": "Encalm Lounge",
+     "rating": 3.9,
+     "ratings_count": 1198,
+     "terminal": "Terminal 1D",
+     "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del12-encalm-lounge"
+    }
+   ],
+   "name": "Indira Gandhi International",
+   "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international"
+  },
+  "DXB": {
+   "complete": true,
+   "fetched": "2026-10-17T19:35:22+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Departure Level, East side, next to Gate B26. The lounge entrance is situated inside the 'Cadiz Tapas Bar'. Passengers departing from Concourse A or C must allow sufficient time (approx.15 - 20 minutes) to reach their departure gate.  ",
+     "name": "Ahlan Lounge at B",
+     "rating": 4.3,
+     "ratings_count": 5594,
+     "terminal": "Terminal 3 Concourse B",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB3",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located on the North side, close to Gate B21. The entrance to the lounge is via a dedicated lift from Level 3 Departures. Emirates and codeshare Qantas flights.",
+     "name": "Marhaba Lounge",
+     "rating": 3.8,
+     "ratings_count": 11196,
+     "terminal": "Terminal 3 Concourse B",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB16",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - take the lift located next to the souvenir shop to Level 6. International and in transit flights only.",
+     "name": "Ahlan Lounge",
+     "rating": 4,
+     "ratings_count": 1686,
+     "terminal": "Terminal 3 Concourse A",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB11",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - West Wing, take the lift from the Duty Free area to Level 4 and the lounge is located between Gates A2 and A3. International and in transit flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4.1,
+     "ratings_count": 4852,
+     "terminal": "Terminal 3 Concourse A",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Departure Level, West End. The lounge is located between Gates A2 and A3. Emirates and codeshare Qantas flights.",
+     "name": "Marhaba Lounge",
+     "rating": 3.8,
+     "ratings_count": 5644,
+     "terminal": "Terminal 3 Concourse A",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB13",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - next to Gate C13. International flights only.",
+     "name": "Ahlan Lounge @C13",
+     "rating": 4.18,
+     "ratings_count": 2379,
+     "terminal": "Terminal 3 Concourse C",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB20",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - near Gate D13. International flights only.",
+     "name": "Ahlan Lounge",
+     "rating": 4.2,
+     "ratings_count": 22,
+     "terminal": "Terminal 1 Concourse D",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Level 2 above the Departure Gates.\r\n",
+     "name": "Ahlan Business Class Lounge",
+     "rating": 4.4,
+     "ratings_count": 3871,
+     "terminal": "Terminal 1 Concourse D",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB10",
+     "hours": "02:00 - 20:00",
+     "location": "Airside - the lounge is located at lounge level, near the Food Court Area, opposite the 'DIH Lounge'. International flights only. ",
+     "name": "SkyTeam Lounge",
+     "rating": 4.4,
+     "ratings_count": 1041,
+     "terminal": "Terminal 1 Concourse D",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB8",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - prior to Immigration, board the train to boarding gates level then take the lift or stairs on the left to Arrival Level, turn left and then right.\r\n\r\n ",
+     "name": "Marhaba Lounge",
+     "rating": 3.8,
+     "ratings_count": 2692,
+     "terminal": "Terminal 1 Concourse D",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DXB5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located in the Departure Area, beyond Security Clearance, opposite Gates F3 and F4.",
+     "name": "Marhaba Lounge",
+     "rating": 3,
+     "ratings_count": 2622,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DXB15",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Sleepover",
+     "rating": 3.9,
+     "ratings_count": 100,
+     "terminal": "Terminal 3 Concourse B",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb15-sleepover"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DXB9",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Sleepover",
+     "rating": 3.6,
+     "ratings_count": 148,
+     "terminal": "Terminal 3 Concourse A",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb9-sleepover"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DXB14",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Sleepover",
+     "rating": 4.2,
+     "ratings_count": 62,
+     "terminal": "Terminal 3 Concourse C",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb14-sleepover"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "DXB12",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Sleepover",
+     "rating": 4.2,
+     "ratings_count": 21,
+     "terminal": "Terminal 1 Concourse D",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb12-sleepover"
+    }
+   ],
+   "name": "Dubai Intl",
+   "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international"
+  },
+  "FRA": {
+   "complete": true,
+   "fetched": "2026-10-17T19:36:36+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "FRA17",
+     "hours": "05:00 - 20:00",
+     "location": "",
+     "name": "Air France Lounge",
+     "rating": 4.44,
+     "ratings_count": 9,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra17-air-france-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "FRA16",
+     "hours": "06:30 - 22:00",
+     "location": "",
+     "name": "SkyTeam Lounge ",
+     "rating": 4.82,
+     "ratings_count": 11,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra16-skyteam-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "FRA15",
+     "hours": "06:15 - 21:15",
+     "location": "",
+     "name": "Priority Lounge",
+     "rating": 4.36,
+     "ratings_count": 25,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra15-priority-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "FRA3",
+     "hours": "06:30 - 21:30",
+     "location": "Landside - before Passport and Security Controls, Departure Level. The lounge is located between Halls B and C , Gallery Level near to the Travel Market. Transit passengers must leave the transit area and go through immigration and customs to access the lounge.  ",
+     "name": "LuxxLounge",
+     "rating": 2.99,
+     "ratings_count": 10057,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra3-luxxlounge"
+    }
+   ],
+   "name": "Frankfurt",
+   "url": "https://www.prioritypass.com/lounges/germany/frankfurt"
+  },
+  "HAN": {
+   "complete": true,
+   "fetched": "2026-10-17T19:33:54+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "HAN6",
+     "hours": "06:00 - 23:59",
+     "location": "",
+     "name": "SH Premium Lounge Ha Noi 3",
+     "rating": 4.67,
+     "ratings_count": 33,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han6-sh-premium-lounge-west-wing"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HAN3",
+     "hours": "06:30 - 02:00",
+     "location": "Airside - International Departures. After Security Checks, 4th Floor, East Wing, near Gates 21-22.",
+     "name": "SH Premium Lounge Ha Noi",
+     "rating": 4.5,
+     "ratings_count": 6003,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han3-sh-premium-lounge-ha-noi"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "HAN5",
+     "hours": "",
+     "location": "",
+     "name": "ASG Sky Lounge",
+     "rating": 4.12,
+     "ratings_count": 94,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han5-asg-sky-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HAN4",
+     "hours": "04:30 - 23:00",
+     "location": "Airside - Domestic Departures. After Security Checks, the lounge is located on the 3rd Floor and follow signs to the lounge entrance.\r\n ",
+     "name": "SH Premium Lounge Ha Noi",
+     "rating": 4.5,
+     "ratings_count": 2609,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international/han4-sh-premium-lounge-ha-noi"
+    }
+   ],
+   "name": "Hanoi Noi Bai Intl",
+   "url": "https://www.prioritypass.com/lounges/vietnam/noi-bai-international"
+  },
+  "ICN": {
+   "complete": true,
+   "fetched": "2026-10-17T19:34:08+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN18",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Passport Control and Security Checks, 4th Floor, near Gate 247.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.49,
+     "ratings_count": 1889,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn18-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN14",
+     "hours": "00:00 - 21:30",
+     "location": "Airside - International Departures, East Wing. The lounge is located on the 4th Floor, near Gate 268.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.4,
+     "ratings_count": 2496,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn14-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN13",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - International and in transit Departures. Take the escalator near Gate 252 to the 4th Floor and walk across the bridge.",
+     "name": "Matina",
+     "rating": 4.4,
+     "ratings_count": 5969,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn13-matina"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN16",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - International Departures, 4th Floor, near Gate 26. The lounge is only accessible when flying with Asiana Airlines and Star Alliance operated flights.",
+     "name": "Asiana Business Lounge Central",
+     "rating": 4.5,
+     "ratings_count": 1591,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn16-asiana-business-lounge-central"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN17",
+     "hours": "06:00 - 00:30",
+     "location": "Airside - International Departures, 4th Floor, near Gate 42. The lounge is only accessible when flying with Asiana Airlines and Star Alliance operated flights.",
+     "name": "Asiana Business Lounge West",
+     "rating": 4.5,
+     "ratings_count": 997,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn17-asiana-business-lounge-west"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN3",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - West Wing. After Passport Control, take the escalator opposite Gate 43 to the 4th Floor. ",
+     "name": "Matina Lounge",
+     "rating": 4.1,
+     "ratings_count": 2585,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn3-matina"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN2",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - East Wing. After Passport Control, take the escalator opposite Gate 11 to the 4th Floor. Follow signs 'Transit Hotel' to where the lounge is located.",
+     "name": "Matina",
+     "rating": 4.2,
+     "ratings_count": 2427,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn2-matina"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN9",
+     "hours": "00:00 - 21:30",
+     "location": "Airside - West Wing. After Passport Control, on the 4th Floor. The lounge is located opposite the Information Desk, near Gate 29.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.1,
+     "ratings_count": 2962,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn9-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN8",
+     "hours": "00:00 - 21:30",
+     "location": "Airside - East Wing. After Passport Control, on the 4th Floor. The lounge is located opposite the Information Desk, near Gate 25.",
+     "name": "Sky Hub Lounge",
+     "rating": 4.1,
+     "ratings_count": 1950,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn8-sky-hub-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ICN10",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - International Departures. After Passport Control and Security Checks, 4th Floor, opposite Gate 115.",
+     "name": "Sky Hub Lounge",
+     "rating": 4,
+     "ratings_count": 1407,
+     "terminal": "Terminal 1 Concourse",
+     "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn10-sky-hub-lounge"
+    }
+   ],
+   "name": "Seoul Incheon Intl",
+   "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international"
+  },
+  "IST": {
+   "complete": true,
+   "fetched": "2026-10-17T19:34:46+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "IST12",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - opposite Gate A6. International and in transit flights only.",
+     "name": "Pop up Lounge",
+     "rating": 3.3,
+     "ratings_count": 1169,
+     "terminal": "International Terminal",
+     "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist12-pop-up-lounge-by-iga"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "IST9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Passport Control, turn left. The lounge is located on the Mezzanine Floor on the right hand side. International flights only.",
+     "name": "IGA Lounge",
+     "rating": 4.3,
+     "ratings_count": 32338,
+     "terminal": "International Terminal",
+     "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "IST11",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Passport Control, turn right. The lounge is located on the right hand side, near Gate G11. Domestic flights only.",
+     "name": "IGA Lounge",
+     "rating": 4.3,
+     "ratings_count": 2866,
+     "terminal": "Domestic Terminal",
+     "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist11-iga-lounge-dom"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "IST10",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "IGA Sleepod",
+     "rating": 4.2,
+     "ratings_count": 38,
+     "terminal": "International Terminal",
+     "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist10-iga-sleepod"
+    }
+   ],
+   "name": "Istanbul",
+   "url": "https://www.prioritypass.com/lounges/turkey/istanbul"
+  },
+  "LGA": {
+   "complete": true,
+   "fetched": "2026-10-17T19:36:55+00:00",
+   "lounges": [],
+   "name": "New York NY LaGuardia",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/laguardia"
+  },
+  "SHJ": {
+   "complete": true,
+   "fetched": "2026-10-17T19:36:50+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SHJ",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - turn left after the Dufry Store and proceed to the 1st Floor. The lounge is located opposite the transfer desk, near the Visa and Information Help Desk. ",
+     "name": "The Lounge",
+     "rating": 4,
+     "ratings_count": 1275,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international/shj-the-lounge"
+    }
+   ],
+   "name": "Sharjah International",
+   "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international"
+  },
+  "ZRH": {
+   "complete": true,
+   "fetched": "2026-10-17T19:36:25+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ZUR",
+     "hours": "05:15 - 20:00",
+     "location": "Airside - Airside Center, after Security Control Check-in 1 or Check-in 2, turn left towards B-Gates. Take the lift or stairs to the 2nd Floor and follow signs to the lounges.",
+     "name": "Marhaba Lounge",
+     "rating": 3.79,
+     "ratings_count": 2727,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zur-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ZRH6",
+     "hours": "06:00 - 22:30",
+     "location": "Airside - Gates E after Security Control, take the lift or stairs from the 2nd Floor Departures Level up to the 3rd Floor. Follow signs to the lounge which is located by Gate E46. International and Transit passengers may access the lounge. Non-Schengen flights only.",
+     "name": "Primeclass Lounge",
+     "rating": 4.2,
+     "ratings_count": 4442,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh6-primeclass-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ZRH4",
+     "hours": "05:15 - 21:00",
+     "location": "Airside - Airside Centre, 3rd Floor, after Security Control in Check-in 1 or Check-in 2, turn left towards B-Gates and follows signs for the lounge. The lounge is not accessible to transit passengers.",
+     "name": "Aspire Lounge",
+     "rating": 3.8,
+     "ratings_count": 9452,
+     "terminal": "Terminal A",
+     "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh4-aspire-lounge"
+    }
+   ],
+   "name": "Zurich",
+   "url": "https://www.prioritypass.com/lounges/switzerland/zurich"
+  }
+ },
+ "index": {
+  "airports": {
+   "AAL": {
+    "name": "Aalborg",
+    "path": "/lounges/denmark/aalborg"
+   },
+   "AAP": {
+    "name": "Aji Pangeran Tumenggung Pranoto International",
+    "path": "/lounges/indonesia/aji-pangeran-tumenggung-pranoto-international"
+   },
+   "ABB": {
+    "name": "Asaba International",
+    "path": "/lounges/nigeria/asaba-international"
+   },
+   "ABT": {
+    "name": "Al Baha Al-Aqiq",
+    "path": "/lounges/saudi-arabia/al-baha-domestic"
+   },
+   "ABV": {
+    "name": "Abuja Nnamdi Azikiwe Intl",
+    "path": "/lounges/nigeria/nnamdi-azikiwe-international"
+   },
+   "ABZ": {
+    "name": "Aberdeen",
+    "path": "/lounges/united-kingdom/aberdeen"
+   },
+   "ACA": {
+    "name": "Acapulco Juan N. Alvarez Intl",
+    "path": "/lounges/mexico/general-juan-n-alvarez-international-airport"
+   },
+   "ACC": {
+    "name": "Accra Kotoka International",
+    "path": "/lounges/ghana/kotoka-international"
+   },
+   "ACE": {
+    "name": "Lanzarote",
+    "path": "/lounges/spain/lanzarote"
+   },
+   "ACX": {
+    "name": "Xingyi Wanfenglin",
+    "path": "/lounges/china/xingyi-wanfenglin"
+   },
+   "ADB": {
+    "name": "Izmir Adnan Menderes",
+    "path": "/lounges/turkey/adnan-menderes"
+   },
+   "ADD": {
+    "name": "Addis Ababa Bole International",
+    "path": "/lounges/ethiopia/bole-international"
+   },
+   "ADL": {
+    "name": "Adelaide International",
+    "path": "/lounges/australia/adelaide"
+   },
+   "ADZ": {
+    "name": "San Andres Island Gustavo R. Pinilla Intl",
+    "path": "/lounges/colombia/gustavo-rojas-pinilla-international"
+   },
+   "AEP": {
+    "name": "Jorge Newbery Airpark",
+    "path": "/lounges/argentina/jorge-newbery-airpark"
+   },
+   "AGA": {
+    "name": "Agadir Al Massira Intl",
+    "path": "/lounges/morocco/agadir-al-massira"
+   },
+   "AGP": {
+    "name": "Malaga",
+    "path": "/lounges/spain/malaga"
+   },
+   "AGU": {
+    "name": "Aguascalientes Jesus Teran Peredo Intl",
+    "path": "/lounges/mexico/lic-jesus-teran-peredo-international"
+   },
+   "AHB": {
+    "name": "Abha Regional",
+    "path": "/lounges/saudi-arabia/abha-regional"
+   },
+   "AHO": {
+    "name": "Alghero Fertilia",
+    "path": "/lounges/italy/alghero-fertilia"
+   },
+   "AJF": {
+    "name": "Al Jouf",
+    "path": "/lounges/saudi-arabia/al-jawf-domestic"
+   },
+   "AJU": {
+    "name": "Aracaju - Santa Maria International",
+    "path": "/lounges/brazil/santa-maria"
+   },
+   "AKL": {
+    "name": "Auckland Intl",
+    "path": "/lounges/new-zealand/auckland"
+   },
+   "ALA": {
+    "name": "Almaty International",
+    "path": "/lounges/kazakhstan/almaty-international"
+   },
+   "ALC": {
+    "name": "Alicante",
+    "path": "/lounges/spain/alicante-elche"
+   },
+   "AMD": {
+    "name": "Sardar Vallabhbhai Patel International",
+    "path": "/lounges/india/sardar-vallabhbhai-patel-international"
+   },
+   "AMM": {
+    "name": "Amman Queen Alia International",
+    "path": "/lounges/jordan/queen-alia-international"
+   },
+   "AMQ": {
+    "name": "Ambon Pattimura International",
+    "path": "/lounges/indonesia/pattimura"
+   },
+   "AMS": {
+    "name": "Amsterdam Schiphol",
+    "path": "/lounges/netherlands/amsterdam-schiphol"
+   },
+   "ANF": {
+    "name": "Cerro Moreno International",
+    "path": "/lounges/chile/cerro-moreno-international"
+   },
+   "ANU": {
+    "name": "St. Georges V. C. Bird Intl",
+    "path": "/lounges/antigua-and-barbuda/v-c-bird-international"
+   },
+   "AOG": {
+    "name": "Anshan Teng'ao",
+    "path": "/lounges/china/anshan-tengao"
+   },
+   "AOJ": {
+    "name": "Aomori",
+    "path": "/lounges/japan/aomori"
+   },
+   "AQJ": {
+    "name": "Aqaba King Hussein Intl",
+    "path": "/lounges/jordan/king-hussein-international"
+   },
+   "AQP": {
+    "name": "Arequipa Rodriguez Ballon Intl",
+    "path": "/lounges/peru/rodriguez-ballon-international"
+   },
+   "ARI": {
+    "name": "Arica Chacalluta International",
+    "path": "/lounges/chile/chacalluta-international"
+   },
+   "ARK": {
+    "name": "Arusha",
+    "path": "/lounges/tanzania/arusha"
+   },
+   "ARN": {
+    "name": "Stockholm Arlanda",
+    "path": "/lounges/sweden/stockholm-arlanda"
+   },
+   "ASU": {
+    "name": "Asuncion Silvio Pettirossi",
+    "path": "/lounges/paraguay/silvio-pettirossi-international"
+   },
+   "ASW": {
+    "name": "Aswan International",
+    "path": "/lounges/egypt/aswan-international"
+   },
+   "ATA": {
+    "name": "Anta German Arias Graziani",
+    "path": "/lounges/peru/comandante-fap-german-arias-graziani"
+   },
+   "ATH": {
+    "name": "Athens International",
+    "path": "/lounges/greece/athens-international-eleftherios-venizelos"
+   },
+   "ATL": {
+    "name": "Atlanta GA International",
+    "path": "/lounges/united-states-of-america/hartsfield-jackson-atlanta-international"
+   },
+   "ATQ": {
+    "name": "Amritsar Sri Guru Ram Dass Jee Intl",
+    "path": "/lounges/india/sri-guru-ram-dass-jee-international"
+   },
+   "AUA": {
+    "name": "Oranjestad Reina Beatrix Intl",
+    "path": "/lounges/aruba/queen-beatrix-international"
+   },
+   "AUH": {
+    "name": "Abu Dhabi International",
+    "path": "/lounges/united-arab-emirates/abu-dhabi-international"
+   },
+   "AUS": {
+    "name": "Austin TX Bergstrom International",
+    "path": "/lounges/united-states-of-america/austin-bergstrom-international"
+   },
+   "AXM": {
+    "name": "El Ed\u00e9n International",
+    "path": "/lounges/colombia/el-eden-international"
+   },
+   "AYJ": {
+    "name": "Maharshi Valmiki International Airport",
+    "path": "/lounges/india/maharshi-valmiki-international-airport"
+   },
+   "AYP": {
+    "name": "Ayacucho Alfredo M. Duarte",
+    "path": "/lounges/peru/coronel-fap-alfredo-mendivil-duarte"
+   },
+   "AYT": {
+    "name": "Antalya International",
+    "path": "/lounges/turkey/antalya"
+   },
+   "AZS": {
+    "name": "Samana El Catey International",
+    "path": "/lounges/dominican-republic/samana-el-catey-international"
+   },
+   "BAH": {
+    "name": "Bahrain International",
+    "path": "/lounges/bahrain/bahrain-international"
+   },
+   "BAQ": {
+    "name": "Barranquilla Ernesto Cortissoz Intl",
+    "path": "/lounges/colombia/ernesto-cortissoz-international"
+   },
+   "BAV": {
+    "name": "Baotou",
+    "path": "/lounges/china/baotou"
+   },
+   "BBI": {
+    "name": "Bhubaneswar Biju Patnaik Intl",
+    "path": "/lounges/india/biju-patnaik-international"
+   },
+   "BBK": {
+    "name": "Kasane",
+    "path": "/lounges/botswana/kasane"
+   },
+   "BCN": {
+    "name": "Barcelona El Prat",
+    "path": "/lounges/spain/barcelona-el-prat"
+   },
+   "BDA": {
+    "name": "St. George's L.F.Wade Intl",
+    "path": "/lounges/bermuda/l-f-wade-international"
+   },
+   "BDJ": {
+    "name": "Banjarmasin Syamsudin Noor Intl",
+    "path": "/lounges/indonesia/syamsudin-noor"
+   },
+   "BDL": {
+    "name": "Windsor Locks CT Bradley Intl",
+    "path": "/lounges/united-states-of-america/bradley-international"
+   },
+   "BDQ": {
+    "name": "Vadodara",
+    "path": "/lounges/india/vadodara-civil-harni"
+   },
+   "BDS": {
+    "name": "Brindisi Salento",
+    "path": "/lounges/italy/brindisi-salento"
+   },
+   "BEG": {
+    "name": "Belgrade Nikola Tesla",
+    "path": "/lounges/serbia-republic-of/belgrade-nikola-tesla"
+   },
+   "BEL": {
+    "name": "Belem Val de Cans Intl",
+    "path": "/lounges/brazil/val-de-cans-international"
+   },
+   "BER": {
+    "name": "Berlin Brandenburg International",
+    "path": "/lounges/germany/berlin-brandenburg"
+   },
+   "BEY": {
+    "name": "Beirut\u2013Rafic Hariri International",
+    "path": "/lounges/lebanon/beirut-rafic-hariri-international"
+   },
+   "BFN": {
+    "name": "Bloemfontein",
+    "path": "/lounges/south-africa/bloemfontein"
+   },
+   "BFS": {
+    "name": "Belfast International",
+    "path": "/lounges/united-kingdom/belfast-international"
+   },
+   "BGA": {
+    "name": "Bucaramanga Palonegro Intl",
+    "path": "/lounges/colombia/palonegro-international"
+   },
+   "BGI": {
+    "name": "Barbados Grantley Adams Intl",
+    "path": "/lounges/barbados/grantley-adams-international"
+   },
+   "BGO": {
+    "name": "Bergen , Flesland",
+    "path": "/lounges/norway/bergen-flesland"
+   },
+   "BGW": {
+    "name": "Baghdad International",
+    "path": "/lounges/iraq/baghdad-international"
+   },
+   "BGY": {
+    "name": "Milan Bergamo Orio Al Serio",
+    "path": "/lounges/italy/milan-bergamo-orio-al-serio"
+   },
+   "BHD": {
+    "name": "Belfast George Best City",
+    "path": "/lounges/united-kingdom/george-best-belfast-city"
+   },
+   "BHH": {
+    "name": "Bisha",
+    "path": "/lounges/saudi-arabia/bisha-domestic"
+   },
+   "BHO": {
+    "name": "Bhopal Raja Bhoj",
+    "path": "/lounges/india/raja-bhoj"
+   },
+   "BHX": {
+    "name": "Birmingham",
+    "path": "/lounges/united-kingdom/birmingham"
+   },
+   "BHY": {
+    "name": "Beihai Fucheng",
+    "path": "/lounges/china/beihai-fucheng"
+   },
+   "BIO": {
+    "name": "Bilbao",
+    "path": "/lounges/spain/bilbao"
+   },
+   "BJL": {
+    "name": "Banjul International",
+    "path": "/lounges/gambia/banjul-international"
+   },
+   "BJV": {
+    "name": "Bodrum Milas Intl",
+    "path": "/lounges/turkey/milas-bodrum"
+   },
+   "BJX": {
+    "name": "Leon/Guanajuato Del Bajio Intl",
+    "path": "/lounges/mexico/del-bajio-international-guanajuato-intl"
+   },
+   "BKI": {
+    "name": "Kota Kinabalu International",
+    "path": "/lounges/malaysia/kota-kinabalu-international"
+   },
+   "BKK": {
+    "name": "Bangkok Suvarnabhumi Intl",
+    "path": "/lounges/thailand/suvarnabhumi"
+   },
+   "BKO": {
+    "name": "Bamako\u2013S\u00e9nou International",
+    "path": "/lounges/mali/bamako-senou-international"
+   },
+   "BLL": {
+    "name": "Billund",
+    "path": "/lounges/denmark/billund"
+   },
+   "BLQ": {
+    "name": "Bologna Guglielmo Marconi",
+    "path": "/lounges/italy/bologna-guglielmo-marconi"
+   },
+   "BLR": {
+    "name": "Kempegowda International",
+    "path": "/lounges/india/kempegowda-international"
+   },
+   "BMV": {
+    "name": "Buon Ma Thuot",
+    "path": "/lounges/vietnam/buon-ma-thuot"
+   },
+   "BNA": {
+    "name": "Nashville International",
+    "path": "/lounges/united-states-of-america/nashville-international"
+   },
+   "BNE": {
+    "name": "Brisbane Intl",
+    "path": "/lounges/australia/brisbane"
+   },
+   "BOD": {
+    "name": "Bordeaux\u2013M\u00e9rignac",
+    "path": "/lounges/france/bordeaux-merignac"
+   },
+   "BOG": {
+    "name": "El Dorado International",
+    "path": "/lounges/colombia/el-dorado-international"
+   },
+   "BOH": {
+    "name": "Bournemouth",
+    "path": "/lounges/united-kingdom/bournemouth"
+   },
+   "BOJ": {
+    "name": "Burgas",
+    "path": "/lounges/bulgaria/burgas"
+   },
+   "BOM": {
+    "name": "Mumbai Chhatrapati Shivaji Intl",
+    "path": "/lounges/india/chhatrapati-shivaji-international"
+   },
+   "BOS": {
+    "name": "Boston MA Logan International",
+    "path": "/lounges/united-states-of-america/logan-international"
+   },
+   "BPN": {
+    "name": "Sultan Aji Muhammad Sulaiman",
+    "path": "/lounges/indonesia/sultan-aji-muhammad-sulaiman"
+   },
+   "BPS": {
+    "name": "Porto Seguro",
+    "path": "/lounges/brazil/porto-seguro"
+   },
+   "BRC": {
+    "name": "San Carlos Bariloche Intl",
+    "path": "/lounges/argentina/san-carlos-de-bariloche"
+   },
+   "BRE": {
+    "name": "Bremen",
+    "path": "/lounges/germany/bremen"
+   },
+   "BRI": {
+    "name": "Bari Karol Wojty\u0142a",
+    "path": "/lounges/italy/bari-karol-wojty-a"
+   },
+   "BRQ": {
+    "name": "Brno Turany",
+    "path": "/lounges/czech-republic/brno-turany"
+   },
+   "BRS": {
+    "name": "Bristol International",
+    "path": "/lounges/united-kingdom/bristol"
+   },
+   "BRU": {
+    "name": "Brussels (Zaventem)",
+    "path": "/lounges/belgium/brussels-zaventem"
+   },
+   "BSB": {
+    "name": "Brasilia J.Kubitschek Intl",
+    "path": "/lounges/brazil/brasilia-international-presidente-j-kubitschek-intl"
+   },
+   "BSL": {
+    "name": "Basel-Mulhouse-Freiburg EuroAirport",
+    "path": "/lounges/switzerland/euro-basel-mulhouse-freiburg"
+   },
+   "BSZ": {
+    "name": "Manas International",
+    "path": "/lounges/kyrgyzstan/manas-international-airport"
+   },
+   "BTH": {
+    "name": "Hang Nadim",
+    "path": "/lounges/indonesia/hang-nadim"
+   },
+   "BTS": {
+    "name": "Bratislava M.R. Stefanik",
+    "path": "/lounges/slovakia/m-r-stefanik"
+   },
+   "BUD": {
+    "name": "Budapest Liszt Ferenc Intl",
+    "path": "/lounges/hungary/budapest-ferenc-liszt-international"
+   },
+   "BUF": {
+    "name": "Buffalo Niagara International",
+    "path": "/lounges/united-states-of-america/buffalo-niagara-international"
+   },
+   "BUQ": {
+    "name": "Bulawayo J.M. Nkomo Intl",
+    "path": "/lounges/zimbabwe/joshua-mqabuko-nkomo-international"
+   },
+   "BUS": {
+    "name": "Batumi International",
+    "path": "/lounges/georgia/batumi-international-alexander-kartveli-batumi-intl"
+   },
+   "BWI": {
+    "name": "Baltimore/Washington International Thurgood Marshall",
+    "path": "/lounges/united-states-of-america/baltimore-washington-international-thurgood-marshall"
+   },
+   "BWN": {
+    "name": "Bandar Seri Begawan Brunei International",
+    "path": "/lounges/brunei/brunei-international"
+   },
+   "BZG": {
+    "name": "Bydgoszcz Ignacy Jan Paderewski",
+    "path": "/lounges/poland/bydgoszcz-ignacy-jan-paderewski"
+   },
+   "BZV": {
+    "name": "Brazzaville Maya Maya",
+    "path": "/lounges/congo-republic-of-the/maya-maya"
+   },
+   "CAG": {
+    "name": "Cagliari Elmas",
+    "path": "/lounges/italy/cagliari-elmas"
+   },
+   "CAI": {
+    "name": "Cairo International",
+    "path": "/lounges/egypt/cairo-international"
+   },
+   "CAN": {
+    "name": "Guangzhou Baiyun International",
+    "path": "/lounges/china/guangzhou-baiyun-international"
+   },
+   "CBB": {
+    "name": "Cochabamba Jorge Wilstermann Intl",
+    "path": "/lounges/bolivia/cochabamba-jorge-wilstermann-intl"
+   },
+   "CBR": {
+    "name": "Canberra",
+    "path": "/lounges/australia/canberra"
+   },
+   "CCJ": {
+    "name": "Kozhikode Calicut International",
+    "path": "/lounges/india/calicut-international-airport"
+   },
+   "CCP": {
+    "name": "Concepcion Carriel Sur Intl",
+    "path": "/lounges/chile/concepcion-carriel-sur-intl"
+   },
+   "CCS": {
+    "name": "Caracas Simon Bolivar Intl",
+    "path": "/lounges/venezuela/caracas-simon-bolivar-intl"
+   },
+   "CCU": {
+    "name": "Kolkata Netaji Subhash Chandra Bose Intl",
+    "path": "/lounges/india/kolkata-netaji-subhash-chandra-bose-intl"
+   },
+   "CDG": {
+    "name": "Paris Charles De Gaulle",
+    "path": "/lounges/france/paris-charles-de-gaulle"
+   },
+   "CEB": {
+    "name": "Cebu Mactan Intl",
+    "path": "/lounges/philippines/cebu-mactan-intl"
+   },
+   "CEI": {
+    "name": "Chiang Rai Mae Fah Luang International",
+    "path": "/lounges/thailand/chiang-rai-mae-fah-luang-international"
+   },
+   "CFU": {
+    "name": "Corfu Ioannis Kapodistrias Intl",
+    "path": "/lounges/greece/kerkyra-ioannis-kapodistrias"
+   },
+   "CGB": {
+    "name": "Cuiaba Marechal Rondon Intl",
+    "path": "/lounges/brazil/cuiaba-marechal-rondon-intl"
+   },
+   "CGD": {
+    "name": "Changde Taohuayuan",
+    "path": "/lounges/china/changde-taohuayuan"
+   },
+   "CGH": {
+    "name": "Sao Paulo Congonhas",
+    "path": "/lounges/brazil/sao-paulo-congonhas"
+   },
+   "CGK": {
+    "name": "Jakarta Soekarno-Hatta Intl",
+    "path": "/lounges/indonesia/jakarta-soekarno-hatta-intl"
+   },
+   "CGN": {
+    "name": "Cologne/Bonn International",
+    "path": "/lounges/germany/cologne-bonn-international"
+   },
+   "CGO": {
+    "name": "Zhengzhou Xinzheng International",
+    "path": "/lounges/china/zhengzhou-xinzheng-international"
+   },
+   "CGP": {
+    "name": "Chattogram Shah Amanat Intl",
+    "path": "/lounges/bangladesh/shah-amanat-international-airport"
+   },
+   "CGQ": {
+    "name": "Changchun Longjia Intl",
+    "path": "/lounges/china/changchun-longjia-intl"
+   },
+   "CGR": {
+    "name": "Campo Grande International",
+    "path": "/lounges/brazil/campo-grande-international"
+   },
+   "CHC": {
+    "name": "Christchurch Intl",
+    "path": "/lounges/new-zealand/christchurch-intl"
+   },
+   "CHS": {
+    "name": "Charleston International/AFB",
+    "path": "/lounges/united-states-of-america/charleston-international-afb"
+   },
+   "CIH": {
+    "name": "Changzhi Wangcun",
+    "path": "/lounges/china/changzhi-wangcun"
+   },
+   "CIT": {
+    "name": "Shymkent International",
+    "path": "/lounges/kazakhstan/shymkent-international"
+   },
+   "CIX": {
+    "name": "Chiclayo J.A. Quinones Gonzalez",
+    "path": "/lounges/peru/chiclayo-j-a-quinones-gonzalez"
+   },
+   "CJA": {
+    "name": "Cajamarca Armando R. Iglesias",
+    "path": "/lounges/peru/cajamarca-armando-r-iglesias"
+   },
+   "CJB": {
+    "name": "Coimbatore International",
+    "path": "/lounges/india/coimbatore-peelamedu-international"
+   },
+   "CJC": {
+    "name": "Calama El Loa",
+    "path": "/lounges/chile/calama-el-loa"
+   },
+   "CJS": {
+    "name": "Ju\u00e1rez Abraham Gonzalez Intl",
+    "path": "/lounges/mexico/abraham-gonzalez-international"
+   },
+   "CJU": {
+    "name": "Jeju International",
+    "path": "/lounges/south-korea/jeju-international"
+   },
+   "CKG": {
+    "name": "Chongqing Jiangbei Intl",
+    "path": "/lounges/china/chongqing-jiangbei-intl"
+   },
+   "CKY": {
+    "name": "Conakry Gbessia International",
+    "path": "/lounges/guinea/conakry-gbessia-international"
+   },
+   "CLE": {
+    "name": "Cleveland OH Hopkins Intl",
+    "path": "/lounges/united-states-of-america/cleveland-hopkins-international"
+   },
+   "CLJ": {
+    "name": "Cluj-Napoca International",
+    "path": "/lounges/romania/cluj-napoca-international"
+   },
+   "CLO": {
+    "name": "Cali A. Bonilla Aragon Intl",
+    "path": "/lounges/colombia/cali-a-bonilla-aragon-intl"
+   },
+   "CLT": {
+    "name": "Charlotte NC Douglas Intl",
+    "path": "/lounges/united-states-of-america/charlotte-douglas-international"
+   },
+   "CMB": {
+    "name": "Colombo Bandaranaike Intl",
+    "path": "/lounges/sri-lanka/colombo-bandaranaike-intl"
+   },
+   "CMH": {
+    "name": "Columbus OH John Glenn Intl",
+    "path": "/lounges/united-states-of-america/john-glenn-columbus-international"
+   },
+   "CMN": {
+    "name": "Casablanca Mohammed V Intl",
+    "path": "/lounges/morocco/casablanca-mohammed-v-intl"
+   },
+   "CNF": {
+    "name": "Belo Horizonte Tancredo Neves Intl",
+    "path": "/lounges/brazil/belo-horizonte-confins-intl"
+   },
+   "CNN": {
+    "name": "Kannur International",
+    "path": "/lounges/india/kannur-international-airport"
+   },
+   "CNS": {
+    "name": "Cairns International",
+    "path": "/lounges/australia/cairns-international-airport"
+   },
+   "CNX": {
+    "name": "Chiang Mai Intl",
+    "path": "/lounges/thailand/chiang-mai-intl"
+   },
+   "COK": {
+    "name": "Cochin International",
+    "path": "/lounges/india/cochin-international"
+   },
+   "COO": {
+    "name": "Cotonou Cadjehoun Intl",
+    "path": "/lounges/benin/cotonou-cadjehoun-intl"
+   },
+   "COR": {
+    "name": "Ingeniero Aeron\u00e1utico Ambrosio L.V. Taravella International (Pajas Blancas)",
+    "path": "/lounges/argentina/ingeniero-aeronautico-ambrosio-l-v-taravella-international-pajas-blancas"
+   },
+   "COS": {
+    "name": "Colorado Springs CO",
+    "path": "/lounges/united-states-of-america/colorado-springs"
+   },
+   "COV": {
+    "name": "Mersin Cukurova International",
+    "path": "/lounges/turkey/cukurova-international-airport"
+   },
+   "CPC": {
+    "name": "Aeropuerto Aviador Carlos Campos",
+    "path": "/lounges/argentina/aviador-carlos-campos"
+   },
+   "CPH": {
+    "name": "Copenhagen Kastrup",
+    "path": "/lounges/denmark/copenhagen-kastrup"
+   },
+   "CPT": {
+    "name": "Cape Town International",
+    "path": "/lounges/south-africa/cape-town-international"
+   },
+   "CPV": {
+    "name": "Campina Grande Joao Suassuna",
+    "path": "/lounges/brazil/campina-grande-joao-suassuna"
+   },
+   "CRD": {
+    "name": "Comodoro Rivadavia General E. Mosconi",
+    "path": "/lounges/argentina/comodoro-rivadavia-general-e-mosconi"
+   },
+   "CRK": {
+    "name": "Clark International",
+    "path": "/lounges/philippines/clark-international"
+   },
+   "CRL": {
+    "name": "Brussels South Charleroi",
+    "path": "/lounges/belgium/brussels-south-charleroi"
+   },
+   "CSX": {
+    "name": "Changsha Huanghua",
+    "path": "/lounges/china/changsha-huanghua"
+   },
+   "CTA": {
+    "name": "Catania Fontanarossa",
+    "path": "/lounges/italy/catania-fontanarossa"
+   },
+   "CTG": {
+    "name": "Cartagena Rafael Nunez",
+    "path": "/lounges/colombia/cartagena-rafael-nunez"
+   },
+   "CTS": {
+    "name": "Sapporo New Chitose",
+    "path": "/lounges/japan/sapporo-new-chitose"
+   },
+   "CTU": {
+    "name": "Chengdu Shuangliu Intl",
+    "path": "/lounges/china/chengdu-shuangliu-intl"
+   },
+   "CUC": {
+    "name": "Cucuta Camilio Daza Intl",
+    "path": "/lounges/colombia/cucuta-camilio-daza-intl"
+   },
+   "CUE": {
+    "name": "Cuenca Mariscal La Mar",
+    "path": "/lounges/ecuador/cuenca-mariscal-la-mar"
+   },
+   "CUL": {
+    "name": "Bachigualato Federal International",
+    "path": "/lounges/mexico/bachigualato-federal-international"
+   },
+   "CUN": {
+    "name": "Cancun International",
+    "path": "/lounges/mexico/cancun-international"
+   },
+   "CUR": {
+    "name": "Curacao Hato International",
+    "path": "/lounges/curacao/curacao-hato-international"
+   },
+   "CUU": {
+    "name": "General Roberto Fierro Villalobos International",
+    "path": "/lounges/mexico/general-roberto-fierro-villalobos-international"
+   },
+   "CUZ": {
+    "name": "Cusco AVA International",
+    "path": "/lounges/peru/cusco-ava-international"
+   },
+   "CVG": {
+    "name": "Cincinnati OH Cincinnati/Northern Kentucky Intl",
+    "path": "/lounges/united-states-of-america/cincinnati-northern-kentucky-international"
+   },
+   "CWB": {
+    "name": "Curitiba Afonso Pena Intl",
+    "path": "/lounges/brazil/curitiba-afonso-pena-intl"
+   },
+   "CWL": {
+    "name": "Cardiff",
+    "path": "/lounges/united-kingdom/cardiff"
+   },
+   "CXB": {
+    "name": "Cox's Bazar International",
+    "path": "/lounges/bangladesh/coxs-bazar"
+   },
+   "CXR": {
+    "name": "Nha Trang Cam Ranh International",
+    "path": "/lounges/vietnam/nha-trang-cam-rahn-international"
+   },
+   "CZM": {
+    "name": "Cozumel International",
+    "path": "/lounges/mexico/cozumel-international"
+   },
+   "CZX": {
+    "name": "Changzhou Benniu Intl",
+    "path": "/lounges/china/changzhou-benniu"
+   },
+   "DAC": {
+    "name": "Dhaka Hazrat Shahjalal Intl",
+    "path": "/lounges/bangladesh/shahjalal-international"
+   },
+   "DAD": {
+    "name": "Da Nang International",
+    "path": "/lounges/vietnam/da-nang-international"
+   },
+   "DAR": {
+    "name": "Dar-es-Salaam Julius Nyerere Intl",
+    "path": "/lounges/tanzania/julius-nyerere-international"
+   },
+   "DAT": {
+    "name": "Datong Yungang",
+    "path": "/lounges/china/datong-yungang"
+   },
+   "DBB": {
+    "name": "El Alamein International",
+    "path": "/lounges/egypt/el-alamein-international"
+   },
+   "DBV": {
+    "name": "Dubrovnik Ruder Boskovic",
+    "path": "/lounges/croatia/dubrovnik"
+   },
+   "DED": {
+    "name": "Dehra Dun Jolly Grant",
+    "path": "/lounges/india/jolly-grant"
+   },
+   "DEL": {
+    "name": "Indira Gandhi International",
+    "path": "/lounges/india/indira-gandhi-international"
+   },
+   "DEN": {
+    "name": "Denver CO International",
+    "path": "/lounges/united-states-of-america/denver-international"
+   },
+   "DFW": {
+    "name": "Dallas TX - DFW International",
+    "path": "/lounges/united-states-of-america/dallas-fort-worth-international"
+   },
+   "DGO": {
+    "name": "Durango Guadalupe Victoria International",
+    "path": "/lounges/mexico/general-guadalupe-victoria-international"
+   },
+   "DIB": {
+    "name": "Dibrugarh Mohanbari",
+    "path": "/lounges/india/dibrugarh-mohanbari"
+   },
+   "DIG": {
+    "name": "Diqing Shangri-La",
+    "path": "/lounges/china/diqing-shangri-la"
+   },
+   "DIN": {
+    "name": "Dien Bien Phu",
+    "path": "/lounges/vietnam/dien-bien-phu"
+   },
+   "DIY": {
+    "name": "Diyarbakir",
+    "path": "/lounges/turkey/diyarbakir"
+   },
+   "DJB": {
+    "name": "Jambi Sultan Thaha",
+    "path": "/lounges/indonesia/sultan-thaha"
+   },
+   "DLA": {
+    "name": "Douala International",
+    "path": "/lounges/cameroon/douala-international"
+   },
+   "DLC": {
+    "name": "Dalian Zhoushuizi Intl",
+    "path": "/lounges/china/dalian-zhoushuizi-international"
+   },
+   "DLI": {
+    "name": "Lien Khuong",
+    "path": "/lounges/vietnam/lien-khuong"
+   },
+   "DLM": {
+    "name": "Dalaman",
+    "path": "/lounges/turkey/dalaman"
+   },
+   "DLU": {
+    "name": "Dali",
+    "path": "/lounges/china/dali"
+   },
+   "DMK": {
+    "name": "Bangkok Don Mueang Intl",
+    "path": "/lounges/thailand/don-mueang-international"
+   },
+   "DMM": {
+    "name": "Dammam King Fahd Intl",
+    "path": "/lounges/saudi-arabia/king-fahd-international"
+   },
+   "DNH": {
+    "name": "Dunhuang",
+    "path": "/lounges/china/dunhuang"
+   },
+   "DOH": {
+    "name": "Doha Hamad International",
+    "path": "/lounges/qatar/hamad-international"
+   },
+   "DOM": {
+    "name": "Marigot Douglas\u2013Charles",
+    "path": "/lounges/dominica/douglas-charles"
+   },
+   "DOY": {
+    "name": "Dongying Shengli",
+    "path": "/lounges/china/dongying-shengli"
+   },
+   "DPS": {
+    "name": "Ngurah Rai International",
+    "path": "/lounges/indonesia/ngurah-rai-international"
+   },
+   "DQM": {
+    "name": "Duqm",
+    "path": "/lounges/oman/duqm-international"
+   },
+   "DRS": {
+    "name": "Dresden",
+    "path": "/lounges/germany/dresden"
+   },
+   "DRV": {
+    "name": "Dharavandhoo",
+    "path": "/lounges/maldives/dharavandhoo"
+   },
+   "DTW": {
+    "name": "Detroit MI Metropolitan Wayne County",
+    "path": "/lounges/united-states-of-america/detroit-metropolitan-wayne-county"
+   },
+   "DUB": {
+    "name": "Dublin",
+    "path": "/lounges/ireland/dublin"
+   },
+   "DUR": {
+    "name": "Durban King Shaka Intl",
+    "path": "/lounges/south-africa/king-shaka-international"
+   },
+   "DUS": {
+    "name": "Duesseldorf International",
+    "path": "/lounges/germany/dusseldorf"
+   },
+   "DVO": {
+    "name": "Davao Francisco Bangoy Int'l",
+    "path": "/lounges/philippines/francisco-bangoy-international"
+   },
+   "DWC": {
+    "name": "Dubai Al Maktoum Intl",
+    "path": "/lounges/united-arab-emirates/al-maktoum-international"
+   },
+   "DWD": {
+    "name": "Al Dawadmi - Dawadmi",
+    "path": "/lounges/saudi-arabia/dawadmi-domestic-king-salman-bin-abdul-aziz-domestic"
+   },
+   "DXB": {
+    "name": "Dubai Intl",
+    "path": "/lounges/united-arab-emirates/dubai-international"
+   },
+   "DYG": {
+    "name": "Zhangjiajie Hehua",
+    "path": "/lounges/china/zhangjiajie-hehua"
+   },
+   "EAM": {
+    "name": "Nejran",
+    "path": "/lounges/saudi-arabia/najran-domestic"
+   },
+   "EBB": {
+    "name": "Entebbe International",
+    "path": "/lounges/uganda/entebbe-international"
+   },
+   "ECN": {
+    "name": "Nicosia Ercan International",
+    "path": "/lounges/cyprus/ercan-international"
+   },
+   "EDI": {
+    "name": "Edinburgh International",
+    "path": "/lounges/united-kingdom/edinburgh"
+   },
+   "EJA": {
+    "name": "Barrancabermeja Yariguies",
+    "path": "/lounges/colombia/yariguies"
+   },
+   "EJH": {
+    "name": "Al Wajh Domestic Airport",
+    "path": "/lounges/saudi-arabia/al-wajh"
+   },
+   "ELQ": {
+    "name": "Prince Nayef bin Abdulaziz Regional",
+    "path": "/lounges/saudi-arabia/prince-nayef-bin-abdulaziz-regional"
+   },
+   "ELS": {
+    "name": "East London",
+    "path": "/lounges/south-africa/east-london"
+   },
+   "EMA": {
+    "name": "East Midlands",
+    "path": "/lounges/united-kingdom/east-midlands"
+   },
+   "ENY": {
+    "name": "Yan'an Nanniwan",
+    "path": "/lounges/china/yanan-nanniwan"
+   },
+   "EOH": {
+    "name": "Medellin Enrique Olaya Herrera",
+    "path": "/lounges/colombia/olaya-herrera"
+   },
+   "ERL": {
+    "name": "Erenhot Saiwusu Intl",
+    "path": "/lounges/china/erenhot-saiwusu-international"
+   },
+   "ESB": {
+    "name": "Ankara Esenboga",
+    "path": "/lounges/turkey/ankara-esenboga-international"
+   },
+   "ETR": {
+    "name": "Santa Rosa International",
+    "path": "/lounges/ecuador/santa-rosa-international"
+   },
+   "EVN": {
+    "name": "Yerevan Zvartnots Intl",
+    "path": "/lounges/armenia/zvartnots-international"
+   },
+   "EWR": {
+    "name": "Newark Liberty International",
+    "path": "/lounges/united-states-of-america/newark-liberty-international"
+   },
+   "EXT": {
+    "name": "Exeter",
+    "path": "/lounges/united-kingdom/exeter-international"
+   },
+   "EYP": {
+    "name": "Yopal El Alcaravan",
+    "path": "/lounges/colombia/el-alcaravan"
+   },
+   "EZE": {
+    "name": "Ministro Pistarini International",
+    "path": "/lounges/argentina/ministro-pistarini-international"
+   },
+   "FAO": {
+    "name": "Faro International",
+    "path": "/lounges/portugal/faro"
+   },
+   "FBM": {
+    "name": "Lubumbashi Luano International",
+    "path": "/lounges/congo-democratic-republic-of-the/lubumbashi-international"
+   },
+   "FCO": {
+    "name": "Rome Fiumicino",
+    "path": "/lounges/italy/leonardo-da-vinci-fiumicino"
+   },
+   "FEN": {
+    "name": "Fernando De Noronha",
+    "path": "/lounges/brazil/fernando-de-noronha-airport"
+   },
+   "FEZ": {
+    "name": "Fes Saiss International",
+    "path": "/lounges/morocco/fes-saiss"
+   },
+   "FLL": {
+    "name": "Ft. Lauderdale FL Intl",
+    "path": "/lounges/united-states-of-america/fairfield-municipal"
+   },
+   "FLN": {
+    "name": "Florianopolis Hercilio Luz Intl",
+    "path": "/lounges/brazil/hercilio-luz-international"
+   },
+   "FLR": {
+    "name": "Florence Amerigo Vespucci",
+    "path": "/lounges/italy/florence-peretola-amerigo-vespucci"
+   },
+   "FMO": {
+    "name": "Muenster-Osnabrueck Intl",
+    "path": "/lounges/germany/munster-osnabruck"
+   },
+   "FOC": {
+    "name": "Fuzhou Changle International",
+    "path": "/lounges/china/fuzhou-changle-international"
+   },
+   "FOR": {
+    "name": "Pinto Martins \u2013 Fortaleza International",
+    "path": "/lounges/brazil/pinto-martins-fortaleza-international"
+   },
+   "FRA": {
+    "name": "Frankfurt",
+    "path": "/lounges/germany/frankfurt"
+   },
+   "FTE": {
+    "name": "El Calafate Comandante Armando Tola International",
+    "path": "/lounges/argentina/comandante-armando-tola-international"
+   },
+   "FUE": {
+    "name": "Fuerteventura",
+    "path": "/lounges/spain/fuerteventura"
+   },
+   "FUG": {
+    "name": "Fuyang Xiguan",
+    "path": "/lounges/china/fuyang-xiguan"
+   },
+   "FUK": {
+    "name": "Fukuoka Intl",
+    "path": "/lounges/japan/fukuoka-itazuke-air-base"
+   },
+   "FUO": {
+    "name": "Foshan Shadi",
+    "path": "/lounges/china/foshan-shadi"
+   },
+   "GAU": {
+    "name": "Lokpriya Gopinath Bordoloi International",
+    "path": "/lounges/india/lokpriya-gopinath-bordoloi-international"
+   },
+   "GBE": {
+    "name": "Gaborone Sir Seretse Khama Intl",
+    "path": "/lounges/botswana/sir-seretse-khama-international"
+   },
+   "GDL": {
+    "name": "Guadalajara Miguel Hidalgo Intl",
+    "path": "/lounges/mexico/guadalajara-international-miguel-hidalgo-y-costilla-intl"
+   },
+   "GDN": {
+    "name": "Gdansk Lech Walesa",
+    "path": "/lounges/poland/gdansk-lech-wa-esa"
+   },
+   "GEO": {
+    "name": "Georgetown Cheddi Jagan Intl",
+    "path": "/lounges/guyana/cheddi-jagan-international"
+   },
+   "GIB": {
+    "name": "Gibraltar International",
+    "path": "/lounges/gibraltar/gibraltar-international-north-front"
+   },
+   "GIG": {
+    "name": "Rio de Janeiro Galeao Intl",
+    "path": "/lounges/brazil/rio-de-janeiro-galeao-international"
+   },
+   "GIZ": {
+    "name": "Jizan Regional (King Abdullah bin Abdulaziz)",
+    "path": "/lounges/saudi-arabia/jizan-regional-king-abdullah-bin-abdulaziz"
+   },
+   "GLA": {
+    "name": "Glasgow",
+    "path": "/lounges/united-kingdom/glasgow"
+   },
+   "GMP": {
+    "name": "Gimpo International",
+    "path": "/lounges/south-korea/gimpo-international"
+   },
+   "GND": {
+    "name": "St. Georges Maurice Bishop Intl",
+    "path": "/lounges/grenada/maurice-bishop-international"
+   },
+   "GOI": {
+    "name": "Dabolim",
+    "path": "/lounges/india/dabolim"
+   },
+   "GOT": {
+    "name": "Gothenburg Landvetter",
+    "path": "/lounges/sweden/goteborg-landvetter"
+   },
+   "GOX": {
+    "name": "Goa Mopa International",
+    "path": "/lounges/india/manohar-international"
+   },
+   "GPS": {
+    "name": "Galapagos Baltra",
+    "path": "/lounges/ecuador/seymour-galapagos"
+   },
+   "GRJ": {
+    "name": "George",
+    "path": "/lounges/south-africa/george"
+   },
+   "GRR": {
+    "name": "Grand Rapids MI Gerald R. Ford Intl",
+    "path": "/lounges/united-states-of-america/gerald-r-ford-international"
+   },
+   "GRU": {
+    "name": "Sao Paulo Guarulhos Intl",
+    "path": "/lounges/brazil/sao-paulo-guarulhos-governador-andre-franco-montoro-international"
+   },
+   "GRX": {
+    "name": "Granada Federico Garcia Lorca",
+    "path": "/lounges/spain/federico-garcia-lorca-granada-jaen"
+   },
+   "GRZ": {
+    "name": "Graz",
+    "path": "/lounges/austria/graz"
+   },
+   "GSP": {
+    "name": "Greenville-Spartanburg SC Intl",
+    "path": "/lounges/united-states-of-america/greenville-spartanburg-international"
+   },
+   "GUA": {
+    "name": "Guatemala La Aurora Intl",
+    "path": "/lounges/guatemala/la-aurora-international"
+   },
+   "GUM": {
+    "name": "Guam Intl",
+    "path": "/lounges/guam/antonio-b-won-pat-international-guam-intl"
+   },
+   "GUW": {
+    "name": "Atyrau",
+    "path": "/lounges/kazakhstan/atyrau"
+   },
+   "GVA": {
+    "name": "Geneva International",
+    "path": "/lounges/switzerland/geneva"
+   },
+   "GWL": {
+    "name": "Gwalior",
+    "path": "/lounges/india/rajmata-vijaya-raje-scindia-gwalior"
+   },
+   "GYD": {
+    "name": "Baku Heydar Aliyev Intl",
+    "path": "/lounges/azerbaijan/heydar-aliyev-international"
+   },
+   "GYE": {
+    "name": "Guayaquil Jose Joaquin de Olmedo Intl",
+    "path": "/lounges/ecuador/jose-joaquin-de-olmedo-international"
+   },
+   "GYN": {
+    "name": "Goiania Santa Genoveva",
+    "path": "/lounges/brazil/santa-genoveva"
+   },
+   "GYS": {
+    "name": "Guangyuan Panlong",
+    "path": "/lounges/china/guangyuan-panlong"
+   },
+   "GYU": {
+    "name": "Guyuan Liupanshan",
+    "path": "/lounges/china/guyuan-liupanshan"
+   },
+   "HAJ": {
+    "name": "Hannover",
+    "path": "/lounges/germany/hannover"
+   },
+   "HAK": {
+    "name": "Haikou Meilan International",
+    "path": "/lounges/china/haikou-meilan-international"
+   },
+   "HAM": {
+    "name": "Hamburg Fuhlsbuettel",
+    "path": "/lounges/germany/hamburg"
+   },
+   "HAN": {
+    "name": "Hanoi Noi Bai Intl",
+    "path": "/lounges/vietnam/noi-bai-international"
+   },
+   "HAS": {
+    "name": "Ha'il Regional",
+    "path": "/lounges/saudi-arabia/hail-regional"
+   },
+   "HBE": {
+    "name": "Borg El Arab International",
+    "path": "/lounges/egypt/borg-el-arab-international"
+   },
+   "HDY": {
+    "name": "Hat Yai International",
+    "path": "/lounges/thailand/hat-yai-international"
+   },
+   "HEL": {
+    "name": "Helsinki Vantaa",
+    "path": "/lounges/finland/helsinki-vantaa"
+   },
+   "HER": {
+    "name": "Heraklion Kazantzakis Intl",
+    "path": "/lounges/greece/heraklion-international-nikos-kazantzakis"
+   },
+   "HET": {
+    "name": "Hohhot Baita International",
+    "path": "/lounges/china/hohhot-baita-international"
+   },
+   "HFE": {
+    "name": "Hefei Xinqiao Intl",
+    "path": "/lounges/china/hefei-xinqiao-international"
+   },
+   "HGH": {
+    "name": "Hangzhou Xiaoshan International",
+    "path": "/lounges/china/hangzhou-xiaoshan-international"
+   },
+   "HIA": {
+    "name": "Huai'an Lianshui",
+    "path": "/lounges/china/huaian-lianshui"
+   },
+   "HKG": {
+    "name": "Hong Kong International (Chek Lap Kok)",
+    "path": "/lounges/hong-kong/hong-kong-international-chek-lap-kok"
+   },
+   "HKT": {
+    "name": "Phuket International",
+    "path": "/lounges/thailand/phuket-international"
+   },
+   "HLA": {
+    "name": "Lanseria International",
+    "path": "/lounges/south-africa/lanseria-international"
+   },
+   "HLD": {
+    "name": "Hulunbuir Hailar",
+    "path": "/lounges/china/hulunbuir-hailar"
+   },
+   "HLH": {
+    "name": "Ulanhot",
+    "path": "/lounges/china/ulanhot"
+   },
+   "HLP": {
+    "name": "Halim Perdanakusuma International",
+    "path": "/lounges/indonesia/halim-perdanakusuma-international"
+   },
+   "HMO": {
+    "name": "Hermosillo International",
+    "path": "/lounges/mexico/general-ignacio-pesqueira-garcia-international"
+   },
+   "HND": {
+    "name": "Tokyo Haneda Intl",
+    "path": "/lounges/japan/haneda"
+   },
+   "HNL": {
+    "name": "Honolulu HI Intl",
+    "path": "/lounges/united-states-of-america/honolulu-international"
+   },
+   "HOU": {
+    "name": "Houston TX William P. Hobby",
+    "path": "/lounges/united-states-of-america/william-p-hobby"
+   },
+   "HPH": {
+    "name": "Hai Phong Cat Bi International",
+    "path": "/lounges/vietnam/cat-bi-international"
+   },
+   "HRB": {
+    "name": "Harbin Taiping International",
+    "path": "/lounges/china/harbin-taiping-international-airport"
+   },
+   "HRE": {
+    "name": "Harare R.G. Mugabe International",
+    "path": "/lounges/zimbabwe/harare-international"
+   },
+   "HRG": {
+    "name": "Hurghada International",
+    "path": "/lounges/egypt/hurghada-international"
+   },
+   "HSG": {
+    "name": "Saga",
+    "path": "/lounges/japan/saga"
+   },
+   "HSN": {
+    "name": "Zhoushan Putuoshan",
+    "path": "/lounges/china/zhoushan-putuoshan"
+   },
+   "HTN": {
+    "name": "Hotan",
+    "path": "/lounges/china/hotan"
+   },
+   "HUI": {
+    "name": "Hue Phu Bai International",
+    "path": "/lounges/vietnam/phu-bai-international"
+   },
+   "HUX": {
+    "name": "Huatulco Bahias de Huatulco Int",
+    "path": "/lounges/mexico/bahias-de-huatulco-international"
+   },
+   "HUY": {
+    "name": "Humberside Intl",
+    "path": "/lounges/united-kingdom/humberside"
+   },
+   "HYD": {
+    "name": "Rajiv Gandhi International",
+    "path": "/lounges/india/rajiv-gandhi-international"
+   },
+   "HYN": {
+    "name": "Taizhou Luqiao",
+    "path": "/lounges/china/taizhou-luqiao"
+   },
+   "IAD": {
+    "name": "Washington Dulles International",
+    "path": "/lounges/united-states-of-america/washington-dulles-international"
+   },
+   "IAH": {
+    "name": "Houston TX George Bush Intercontinental",
+    "path": "/lounges/united-states-of-america/george-bush-intercontinental"
+   },
+   "IAS": {
+    "name": "Ia\u0219i International",
+    "path": "/lounges/romania/iasi-international"
+   },
+   "IBE": {
+    "name": "Ibague Perales",
+    "path": "/lounges/colombia/ibague-perales"
+   },
+   "IBZ": {
+    "name": "Ibiza",
+    "path": "/lounges/spain/ibiza"
+   },
+   "ICN": {
+    "name": "Seoul Incheon Intl",
+    "path": "/lounges/south-korea/incheon-international"
+   },
+   "IDR": {
+    "name": "Indore Devi Ahilya Bai Holkar",
+    "path": "/lounges/india/devi-ahilyabai-holkar-international"
+   },
+   "IGR": {
+    "name": "Iguazu Cataratas del Iguazu",
+    "path": "/lounges/argentina/cataratas-del-iguazu-international"
+   },
+   "IGU": {
+    "name": "Foz do Iguacu Cataratas Intl",
+    "path": "/lounges/brazil/foz-do-iguacu-international"
+   },
+   "ILS": {
+    "name": "San Salvador Ilopango",
+    "path": "/lounges/el-salvador/ilopango-international"
+   },
+   "INC": {
+    "name": "Yinchuan Hedong International",
+    "path": "/lounges/china/yinchuan-hedong-international"
+   },
+   "IND": {
+    "name": "Indianapolis IN Intl",
+    "path": "/lounges/united-states-of-america/indianapolis-international"
+   },
+   "INN": {
+    "name": "Innsbruck",
+    "path": "/lounges/austria/innsbruck"
+   },
+   "INV": {
+    "name": "Inverness Dalcross",
+    "path": "/lounges/united-kingdom/inverness"
+   },
+   "IOM": {
+    "name": "Isle of Man Ronaldsway",
+    "path": "/lounges/isle-of-man/isle-of-man-ronaldsway"
+   },
+   "IOS": {
+    "name": "Ilheus Jorge Amado",
+    "path": "/lounges/brazil/ilheus-jorge-amado"
+   },
+   "IQN": {
+    "name": "Qingyang",
+    "path": "/lounges/china/qingyang"
+   },
+   "IQQ": {
+    "name": "Iquique Diego Aracena Intl",
+    "path": "/lounges/chile/diego-aracena-international"
+   },
+   "IQT": {
+    "name": "Iquitos International",
+    "path": "/lounges/peru/coronel-fap-francisco-secada-vignetta-international"
+   },
+   "ISB": {
+    "name": "Islamabad International",
+    "path": "/lounges/pakistan/islamabad-international"
+   },
+   "IST": {
+    "name": "Istanbul",
+    "path": "/lounges/turkey/istanbul"
+   },
+   "ITM": {
+    "name": "Osaka Itami Intl",
+    "path": "/lounges/japan/osaka-international-itami-intl"
+   },
+   "IXA": {
+    "name": "Agartala Maharaja Bir Bikram",
+    "path": "/lounges/india/agartala-singerbhil"
+   },
+   "IXB": {
+    "name": "Bagdogra",
+    "path": "/lounges/india/bagdogra"
+   },
+   "IXC": {
+    "name": "Chandigarh International",
+    "path": "/lounges/india/chandigarh"
+   },
+   "IXD": {
+    "name": "Prayagraj",
+    "path": "/lounges/india/allahabad-bamrauli-air-force-base"
+   },
+   "IXJ": {
+    "name": "Jammu",
+    "path": "/lounges/india/jammu-satwari"
+   },
+   "IXM": {
+    "name": "Madurai International",
+    "path": "/lounges/india/madurai-international-airport"
+   },
+   "IXR": {
+    "name": "Ranchi Birsa Munda",
+    "path": "/lounges/india/birsa-munda"
+   },
+   "JAI": {
+    "name": "Jaipur International",
+    "path": "/lounges/india/jaipur-international"
+   },
+   "JDO": {
+    "name": "Juazeiro Do Norte O. Bezerra de Menezes",
+    "path": "/lounges/brazil/juazeiro-do-norte"
+   },
+   "JDZ": {
+    "name": "Jingdezhen Luojia",
+    "path": "/lounges/china/jingdezhen-luojia"
+   },
+   "JED": {
+    "name": "Jeddah King A Aziz Intl",
+    "path": "/lounges/saudi-arabia/king-abdulaziz-international"
+   },
+   "JER": {
+    "name": "Jersey",
+    "path": "/lounges/jersey/jersey"
+   },
+   "JFK": {
+    "name": "New York NY JFK International",
+    "path": "/lounges/united-states-of-america/john-f-kennedy-international"
+   },
+   "JGN": {
+    "name": "Jiayuguan",
+    "path": "/lounges/china/jiayuguan-jiuquan-airport"
+   },
+   "JGS": {
+    "name": "Ji'an Jinggangshan",
+    "path": "/lounges/china/jinggangshan"
+   },
+   "JHB": {
+    "name": "Johor Baru Senai International",
+    "path": "/lounges/malaysia/senai-international"
+   },
+   "JHG": {
+    "name": "Xishuangbanna Gasa",
+    "path": "/lounges/china/xishuangbanna-gasa"
+   },
+   "JIB": {
+    "name": "De Djibouti Internationa Airport",
+    "path": "/lounges/djibouti/djibouti-ambouli-international"
+   },
+   "JJD": {
+    "name": "Jericoacoara Ariston Pessoa Regional",
+    "path": "/lounges/brazil/ariston-pessoa-regional"
+   },
+   "JJN": {
+    "name": "Quanzhou Jinjiang International",
+    "path": "/lounges/china/quanzhou-jinjiang-international"
+   },
+   "JMK": {
+    "name": "Mykonos",
+    "path": "/lounges/greece/mykonos-island-national"
+   },
+   "JNB": {
+    "name": "Johannesburg O.R. Tambo Intl",
+    "path": "/lounges/south-africa/o-r-tambo-international"
+   },
+   "JNG": {
+    "name": "Jining Qufu",
+    "path": "/lounges/china/jining-qufu"
+   },
+   "JOI": {
+    "name": "Joinville Lauro Carneiro De Loyola",
+    "path": "/lounges/brazil/joinville-lauro-carneiro-de-loyola"
+   },
+   "JPA": {
+    "name": "Joao Pessoa Castro Pinto Intl",
+    "path": "/lounges/brazil/presidente-castro-pinto-international"
+   },
+   "JRO": {
+    "name": "Kilimanjaro International",
+    "path": "/lounges/tanzania/kilimanjaro-international"
+   },
+   "JSR": {
+    "name": "Jashore",
+    "path": "/lounges/bangladesh/jessore"
+   },
+   "JUH": {
+    "name": "Chizhou Jiuhuashan",
+    "path": "/lounges/china/chizhou-jiuhuashan"
+   },
+   "JUJ": {
+    "name": "Jujuy Gobernador Horacio Guzm\u00e1n International",
+    "path": "/lounges/argentina/gobernador-horacio-guzman-international"
+   },
+   "JUL": {
+    "name": "Juliaca",
+    "path": "/lounges/peru/inca-manco-capac-international"
+   },
+   "JXA": {
+    "name": "Jixi Xingkaihu",
+    "path": "/lounges/china/jixi-xingkaihu"
+   },
+   "KAN": {
+    "name": "Kano Mallam Aminu Intl",
+    "path": "/lounges/nigeria/mallam-aminu-kano-international"
+   },
+   "KBV": {
+    "name": "Krabi International",
+    "path": "/lounges/thailand/krabi"
+   },
+   "KCH": {
+    "name": "Kuching International",
+    "path": "/lounges/malaysia/kuching-international"
+   },
+   "KEF": {
+    "name": "Reykjavik Keflavik International",
+    "path": "/lounges/iceland/keflavik-international"
+   },
+   "KGF": {
+    "name": "Karaganda Sary-Arka",
+    "path": "/lounges/kazakhstan/sary-arka"
+   },
+   "KGL": {
+    "name": "Kigali International",
+    "path": "/lounges/rwanda/kigali-international-kanombe"
+   },
+   "KHG": {
+    "name": "Kashi Laining International",
+    "path": "/lounges/china/kashi-laining-international"
+   },
+   "KHH": {
+    "name": "Kaohsiung International",
+    "path": "/lounges/taiwan-region/kaohsiung-international"
+   },
+   "KHI": {
+    "name": "Karachi Jinnah International",
+    "path": "/lounges/pakistan/jinnah-international"
+   },
+   "KHN": {
+    "name": "Nanchang Changbei International",
+    "path": "/lounges/china/nanchang-changbei-international"
+   },
+   "KIN": {
+    "name": "Kingston Norman Manley Intl",
+    "path": "/lounges/jamaica/norman-manley-international"
+   },
+   "KIX": {
+    "name": "Kansai International",
+    "path": "/lounges/japan/kansai-international"
+   },
+   "KMG": {
+    "name": "Kunming Changshui International",
+    "path": "/lounges/china/kunming-changshui-international"
+   },
+   "KNO": {
+    "name": "Kualanamu International",
+    "path": "/lounges/indonesia/kualanamu-international"
+   },
+   "KOE": {
+    "name": "Kupang El Tari International",
+    "path": "/lounges/indonesia/el-tari"
+   },
+   "KOJ": {
+    "name": "Kagoshima",
+    "path": "/lounges/japan/kagoshima"
+   },
+   "KRK": {
+    "name": "John Paul II International Krak\u00f3w\u2013Balice",
+    "path": "/lounges/poland/john-paul-ii-international-krakow-balice"
+   },
+   "KRL": {
+    "name": "Korla Licheng",
+    "path": "/lounges/china/korla-licheng"
+   },
+   "KSC": {
+    "name": "Kosice International",
+    "path": "/lounges/slovakia/kosice-international"
+   },
+   "KTI": {
+    "name": "Phnom Penh Techo International",
+    "path": "/lounges/cambodia/techo-international"
+   },
+   "KTM": {
+    "name": "Kathmandu International",
+    "path": "/lounges/nepal/tribhuvan-international"
+   },
+   "KTW": {
+    "name": "Katowice Pyrzowice Intl",
+    "path": "/lounges/poland/katowice-international"
+   },
+   "KUL": {
+    "name": "Kuala Lumpur Intl",
+    "path": "/lounges/malaysia/kuala-lumpur-international"
+   },
+   "KWE": {
+    "name": "Guiyang Longdongbao International",
+    "path": "/lounges/china/guiyang-longdongbao-international"
+   },
+   "KWI": {
+    "name": "Kuwait International",
+    "path": "/lounges/kuwait/kuwait-international"
+   },
+   "KWL": {
+    "name": "Guilin Liangjiang International",
+    "path": "/lounges/china/guilin-liangjiang-international"
+   },
+   "LAP": {
+    "name": "La Paz Manuel Marquez de Leon Intl",
+    "path": "/lounges/mexico/manuel-marquez-de-leon-international"
+   },
+   "LAS": {
+    "name": "Las Vegas NV Harry Reid International",
+    "path": "/lounges/united-states-of-america/harry-reid-international"
+   },
+   "LAX": {
+    "name": "Los Angeles International",
+    "path": "/lounges/united-states-of-america/los-angeles-international"
+   },
+   "LBA": {
+    "name": "Leeds Bradford",
+    "path": "/lounges/united-kingdom/leeds-bradford"
+   },
+   "LBV": {
+    "name": "Libreville Leon Mba International",
+    "path": "/lounges/gabon/libreville-international"
+   },
+   "LCA": {
+    "name": "Larnaca International",
+    "path": "/lounges/cyprus/larnaca-international"
+   },
+   "LCE": {
+    "name": "Golos\u00f3n International Airport",
+    "path": "/lounges/honduras/goloson-international"
+   },
+   "LCG": {
+    "name": "A Coruna",
+    "path": "/lounges/spain/a-coruna"
+   },
+   "LCY": {
+    "name": "London City",
+    "path": "/lounges/united-kingdom/london-city"
+   },
+   "LDB": {
+    "name": "Londrina Jose Richa",
+    "path": "/lounges/brazil/londrina-governador-jose-richa"
+   },
+   "LDY": {
+    "name": "City of Derry Airport",
+    "path": "/lounges/united-kingdom/city-of-derry"
+   },
+   "LEJ": {
+    "name": "Leipzig/Halle",
+    "path": "/lounges/germany/leipzig-halle"
+   },
+   "LET": {
+    "name": "Leticia Alfredo Vasquez Cobo International",
+    "path": "/lounges/colombia/alfredo-vasquez-cobo-international"
+   },
+   "LFQ": {
+    "name": "Linfen Yaodu",
+    "path": "/lounges/china/linfen-qiaoli"
+   },
+   "LGA": {
+    "name": "New York NY LaGuardia",
+    "path": "/lounges/united-states-of-america/laguardia"
+   },
+   "LGK": {
+    "name": "Langkawi International",
+    "path": "/lounges/malaysia/langkawi-international"
+   },
+   "LGW": {
+    "name": "London Gatwick",
+    "path": "/lounges/united-kingdom/gatwick"
+   },
+   "LHE": {
+    "name": "Lahore Allama Iqbal Intl",
+    "path": "/lounges/pakistan/allama-iqbal-international"
+   },
+   "LHR": {
+    "name": "Heathrow",
+    "path": "/lounges/united-kingdom/heathrow"
+   },
+   "LHW": {
+    "name": "Lanzhou Zhongchuan",
+    "path": "/lounges/china/lanzhou-zhongchuan-international"
+   },
+   "LIM": {
+    "name": "Jorge Ch\u00e1vez International",
+    "path": "/lounges/peru/jorge-chavez-international"
+   },
+   "LIN": {
+    "name": "Milan Linate",
+    "path": "/lounges/italy/linate"
+   },
+   "LIR": {
+    "name": "Daniel Oduber Quir\u00f3s International",
+    "path": "/lounges/costa-rica/daniel-oduber-quiros-international"
+   },
+   "LIS": {
+    "name": "Lisbon Portela",
+    "path": "/lounges/portugal/lisbon-portela"
+   },
+   "LJG": {
+    "name": "Lijiang Sanyi",
+    "path": "/lounges/china/lijiang-sanyi"
+   },
+   "LJU": {
+    "name": "Ljubljana",
+    "path": "/lounges/slovenia/ljubljana-joze-pucnik-brnik"
+   },
+   "LKO": {
+    "name": "Lucknow Chaudhary Charan Singh Intl",
+    "path": "/lounges/india/chaudhary-charan-singh-international"
+   },
+   "LNZ": {
+    "name": "Linz",
+    "path": "/lounges/austria/linz-blue-danube"
+   },
+   "LOH": {
+    "name": "Loja Catamayo",
+    "path": "/lounges/ecuador/ciudad-de-catamayo"
+   },
+   "LOP": {
+    "name": "Lombok International",
+    "path": "/lounges/indonesia/lombok-international"
+   },
+   "LOS": {
+    "name": "Lagos Murtala Muhammed",
+    "path": "/lounges/nigeria/murtala-muhammed-international"
+   },
+   "LPA": {
+    "name": "Gran Canaria Las Palmas",
+    "path": "/lounges/spain/gran-canaria"
+   },
+   "LPB": {
+    "name": "La Paz El Alto International",
+    "path": "/lounges/bolivia/el-alto-international"
+   },
+   "LPI": {
+    "name": "Linkoping City",
+    "path": "/lounges/sweden/linkoping-saab"
+   },
+   "LPL": {
+    "name": "Liverpool John Lennon",
+    "path": "/lounges/united-kingdom/liverpool-john-lennon"
+   },
+   "LRM": {
+    "name": "La Romana Casa De Campo Intl",
+    "path": "/lounges/dominican-republic/la-romana-international-casa-de-campo-international"
+   },
+   "LSC": {
+    "name": "La Serena La Florida",
+    "path": "/lounges/chile/la-florida"
+   },
+   "LTN": {
+    "name": "London Luton",
+    "path": "/lounges/united-kingdom/luton"
+   },
+   "LUM": {
+    "name": "Dehong Mangshi",
+    "path": "/lounges/china/dehong-mangshi"
+   },
+   "LUN": {
+    "name": "Kenneth Kaunda International",
+    "path": "/lounges/zambia/kenneth-kaunda-international"
+   },
+   "LUX": {
+    "name": "Luxembourg Findel Intl",
+    "path": "/lounges/luxembourg/luxembourg-findel"
+   },
+   "LUZ": {
+    "name": "Lublin Swidnik",
+    "path": "/lounges/poland/lublin"
+   },
+   "LVI": {
+    "name": "Harry Mwanga Nkumbula International",
+    "path": "/lounges/zambia/harry-mwanga-nkumbula-international"
+   },
+   "LXR": {
+    "name": "Luxor International",
+    "path": "/lounges/egypt/luxor-international"
+   },
+   "LYG": {
+    "name": "Lianyungang Huaguoshan Intl",
+    "path": "/lounges/china/lianyungang-huaguoshan-international"
+   },
+   "LYI": {
+    "name": "Linyi Qiyang",
+    "path": "/lounges/china/linyi-qiyang"
+   },
+   "LYP": {
+    "name": "Faisalabad International",
+    "path": "/lounges/pakistan/faisalabad-international"
+   },
+   "LYS": {
+    "name": "Lyon St Exup\u00e9ry",
+    "path": "/lounges/france/lyon-saint-exupery"
+   },
+   "LZH": {
+    "name": "Liuzhou Bailian",
+    "path": "/lounges/china/liuzhou-bailian"
+   },
+   "LZO": {
+    "name": "Luzhou Yunlong",
+    "path": "/lounges/china/luzhou-yunlong"
+   },
+   "MAA": {
+    "name": "Chennai International",
+    "path": "/lounges/india/chennai-international"
+   },
+   "MAD": {
+    "name": "Madrid Adolfo Suarez-Barajas",
+    "path": "/lounges/spain/adolfo-suarez-madrid-barajas"
+   },
+   "MAH": {
+    "name": "Menorca",
+    "path": "/lounges/spain/menorca-mahon"
+   },
+   "MAN": {
+    "name": "Manchester International",
+    "path": "/lounges/united-kingdom/manchester"
+   },
+   "MAO": {
+    "name": "Eduardo Gomes International",
+    "path": "/lounges/brazil/eduardo-gomes-international"
+   },
+   "MBA": {
+    "name": "Mombasa Moi International",
+    "path": "/lounges/kenya/moi-international"
+   },
+   "MBJ": {
+    "name": "Montego Bay Sangster Intl",
+    "path": "/lounges/jamaica/sangster-international"
+   },
+   "MCI": {
+    "name": "Kansas City MO International",
+    "path": "/lounges/united-states-of-america/kansas-city-international"
+   },
+   "MCO": {
+    "name": "Orlando FL International",
+    "path": "/lounges/united-states-of-america/orlando-international"
+   },
+   "MCP": {
+    "name": "Macapa Alberto Alcolumbre Intl",
+    "path": "/lounges/brazil/alberto-alcolumbre-international"
+   },
+   "MCT": {
+    "name": "Muscat International",
+    "path": "/lounges/oman/muscat-international"
+   },
+   "MCZ": {
+    "name": "Maceio Zumbi dos Palmares Intl",
+    "path": "/lounges/brazil/zumbi-dos-palmares-international"
+   },
+   "MDC": {
+    "name": "Manado Sam Ratulangi",
+    "path": "/lounges/indonesia/sam-ratulangi-international"
+   },
+   "MDE": {
+    "name": "Medellin JM Cordova",
+    "path": "/lounges/colombia/jose-maria-cordova-international"
+   },
+   "MDL": {
+    "name": "Mandalay International",
+    "path": "/lounges/myanmar/mandalay-international"
+   },
+   "MDW": {
+    "name": "Chicago IL Midway International",
+    "path": "/lounges/united-states-of-america/midway-international"
+   },
+   "MDZ": {
+    "name": "Mendoza El Plumerillo",
+    "path": "/lounges/argentina/gov-francisco-gabrielli-international-el-plumerillo"
+   },
+   "MEC": {
+    "name": "Manta Eloy Alfaro Intl",
+    "path": "/lounges/ecuador/eloy-alfaro-international"
+   },
+   "MED": {
+    "name": "Madinah Mohammad Bin Abdulaziz",
+    "path": "/lounges/saudi-arabia/mohammad-bin-abdulaziz"
+   },
+   "MEL": {
+    "name": "Melbourne",
+    "path": "/lounges/australia/melbourne"
+   },
+   "MEX": {
+    "name": "Mexico City International",
+    "path": "/lounges/mexico/mexico-city-international"
+   },
+   "MFM": {
+    "name": "Macau Intl",
+    "path": "/lounges/macau/macau-international"
+   },
+   "MGF": {
+    "name": "S\u00edlvio Name J\u00fanior Regional",
+    "path": "/lounges/brazil/silvio-name-junior-regional"
+   },
+   "MHH": {
+    "name": "Marsh Harbour International",
+    "path": "/lounges/bahamas/marsh-harbour"
+   },
+   "MIA": {
+    "name": "Miami International",
+    "path": "/lounges/united-states-of-america/miami-international"
+   },
+   "MID": {
+    "name": "Merida International",
+    "path": "/lounges/mexico/manuel-crescencio-rejon-international"
+   },
+   "MIG": {
+    "name": "Mianyang Nanjiao",
+    "path": "/lounges/china/mianyang-nanjiao"
+   },
+   "MIR": {
+    "name": "Monastir Habib Bourguiba Intl",
+    "path": "/lounges/tunisia/monastir-habib-bourguiba-international"
+   },
+   "MLA": {
+    "name": "Malta International",
+    "path": "/lounges/malta/malta-international-luqa"
+   },
+   "MLB": {
+    "name": "Melbourne FL Orlando Intl",
+    "path": "/lounges/united-states-of-america/melbourne-orlando-international"
+   },
+   "MLE": {
+    "name": "Male International",
+    "path": "/lounges/maldives/ibrahim-nasir-international"
+   },
+   "MME": {
+    "name": "Teesside International",
+    "path": "/lounges/united-kingdom/teesside-international"
+   },
+   "MNL": {
+    "name": "Ninoy Aquino International \u00a0/\u00a0Villamor Air Base",
+    "path": "/lounges/philippines/ninoy-aquino-international"
+   },
+   "MPL": {
+    "name": "Montpellier Mediterranee",
+    "path": "/lounges/france/montpellier-mediterranee-frejorgues"
+   },
+   "MPM": {
+    "name": "Maputo International",
+    "path": "/lounges/mozambique/maputo-international"
+   },
+   "MQP": {
+    "name": "Kruger Mpumalanga International",
+    "path": "/lounges/south-africa/kruger-mpumalanga-international"
+   },
+   "MRS": {
+    "name": "Marseille Provence",
+    "path": "/lounges/france/marseille-provence"
+   },
+   "MRU": {
+    "name": "Mauritius S.S.R. International",
+    "path": "/lounges/mauritius/sir-seewoosagur-ramgoolam-international"
+   },
+   "MSP": {
+    "name": "Minn/St. Paul MN International",
+    "path": "/lounges/united-states-of-america/minneapolis-saint-paul-international"
+   },
+   "MSQ": {
+    "name": "Minsk International",
+    "path": "/lounges/belarus/minsk-national-airport"
+   },
+   "MSY": {
+    "name": "Louis Armstrong New Orleans International",
+    "path": "/lounges/united-states-of-america/louis-armstrong-new-orleans-international"
+   },
+   "MTR": {
+    "name": "Monteria Los Garzones",
+    "path": "/lounges/colombia/los-garzones"
+   },
+   "MTT": {
+    "name": "Minatitlan International",
+    "path": "/lounges/mexico/minatitlan-coatzacoalcos-international"
+   },
+   "MTY": {
+    "name": "General Mariano Escobedo International",
+    "path": "/lounges/mexico/general-mariano-escobedo-international"
+   },
+   "MUB": {
+    "name": "Maun International",
+    "path": "/lounges/botswana/maun"
+   },
+   "MUC": {
+    "name": "Munich Franz-Josef Strauss",
+    "path": "/lounges/germany/munich"
+   },
+   "MUX": {
+    "name": "Multan International",
+    "path": "/lounges/pakistan/multan-international"
+   },
+   "MVD": {
+    "name": "Montevideo Carrasco Intl",
+    "path": "/lounges/uruguay/carrasco-gral-cesareo-l-berisso-international"
+   },
+   "MXL": {
+    "name": "Mexicali R Sanchez Taboada Intl",
+    "path": "/lounges/mexico/general-rodolfo-sanchez-taboada-international"
+   },
+   "MXP": {
+    "name": "Milan Malpensa",
+    "path": "/lounges/italy/milan-malpensa"
+   },
+   "MZT": {
+    "name": "Mazatlan Rafael Buelna Intl",
+    "path": "/lounges/mexico/general-rafael-buelna-international"
+   },
+   "NAG": {
+    "name": "Dr. Babasaheb Ambedkar International",
+    "path": "/lounges/india/dr-babasaheb-ambedkar-international"
+   },
+   "NAN": {
+    "name": "Nadi International",
+    "path": "/lounges/fiji/nadi-international"
+   },
+   "NAO": {
+    "name": "Nanchong Gaoping",
+    "path": "/lounges/china/nanchong-gaoping-airport"
+   },
+   "NAP": {
+    "name": "Naples International",
+    "path": "/lounges/italy/naples-international"
+   },
+   "NAS": {
+    "name": "Nassau Lynden Pindling Intl",
+    "path": "/lounges/bahamas/lynden-pindling-international"
+   },
+   "NAT": {
+    "name": "Natal Intl",
+    "path": "/lounges/brazil/sao-goncalo-do-amarante-governador-aluizio-alves-international"
+   },
+   "NBE": {
+    "name": "Enfidha Hammamet International",
+    "path": "/lounges/tunisia/enfidha-hammamet-international"
+   },
+   "NBO": {
+    "name": "Nairobi Jomo Kenyatta Intl",
+    "path": "/lounges/kenya/jomo-kenyatta-international"
+   },
+   "NCE": {
+    "name": "Nice Cote d Azur",
+    "path": "/lounges/france/nice-cote-dazur"
+   },
+   "NCL": {
+    "name": "Newcastle International",
+    "path": "/lounges/united-kingdom/newcastle"
+   },
+   "NDR": {
+    "name": "Nador El Aroui",
+    "path": "/lounges/morocco/nador-international"
+   },
+   "NGB": {
+    "name": "Ningbo Lishe International",
+    "path": "/lounges/china/ningbo-lishe-international"
+   },
+   "NGO": {
+    "name": "Chubu Centrair International",
+    "path": "/lounges/japan/chubu-centrair-international"
+   },
+   "NKG": {
+    "name": "Nanjing Lukou International",
+    "path": "/lounges/china/nanjing-lukou-international"
+   },
+   "NLA": {
+    "name": "Simon Mwansa Kapwepwe International",
+    "path": "/lounges/zambia/simon-mwansa-kapwepwe-international"
+   },
+   "NLU": {
+    "name": "Mexico City Felipe Angeles Intl",
+    "path": "/lounges/mexico/mexico-city-felipe-angeles-international"
+   },
+   "NNG": {
+    "name": "Nanning Wuxu International",
+    "path": "/lounges/china/nanning-wuxu-international"
+   },
+   "NNY": {
+    "name": "Nanyang Jiangying",
+    "path": "/lounges/china/nanyang-jiangying"
+   },
+   "NOC": {
+    "name": "Ireland West Airport Knock",
+    "path": "/lounges/ireland/ireland-west-knock"
+   },
+   "NQY": {
+    "name": "Newquay Cornwall",
+    "path": "/lounges/united-kingdom/newquay"
+   },
+   "NQZ": {
+    "name": "Astana Nursultan Nazarbayev Intl",
+    "path": "/lounges/kazakhstan/nursultan-nazarbayev-international"
+   },
+   "NRT": {
+    "name": "Narita International",
+    "path": "/lounges/japan/narita-international"
+   },
+   "NTE": {
+    "name": "Nantes Atlantique",
+    "path": "/lounges/france/nantes-atlantique"
+   },
+   "NTG": {
+    "name": "Nantong Xingdong",
+    "path": "/lounges/china/nantong-xingdong"
+   },
+   "NUE": {
+    "name": "Nuremberg",
+    "path": "/lounges/germany/nuremberg"
+   },
+   "NUM": {
+    "name": "Neom Bay",
+    "path": "/lounges/saudi-arabia/neom-bay"
+   },
+   "NVA": {
+    "name": "Neiva Benito Salas",
+    "path": "/lounges/colombia/benito-salas"
+   },
+   "NVT": {
+    "name": "Navegantes Victor Konder Intl",
+    "path": "/lounges/brazil/navegantes-ministro-victor-konder-international"
+   },
+   "NWI": {
+    "name": "Norwich International",
+    "path": "/lounges/united-kingdom/norwich-international"
+   },
+   "NYO": {
+    "name": "Stockholm Skavsta",
+    "path": "/lounges/sweden/stockholm-skavsta"
+   },
+   "OAK": {
+    "name": "Oakland CA Intl",
+    "path": "/lounges/united-states-of-america/oakland-international"
+   },
+   "OAX": {
+    "name": "Oaxaca Xoxocotlan Intl",
+    "path": "/lounges/mexico/xoxocotlan-international"
+   },
+   "OCC": {
+    "name": "Coca Francisco De Orellana",
+    "path": "/lounges/ecuador/francisco-de-orellana"
+   },
+   "OGG": {
+    "name": "Kahului HI",
+    "path": "/lounges/united-states-of-america/kahului"
+   },
+   "OHD": {
+    "name": "Ohrid St. Paul the Apostle",
+    "path": "/lounges/north-macedonia/ohrid-st-paul-the-apostle"
+   },
+   "OLB": {
+    "name": "Olbia Costa Smeralda",
+    "path": "/lounges/italy/olbia-costa-smeralda"
+   },
+   "ONT": {
+    "name": "Ontario CA International",
+    "path": "/lounges/united-states-of-america/ontario-international"
+   },
+   "OOL": {
+    "name": "Gold Coast (Coolangatta)",
+    "path": "/lounges/australia/gold-coast-coolangatta"
+   },
+   "OPO": {
+    "name": "Porto Francisco S.Carneiro Int",
+    "path": "/lounges/portugal/francisco-de-sa-carneiro"
+   },
+   "OPS": {
+    "name": "Sinop Presidente Joao Batista Figueiredo",
+    "path": "/lounges/brazil/presidente-joao-figueiredo"
+   },
+   "ORD": {
+    "name": "Chicago IL O Hare Intl",
+    "path": "/lounges/united-states-of-america/ohare-international"
+   },
+   "ORK": {
+    "name": "Cork",
+    "path": "/lounges/ireland/cork"
+   },
+   "ORY": {
+    "name": "Paris Orly",
+    "path": "/lounges/france/orly"
+   },
+   "OSL": {
+    "name": "Oslo , Gardermoen",
+    "path": "/lounges/norway/oslo-gardermoen"
+   },
+   "OSR": {
+    "name": "Ostrava Leos Janacek",
+    "path": "/lounges/czech-republic/leos-janacek-ostrava"
+   },
+   "OST": {
+    "name": "Ostend\u2013bruges International Airport",
+    "path": "/lounges/belgium/ostend-bruges-international"
+   },
+   "OTP": {
+    "name": "Bucharest Henri Coanda Intl",
+    "path": "/lounges/romania/henri-coanda-international"
+   },
+   "OUD": {
+    "name": "Oujda Angads",
+    "path": "/lounges/morocco/angads"
+   },
+   "OVD": {
+    "name": "Asturias",
+    "path": "/lounges/spain/asturias-oviedo"
+   },
+   "PAT": {
+    "name": "Lok Nayak Jayaprakash",
+    "path": "/lounges/india/lok-nayak-jayaprakash"
+   },
+   "PBC": {
+    "name": "Puebla Hermanos Serdan Intl",
+    "path": "/lounges/mexico/hermanos-serdan-international"
+   },
+   "PCL": {
+    "name": "Pucallpa International",
+    "path": "/lounges/peru/fap-captain-david-abensur-rengifo-international"
+   },
+   "PDP": {
+    "name": "Punta Del Este Intl",
+    "path": "/lounges/uruguay/capitan-de-corbeta-carlos-a-curbelo-international"
+   },
+   "PDX": {
+    "name": "Portland International",
+    "path": "/lounges/united-states-of-america/portland-international"
+   },
+   "PEI": {
+    "name": "Pereira Matecana Intl",
+    "path": "/lounges/colombia/matecana-international-airport"
+   },
+   "PEK": {
+    "name": "Beijing Capital International",
+    "path": "/lounges/china/beijing-capital-international"
+   },
+   "PEM": {
+    "name": "Puerto Maldonado Padre Aldamiz Intl",
+    "path": "/lounges/peru/padre-aldamiz-international"
+   },
+   "PEN": {
+    "name": "Penang International",
+    "path": "/lounges/malaysia/penang-international"
+   },
+   "PER": {
+    "name": "Perth",
+    "path": "/lounges/australia/perth"
+   },
+   "PEW": {
+    "name": "Peshawar Bacha Khan International",
+    "path": "/lounges/pakistan/bacha-khan-international"
+   },
+   "PFO": {
+    "name": "Paphos International",
+    "path": "/lounges/cyprus/paphos-international"
+   },
+   "PGK": {
+    "name": "Depati Amir Airport",
+    "path": "/lounges/indonesia/depati-amir"
+   },
+   "PHL": {
+    "name": "Philadelphia PA International",
+    "path": "/lounges/united-states-of-america/philadelphia-international"
+   },
+   "PHX": {
+    "name": "Phoenix AZ Sky Harbor Intl",
+    "path": "/lounges/united-states-of-america/phoenix-sky-harbor-international"
+   },
+   "PIT": {
+    "name": "Pittsburgh PA International",
+    "path": "/lounges/united-states-of-america/pittsburgh-international"
+   },
+   "PIU": {
+    "name": "Piura",
+    "path": "/lounges/peru/fap-captain-guillermo-concha-iberico-international"
+   },
+   "PKU": {
+    "name": "Sultan Syarif Kasim II International",
+    "path": "/lounges/indonesia/sultan-syarif-kasim-ii-international"
+   },
+   "PKX": {
+    "name": "Beijing Daxing International",
+    "path": "/lounges/china/beijing-daxing-international"
+   },
+   "PLM": {
+    "name": "Sultan Mahmud Badaruddin II International",
+    "path": "/lounges/indonesia/sultan-mahmud-badaruddin-ii-international"
+   },
+   "PLZ": {
+    "name": "Port Elizabeth",
+    "path": "/lounges/south-africa/port-elizabeth"
+   },
+   "PMC": {
+    "name": "Puerto Montt El Tepual",
+    "path": "/lounges/chile/el-tepual"
+   },
+   "PMI": {
+    "name": "Palma de Mallorca",
+    "path": "/lounges/spain/palma-de-mallorca"
+   },
+   "PMO": {
+    "name": "Falcone\u2013Borsellino (Punta Raisi)",
+    "path": "/lounges/italy/falcone-borsellino-punta-raisi"
+   },
+   "PMW": {
+    "name": "Palmas Brigadeiro Lysias Rodrigues",
+    "path": "/lounges/brazil/palmas-brigadeiro-lysias-rodrigues"
+   },
+   "PNK": {
+    "name": "Supadio",
+    "path": "/lounges/indonesia/supadio"
+   },
+   "PNQ": {
+    "name": "Pune International",
+    "path": "/lounges/india/pune"
+   },
+   "PNR": {
+    "name": "Pointe-Noire Antonio Agostinho-Neto Intl",
+    "path": "/lounges/congo-republic-of-the/pointe-noire"
+   },
+   "POA": {
+    "name": "Salgado Filho International",
+    "path": "/lounges/brazil/salgado-filho-international"
+   },
+   "POP": {
+    "name": "Puerto Plata G.L Intl",
+    "path": "/lounges/dominican-republic/gregorio-luperon-international"
+   },
+   "POS": {
+    "name": "Port of Spain Piarco Intl",
+    "path": "/lounges/trinidad-and-tobago/piarco-international"
+   },
+   "POZ": {
+    "name": "Pozna\u0144\u2013\u0141awica Henryk Wieniawski",
+    "path": "/lounges/poland/poznan-awica-henryk-wieniawski"
+   },
+   "PPN": {
+    "name": "Popayan Guillermo Leon Valencia",
+    "path": "/lounges/colombia/guillermo-leon-valencia"
+   },
+   "PPS": {
+    "name": "Puerto Princesa International",
+    "path": "/lounges/philippines/puerto-princesa-international"
+   },
+   "PQC": {
+    "name": "Phu Quoc Island International",
+    "path": "/lounges/vietnam/phu-quoc-international"
+   },
+   "PRG": {
+    "name": "Prague Vaclav Havel",
+    "path": "/lounges/czech-republic/vaclav-havel-prague"
+   },
+   "PSA": {
+    "name": "Pisa Galileo Galilei Intl",
+    "path": "/lounges/italy/pisa-international-galileo-galilei"
+   },
+   "PSO": {
+    "name": "Pasto Antonio Narino",
+    "path": "/lounges/colombia/antonio-narino"
+   },
+   "PTP": {
+    "name": "Pointe-a-Pitre Le Raizet",
+    "path": "/lounges/guadeloupe/pointe-a-pitre-international-le-raizet"
+   },
+   "PTY": {
+    "name": "Panama Tocumen International",
+    "path": "/lounges/panama/tocumen-international"
+   },
+   "PUJ": {
+    "name": "Punta Cana International",
+    "path": "/lounges/dominican-republic/punta-cana-international"
+   },
+   "PUQ": {
+    "name": "Punta Arenas C.I.D.C Intl",
+    "path": "/lounges/chile/presidente-carlos-ibanez-del-campo-international"
+   },
+   "PUS": {
+    "name": "Busan Gimhae International",
+    "path": "/lounges/south-korea/gimhae-international"
+   },
+   "PVD": {
+    "name": "Providence RI - Theodore Francis Green State",
+    "path": "/lounges/united-states-of-america/theodore-francis-green-state"
+   },
+   "PVG": {
+    "name": "Shanghai Pudong International",
+    "path": "/lounges/china/shanghai-pudong-international"
+   },
+   "PVR": {
+    "name": "Puerto Vallarta Intl",
+    "path": "/lounges/mexico/licenciado-gustavo-diaz-ordaz-international"
+   },
+   "PXU": {
+    "name": "Pleiku",
+    "path": "/lounges/vietnam/pleiku"
+   },
+   "PZI": {
+    "name": "Panzhihua Baoanying",
+    "path": "/lounges/china/panzhihua-baoanying"
+   },
+   "QRO": {
+    "name": "Queretaro Intercontinental",
+    "path": "/lounges/mexico/queretaro-intercontinental"
+   },
+   "RAE": {
+    "name": "Arar",
+    "path": "/lounges/saudi-arabia/arar-domestic"
+   },
+   "RAK": {
+    "name": "Marrakesh Menara",
+    "path": "/lounges/morocco/marrakesh-menara"
+   },
+   "RAO": {
+    "name": "Ribeirao Preto Leite Lopes",
+    "path": "/lounges/brazil/leite-lopes"
+   },
+   "REC": {
+    "name": "Recife Guararapes Intl",
+    "path": "/lounges/brazil/recife-guararapes-gilberto-freyre-international"
+   },
+   "REL": {
+    "name": "Trelew Almirante M.A. Zar",
+    "path": "/lounges/argentina/almirante-marcos-a-zar"
+   },
+   "REX": {
+    "name": "Reynosa Lucio Blanco International",
+    "path": "/lounges/mexico/general-lucio-blanco-international"
+   },
+   "RGN": {
+    "name": "Yangon International",
+    "path": "/lounges/myanmar/yangon-international"
+   },
+   "RHO": {
+    "name": "Rhodes Diagoras International",
+    "path": "/lounges/greece/rhodes-international"
+   },
+   "RIX": {
+    "name": "Riga International",
+    "path": "/lounges/latvia/riga-international"
+   },
+   "RIZ": {
+    "name": "Rizhao Shanzihe",
+    "path": "/lounges/china/rizhao-shanzihe"
+   },
+   "RKT": {
+    "name": "Ras Al-Khaimah International",
+    "path": "/lounges/united-arab-emirates/ras-al-khaimah-international"
+   },
+   "RMF": {
+    "name": "Marsa Alam International",
+    "path": "/lounges/egypt/marsa-alam-international"
+   },
+   "RMQ": {
+    "name": "Taichung (Taichung Ching Chuan Kang)",
+    "path": "/lounges/taiwan-region/taichung-taichung-ching-chuan-kang"
+   },
+   "ROS": {
+    "name": "Rosario Islas Malvinas",
+    "path": "/lounges/argentina/rosario-islas-malvinas-international"
+   },
+   "RPR": {
+    "name": "Raipur Swami Vivekananda",
+    "path": "/lounges/india/swami-vivekananda"
+   },
+   "RRJ": {
+    "name": "Rio De Janeiro Jacarepagua\u2013Roberto Marinho",
+    "path": "/lounges/brazil/jacarepagua-roberto-marinho"
+   },
+   "RTM": {
+    "name": "Rotterdam",
+    "path": "/lounges/netherlands/rotterdam-the-hague"
+   },
+   "RUH": {
+    "name": "King Khalid International",
+    "path": "/lounges/saudi-arabia/king-khalid-international"
+   },
+   "RZE": {
+    "name": "Rzeszow - Jasionka",
+    "path": "/lounges/poland/rzeszow-jasionka"
+   },
+   "SAI": {
+    "name": "Siem Reap - Angkor",
+    "path": "/lounges/cambodia/siem-reap-international"
+   },
+   "SAL": {
+    "name": "San Salvador El Salvador Intl",
+    "path": "/lounges/el-salvador/el-salvador-international"
+   },
+   "SAN": {
+    "name": "San Diego CA Int'l",
+    "path": "/lounges/united-states-of-america/san-diego-international"
+   },
+   "SAP": {
+    "name": "San Pedro Sula Intl",
+    "path": "/lounges/honduras/ramon-villeda-morales-international"
+   },
+   "SAW": {
+    "name": "Istanbul Sabiha Gokcen Intl",
+    "path": "/lounges/turkey/sabiha-gokcen-international"
+   },
+   "SBZ": {
+    "name": "Sibiu International",
+    "path": "/lounges/romania/sibiu-international"
+   },
+   "SCL": {
+    "name": "Arturo Merino Ben\u00edtez International",
+    "path": "/lounges/chile/arturo-merino-benitez-international"
+   },
+   "SCN": {
+    "name": "Saarbruecken",
+    "path": "/lounges/germany/saarbrucken"
+   },
+   "SCQ": {
+    "name": "Santiago de Compostela",
+    "path": "/lounges/spain/santiago-de-compostela"
+   },
+   "SCY": {
+    "name": "San Cristobal Island",
+    "path": "/lounges/ecuador/san-cristobal"
+   },
+   "SDQ": {
+    "name": "Santo Domingo Las Americas Intl",
+    "path": "/lounges/dominican-republic/las-americas-international"
+   },
+   "SDU": {
+    "name": "Rio de Janeiro Santos Dumont",
+    "path": "/lounges/brazil/santos-dumont"
+   },
+   "SEA": {
+    "name": "Seattle\u2013Tacoma International",
+    "path": "/lounges/united-states-of-america/seattle-tacoma-international"
+   },
+   "SEN": {
+    "name": "London Southend",
+    "path": "/lounges/united-kingdom/london-southend"
+   },
+   "SEZ": {
+    "name": "Mahe Island Seychelles International",
+    "path": "/lounges/seychelles/seychelles-international"
+   },
+   "SFO": {
+    "name": "San Francisco CA Intl",
+    "path": "/lounges/united-states-of-america/san-francisco-international"
+   },
+   "SGN": {
+    "name": "Ho Chi Minh TSN International",
+    "path": "/lounges/vietnam/tan-son-nhat-international"
+   },
+   "SHA": {
+    "name": "Shanghai Hongqiao International",
+    "path": "/lounges/china/shanghai-hongqiao-international"
+   },
+   "SHE": {
+    "name": "Shenyang Taoxian International",
+    "path": "/lounges/china/shenyang-taoxian-international"
+   },
+   "SHJ": {
+    "name": "Sharjah International",
+    "path": "/lounges/united-arab-emirates/sharjah-international"
+   },
+   "SIN": {
+    "name": "Singapore Changi Airport",
+    "path": "/lounges/singapore/singapore-changi-airport"
+   },
+   "SJC": {
+    "name": "San Jose International",
+    "path": "/lounges/united-states-of-america/san-jose-international"
+   },
+   "SJD": {
+    "name": "Los Cabos International",
+    "path": "/lounges/mexico/los-cabos-international"
+   },
+   "SJJ": {
+    "name": "Sarajevo International",
+    "path": "/lounges/bosnia-and-herzegovina/sarajevo-international"
+   },
+   "SJO": {
+    "name": "San Jose International",
+    "path": "/lounges/costa-rica/juan-santamaria-international"
+   },
+   "SJP": {
+    "name": "Sao Jose Do Rio Preto Eribelto Manoel Reino",
+    "path": "/lounges/brazil/prof-eribelto-manoel-reino-state"
+   },
+   "SJU": {
+    "name": "San Juan Intl",
+    "path": "/lounges/puerto-rico/luis-munoz-marin-international"
+   },
+   "SJW": {
+    "name": "Shijiazhuang Zhengding International",
+    "path": "/lounges/china/shijiazhuang-zhengding-international"
+   },
+   "SKD": {
+    "name": "Samarkand International",
+    "path": "/lounges/uzbekistan/samarkand-international"
+   },
+   "SKG": {
+    "name": "Thessaloniki Makedonia",
+    "path": "/lounges/greece/thessaloniki-macedonia"
+   },
+   "SKP": {
+    "name": "Skopje International",
+    "path": "/lounges/north-macedonia/skopje-alexander-the-great"
+   },
+   "SLA": {
+    "name": "Salta Martin M. de Guemes Intl",
+    "path": "/lounges/argentina/martin-miguel-de-guemes-international"
+   },
+   "SLC": {
+    "name": "Salt Lake City UT Intl",
+    "path": "/lounges/united-states-of-america/salt-lake-city-international"
+   },
+   "SLL": {
+    "name": "Salalah International",
+    "path": "/lounges/oman/salalah-international"
+   },
+   "SLP": {
+    "name": "Ponciano Arriaga International",
+    "path": "/lounges/mexico/ponciano-arriaga-international"
+   },
+   "SLZ": {
+    "name": "Sao Luis Marechal Cunha Machado Intl",
+    "path": "/lounges/brazil/marechal-cunha-machado-international"
+   },
+   "SMF": {
+    "name": "Sacramento CA Intl",
+    "path": "/lounges/united-states-of-america/sacramento-international"
+   },
+   "SMR": {
+    "name": "Santa Marta Simon Bolivar Intl",
+    "path": "/lounges/colombia/simon-bolivar-international"
+   },
+   "SNN": {
+    "name": "Shannon International",
+    "path": "/lounges/ireland/shannon"
+   },
+   "SOC": {
+    "name": "Solo City Adisumarmo",
+    "path": "/lounges/indonesia/adisumarmo-international"
+   },
+   "SOF": {
+    "name": "Sofia",
+    "path": "/lounges/bulgaria/sofia"
+   },
+   "SOU": {
+    "name": "Southampton",
+    "path": "/lounges/united-kingdom/southampton"
+   },
+   "SPD": {
+    "name": "Saidpur",
+    "path": "/lounges/bangladesh/saidpur"
+   },
+   "SPN": {
+    "name": "Saipan International",
+    "path": "/lounges/northern-mariana-islands/saipan-international-francisco-c-ada-intl"
+   },
+   "SPX": {
+    "name": "Sphinx International",
+    "path": "/lounges/egypt/sphinx-international"
+   },
+   "SRG": {
+    "name": "Semarang Ahmad Yani",
+    "path": "/lounges/indonesia/achmad-yani-international"
+   },
+   "SSA": {
+    "name": "Deputado Lu\u00eds Eduardo Magalh\u00e3es International",
+    "path": "/lounges/brazil/deputado-luis-eduardo-magalhaes-international"
+   },
+   "SSH": {
+    "name": "Sharm el-Sheikh International",
+    "path": "/lounges/egypt/sharm-el-sheikh-international"
+   },
+   "STI": {
+    "name": "Santiago Cibao Intl",
+    "path": "/lounges/dominican-republic/cibao-international"
+   },
+   "STL": {
+    "name": "Lambert\u2013St. Louis International",
+    "path": "/lounges/united-states-of-america/lambert-st-louis-international"
+   },
+   "STN": {
+    "name": "London Stansted",
+    "path": "/lounges/united-kingdom/london-stansted"
+   },
+   "STR": {
+    "name": "Stuttgart",
+    "path": "/lounges/germany/stuttgart"
+   },
+   "SUB": {
+    "name": "Juanda International",
+    "path": "/lounges/indonesia/juanda-international"
+   },
+   "SVG": {
+    "name": "Stavanger , Sola",
+    "path": "/lounges/norway/stavanger-sola"
+   },
+   "SVQ": {
+    "name": "Sevilla International",
+    "path": "/lounges/spain/seville"
+   },
+   "SWA": {
+    "name": "Shantou Jieyang Chaoshan International",
+    "path": "/lounges/china/jieyang-chaoshan-international"
+   },
+   "SXM": {
+    "name": "St. Maarten Princess Juliana Intl",
+    "path": "/lounges/sint-maarten/princess-juliana-international"
+   },
+   "SXR": {
+    "name": "Srinagar Sheikh Ul-Alam International",
+    "path": "/lounges/india/sheikh-ul-alam-international"
+   },
+   "SYD": {
+    "name": "Sydney Kingsford Smith",
+    "path": "/lounges/australia/sydney-kingsford-smith"
+   },
+   "SYR": {
+    "name": "Syracuse NY Hancock Intl",
+    "path": "/lounges/united-states-of-america/syracuse-hancock-international"
+   },
+   "SYX": {
+    "name": "Sanya Phoenix International",
+    "path": "/lounges/china/sanya-phoenix-international"
+   },
+   "SZB": {
+    "name": "Subang Sultan Abdul Aziz Shah",
+    "path": "/lounges/malaysia/sultan-abdul-aziz-shah"
+   },
+   "SZG": {
+    "name": "Salzburg",
+    "path": "/lounges/austria/salzburg"
+   },
+   "SZH": {
+    "name": "Shuozhou Zirun",
+    "path": "/lounges/china/shuozhou-zirun"
+   },
+   "SZX": {
+    "name": "Shenzhen Baoan International",
+    "path": "/lounges/china/shenzhen-baoan-international"
+   },
+   "TAM": {
+    "name": "Tampico General Francisco Javier Mina Intl",
+    "path": "/lounges/mexico/general-francisco-javier-mina-international"
+   },
+   "TAO": {
+    "name": "Qingdao Jiaodong International",
+    "path": "/lounges/china/qingdao-jiaodong-international"
+   },
+   "TAP": {
+    "name": "Tapachula International",
+    "path": "/lounges/mexico/tapachula-international"
+   },
+   "TAS": {
+    "name": "Tashkent International",
+    "path": "/lounges/uzbekistan/tashkent-international"
+   },
+   "TBB": {
+    "name": "Tuy Hoa",
+    "path": "/lounges/vietnam/dong-tac"
+   },
+   "TBP": {
+    "name": "Tumbes Pedro Canga Rodriguez",
+    "path": "/lounges/peru/cap-fap-pedro-canga-rodriguez"
+   },
+   "TBS": {
+    "name": "Tbilisi International",
+    "path": "/lounges/georgia/tbilisi-international"
+   },
+   "TCQ": {
+    "name": "Tacna C. Ciriani Santa Rosa Intl",
+    "path": "/lounges/peru/coronel-fap-carlos-ciriani-santa-rosa-international"
+   },
+   "TCZ": {
+    "name": "Tengchong Tuofeng",
+    "path": "/lounges/china/tengchong-tuofeng"
+   },
+   "TFN": {
+    "name": "Tenerife North Los Rodeos",
+    "path": "/lounges/spain/tenerife-north-los-rodeos"
+   },
+   "TFS": {
+    "name": "Tenerife South Reina Sofia",
+    "path": "/lounges/spain/tenerife-south-reina-sofia"
+   },
+   "TFU": {
+    "name": "Chengdu Tianfu International",
+    "path": "/lounges/china/chengdu-tianfu-international"
+   },
+   "TGU": {
+    "name": "TegucigalpaToncontin International",
+    "path": "/lounges/honduras/toncontin-international"
+   },
+   "TGZ": {
+    "name": "\u00c1ngel Albino Corzo International",
+    "path": "/lounges/mexico/angel-albino-corzo-international"
+   },
+   "THD": {
+    "name": "Thanh Hoa Tho Xuan",
+    "path": "/lounges/vietnam/tho-xuan"
+   },
+   "THE": {
+    "name": "Teresina Petronio Portella",
+    "path": "/lounges/brazil/teresina-senador-petronio-portella"
+   },
+   "TIA": {
+    "name": "Tirana Nene Tereza Intl",
+    "path": "/lounges/albania/tirana-international-nene-tereza"
+   },
+   "TIF": {
+    "name": "Ta'if Regional",
+    "path": "/lounges/saudi-arabia/taif-regional"
+   },
+   "TIJ": {
+    "name": "Tijuana International",
+    "path": "/lounges/mexico/tijuana-international"
+   },
+   "TIV": {
+    "name": "Tivat",
+    "path": "/lounges/montenegro/tivat"
+   },
+   "TLC": {
+    "name": "Mexico City Toluca-A.Lopez Mateos Intl",
+    "path": "/lounges/mexico/licenciado-adolfo-lopez-mateos-international"
+   },
+   "TLL": {
+    "name": "Tallinn Lennart Meri",
+    "path": "/lounges/estonia/tallinn-lennart-meri-tallinn"
+   },
+   "TLS": {
+    "name": "Toulouse Blagnac",
+    "path": "/lounges/france/toulouse-blagnac"
+   },
+   "TNA": {
+    "name": "Jinan Yaoqiang International",
+    "path": "/lounges/china/jinan-yaoqiang-international"
+   },
+   "TNG": {
+    "name": "Tangier Ibn Battouta Intl",
+    "path": "/lounges/morocco/tangier-ibn-battouta"
+   },
+   "TNR": {
+    "name": "Antananarivo Ivato International",
+    "path": "/lounges/madagascar/ivato-international"
+   },
+   "TPE": {
+    "name": "Taipei Taiwan Taoyuan Intl",
+    "path": "/lounges/taiwan-region/taiwan-taoyuan-international"
+   },
+   "TPP": {
+    "name": "Tarapoto",
+    "path": "/lounges/peru/cad-fap-guillermo-del-castillo-paredes"
+   },
+   "TQO": {
+    "name": "Tulum Felipe Carrillo Puerto International",
+    "path": "/lounges/mexico/tulum-felipe-carrillo-puerto-international"
+   },
+   "TRC": {
+    "name": "Torreon Francisco Sarabia Intl",
+    "path": "/lounges/mexico/francisco-sarabia-international-torreon-intl"
+   },
+   "TRK": {
+    "name": "Tarakan Juwata",
+    "path": "/lounges/indonesia/juwata-airport"
+   },
+   "TRN": {
+    "name": "Turin Sandro Pertini",
+    "path": "/lounges/italy/turin-caselle"
+   },
+   "TRS": {
+    "name": "Trieste Friuli Venezia Giulia",
+    "path": "/lounges/italy/trieste-ronchi-dei-legionari"
+   },
+   "TRU": {
+    "name": "Trujillo International",
+    "path": "/lounges/peru/fap-captain-carlos-martinez-de-pinillos-international"
+   },
+   "TRV": {
+    "name": "Thiruvananthapuram International",
+    "path": "/lounges/india/thiruvananthapuram-international"
+   },
+   "TRZ": {
+    "name": "Tiruchirappalli International",
+    "path": "/lounges/india/tiruchirappalli-international"
+   },
+   "TSA": {
+    "name": "Taipei Songshan",
+    "path": "/lounges/taiwan-region/taipei-songshan"
+   },
+   "TSN": {
+    "name": "Tianjin Binhai International",
+    "path": "/lounges/china/tianjin-binhai-international"
+   },
+   "TSR": {
+    "name": "Timisoara Intl",
+    "path": "/lounges/romania/timisoara-traian-vuia-international"
+   },
+   "TSV": {
+    "name": "Townsville International",
+    "path": "/lounges/australia/townsville"
+   },
+   "TUI": {
+    "name": "Turaif",
+    "path": "/lounges/saudi-arabia/turaif-domestic"
+   },
+   "TUL": {
+    "name": "Tulsa OK International",
+    "path": "/lounges/united-states-of-america/tulsa-international"
+   },
+   "TUN": {
+    "name": "Tunis\u2013Carthage International",
+    "path": "/lounges/tunisia/tunis-carthage-international"
+   },
+   "TUS": {
+    "name": "Tucson AZ Intl",
+    "path": "/lounges/united-states-of-america/tucson-international"
+   },
+   "TUU": {
+    "name": "Tabuk Regional",
+    "path": "/lounges/saudi-arabia/tabuk-regional"
+   },
+   "TXN": {
+    "name": "Huangshan Tunxi International",
+    "path": "/lounges/china/huangshan-tunxi-international"
+   },
+   "TYL": {
+    "name": "Talara Victor Monteas Arias",
+    "path": "/lounges/peru/capitan-fap-victor-montes-arias-international"
+   },
+   "TYN": {
+    "name": "Taiyuan Wusu International",
+    "path": "/lounges/china/taiyuan-wusu-international"
+   },
+   "UDI": {
+    "name": "Uberlandia Cesar Bombonato",
+    "path": "/lounges/brazil/uberlandia-airport"
+   },
+   "UIH": {
+    "name": "Quy Nhon Phu Cat",
+    "path": "/lounges/vietnam/phu-cat"
+   },
+   "UIO": {
+    "name": "Quito Intl",
+    "path": "/lounges/ecuador/mariscal-sucre-international"
+   },
+   "ULH": {
+    "name": "Al-Ula International",
+    "path": "/lounges/saudi-arabia/prince-abdul-majeed-bin-abdulaziz-domestic"
+   },
+   "UPG": {
+    "name": "Sultan Hasanuddin International",
+    "path": "/lounges/indonesia/sultan-hasanuddin-international"
+   },
+   "URA": {
+    "name": "Uralsk Ak Zhol",
+    "path": "/lounges/kazakhstan/oral-ak-zhol"
+   },
+   "URC": {
+    "name": "Urumqi Tianshan International",
+    "path": "/lounges/china/urumqi-tianshan-international"
+   },
+   "URY": {
+    "name": "Gurayat",
+    "path": "/lounges/saudi-arabia/gurayat-domestic"
+   },
+   "USH": {
+    "name": "Ushuaia - Malvinas Argentinas International",
+    "path": "/lounges/argentina/ushuaia-malvinas-argentinas-international"
+   },
+   "USM": {
+    "name": "Samui International",
+    "path": "/lounges/thailand/samui"
+   },
+   "UTH": {
+    "name": "Udon Thani Intl",
+    "path": "/lounges/thailand/udon-thani-international"
+   },
+   "UVF": {
+    "name": "St Lucia - Hewanorra Intl",
+    "path": "/lounges/saint-lucia/hewanorra-international"
+   },
+   "UYN": {
+    "name": "Yulin Yuyang",
+    "path": "/lounges/china/yulin-yuyang"
+   },
+   "VAR": {
+    "name": "Varna",
+    "path": "/lounges/bulgaria/varna"
+   },
+   "VCA": {
+    "name": "Can Tho International",
+    "path": "/lounges/vietnam/can-tho-international"
+   },
+   "VCE": {
+    "name": "Venice Marco Polo",
+    "path": "/lounges/italy/venice-marco-polo"
+   },
+   "VCL": {
+    "name": "Chu Lai International",
+    "path": "/lounges/vietnam/chu-lai-international"
+   },
+   "VCP": {
+    "name": "Campinas Viracopos International",
+    "path": "/lounges/brazil/viracopos-campinas-international"
+   },
+   "VCS": {
+    "name": "Con Dao Island Co Ong",
+    "path": "/lounges/vietnam/con-dao"
+   },
+   "VDC": {
+    "name": "Vitoria da Conquista Glauber Rocha",
+    "path": "/lounges/brazil/glauber-rocha"
+   },
+   "VDH": {
+    "name": "Dong Hoi",
+    "path": "/lounges/vietnam/dong-hoi"
+   },
+   "VER": {
+    "name": "Veracruz Heriberto Jara Intl",
+    "path": "/lounges/mexico/general-heriberto-jara-international"
+   },
+   "VFA": {
+    "name": "Victoria Falls Intl",
+    "path": "/lounges/zimbabwe/victoria-falls"
+   },
+   "VGO": {
+    "name": "Vigo",
+    "path": "/lounges/spain/vigo-peinador"
+   },
+   "VIE": {
+    "name": "Vienna International",
+    "path": "/lounges/austria/vienna-international"
+   },
+   "VII": {
+    "name": "Vinh International",
+    "path": "/lounges/vietnam/vinh-international"
+   },
+   "VIL": {
+    "name": "Dakhla",
+    "path": "/lounges/morocco/dakhla"
+   },
+   "VIX": {
+    "name": "Vitoria E. de Aguiar Salles",
+    "path": "/lounges/brazil/eurico-de-aguiar-salles"
+   },
+   "VKG": {
+    "name": "Rach Gia",
+    "path": "/lounges/vietnam/rach-gia"
+   },
+   "VLC": {
+    "name": "Valencia",
+    "path": "/lounges/spain/valencia"
+   },
+   "VLI": {
+    "name": "Port Vila",
+    "path": "/lounges/vanuatu/bauerfield-international"
+   },
+   "VNO": {
+    "name": "Vilnius International",
+    "path": "/lounges/lithuania/vilnius"
+   },
+   "VNS": {
+    "name": "Varanasi Lal Bahadur Shastri Intl",
+    "path": "/lounges/india/lal-bahadur-shastri"
+   },
+   "VRN": {
+    "name": "Verona Villafranca",
+    "path": "/lounges/italy/verona-villafranca"
+   },
+   "VSA": {
+    "name": "Villahermosa International",
+    "path": "/lounges/mexico/carlos-rovirosa-perez-international"
+   },
+   "VTZ": {
+    "name": "Vishakhapatnam",
+    "path": "/lounges/india/visakhapatnam-international-airport"
+   },
+   "VUP": {
+    "name": "Valledupar Alfonso Lopez Pumarejo",
+    "path": "/lounges/colombia/alfonso-lopez-pumarejo"
+   },
+   "VVC": {
+    "name": "Villavicencio Vanguardia",
+    "path": "/lounges/colombia/la-vanguardia"
+   },
+   "VVI": {
+    "name": "Santa Cruz Viru Viru Intl",
+    "path": "/lounges/bolivia/viru-viru-international"
+   },
+   "WAE": {
+    "name": "Wadi al Dawasir",
+    "path": "/lounges/saudi-arabia/wadi-al-dawasir-domestic"
+   },
+   "WAW": {
+    "name": "Warsaw Frederic Chopin",
+    "path": "/lounges/poland/warsaw-chopin"
+   },
+   "WDH": {
+    "name": "Hosea Kutako International",
+    "path": "/lounges/namibia/hosea-kutako-international"
+   },
+   "WDS": {
+    "name": "Shiyan Wudangshan",
+    "path": "/lounges/china/shiyan-wudangshan"
+   },
+   "WEF": {
+    "name": "Weifang",
+    "path": "/lounges/china/weifang-nanyuan-airport"
+   },
+   "WEH": {
+    "name": "Weihai Dashuibo",
+    "path": "/lounges/china/weihai-dashuibo"
+   },
+   "WHA": {
+    "name": "Wuhu Xuanzhou",
+    "path": "/lounges/china/wuhu-xuanzhou"
+   },
+   "WMI": {
+    "name": "Warsaw Modlin",
+    "path": "/lounges/poland/warsaw-modlin"
+   },
+   "WNZ": {
+    "name": "Wenzhou Longwan Intl",
+    "path": "/lounges/china/wenzhou-longwan-international"
+   },
+   "WRO": {
+    "name": "Wroclaw",
+    "path": "/lounges/poland/wroclaw"
+   },
+   "WUA": {
+    "name": "Wuhai",
+    "path": "/lounges/china/wuhai"
+   },
+   "WUH": {
+    "name": "Wuhan Tianhe International",
+    "path": "/lounges/china/wuhan-tianhe-international"
+   },
+   "WUS": {
+    "name": "Wuyishan",
+    "path": "/lounges/china/wuyishan"
+   },
+   "WUX": {
+    "name": "Sunan Shuofang International",
+    "path": "/lounges/china/sunan-shuofang-international"
+   },
+   "XAP": {
+    "name": "Chapeco Serafin Enoss Bertaso",
+    "path": "/lounges/brazil/serafin-enoss-bertaso"
+   },
+   "XFN": {
+    "name": "Xiangyang Liuji",
+    "path": "/lounges/china/xiangyang-liuji"
+   },
+   "XIY": {
+    "name": "Xi'an Xianyang International",
+    "path": "/lounges/china/xian-xianyang-international"
+   },
+   "XMN": {
+    "name": "Xiamen Gaoqi Intl",
+    "path": "/lounges/china/xiamen-gaoqi-international"
+   },
+   "XNA": {
+    "name": "Fayetteville/Springd. AR NW Arkansas National",
+    "path": "/lounges/united-states-of-america/northwest-arkansas-regional"
+   },
+   "XNN": {
+    "name": "Xining Caojiabao",
+    "path": "/lounges/china/xining-caojiabao"
+   },
+   "XPL": {
+    "name": "Comayagua Palmerola International",
+    "path": "/lounges/honduras/soto-cano-air-base"
+   },
+   "XUZ": {
+    "name": "Xuzhou Guanyin",
+    "path": "/lounges/china/xuzhou-guanyin"
+   },
+   "YBP": {
+    "name": "Yibin Wuliangye",
+    "path": "/lounges/china/yibin-wuliangye"
+   },
+   "YCU": {
+    "name": "Yuncheng Yanhu International",
+    "path": "/lounges/china/yuncheng-guangong"
+   },
+   "YEG": {
+    "name": "Edmonton International",
+    "path": "/lounges/canada/edmonton-international"
+   },
+   "YGJ": {
+    "name": "Yonago Miho",
+    "path": "/lounges/japan/miho-yonago"
+   },
+   "YIA": {
+    "name": "Yogyakarta Kulon Progo International",
+    "path": "/lounges/indonesia/yogyakarta-international"
+   },
+   "YIH": {
+    "name": "Yichang Sanxia",
+    "path": "/lounges/china/yichang-sanxia"
+   },
+   "YIN": {
+    "name": "Yining International",
+    "path": "/lounges/china/yining-international"
+   },
+   "YIW": {
+    "name": "Yiwu",
+    "path": "/lounges/china/yiwu"
+   },
+   "YNB": {
+    "name": "Yanbu Regional",
+    "path": "/lounges/saudi-arabia/yanbu-yenbo"
+   },
+   "YNT": {
+    "name": "Yantai Penglai International",
+    "path": "/lounges/china/yantai-penglai-international"
+   },
+   "YNZ": {
+    "name": "Yancheng Nanyang",
+    "path": "/lounges/china/yancheng-nanyang-international"
+   },
+   "YOW": {
+    "name": "Ottawa Macdonald\u2013Cartier International",
+    "path": "/lounges/canada/ottawa-macdonald-cartier-international"
+   },
+   "YQB": {
+    "name": "Qu\u00e9bec City Jean Lesage International",
+    "path": "/lounges/canada/quebec-city-jean-lesage-international"
+   },
+   "YTY": {
+    "name": "Yangzhou Taizhou",
+    "path": "/lounges/china/yangzhou-taizhou"
+   },
+   "YTZ": {
+    "name": "Toronto Billy Bishop City",
+    "path": "/lounges/canada/billy-bishop-toronto-city-toronto-island"
+   },
+   "YUL": {
+    "name": "Montreal Pierre E.Trudeau Intl",
+    "path": "/lounges/canada/montreal-trudeau-international"
+   },
+   "YVR": {
+    "name": "Vancouver International",
+    "path": "/lounges/canada/vancouver-international"
+   },
+   "YWG": {
+    "name": "Winnipeg J.A.Richardson International",
+    "path": "/lounges/canada/winnipeg-james-armstrong-richardson-international"
+   },
+   "YYC": {
+    "name": "YYC Calgary Intl",
+    "path": "/lounges/canada/calgary-international"
+   },
+   "YYZ": {
+    "name": "Toronto Lester B. Pearson International",
+    "path": "/lounges/canada/toronto-pearson-international"
+   },
+   "YZY": {
+    "name": "Zhangye Ganzhou",
+    "path": "/lounges/china/zhangye-ganzhou"
+   },
+   "ZAD": {
+    "name": "Zadar",
+    "path": "/lounges/croatia/zadar"
+   },
+   "ZAG": {
+    "name": "Zagreb Franjo Tudman",
+    "path": "/lounges/croatia/franjo-tu-man"
+   },
+   "ZAT": {
+    "name": "Zhaotong",
+    "path": "/lounges/china/zhaotong"
+   },
+   "ZCO": {
+    "name": "Temuco La Araucania",
+    "path": "/lounges/chile/la-araucania"
+   },
+   "ZHA": {
+    "name": "Zhanjiang Wuchuan",
+    "path": "/lounges/china/zhanjiang-wuchuan"
+   },
+   "ZHY": {
+    "name": "Zhongwei Shapotou",
+    "path": "/lounges/china/zhongwei-shapotou"
+   },
+   "ZIH": {
+    "name": "Ixtapa-Zihuatanejo Intl",
+    "path": "/lounges/mexico/ixtapa-zihuatanejo-international"
+   },
+   "ZNZ": {
+    "name": "Zanzibar Abeid Amani Karume Intl",
+    "path": "/lounges/tanzania/abeid-amani-karume-international"
+   },
+   "ZQN": {
+    "name": "Queenstown Intl",
+    "path": "/lounges/new-zealand/queenstown"
+   },
+   "ZRH": {
+    "name": "Zurich",
+    "path": "/lounges/switzerland/zurich"
+   },
+   "ZUH": {
+    "name": "Zhuhai Jinwan",
+    "path": "/lounges/china/zhuhai-jinwan-zhuhai-sanzao"
+   },
+   "ZYI": {
+    "name": "Zunyi Xinzhou",
+    "path": "/lounges/china/zunyi-xinzhou"
+   },
+   "ZYL": {
+    "name": "Sylhet Osmany Intl",
+    "path": "/lounges/bangladesh/osmani-international"
+   }
+  },
+  "built": "2026-10-17T19:33:51+00:00",
+  "missing": []
+ }
+}

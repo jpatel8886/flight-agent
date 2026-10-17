@@ -1,0 +1,15 @@
+{
+ "PHX-SFO-2026-11-24": {
+  "best_score": 137.5,
+  "best_summary": "103, 2h, 0 stops",
+  "best_seen_at": "2026-10-17T19:41:45+00:00",
+  "lowest_price": 103.0
+ },
+ "SFO-PHX-2026-11-29": {
+  "best_score": 189.2,
+  "best_summary": "159, 2h, 0 stops",
+  "best_seen_at": "2026-10-17T19:41:45+00:00",
+  "lowest_price": 159.0
+ },
+ "_email": {}
+}
