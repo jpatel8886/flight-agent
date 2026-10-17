@@ -87,6 +87,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="config.yaml")
     ap.add_argument("--data", default="docs/data")
+    ap.add_argument("--lounge-cache", default="docs/data/lounges.json", help="shared JSON cache for Priority Pass lounge data")
     ap.add_argument("--no-email", action="store_true")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -100,7 +101,7 @@ def main() -> None:
     site_url = os.environ.get("SITE_URL")
     now = datetime.now(timezone.utc)
     searcher = Searcher(cfg)
-    lounges = Lounges(data_dir / "lounges.json", cfg)
+    lounges = Lounges(Path(args.lounge_cache), cfg)
     digest: list[dict] = []
     avoid = {c.lower() for c in cfg.get("avoid_countries", [])}
     latest = {"generated_at": now.isoformat(timespec="seconds"), "currency": cfg.get("currency", "USD"),
