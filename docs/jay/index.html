@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Flight Watch</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #ffffff; --surface-2: #f3f2ef; --grid: #e4e3df; --border: #e6e6e3;
+    --text: #0b0b0b; --text-2: #52514e; --muted: #77766f;
+    --series: #2a78d6; --accent: #2a78d6; --accent-ink: #ffffff; --accent-soft: #e8f1fc;
+    --good: #0b7d0b; --good-soft: #e7f6e7; --warn-soft: #fff4dc; --warn-ink: #7a5300;
+    --hero-1: #0d366b; --hero-2: #2a78d6;
+    --shadow: 0 1px 2px rgba(16,24,40,.06), 0 4px 16px rgba(16,24,40,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121211; --card: #1a1a19; --surface-2: #242423; --grid: #34342f; --border: #2e2e2b;
+      --text: #f0efec; --text-2: #c3c2b7; --muted: #9b9a91;
+      --series: #3987e5; --accent: #3987e5; --accent-ink: #ffffff; --accent-soft: #1d2d42;
+      --good: #4cc94c; --good-soft: #15301a; --warn-soft: #3a2e12; --warn-ink: #f3c96b;
+      --hero-1: #0d2547; --hero-2: #1c5cab;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 16px rgba(0,0,0,.3);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+  a { color: var(--accent); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  header.hero { background: linear-gradient(120deg, var(--hero-1), var(--hero-2)); color: #fff; padding: 28px 16px 72px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  .hero h1 { margin: 0; font-size: 26px; letter-spacing: -.01em; }
+  .hero h1 span { opacity: .75; font-weight: 500; }
+  .hero .sub { margin-top: 6px; opacity: .92; font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.16); border-radius: 99px; padding: 3px 10px; font-size: 13px; }
+  .switch { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; background: rgba(255,255,255,.16); border-radius: 99px; padding: 3px 12px 3px 4px; font-size: 13px; user-select: none; }
+  .switch input { appearance: none; width: 30px; height: 18px; border-radius: 99px; background: rgba(255,255,255,.35); position: relative; margin: 0; cursor: pointer; transition: background .15s; }
+  .switch input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: left .15s; }
+  .switch input:checked { background: #5be37a; }
+  .switch input:checked::after { left: 14px; }
+  .switch input:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: #5be37a; }
+
+  main { margin-top: -52px; padding: 0 16px 64px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); }
+
+  .overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-bottom: 26px; }
+  .ov { padding: 16px 18px; text-decoration: none; color: inherit; position: relative; transition: transform .12s ease; }
+  .ov:hover { transform: translateY(-2px); }
+  .ov.active { border: 2px solid var(--accent); padding: 15px 17px; }
+  .ov:not(.active) { opacity: .8; }
+  .ov:not(.active):hover { opacity: 1; }
+  .ov .k { color: var(--text-2); font-size: 13px; }
+  .ov .price { font-size: 30px; font-weight: 700; letter-spacing: -.02em; margin: 2px 0; }
+  .ov .meta { color: var(--text-2); font-size: 13px; }
+  .ribbon { position: absolute; top: 14px; right: 14px; background: var(--good-soft); color: var(--good); font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 99px; }
+
+  section.search { padding: 22px; margin-bottom: 26px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .head h2 { margin: 0; font-size: 20px; letter-spacing: -.01em; }
+  .muted { color: var(--text-2); font-size: 13px; }
+  h3 { font-size: 15px; margin: 26px 0 10px; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 16px 0 4px; }
+  .tile { background: var(--surface-2); border-radius: 10px; padding: 10px 14px; }
+  .tile .k { color: var(--text-2); font-size: 12px; }
+  .tile .v { font-size: 18px; font-weight: 650; }
+
+  .best { border: 1.5px solid var(--accent); border-radius: 12px; padding: 18px; background: linear-gradient(180deg, var(--accent-soft), transparent 70%); }
+  .best .top { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+  .best .label { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; }
+  .best .price { font-size: 36px; font-weight: 750; letter-spacing: -.02em; line-height: 1.1; }
+  .best .facts { color: var(--text-2); font-size: 14px; }
+  .rl { font-weight: 600; font-size: 14px; margin-top: 2px; }
+  .best .rl { font-size: 15px; margin-top: 6px; }
+
+  .tl { display: flex; align-items: flex-start; margin: 18px 0 6px; overflow-x: auto; padding-bottom: 4px; }
+  .stop { display: flex; flex-direction: column; align-items: center; min-width: 74px; text-align: center; }
+  .stop .code { font-weight: 700; font-size: 16px; }
+  .stop .node { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--accent); background: var(--card); margin: 4px 0; }
+  .stop.end .node { background: var(--accent); }
+  .stop .t { font-size: 12px; color: var(--text-2); white-space: nowrap; }
+  .stop .lay { font-size: 11px; color: var(--text-2); background: var(--surface-2); border-radius: 6px; padding: 1px 6px; margin-top: 3px; white-space: nowrap; }
+  .stop .lay.pp { background: var(--good-soft); color: var(--good); font-weight: 600; }
+  .leg { flex: 1; min-width: 60px; display: flex; flex-direction: column; align-items: center; padding-top: 25px; }
+  .leg .line { height: 2px; width: 100%; background: var(--accent); border-radius: 2px; }
+  .leg .d { font-size: 11px; color: var(--muted); margin-top: 3px; white-space: nowrap; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .chip { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 2px 9px; border-radius: 99px; background: var(--surface-2); color: var(--text-2); white-space: nowrap; }
+  .chip.warn { background: var(--warn-soft); color: var(--warn-ink); }
+  .chip.warn::before { content: "⚠"; }
+  .chip.pp { background: var(--good-soft); color: var(--good); text-decoration: none; }
+  .chip.cheap { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+
+  .book { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .btn { display: inline-block; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .btn.primary:hover { filter: brightness(1.08); color: var(--accent-ink); }
+  .ticket { margin-top: 8px; }
+  .ticket .muted { margin-right: 6px; }
+
+  .lounges { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+  .lg { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; font-size: 13px; }
+  .lg b { font-size: 14px; }
+  .lg ul { margin: 6px 0 0; padding: 0; list-style: none; }
+  .lg li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-top: 1px solid var(--border); }
+  .lg li:first-child { border-top: 0; }
+  .lg a { text-decoration: none; }
+  .stars { white-space: nowrap; font-weight: 600; }
+
+  .opts { display: flex; flex-direction: column; gap: 10px; }
+  .opt { display: grid; grid-template-columns: 110px 1fr auto; gap: 14px; align-items: start; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+  .opt:hover { border-color: var(--accent); }
+  .opt .p { font-size: 20px; font-weight: 700; }
+  .opt .route { font-weight: 600; }
+  .opt .tl { margin: 8px 0 0; }
+  .opt .stop { min-width: 56px; }
+  .opt .stop .code { font-size: 13px; }
+  .opt .leg { padding-top: 22px; }
+  .opt .book { justify-content: flex-end; max-width: 260px; }
+  @media (max-width: 720px) { .opt { grid-template-columns: 1fr; } .opt .book { justify-content: flex-start; max-width: none; } }
+  .more { margin-top: 10px; }
+
+  .chart { position: relative; margin: 4px 0; }
+  .chart svg { display: block; width: 100%; height: 200px; overflow: visible; }
+  .tip { position: absolute; pointer-events: none; background: var(--text); color: var(--card); font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, -125%); display: none; }
+  details { margin: 6px 0; color: var(--text-2); font-size: 13px; }
+  summary { cursor: pointer; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 6px; }
+  th { text-align: left; color: var(--text-2); font-weight: 500; border-bottom: 1px solid var(--border); padding: 5px 8px; }
+  td { border-bottom: 1px solid var(--border); padding: 5px 8px; }
+
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 28px; }
+  .empty { padding: 40px; text-align: center; color: var(--text-2); }
+
+  /* agent: prompt box + status bar */
+  .ask-btn { position: fixed; right: 20px; bottom: 20px; z-index: 20; border: 0; border-radius: 99px; padding: 11px 18px; background: var(--accent); color: var(--accent-ink); font: 600 14px/1 inherit; box-shadow: var(--shadow); cursor: pointer; }
+  .ask { position: fixed; right: 20px; bottom: 72px; z-index: 20; width: min(420px, calc(100vw - 40px)); padding: 16px; display: none; }
+  .ask.open { display: block; }
+  .ask h4 { margin: 0 0 8px; font-size: 15px; }
+  .ask textarea, .ask input { width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 9px 10px; font: inherit; background: var(--card); color: var(--text); }
+  .ask textarea { min-height: 96px; resize: vertical; }
+  .ask .row { display: flex; gap: 8px; align-items: center; justify-content: space-between; margin-top: 10px; flex-wrap: wrap; }
+  .ask .muted a { color: var(--accent); }
+  .ask button { cursor: pointer; }
+  .status { position: sticky; top: 0; z-index: 15; display: none; align-items: center; gap: 10px; padding: 10px 16px; font-size: 14px; background: var(--accent-soft); color: var(--text); border-bottom: 1px solid var(--border); }
+  .status.show { display: flex; }
+  .status.bad { background: var(--warn-soft); }
+  .status .grow { flex: 1; }
+  .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--accent); border-right-color: transparent; animation: spin .8s linear infinite; flex: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
+</style>
+</head>
+<body>
+<div class="status" id="agent-status" role="status" aria-live="polite"></div>
+<header class="hero">
+  <div class="wrap">
+    <h1>Flight Watch <span id="route"></span></h1>
+    <div class="sub" id="updated">Loading…</div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="overview" id="overview"></div>
+  <div id="app"></div>
+  <button class="ask-btn" id="ask-btn" type="button">Ask agent</button>
+  <div class="ask card" id="ask" role="dialog" aria-label="Ask the agent"></div>
+  <footer>Flight options ranked by price + travel time + layovers. Prices change fast; confirm on the booking site. Lounge data from Priority Pass.</footer>
+</main>
+<script>
+const $ = (tag, attrs = {}, ...kids) => {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null) continue;
+    if (k === "class") el.className = v; else if (k === "text") el.textContent = v; else el.setAttribute(k, v);
+  }
+  for (const k of kids) if (k != null && k !== false) el.append(k);
+  return el;
+};
+const safeUrl = u => { try { const p = new URL(u); return ["http:", "https:"].includes(p.protocol) ? p.href : null; } catch { return null; } };
+const fmtMin = m => `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`;
+const minsBetween = (a, b) => Math.round((new Date(b) - new Date(a)) / 60000);
+const hhmm = s => s.slice(11, 16);
+const dayLabel = s => new Date(s.slice(0, 10) + "T00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
+const longDate = (d, opts) => new Date(d + "T00:00").toLocaleDateString(undefined, opts);
+const stopsText = n => n === 0 ? "nonstop" : `${n} stop${n === 1 ? "" : "s"}`;
+const ago = iso => { const d = (Date.now() - new Date(iso)) / 86400000; return d < 1 ? `checked today at ${new Date(iso).toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}` : `checked ${Math.round(d)} d ago`; };
+let CUR = "USD";
+let AVOID = localStorage.getItem("avoidME") !== "0";  // default on
+const visible = s => AVOID ? s.options.filter(o => !o.avoid) : s.options;
+const cheapestOf = opts => opts.reduce((a, b) => (!a || b.price < a.price) ? b : a, null);
+const money = v => v == null ? "–" : new Intl.NumberFormat(undefined, { style: "currency", currency: CUR, maximumFractionDigits: 0 }).format(v);
+// "AMD → KWI (4h 50m) → IST (3h 10m) → IAD"
+const routeLay = o => [o.segments[0].origin, ...o.segments.slice(0, -1).map((s, i) => `${s.destination} (${fmtMin(minsBetween(s.arrive, o.segments[i + 1].depart))})`), o.segments.at(-1).destination].join(" → ");
+const stars = r => `${Number(r).toFixed(1)}★`;
+const link = (l, cls = "btn") => { const u = safeUrl(l.url); return u ? $("a", { class: cls, href: u, target: "_blank", rel: "noopener noreferrer", text: l.name }) : null; };
+
+function timeline(o) {
+  const tl = $("div", { class: "tl" });
+  const segs = o.segments;
+  // For two-ticket trips, the hub where ticket 1 ends.
+  const change = o.separate_tickets && o.ticket_links && o.ticket_links.length === 2 ? o.ticket_links[0].leg.split("→")[1].trim() : null;
+  segs.forEach((s, i) => {
+    if (i === 0) tl.append($("div", { class: "stop end" }, $("div", { class: "code", text: s.origin }), $("div", { class: "node" }), $("div", { class: "t", text: `${hhmm(s.depart)} · ${dayLabel(s.depart)}` })));
+    tl.append($("div", { class: "leg" }, $("div", { class: "line" }), $("div", { class: "d", text: `✈ ${fmtMin(s.duration_min)}` })));
+    const last = i === segs.length - 1;
+    const stop = $("div", { class: "stop" + (last ? " end" : "") }, $("div", { class: "code", text: s.destination }), $("div", { class: "node" }));
+    if (last) stop.append($("div", { class: "t", text: `${hhmm(s.arrive)} · ${dayLabel(s.arrive)}` }));
+    else {
+      const pp = (o.lounges || {})[s.destination];
+      stop.append($("div", { class: "lay" + (pp ? " pp" : ""), title: pp ? `${pp.count} Priority Pass lounge(s)` : null,
+        text: `${fmtMin(minsBetween(s.arrive, segs[i + 1].depart))}${pp ? " · PP lounge" : ""}` }));
+      if (change === s.destination) stop.append($("div", { class: "lay", text: "change tickets" }));
+    }
+    tl.append(stop);
+  });
+  return tl;
+}
+
+function chips(o, cheapestKey) {
+  const c = $("div", { class: "chips" });
+  if (o.key === cheapestKey) c.append($("span", { class: "chip cheap", text: "Cheapest" }));
+  if (o.hidden_city) c.append($("span", { class: "chip warn", text: "hidden-city: carry-on only" }));
+  return c.childNodes.length ? c : null;
+}
+
+function booking(o, primary) {
+  const box = $("div");
+  if (o.ticket_links && o.ticket_links.length) {
+    o.ticket_links.forEach((t, i) => {
+      const row = $("div", { class: "book ticket" }, $("span", { class: "muted", text: `Ticket ${i + 1}: ${t.leg} · ${money(t.price)}` }));
+      t.links.forEach((l, j) => row.append(link(l, primary && j === 0 ? "btn primary" : "btn")));
+      box.append(row);
+    });
+    return box;
+  }
+  const row = $("div", { class: "book" });
+  o.links.forEach((l, j) => row.append(link(l, primary && j === 0 ? "btn primary" : "btn")));
+  box.append(row);
+  return box;
+}
+
+function loungePanel(o) {
+  if (!o.lounges) return null;  // not looked up yet (data from before lounge support, or lookup failed)
+  const entries = Object.entries(o.lounges);
+  if (!entries.length) return o.stops ? $("div", { class: "muted", style: "margin-top:12px", text: "No Priority Pass lounges at the layover airports." }) : null;
+  const box = $("div", { class: "lounges" });
+  for (const [code, l] of entries) {
+    const ul = $("ul");
+    for (const x of l.lounges.slice().sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 4)) {
+      const u = safeUrl(x.url);
+      ul.append($("li", {},
+        $("span", {}, u ? $("a", { href: u, target: "_blank", rel: "noopener noreferrer", text: x.name }) : x.name,
+          $("span", { class: "muted", text: ` · ${x.terminal}${x.hours && x.hours !== "00:00 - 23:59" ? ` · ${x.hours}` : " · 24h"}${x.airside === "unknown" ? " · check airside" : ""}` })),
+        $("span", { class: "stars", title: x.ratings_count ? `${x.ratings_count.toLocaleString()} member ratings` : "no ratings yet",
+          text: x.rating ? `${stars(x.rating)} (${x.ratings_count.toLocaleString()})` : "–" })));
+    }
+    box.append($("div", { class: "lg" }, $("b", { text: `Priority Pass · ${l.airport} (${code})` }),
+      $("span", { class: "muted", text: ` · ${l.count} lounge${l.count === 1 ? "" : "s"}${l.sleep_pods ? ` + ${l.sleep_pods} rest/sleep` : ""}` }), ul));
+  }
+  return box;
+}
+
+function chart(points) {
+  const wrap = $("div", { class: "chart" });
+  if (points.length < 2) { wrap.append($("p", { class: "muted", text: "Price history appears after a few runs." })); return wrap; }
+  const W = 1000, H = 200, L = 60, R = 74, T = 12, B = 26;
+  const xs = points.map(p => new Date(p.t).getTime()), ys = points.map(p => p.best);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs);
+  let y0 = Math.min(...ys), y1 = Math.max(...ys); const pad = Math.max(10, (y1 - y0) * 0.15); y0 -= pad; y1 += pad;
+  const X = t => L + (t - x0) / (x1 - x0 || 1) * (W - L - R), Y = v => T + (1 - (v - y0) / (y1 - y0)) * (H - T - B);
+  const NS = "http://www.w3.org/2000/svg";
+  const s = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, preserveAspectRatio: "none", role: "img", "aria-label": "Best-value price over time" });
+  for (let i = 0; i <= 3; i++) {
+    const v = y0 + (y1 - y0) * i / 3, y = Y(v);
+    svg.append(s("line", { x1: L, x2: W - R, y1: y, y2: y, stroke: "var(--grid)", "stroke-width": 1, "vector-effect": "non-scaling-stroke" }));
+    const lbl = s("text", { x: L - 8, y: y + 4, "text-anchor": "end", "font-size": 12, fill: "var(--muted)" }); lbl.textContent = money(v); svg.append(lbl);
+  }
+  [x0, x1].forEach((t, i) => { const lbl = s("text", { x: X(t), y: H - 6, "text-anchor": i ? "end" : "start", "font-size": 12, fill: "var(--muted)" }); lbl.textContent = new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" }); svg.append(lbl); });
+  const d = points.map((p, i) => `${i ? "L" : "M"}${X(xs[i]).toFixed(1)},${Y(p.best).toFixed(1)}`).join("");
+  svg.append(s("path", { d: `${d}L${X(xs.at(-1)).toFixed(1)},${H - B}L${X(xs[0]).toFixed(1)},${H - B}Z`, fill: "var(--series)", opacity: 0.08 }));
+  svg.append(s("path", { d, fill: "none", stroke: "var(--series)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", "vector-effect": "non-scaling-stroke" }));
+  const last = points.at(-1);
+  const endLbl = s("text", { x: X(xs.at(-1)) + 8, y: Y(last.best) + 4, "font-size": 13, "font-weight": 600, fill: "var(--text)" }); endLbl.textContent = money(last.best); svg.append(endLbl);
+  const cross = s("line", { y1: T, y2: H - B, stroke: "var(--muted)", "stroke-width": 1, "vector-effect": "non-scaling-stroke", visibility: "hidden" });
+  const dot = s("circle", { r: 5, fill: "var(--series)", stroke: "var(--card)", "stroke-width": 2, visibility: "hidden" });
+  svg.append(cross, dot);
+  const tip = $("div", { class: "tip" });
+  const hit = s("rect", { x: L, y: 0, width: W - L - R, height: H, fill: "transparent" });
+  hit.addEventListener("pointermove", e => {
+    const r = svg.getBoundingClientRect(), vx = (e.clientX - r.left) / r.width * W;
+    let i = 0; xs.forEach((t, j) => { if (Math.abs(X(t) - vx) < Math.abs(X(xs[i]) - vx)) i = j; });
+    const px = X(xs[i]), py = Y(points[i].best);
+    cross.setAttribute("x1", px); cross.setAttribute("x2", px); dot.setAttribute("cx", px); dot.setAttribute("cy", py);
+    cross.setAttribute("visibility", "visible"); dot.setAttribute("visibility", "visible");
+    tip.textContent = `${money(points[i].best)} · ${new Date(points[i].t).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}`;
+    tip.style.left = `${px / W * r.width}px`; tip.style.top = `${py / H * r.height}px`; tip.style.display = "block";
+  });
+  hit.addEventListener("pointerleave", () => { tip.style.display = "none"; cross.setAttribute("visibility", "hidden"); dot.setAttribute("visibility", "hidden"); });
+  svg.append(hit);
+  wrap.append(svg, tip);
+  return wrap;
+}
+
+function historyTable(points) {
+  const det = $("details", {}, $("summary", { text: "Price history table" }));
+  const t = $("table", {}, $("tr", {}, $("th", { text: "Checked" }), $("th", { text: "Best value" }), $("th", { text: "Cheapest" })));
+  for (const p of points.slice().reverse().slice(0, 72)) {
+    t.append($("tr", {}, $("td", { text: new Date(p.t).toLocaleString() }), $("td", { class: "num", text: money(p.best) }), $("td", { class: "num", text: money(p.cheapest) })));
+  }
+  det.append(t);
+  return det;
+}
+
+function optionCard(o, cheapestKey) {
+  return $("div", { class: "opt" },
+    $("div", {}, $("div", { class: "p num", text: money(o.price) }), $("div", { class: "muted", text: `${fmtMin(o.total_minutes)} · ${stopsText(o.stops)}` })),
+    $("div", {}, $("div", { class: "rl", text: routeLay(o) }), $("div", { class: "muted", text: `${o.airlines.join(", ")} · found on ${o.source}` }), timeline(o), chips(o, cheapestKey)),
+    booking(o, false));
+}
+
+function renderSearch(s, history) {
+  const sec = $("section", { class: "search card", id: `s-${s.key}` });
+  sec.append($("div", { class: "head" }, $("h2", { text: s.name }),
+    $("span", { class: "muted", text: `${[].concat(s.origin).join(" / ")} → ${[].concat(s.destination).join(" / ")} · ${longDate(s.date, { weekday: "short", month: "short", day: "numeric", year: "numeric" })} · ${s.requests} lookups` })));
+  const opts = visible(s);
+  const hidden = s.options.length - opts.length;
+  const best = opts[0];
+  if (!best) {
+    sec.append($("div", { class: "empty", text: hidden ? `All ${hidden} options connect through avoided countries. Turn off "Avoid Middle East layovers" to see them.` : "No fares found on the last run." }));
+    return sec;
+  }
+  const cheapest = cheapestOf(opts);
+  const cheapestKey = cheapest.key;
+
+  sec.append($("div", { class: "best" },
+    $("div", { class: "top" },
+      $("div", {}, $("div", { class: "label", text: "Best value" }), $("div", { class: "price num", text: money(best.price) }),
+        $("div", { class: "facts", text: `${fmtMin(best.total_minutes)} total · ${stopsText(best.stops)} · ${best.airlines.join(", ")}` }),
+        $("div", { class: "rl", text: routeLay(best) })),
+      $("div", {}, booking(best, true))),
+    timeline(best), chips(best, cheapestKey),
+    cheapest && cheapest.key !== best.key ? $("div", { class: "muted", style: "margin-top:6px", text: `Cheapest is ${money(cheapest.price)} but takes ${fmtMin(cheapest.total_minutes)} with ${stopsText(cheapest.stops)}.` }) : null,
+    loungePanel(best)));
+
+  const tile = (k, v) => $("div", { class: "tile" }, $("div", { class: "k", text: k }), $("div", { class: "v num", text: v }));
+  const pts = (history[s.key] || []).map(p => ({ t: p.t, best: AVOID ? (p.best_ok ?? p.best) : p.best, cheapest: AVOID ? (p.cheapest_ok ?? p.cheapest) : p.cheapest })).filter(p => p.best != null);
+  const lows = pts.map(p => p.cheapest).filter(v => v != null);
+  const allTimeLow = lows.length ? Math.min(...lows, cheapest.price) : cheapest.price;
+  sec.append($("div", { class: "tiles" }, tile("Cheapest", money(cheapest.price)), tile("All-time low", money(allTimeLow)),
+    s.target_price ? tile("Your target", money(s.target_price)) : null));
+
+  sec.append($("h3", { text: "Best-value price over time" }), chart(pts), historyTable(pts));
+
+  const rest = opts.slice(1);
+  if (rest.length > 0) {
+    const list = $("div", { class: "opts" });
+    rest.slice(0, 6).forEach(o => list.append(optionCard(o, cheapestKey)));
+    if (rest.length > 6) {
+      const more = $("div", { class: "opts", style: "margin-top:10px" });
+      rest.slice(6).forEach(o => more.append(optionCard(o, cheapestKey)));
+      list.append($("details", { class: "more" }, $("summary", { text: `Show ${rest.length - 6} more` }), more));
+    }
+    sec.append($("details", { class: "more", style: "margin-top:20px" }, $("summary", { text: `More options (${rest.length})` }), list));
+  }
+
+  if (hidden) sec.append($("div", { class: "muted", style: "margin-top:12px", text: `${hidden} option${hidden === 1 ? "" : "s"} with layovers in avoided countries hidden.` }));
+  if (s.errors && s.errors.length) sec.append($("details", {}, $("summary", { text: `${s.errors.length} lookup issue(s)` }), ...s.errors.map(e => $("div", { text: e }))));
+  return sec;
+}
+
+function render(latest, history) {
+  CUR = latest.currency || "USD";
+  const searches = latest.searches;
+  const origins = [...new Set(searches.flatMap(s => [].concat(s.origin)))].join("/");
+  const dests = [...new Set(searches.flatMap(s => [].concat(s.destination)))].join("/");
+  document.getElementById("route").textContent = searches.length ? `· ${origins} → ${dests}` : "";
+  const toggle = $("input", { type: "checkbox", "aria-label": "Avoid Middle East layovers" });
+  toggle.checked = AVOID;
+  toggle.addEventListener("change", () => { AVOID = toggle.checked; localStorage.setItem("avoidME", AVOID ? "1" : "0"); render(latest, history); });
+  document.getElementById("updated").replaceChildren(...[
+    $("span", { class: "pill" }, $("span", { class: "dot" }), (t => t[0].toUpperCase() + t.slice(1))(ago(latest.generated_at))),
+    $("label", { class: "switch", title: (latest.avoid_countries || []).join(", ") }, toggle, "Avoid Middle East layovers"),
+    // Data from before the filter existed has no per-option country tags.
+    AVOID && searches.some(s => s.options.some(o => !("avoid" in o))) ? $("span", { class: "pill", text: "Filter applies after the next refresh" }) : null,
+    $("span", { text: "refreshes hourly" })].filter(Boolean));
+
+  const ov = document.getElementById("overview");
+  const app = document.getElementById("app");
+  if (!searches.length) { ov.replaceChildren(); app.replaceChildren($("div", { class: "card empty", text: "No active searches." })); return; }
+  const withBest = searches.filter(s => visible(s).length);
+  const top = withBest.reduce((a, b) => (!a || visible(b)[0].score < visible(a)[0].score) ? b : a, null);
+  const show = key => {
+    const sel = searches.find(s => s.key === key) || top || searches[0];
+    ov.replaceChildren(...searches.map(s => {
+      const b = visible(s)[0];
+      return $("a", { class: "ov card" + (s === sel ? " active" : ""), href: `#${s.key}`, "aria-current": s === sel ? "page" : null },
+        top === s && withBest.length > 1 ? $("span", { class: "ribbon", text: "Best overall" }) : null,
+        $("div", { class: "k", text: longDate(s.date, { weekday: "long", month: "short", day: "numeric" }) }),
+        $("div", { class: "price num", text: b ? money(b.price) : "–" }),
+        b ? $("div", { class: "rl", text: routeLay(b) }) : null,
+        $("div", { class: "meta", text: b ? `${fmtMin(b.total_minutes)} total · ${stopsText(b.stops)}` : "No fares found" }));
+    }));
+    app.replaceChildren(renderSearch(sel, history));
+  };
+  const fromHash = () => { const h = decodeURIComponent(location.hash.slice(1)); show((searches.find(s => s.key === h || s.date === h) || {}).key); };
+  window.onhashchange = fromHash;
+  fromHash();
+}
+
+// ---- Agent: free-text requests become "[agent]" issues; the Agent workflow proposes a PR. ----
+const REPO = location.hostname.endsWith(".github.io")
+  ? `${location.hostname.split(".")[0]}/${location.pathname.split("/")[1]}`
+  : "jpatel8886/flight-agent";
+const GH = "https://api.github.com";
+const ghToken = () => localStorage.getItem("ghToken") || "";
+const gh = (path, opts = {}) => fetch(GH + path, { ...opts, headers: { Accept: "application/vnd.github+json", ...(ghToken() ? { Authorization: `Bearer ${ghToken()}` } : {}), ...(opts.headers || {}) } })
+  .then(r => r.ok ? r.json() : r.json().catch(() => ({})).then(b => Promise.reject(new Error(b.message || `GitHub ${r.status}`))));
+
+function askPanel() {
+  const box = document.getElementById("ask");
+  if (!ghToken()) {
+    // No token in this browser: hand the request to GitHub's own new-issue page (uses your GitHub login).
+    const ta = $("textarea", { placeholder: "e.g. Show the airline logo on each option, or add Jan 10 as a date", "aria-label": "Request" });
+    const send = $("button", { class: "btn primary", type: "button", text: "Send via GitHub" });
+    send.onclick = () => {
+      const text = ta.value.trim();
+      if (!text) return;
+      const q = new URLSearchParams({ title: `[agent] ${text.replace(/\s+/g, " ").slice(0, 70)}`, body: text });
+      window.open(`https://github.com/${REPO}/issues/new?${q}`, "_blank", "noopener");
+      box.classList.remove("open");
+      setTimeout(pollAgent, 20000);  // the status bar appears once the issue is submitted
+    };
+    const input = $("input", { type: "password", placeholder: "github_pat_…", autocomplete: "off", "aria-label": "GitHub token" });
+    const save = $("button", { class: "btn", type: "button", text: "Save" });
+    save.onclick = () => { if (input.value.trim()) { localStorage.setItem("ghToken", input.value.trim()); askPanel(); } };
+    box.replaceChildren($("h4", { text: "Ask the agent to change something" }), ta,
+      $("div", { class: "row" }, $("span", { class: "muted", text: "Opens GitHub; tap Submit there." }), send),
+      $("details", { class: "muted", style: "margin-top:10px" }, $("summary", { text: "Send directly from this page instead" }),
+        $("p", {}, "Paste a ", $("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer", text: "fine-grained token" }),
+          ` with access to only ${REPO} and Issues: read and write. It stays in this browser.`),
+        input, $("div", { class: "row" }, $("span"), save)));
+    setTimeout(() => ta.focus(), 0);
+    return;
+  }
+  const ta = $("textarea", { placeholder: "e.g. Show the airline logo on each option, or add Jan 10 as a date", "aria-label": "Request" });
+  const send = $("button", { class: "btn primary", type: "button", text: "Send" });
+  const forget = $("a", { href: "#", class: "muted", text: "Forget token" });
+  forget.onclick = e => { e.preventDefault(); localStorage.removeItem("ghToken"); askPanel(); };
+  send.onclick = async () => {
+    const text = ta.value.trim();
+    if (!text) return;
+    send.disabled = true; send.textContent = "Sending…";
+    try {
+      const issue = await gh(`/repos/${REPO}/issues`, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title: `[agent] ${text.replace(/\s+/g, " ").slice(0, 70)}`, body: text }) });
+      localStorage.setItem("agentIssue", String(issue.number));
+      box.classList.remove("open");
+      pollAgent();
+    } catch (e) {
+      send.disabled = false; send.textContent = "Send";
+      box.append($("p", { class: "muted", text: `Couldn't send: ${e.message}` }));
+    }
+  };
+  box.replaceChildren($("h4", { text: "Ask the agent to change something" }), ta,
+    $("div", { class: "row" }, forget, send),
+    $("p", { class: "muted", style: "margin:8px 0 0", text: "It opens a pull request; you review and merge it on GitHub." }));
+  setTimeout(() => ta.focus(), 0);
+}
+
+function setStatus(kind, ...kids) {
+  const bar = document.getElementById("agent-status");
+  if (!kind) { bar.className = "status"; bar.replaceChildren(); return; }
+  bar.className = "status show" + (kind === "bad" ? " bad" : "");
+  bar.replaceChildren(...kids.filter(Boolean));
+}
+
+let pollTimer = null;
+// Requests already shown as applied; never reload for these again (the issue may stay open).
+const doneIssues = () => JSON.parse(localStorage.getItem("agentDone") || "[]");
+const markDone = n => localStorage.setItem("agentDone", JSON.stringify([...new Set([...doneIssues(), String(n)])].slice(-50)));
+
+async function pollAgent() {
+  clearTimeout(pollTimer);
+  let n = localStorage.getItem("agentIssue");
+  try {
+    if (!n) {  // pick up a request sent from another device
+      const open = (await gh(`/repos/${REPO}/issues?state=open&per_page=20`))
+        .filter(i => !i.pull_request && i.title.startsWith("[agent]") && !doneIssues().includes(String(i.number)));
+      if (!open.length) return setStatus(null);
+      n = String(open[0].number);
+    }
+    const issue = await gh(`/repos/${REPO}/issues/${n}`);
+    const labels = issue.labels.map(l => l.name);
+    const what = `“${issue.title.replace(/^\[agent\]\s*/, "")}”`;
+    const dismiss = $("button", { class: "btn", type: "button", text: "Dismiss" });
+    dismiss.onclick = () => { localStorage.removeItem("agentIssue"); setStatus(null); };
+    const issueLink = () => $("a", { href: issue.html_url, target: "_blank", rel: "noopener noreferrer", text: "details" });
+    if (issue.state === "open" && labels.includes("agent: proposal")) {
+      const prs = await gh(`/repos/${REPO}/pulls?state=all&head=${REPO.split("/")[0]}:agent/issue-${n}`);
+      const pr = prs.find(p => p.state === "open") || prs[0];
+      if (pr && pr.merged_at) {
+        // Merged by the workflow's token: GitHub doesn't auto-close the issue then, so do it here if we can.
+        if (ghToken()) gh(`/repos/${REPO}/issues/${n}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ state: "closed", state_reason: "completed" }) }).catch(() => {});
+        localStorage.removeItem("agentIssue");
+        markDone(n);
+        if (Date.now() - new Date(pr.merged_at) > 180000) return setStatus(null);  // merged a while ago: page is already current
+        setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Applied ${what}. Refreshing the page…` }));
+        setTimeout(() => location.reload(), 90000);
+        return;
+      }
+      setStatus("info", $("span", { class: "grow", text: `Change ready for review: ${what}` }),
+        pr ? $("a", { class: "btn primary", href: pr.html_url, target: "_blank", rel: "noopener noreferrer", text: "Review & merge" }) : issueLink());
+    } else if (issue.state === "open") {
+      setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Agent is working on ${what}…` }));
+    } else if (labels.includes("agent: failed") || labels.includes("agent: no change")) {
+      const failed = labels.includes("agent: failed");
+      // Reopening the issue re-runs the agent (e.g. after Gemini's free tier was too busy).
+      const retry = $("button", { class: "btn primary", type: "button", text: "Retry" });
+      retry.onclick = async () => {
+        localStorage.setItem("agentIssue", n);
+        localStorage.setItem("agentDone", JSON.stringify(doneIssues().filter(x => x !== String(n))));
+        if (!ghToken()) { window.open(issue.html_url, "_blank", "noopener"); setTimeout(pollAgent, 20000); return; }
+        retry.disabled = true; retry.textContent = "Retrying…";
+        try {
+          await gh(`/repos/${REPO}/issues/${n}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ state: "open" }) });
+          setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Retrying ${what}…` }));
+          pollTimer = setTimeout(pollAgent, 15000);
+        } catch (e) { retry.disabled = false; retry.textContent = "Retry"; }
+      };
+      setStatus("bad", $("span", { class: "grow", text: `${failed ? "Couldn't make" : "No change for"} ${what}.` }),
+        issueLink(), failed ? retry : null, dismiss);
+      return;
+    } else {
+      // Closed by the merged PR: GitHub Pages redeploys in about a minute.
+      localStorage.removeItem("agentIssue");
+      markDone(n);
+      setStatus("info", $("div", { class: "spin", "aria-hidden": "true" }), $("span", { class: "grow", text: `Applied ${what}. Refreshing the page…` }));
+      setTimeout(() => location.reload(), 90000);
+      return;
+    }
+  } catch (e) {
+    setStatus(null);
+  }
+  pollTimer = setTimeout(pollAgent, ghToken() ? 15000 : 60000);  // unauthenticated API allows 60 calls/hour
+}
+
+document.getElementById("ask-btn").onclick = () => {
+  const box = document.getElementById("ask");
+  if (box.classList.toggle("open")) askPanel();
+};
+pollAgent();
+
+Promise.all([fetch("data/latest.json", { cache: "no-store" }).then(r => r.json()), fetch("data/history.json", { cache: "no-store" }).then(r => r.json()).catch(() => ({}))])
+  .then(([l, h]) => render(l, h))
+  .catch(() => { document.getElementById("updated").textContent = "No data yet. The first scheduled run will populate this page."; });
+</script>
+</body>
+</html>
