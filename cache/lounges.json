@@ -996,6 +996,50 @@
    "name": "Istanbul",
    "url": "https://www.prioritypass.com/lounges/turkey/istanbul"
   },
+  "JED": {
+   "complete": true,
+   "fetched": "2026-10-18T00:01:50+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JED1",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Security Checks and Passport Control, the lounge is located immediately after the Immigration counters on the left. North Terminal international flights only (no access for Saudia Airlines flights).",
+     "name": "First Class Lounge",
+     "rating": 3.59,
+     "ratings_count": 606,
+     "terminal": "North Terminal",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed1-first-class-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JED6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - near Gate 39. International and in transit flights only.",
+     "name": "Plaza Premium Lounge (International Departures)",
+     "rating": 3.8,
+     "ratings_count": 1433,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed6-plaza-premium-lounge-international-departures"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JED5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - 1st Floor. Domestic flights only. ",
+     "name": "naSmiles Lounge",
+     "rating": 4.09,
+     "ratings_count": 402,
+     "terminal": "Domestic Terminal",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed5-nasmiles-lounge"
+    }
+   ],
+   "name": "Jeddah King A Aziz Intl",
+   "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international"
+  },
   "LAS": {
    "complete": true,
    "fetched": "2026-10-17T20:08:46+00:00",
