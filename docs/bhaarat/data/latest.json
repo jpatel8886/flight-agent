@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T00:01:59+00:00",
+ "generated_at": "2026-10-18T04:13:43+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -1289,7 +1289,7 @@
     "DEL": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "BOM": {
      "forced": null,
@@ -1304,17 +1304,17 @@
     "CDG": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "FRA": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "AMS": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "MUC": {
      "forced": null,
@@ -1570,7 +1570,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 234.0,
+     "price": 233.0,
      "currency": "USD",
      "segments": [
       {
@@ -1609,7 +1609,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 265.0,
+     "score": 264.0,
      "key": "7d757aa57e77",
      "origin": "SFO",
      "destination": "PHX",
@@ -1624,7 +1624,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 255.0,
+     "price": 254.0,
      "currency": "USD",
      "segments": [
       {
@@ -1663,7 +1663,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 286.2,
+     "score": 285.2,
      "key": "a69d9fc97c43",
      "origin": "SFO",
      "destination": "PHX",
@@ -1835,62 +1835,6 @@
     },
     {
      "source": "Skiplagged",
-     "strategy": "hidden-city",
-     "price": 238.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "SFO",
-       "destination": "PHX",
-       "depart": "2026-11-29T16:00",
-       "arrive": "2026-11-29T19:04",
-       "carrier": "AA",
-       "flight_number": "AA1930",
-       "duration_min": 124
-      }
-     ],
-     "airlines": [
-      "American Airlines"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": true,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:SFO,to:PHX,departure:11/29/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/SFO-PHX/2026-11-29/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/SFO/PHX/2026-11-29"
-      }
-     ],
-     "notes": [
-      "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
-     ],
-     "also_seen": {},
-     "score": 319.0,
-     "key": "08251bf9cb85",
-     "origin": "SFO",
-     "destination": "PHX",
-     "stops": 0,
-     "total_minutes": 124,
-     "layovers": [],
-     "ticket_links": [],
-     "layover_countries": [],
-     "avoid": false,
-     "lounges": {}
-    },
-    {
-     "source": "Skiplagged",
      "strategy": "direct",
      "price": 288.0,
      "currency": "USD",
@@ -2000,7 +1944,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 244.0,
+     "price": 236.0,
      "currency": "USD",
      "segments": [
       {
@@ -2048,7 +1992,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 341.5,
+     "score": 333.5,
      "key": "45f818915bd0",
      "origin": "SFO",
      "destination": "PHX",
@@ -2128,6 +2072,116 @@
      "layover_countries": [
       "United States"
      ],
+     "avoid": false,
+     "lounges": {}
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "hidden-city",
+     "price": 269.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "SFO",
+       "destination": "PHX",
+       "depart": "2026-11-29T19:12",
+       "arrive": "2026-11-29T22:16",
+       "carrier": "AA",
+       "flight_number": "AA901",
+       "duration_min": 124
+      }
+     ],
+     "airlines": [
+      "American Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": true,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:SFO,to:PHX,departure:11/29/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/SFO-PHX/2026-11-29/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/SFO/PHX/2026-11-29"
+      }
+     ],
+     "notes": [
+      "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
+     ],
+     "also_seen": {},
+     "score": 350.0,
+     "key": "637f22f8f01f",
+     "origin": "SFO",
+     "destination": "PHX",
+     "stops": 0,
+     "total_minutes": 124,
+     "layovers": [],
+     "ticket_links": [],
+     "layover_countries": [],
+     "avoid": false,
+     "lounges": {}
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 319.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "SFO",
+       "destination": "PHX",
+       "depart": "2026-11-29T16:00",
+       "arrive": "2026-11-29T19:04",
+       "carrier": "AA",
+       "flight_number": "AA1930",
+       "duration_min": 124
+      }
+     ],
+     "airlines": [
+      "American Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:SFO,to:PHX,departure:11/29/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/SFO-PHX/2026-11-29/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/SFO/PHX/2026-11-29"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 350.0,
+     "key": "08251bf9cb85",
+     "origin": "SFO",
+     "destination": "PHX",
+     "stops": 0,
+     "total_minutes": 124,
+     "layovers": [],
+     "ticket_links": [],
+     "layover_countries": [],
      "avoid": false,
      "lounges": {}
     },
@@ -2323,18 +2377,18 @@
     },
     {
      "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 349.0,
+     "strategy": "hidden-city",
+     "price": 289.0,
      "currency": "USD",
      "segments": [
       {
        "origin": "SFO",
        "destination": "PHX",
-       "depart": "2026-11-29T19:12",
-       "arrive": "2026-11-29T22:16",
+       "depart": "2026-11-29T20:59",
+       "arrive": "2026-11-30T00:01",
        "carrier": "AA",
-       "flight_number": "AA901",
-       "duration_min": 124
+       "flight_number": "AA1865",
+       "duration_min": 122
       }
      ],
      "airlines": [
@@ -2342,7 +2396,7 @@
      ],
      "via": "",
      "separate_tickets": false,
-     "hidden_city": false,
+     "hidden_city": true,
      "links": [
       {
        "name": "Skyscanner",
@@ -2361,14 +2415,16 @@
        "url": "https://skiplagged.com/flights/SFO/PHX/2026-11-29"
       }
      ],
-     "notes": [],
+     "notes": [
+      "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
+     ],
      "also_seen": {},
-     "score": 380.0,
-     "key": "637f22f8f01f",
+     "score": 369.5,
+     "key": "17211aa6a2ee",
      "origin": "SFO",
      "destination": "PHX",
      "stops": 0,
-     "total_minutes": 124,
+     "total_minutes": 122,
      "layovers": [],
      "ticket_links": [],
      "layover_countries": [],
@@ -2508,60 +2564,6 @@
      ],
      "avoid": false,
      "lounges": {}
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 386.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "SFO",
-       "destination": "PHX",
-       "depart": "2026-11-29T20:59",
-       "arrive": "2026-11-30T00:01",
-       "carrier": "AA",
-       "flight_number": "AA1865",
-       "duration_min": 122
-      }
-     ],
-     "airlines": [
-      "American Airlines"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:SFO,to:PHX,departure:11/29/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/SFO-PHX/2026-11-29/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/SFO/PHX/2026-11-29"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 416.5,
-     "key": "17211aa6a2ee",
-     "origin": "SFO",
-     "destination": "PHX",
-     "stops": 0,
-     "total_minutes": 122,
-     "layovers": [],
-     "ticket_links": [],
-     "layover_countries": [],
-     "avoid": false,
-     "lounges": {}
     }
    ],
    "best_by_strategy": {
@@ -2569,11 +2571,6 @@
     "hidden-city": 172.0
    },
    "hubs": {
-    "DXB": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": true
-    },
     "DOH": {
      "forced": null,
      "self_transfer": null,
@@ -2584,7 +2581,22 @@
      "self_transfer": null,
      "skipped": true
     },
+    "JED": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": true
+    },
+    "BAH": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": true
+    },
     "IST": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": true
+    },
+    "BOM": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
@@ -2605,11 +2617,6 @@
      "skipped": true
     },
     "MUC": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": true
-    },
-    "VIE": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
