@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T20:35:45+00:00",
+ "generated_at": "2026-10-18T23:05:58+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -718,7 +718,7 @@
      ],
      "notes": [],
      "also_seen": {
-      "Skiplagged": 159.0
+      "Skiplagged": 199.0
      },
      "score": 192.0,
      "key": "0480b6f30d71",
@@ -1388,12 +1388,12 @@
     "LHR": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "CDG": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "FRA": {
      "forced": null,
@@ -1403,7 +1403,7 @@
     "AMS": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "MUC": {
      "forced": null,
@@ -2720,7 +2720,7 @@
     "BAH": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "IST": {
      "forced": null,
