@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T09:26:05+00:00",
+ "generated_at": "2026-10-18T13:53:11+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -35,7 +35,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 1187.75,
+     "price": 1229.75,
      "currency": "USD",
      "segments": [
       {
@@ -94,7 +94,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 1731.5,
+     "score": 1773.5,
      "key": "50a64b985104",
      "origin": "AMD",
      "destination": "IAD",
@@ -397,6 +397,303 @@
          "rating": 4.3,
          "ratings_count": 32338,
          "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1432.3,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "BOM",
+       "depart": "2027-01-08T12:55",
+       "arrive": "2027-01-08T14:15",
+       "carrier": "6E",
+       "flight_number": "6E2283",
+       "duration_min": 50
+      },
+      {
+       "origin": "BOM",
+       "destination": "AUH",
+       "depart": "2027-01-08T21:25",
+       "arrive": "2027-01-08T23:40",
+       "carrier": "IX",
+       "flight_number": "IX261",
+       "duration_min": 225
+      },
+      {
+       "origin": "AUH",
+       "destination": "IAD",
+       "depart": "2027-01-09T03:15",
+       "arrive": "2027-01-09T09:00",
+       "carrier": "EY",
+       "flight_number": "EY5",
+       "duration_min": 885
+      }
+     ],
+     "airlines": [
+      "Air India Express",
+      "Etihad Airways",
+      "IndiGo"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 1963.5,
+     "key": "decb51570429",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1805,
+     "layovers": [
+      "BOM",
+      "AUH"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "United Arab Emirates"
+     ],
+     "avoid": true,
+     "lounges": {
+      "BOM": {
+       "airport": "Mumbai Chhatrapati Shivaji Intl",
+       "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international",
+       "count": 3,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Adani Silver Lounge",
+        "terminal": "Terminal 2",
+        "hours": "12:00 - 23:59",
+        "rating": 3.81,
+        "ratings_count": 17,
+        "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Aviserv Lounge - West",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": null,
+         "ratings_count": 0,
+         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom27-aviserv-lounge-west",
+         "airside": "unknown"
+        },
+        {
+         "name": "Adani Silver Lounge",
+         "terminal": "Terminal 2",
+         "hours": "12:00 - 23:59",
+         "rating": 3.81,
+         "ratings_count": 17,
+         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "Adani Silver International Lounge",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": 3.49,
+         "ratings_count": 1315,
+         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom20-adani-lounge-east",
+         "airside": true
+        }
+       ]
+      },
+      "AUH": {
+       "airport": "Abu Dhabi International",
+       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Pearl Lounge",
+        "terminal": "Terminal A",
+        "hours": "00:00 - 23:59",
+        "rating": 4,
+        "ratings_count": 9093,
+        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Pearl Lounge",
+         "terminal": "Terminal A",
+         "hours": "00:00 - 23:59",
+         "rating": 4,
+         "ratings_count": 9093,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1444.3,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "BOM",
+       "depart": "2027-01-08T12:55",
+       "arrive": "2027-01-08T14:15",
+       "carrier": "6E",
+       "flight_number": "6E2283",
+       "duration_min": 50
+      },
+      {
+       "origin": "BOM",
+       "destination": "AUH",
+       "depart": "2027-01-08T19:20",
+       "arrive": "2027-01-08T21:15",
+       "carrier": "6E",
+       "flight_number": "6E1401",
+       "duration_min": 205
+      },
+      {
+       "origin": "AUH",
+       "destination": "IAD",
+       "depart": "2027-01-09T03:15",
+       "arrive": "2027-01-09T09:00",
+       "carrier": "EY",
+       "flight_number": "EY5",
+       "duration_min": 885
+      }
+     ],
+     "airlines": [
+      "Etihad Airways",
+      "IndiGo"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 1975.5,
+     "key": "faaa0676dcbc",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1805,
+     "layovers": [
+      "BOM",
+      "AUH"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "United Arab Emirates"
+     ],
+     "avoid": true,
+     "lounges": {
+      "BOM": {
+       "airport": "Mumbai Chhatrapati Shivaji Intl",
+       "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international",
+       "count": 3,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Adani Silver Lounge",
+        "terminal": "Terminal 2",
+        "hours": "12:00 - 23:59",
+        "rating": 3.81,
+        "ratings_count": 17,
+        "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Aviserv Lounge - West",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": null,
+         "ratings_count": 0,
+         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom27-aviserv-lounge-west",
+         "airside": "unknown"
+        },
+        {
+         "name": "Adani Silver Lounge",
+         "terminal": "Terminal 2",
+         "hours": "12:00 - 23:59",
+         "rating": 3.81,
+         "ratings_count": 17,
+         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "Adani Silver International Lounge",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": 3.49,
+         "ratings_count": 1315,
+         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom20-adani-lounge-east",
+         "airside": true
+        }
+       ]
+      },
+      "AUH": {
+       "airport": "Abu Dhabi International",
+       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Pearl Lounge",
+        "terminal": "Terminal A",
+        "hours": "00:00 - 23:59",
+        "rating": 4,
+        "ratings_count": 9093,
+        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Pearl Lounge",
+         "terminal": "Terminal A",
+         "hours": "00:00 - 23:59",
+         "rating": 4,
+         "ratings_count": 9093,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge",
          "airside": true
         }
        ]
@@ -1175,6 +1472,219 @@
      }
     },
     {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1451.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T11:00",
+       "arrive": "2027-01-08T12:50",
+       "carrier": "AI",
+       "flight_number": "AI1823",
+       "duration_min": 80
+      },
+      {
+       "origin": "DEL",
+       "destination": "ICN",
+       "depart": "2027-01-08T19:50",
+       "arrive": "2027-01-09T06:05",
+       "carrier": "KE",
+       "flight_number": "KE498",
+       "duration_min": 405
+      },
+      {
+       "origin": "ICN",
+       "destination": "IAD",
+       "depart": "2027-01-09T10:15",
+       "arrive": "2027-01-09T09:50",
+       "carrier": "KE",
+       "flight_number": "KE93",
+       "duration_min": 815
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Korean Air"
+     ],
+     "via": "",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
+      }
+     ],
+     "notes": [
+      "Virtual interlining: separate airline tickets combined by the seller"
+     ],
+     "also_seen": {},
+     "score": 2098.5,
+     "key": "146e5705fab1",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1970,
+     "layovers": [
+      "DEL",
+      "ICN"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "South Korea"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "ICN": {
+       "airport": "Seoul Incheon Intl",
+       "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international",
+       "count": 10,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Asiana Business Lounge Central",
+        "terminal": "Terminal 1",
+        "hours": "06:00 - 22:00",
+        "rating": 4.5,
+        "ratings_count": 1591,
+        "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn16-asiana-business-lounge-central"
+       },
+       "lounges": [
+        {
+         "name": "Sky Hub Lounge",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": 4.49,
+         "ratings_count": 1889,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn18-sky-hub-lounge",
+         "airside": true
+        },
+        {
+         "name": "Sky Hub Lounge",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 21:30",
+         "rating": 4.4,
+         "ratings_count": 2496,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn14-sky-hub-lounge",
+         "airside": true
+        },
+        {
+         "name": "Matina",
+         "terminal": "Terminal 2",
+         "hours": "06:00 - 22:00",
+         "rating": 4.4,
+         "ratings_count": 5969,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn13-matina",
+         "airside": true
+        },
+        {
+         "name": "Asiana Business Lounge Central",
+         "terminal": "Terminal 1",
+         "hours": "06:00 - 22:00",
+         "rating": 4.5,
+         "ratings_count": 1591,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn16-asiana-business-lounge-central",
+         "airside": true
+        },
+        {
+         "name": "Asiana Business Lounge West",
+         "terminal": "Terminal 1",
+         "hours": "06:00 - 00:30",
+         "rating": 4.5,
+         "ratings_count": 997,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn17-asiana-business-lounge-west",
+         "airside": true
+        },
+        {
+         "name": "Matina Lounge",
+         "terminal": "Terminal 1",
+         "hours": "06:00 - 22:00",
+         "rating": 4.1,
+         "ratings_count": 2585,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn3-matina",
+         "airside": true
+        },
+        {
+         "name": "Matina",
+         "terminal": "Terminal 1",
+         "hours": "06:00 - 22:00",
+         "rating": 4.2,
+         "ratings_count": 2427,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn2-matina",
+         "airside": true
+        },
+        {
+         "name": "Sky Hub Lounge",
+         "terminal": "Terminal 1",
+         "hours": "00:00 - 21:30",
+         "rating": 4.1,
+         "ratings_count": 2962,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn9-sky-hub-lounge",
+         "airside": true
+        },
+        {
+         "name": "Sky Hub Lounge",
+         "terminal": "Terminal 1",
+         "hours": "00:00 - 21:30",
+         "rating": 4.1,
+         "ratings_count": 1950,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn8-sky-hub-lounge",
+         "airside": true
+        },
+        {
+         "name": "Sky Hub Lounge",
+         "terminal": "Terminal 1 Concourse",
+         "hours": "06:00 - 22:00",
+         "rating": 4,
+         "ratings_count": 1407,
+         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn10-sky-hub-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
      "source": "Google Flights x2",
      "strategy": "self-transfer",
      "price": 1484.0,
@@ -1219,7 +1729,9 @@
      "notes": [
       "Two separate tickets with 4.0h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
      ],
-     "also_seen": {},
+     "also_seen": {
+      "Skiplagged": 1645.75
+     },
      "score": 2111.5,
      "key": "c099c2e8f740",
      "origin": "HSR",
@@ -1828,7 +2340,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 1689.52,
+     "price": 1697.93,
      "currency": "USD",
      "segments": [
       {
@@ -1886,7 +2398,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 2120.8,
+     "score": 2129.2,
      "key": "e1af40c5c8fa",
      "origin": "AMD",
      "destination": "IAD",
@@ -2312,6 +2824,512 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
+     "price": 1631.97,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T22:05",
+       "arrive": "2027-01-08T23:55",
+       "carrier": "6E",
+       "flight_number": "6E6046",
+       "duration_min": 80
+      },
+      {
+       "origin": "DEL",
+       "destination": "IST",
+       "depart": "2027-01-09T07:20",
+       "arrive": "2027-01-09T12:55",
+       "carrier": "6E",
+       "flight_number": "6E11",
+       "duration_min": 485
+      },
+      {
+       "origin": "IST",
+       "destination": "IAD",
+       "depart": "2027-01-09T16:10",
+       "arrive": "2027-01-09T19:25",
+       "carrier": "6E",
+       "flight_number": "6E4007",
+       "duration_min": 675
+      }
+     ],
+     "airlines": [
+      "IndiGo"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 2182.0,
+     "key": "3f654da85c18",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1880,
+     "layovers": [
+      "DEL",
+      "IST"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "Turkey"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "IST": {
+       "airport": "Istanbul",
+       "url": "https://www.prioritypass.com/lounges/turkey/istanbul",
+       "count": 2,
+       "sleep_pods": 1,
+       "best": {
+        "name": "IGA Lounge",
+        "terminal": "International Terminal",
+        "hours": "00:00 - 23:59",
+        "rating": 4.3,
+        "ratings_count": 32338,
+        "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international"
+       },
+       "lounges": [
+        {
+         "name": "Pop up Lounge",
+         "terminal": "International Terminal",
+         "hours": "00:00 - 23:59",
+         "rating": 3.3,
+         "ratings_count": 1169,
+         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist12-pop-up-lounge-by-iga",
+         "airside": true
+        },
+        {
+         "name": "IGA Lounge",
+         "terminal": "International Terminal",
+         "hours": "00:00 - 23:59",
+         "rating": 4.3,
+         "ratings_count": 32338,
+         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1631.95,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T11:00",
+       "arrive": "2027-01-08T12:50",
+       "carrier": "AI",
+       "flight_number": "AI1823",
+       "duration_min": 80
+      },
+      {
+       "origin": "DEL",
+       "destination": "DXB",
+       "depart": "2027-01-08T16:15",
+       "arrive": "2027-01-08T18:35",
+       "carrier": "EK",
+       "flight_number": "EK517",
+       "duration_min": 230
+      },
+      {
+       "origin": "DXB",
+       "destination": "IAD",
+       "depart": "2027-01-09T02:25",
+       "arrive": "2027-01-09T08:35",
+       "carrier": "EK",
+       "flight_number": "EK231",
+       "duration_min": 910
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Emirates"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 2185.7,
+     "key": "966a448f4cb1",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1895,
+     "layovers": [
+      "DEL",
+      "DXB"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "United Arab Emirates"
+     ],
+     "avoid": true,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "DXB": {
+       "airport": "Dubai Intl",
+       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
+       "count": 11,
+       "sleep_pods": 4,
+       "best": {
+        "name": "Ahlan Business Class Lounge",
+        "terminal": "Terminal 1 Concourse D",
+        "hours": "00:00 - 23:59",
+        "rating": 4.4,
+        "ratings_count": 3871,
+        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Ahlan Lounge at B",
+         "terminal": "Terminal 3 Concourse B",
+         "hours": "00:00 - 23:59",
+         "rating": 4.3,
+         "ratings_count": 5594,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 3 Concourse B",
+         "hours": "00:00 - 23:59",
+         "rating": 3.8,
+         "ratings_count": 11196,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Lounge",
+         "terminal": "Terminal 3 Concourse A",
+         "hours": "00:00 - 23:59",
+         "rating": 4,
+         "ratings_count": 1686,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3 Concourse A",
+         "hours": "00:00 - 23:59",
+         "rating": 4.1,
+         "ratings_count": 4852,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 3 Concourse A",
+         "hours": "00:00 - 23:59",
+         "rating": 3.8,
+         "ratings_count": 5644,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Lounge @C13",
+         "terminal": "Terminal 3 Concourse C",
+         "hours": "00:00 - 23:59",
+         "rating": 4.18,
+         "ratings_count": 2379,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "00:00 - 23:59",
+         "rating": 4.2,
+         "ratings_count": 22,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Business Class Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "00:00 - 23:59",
+         "rating": 4.4,
+         "ratings_count": 3871,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge",
+         "airside": true
+        },
+        {
+         "name": "SkyTeam Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "02:00 - 20:00",
+         "rating": 4.4,
+         "ratings_count": 1041,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "00:00 - 23:59",
+         "rating": 3.8,
+         "ratings_count": 2692,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": 3,
+         "ratings_count": 2622,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1658.26,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-08T20:00",
+       "arrive": "2027-01-08T21:45",
+       "carrier": "AI",
+       "flight_number": "AI2538",
+       "duration_min": 75
+      },
+      {
+       "origin": "DEL",
+       "destination": "FRA",
+       "depart": "2027-01-09T03:35",
+       "arrive": "2027-01-09T07:55",
+       "carrier": "LH",
+       "flight_number": "LH761",
+       "duration_min": 530
+      },
+      {
+       "origin": "FRA",
+       "destination": "IAD",
+       "depart": "2027-01-09T13:00",
+       "arrive": "2027-01-09T15:55",
+       "carrier": "LH",
+       "flight_number": "LH418",
+       "duration_min": 535
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "Lufthansa"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 2187.0,
+     "key": "d3d94faccf5d",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1795,
+     "layovers": [
+      "DEL",
+      "FRA"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "Germany"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "FRA": {
+       "airport": "Frankfurt",
+       "url": "https://www.prioritypass.com/lounges/germany/frankfurt",
+       "count": 3,
+       "sleep_pods": 0,
+       "best": {
+        "name": "SkyTeam Lounge ",
+        "terminal": "Terminal 3",
+        "hours": "06:30 - 22:00",
+        "rating": 4.82,
+        "ratings_count": 11,
+        "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra16-skyteam-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Air France Lounge",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 20:00",
+         "rating": 4.44,
+         "ratings_count": 9,
+         "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra17-air-france-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "SkyTeam Lounge ",
+         "terminal": "Terminal 3",
+         "hours": "06:30 - 22:00",
+         "rating": 4.82,
+         "ratings_count": 11,
+         "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra16-skyteam-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "Priority Lounge",
+         "terminal": "Terminal 3",
+         "hours": "06:15 - 21:15",
+         "rating": 4.36,
+         "ratings_count": 25,
+         "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra15-priority-lounge",
+         "airside": "unknown"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
      "price": 1684.0,
      "currency": "USD",
      "segments": [
@@ -2593,759 +3611,6 @@
          "ratings_count": 25,
          "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra15-priority-lounge",
          "airside": "unknown"
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Google Flights x2",
-     "strategy": "self-transfer",
-     "price": 1652.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-08T15:25",
-       "arrive": "2027-01-08T17:10",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 105
-      },
-      {
-       "origin": "DEL",
-       "destination": "DXB",
-       "depart": "2027-01-08T21:30",
-       "arrive": "2027-01-08T23:59",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 239
-      },
-      {
-       "origin": "DXB",
-       "destination": "IAD",
-       "depart": "2027-01-09T02:25",
-       "arrive": "2027-01-09T08:35",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 910
-      }
-     ],
-     "airlines": [
-      "Air India",
-      "Emirates"
-     ],
-     "via": "DEL",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [],
-     "notes": [
-      "Two separate tickets with 4.3h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
-     ],
-     "also_seen": {
-      "Skiplagged": 1722.0
-     },
-     "score": 2222.0,
-     "key": "379356e8ec00",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1660,
-     "layovers": [
-      "DEL",
-      "DXB"
-     ],
-     "ticket_links": [
-      {
-       "leg": "AMD \u2192 DEL",
-       "price": 76.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/amd/del/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-08"
-        }
-       ]
-      },
-      {
-       "leg": "DEL \u2192 IAD",
-       "price": 1576.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/del/iad/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-08"
-        }
-       ]
-      }
-     ],
-     "layover_countries": [
-      "India",
-      "United Arab Emirates"
-     ],
-     "avoid": true,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "DXB": {
-       "airport": "Dubai Intl",
-       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
-       "count": 11,
-       "sleep_pods": 4,
-       "best": {
-        "name": "Ahlan Business Class Lounge",
-        "terminal": "Terminal 1 Concourse D",
-        "hours": "00:00 - 23:59",
-        "rating": 4.4,
-        "ratings_count": 3871,
-        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Ahlan Lounge at B",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 5594,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 11196,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4,
-         "ratings_count": 1686,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 4852,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 5644,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge @C13",
-         "terminal": "Terminal 3 Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 4.18,
-         "ratings_count": 2379,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.2,
-         "ratings_count": 22,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Business Class Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 3871,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "SkyTeam Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "02:00 - 20:00",
-         "rating": 4.4,
-         "ratings_count": 1041,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 2692,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3,
-         "ratings_count": 2622,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1691.27,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "HSR",
-       "destination": "DEL",
-       "depart": "2027-01-08T22:05",
-       "arrive": "2027-01-08T23:55",
-       "carrier": "6E",
-       "flight_number": "6E6046",
-       "duration_min": 80
-      },
-      {
-       "origin": "DEL",
-       "destination": "IST",
-       "depart": "2027-01-09T07:20",
-       "arrive": "2027-01-09T12:55",
-       "carrier": "6E",
-       "flight_number": "6E11",
-       "duration_min": 485
-      },
-      {
-       "origin": "IST",
-       "destination": "IAD",
-       "depart": "2027-01-09T16:10",
-       "arrive": "2027-01-09T19:25",
-       "carrier": "6E",
-       "flight_number": "6E4007",
-       "duration_min": 675
-      }
-     ],
-     "airlines": [
-      "IndiGo"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/hsr/iad/270108/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/HSR-IAD/2027-01-08/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/HSR/IAD/2027-01-08"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 2241.3,
-     "key": "3f654da85c18",
-     "origin": "HSR",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1880,
-     "layovers": [
-      "DEL",
-      "IST"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "India",
-      "Turkey"
-     ],
-     "avoid": false,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "IST": {
-       "airport": "Istanbul",
-       "url": "https://www.prioritypass.com/lounges/turkey/istanbul",
-       "count": 2,
-       "sleep_pods": 1,
-       "best": {
-        "name": "IGA Lounge",
-        "terminal": "International Terminal",
-        "hours": "00:00 - 23:59",
-        "rating": 4.3,
-        "ratings_count": 32338,
-        "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international"
-       },
-       "lounges": [
-        {
-         "name": "Pop up Lounge",
-         "terminal": "International Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 3.3,
-         "ratings_count": 1169,
-         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist12-pop-up-lounge-by-iga",
-         "airside": true
-        },
-        {
-         "name": "IGA Lounge",
-         "terminal": "International Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 32338,
-         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1790.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "AUH",
-       "depart": "2027-01-08T21:00",
-       "arrive": "2027-01-08T22:40",
-       "carrier": "EY",
-       "flight_number": "EY241",
-       "duration_min": 190
-      },
-      {
-       "origin": "AUH",
-       "destination": "IAD",
-       "depart": "2027-01-09T03:15",
-       "arrive": "2027-01-09T09:00",
-       "carrier": "EY",
-       "flight_number": "EY5",
-       "duration_min": 885
-      }
-     ],
-     "airlines": [
-      "Etihad Airways"
-     ],
-     "via": "",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
-      }
-     ],
-     "notes": [
-      "Virtual interlining: separate airline tickets combined by the seller"
-     ],
-     "also_seen": {
-      "Google Flights": 1975.0
-     },
-     "score": 2242.5,
-     "key": "900f70afbeae",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 1,
-     "total_minutes": 1350,
-     "layovers": [
-      "AUH"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "United Arab Emirates"
-     ],
-     "avoid": true,
-     "lounges": {
-      "AUH": {
-       "airport": "Abu Dhabi International",
-       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Pearl Lounge",
-        "terminal": "Terminal A",
-        "hours": "00:00 - 23:59",
-        "rating": 4,
-        "ratings_count": 9093,
-        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Pearl Lounge",
-         "terminal": "Terminal A",
-         "hours": "00:00 - 23:59",
-         "rating": 4,
-         "ratings_count": 9093,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Google Flights x2",
-     "strategy": "self-transfer",
-     "price": 1652.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-08T14:00",
-       "arrive": "2027-01-08T15:45",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 105
-      },
-      {
-       "origin": "DEL",
-       "destination": "DXB",
-       "depart": "2027-01-08T21:30",
-       "arrive": "2027-01-08T23:59",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 239
-      },
-      {
-       "origin": "DXB",
-       "destination": "IAD",
-       "depart": "2027-01-09T02:25",
-       "arrive": "2027-01-09T08:35",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 910
-      }
-     ],
-     "airlines": [
-      "Air India",
-      "Emirates"
-     ],
-     "via": "DEL",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [],
-     "notes": [
-      "Two separate tickets with 5.8h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
-     ],
-     "also_seen": {},
-     "score": 2243.2,
-     "key": "8c3383562a10",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1745,
-     "layovers": [
-      "DEL",
-      "DXB"
-     ],
-     "ticket_links": [
-      {
-       "leg": "AMD \u2192 DEL",
-       "price": 76.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/amd/del/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-08"
-        }
-       ]
-      },
-      {
-       "leg": "DEL \u2192 IAD",
-       "price": 1576.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/del/iad/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-08"
-        }
-       ]
-      }
-     ],
-     "layover_countries": [
-      "India",
-      "United Arab Emirates"
-     ],
-     "avoid": true,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "DXB": {
-       "airport": "Dubai Intl",
-       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
-       "count": 11,
-       "sleep_pods": 4,
-       "best": {
-        "name": "Ahlan Business Class Lounge",
-        "terminal": "Terminal 1 Concourse D",
-        "hours": "00:00 - 23:59",
-        "rating": 4.4,
-        "ratings_count": 3871,
-        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Ahlan Lounge at B",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 5594,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 11196,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4,
-         "ratings_count": 1686,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 4852,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 5644,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge @C13",
-         "terminal": "Terminal 3 Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 4.18,
-         "ratings_count": 2379,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.2,
-         "ratings_count": 22,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Business Class Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 3871,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "SkyTeam Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "02:00 - 20:00",
-         "rating": 4.4,
-         "ratings_count": 1041,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 2692,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3,
-         "ratings_count": 2622,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
-         "airside": true
         }
        ]
       }
@@ -3797,291 +4062,203 @@
      }
     },
     {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1738.57,
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1716.0,
      "currency": "USD",
      "segments": [
       {
        "origin": "AMD",
-       "destination": "DMK",
-       "depart": "2027-01-08T01:25",
-       "arrive": "2027-01-08T07:05",
-       "carrier": "SL",
-       "flight_number": "SL213",
-       "duration_min": 250
+       "destination": "DEL",
+       "depart": "2027-01-08T20:20",
+       "arrive": "2027-01-08T22:05",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 105
       },
       {
-       "origin": "BKK",
-       "destination": "TPE",
-       "depart": "2027-01-08T12:40",
-       "arrive": "2027-01-08T17:20",
-       "carrier": "TG",
-       "flight_number": "TG634",
-       "duration_min": 220
+       "origin": "DEL",
+       "destination": "FCO",
+       "depart": "2027-01-09T03:45",
+       "arrive": "2027-01-09T08:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 540
       },
       {
-       "origin": "TPE",
+       "origin": "FCO",
        "destination": "IAD",
-       "depart": "2027-01-08T19:30",
-       "arrive": "2027-01-08T20:55",
-       "carrier": "TG",
-       "flight_number": "TG6284",
-       "duration_min": 865
+       "depart": "2027-01-09T10:10",
+       "arrive": "2027-01-09T14:30",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 620
       }
      ],
      "airlines": [
-      "Thai Airways International",
-      "Thai Lion Air"
+      "Air India",
+      "ITA"
      ],
-     "via": "",
-     "separate_tickets": false,
+     "via": "DEL",
+     "separate_tickets": true,
      "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
-      }
+     "links": [],
+     "notes": [
+      "Two separate tickets with 5.7h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
      ],
-     "notes": [],
      "also_seen": {},
-     "score": 2268.6,
-     "key": "d506b7a550d0",
+     "score": 2301.0,
+     "key": "c5630f8d8e07",
      "origin": "AMD",
      "destination": "IAD",
      "stops": 2,
-     "total_minutes": 1800,
+     "total_minutes": 1720,
      "layovers": [
-      "DMK",
-      "TPE"
+      "DEL",
+      "FCO"
      ],
-     "ticket_links": [],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DEL",
+       "price": 76.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/del/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1640.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-09"
+        }
+       ]
+      }
+     ],
      "layover_countries": [
-      "Thailand",
-      "Taiwan"
+      "India",
+      "Italy"
      ],
      "avoid": false,
      "lounges": {
-      "BKK": {
-       "airport": "Bangkok Suvarnabhumi Intl",
-       "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi",
-       "count": 15,
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
        "sleep_pods": 0,
        "best": {
-        "name": "The Coral Finest Business Class Lounge",
-        "terminal": "International Concourse D",
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
         "hours": "00:00 - 23:59",
-        "rating": 4.5,
-        "ratings_count": 4202,
-        "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk20-the-coral-finest-business-class-lounge"
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
        },
        "lounges": [
         {
-         "name": "Plaza Premium Lounge",
-         "terminal": "International Concourse G",
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
          "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 10,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk27-plaza-premium-lounge",
-         "airside": "unknown"
-        },
-        {
-         "name": "Miracle Business Class Lounge",
-         "terminal": "International Concourse G",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 2481,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk5-miracle-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "International Concourse G",
-         "hours": "00:00 - 23:59",
-         "rating": 4.11,
-         "ratings_count": 271,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk4-miracle-first-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "International Concourse G",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 2623,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk2-miracle-first-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle Business Class Lounge",
-         "terminal": "Satellite 1",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 1370,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk26-miracle-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "Satellite 1",
-         "hours": "00:00 - 23:59",
-         "rating": 4.5,
-         "ratings_count": 2064,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk24-miracle-first-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "The Coral Finest Business Class Lounge (Cocoon)",
-         "terminal": "International Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 4.5,
-         "ratings_count": 1325,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk25-the-coral-finest-business-class-lounge-cocoon",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "International Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 3.5,
-         "ratings_count": 1662,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk3-miracle-first-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "The Coral Finest Business Class Lounge",
-         "terminal": "International Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 4.5,
-         "ratings_count": 856,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk23-the-coral-finest-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle Business Class Lounge",
-         "terminal": "International Concourse F",
-         "hours": "00:00 - 23:59",
-         "rating": 3.7,
-         "ratings_count": 2204,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk6-miracle-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "International Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 5543,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk10-miracle-first-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle Business Class Lounge",
-         "terminal": "International Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 4426,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk9-miracle-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "The Coral Finest Business Class Lounge",
-         "terminal": "International Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.5,
-         "ratings_count": 4202,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk20-the-coral-finest-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "International Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 3.9,
-         "ratings_count": 330,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk1-miracle-first-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "Miracle First Class Lounge",
-         "terminal": "International Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4,
-         "ratings_count": 689,
-         "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi/bkk11-miracle-first-class-lounge",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
          "airside": true
         }
        ]
       },
-      "TPE": {
-       "airport": "Taipei Taiwan Taoyuan Intl",
-       "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international",
+      "FCO": {
+       "airport": "Rome Fiumicino",
+       "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino",
        "count": 5,
        "sleep_pods": 0,
        "best": {
-        "name": "Oriental Club Lounge",
-        "terminal": "Terminal 2",
-        "hours": "00:00 - 23:59",
-        "rating": 4.6,
-        "ratings_count": 14101,
-        "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe9-oriental-club-lounge"
+        "name": "Prima Vista Lounge - Portus",
+        "terminal": "Terminal 3",
+        "hours": "05:45 - 22:45",
+        "rating": 4.3,
+        "ratings_count": 2667,
+        "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus"
        },
        "lounges": [
         {
-         "name": "Oriental Club Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 4.6,
-         "ratings_count": 14101,
-         "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe9-oriental-club-lounge",
+         "name": "Prima Vista Lounge",
+         "terminal": "Terminal 1",
+         "hours": "05:15 - 21:45",
+         "rating": 4.27,
+         "ratings_count": 871,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco7-prima-vista-lounge",
          "airside": true
         },
         {
-         "name": "Plaza Premium Lounge The Crest (Zone A1)",
-         "terminal": "Terminal 2",
-         "hours": "05:00 - 21:00",
-         "rating": 4.2,
-         "ratings_count": 1745,
-         "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe7-plaza-premium-lounge-zone-a1",
+         "name": "TAV Primeclass FCO",
+         "terminal": "Terminal 1",
+         "hours": "05:30 - 22:00",
+         "rating": 4.1,
+         "ratings_count": 5989,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco3-tav-primeclass-fco",
          "airside": true
         },
         {
-         "name": "Plaza Premium Lounge The Terroir (Zone A)",
-         "terminal": "Terminal 2",
-         "hours": "05:00 - 23:00",
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 1",
+         "hours": "04:30 - 21:30",
+         "rating": 4.09,
+         "ratings_count": 4332,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco4-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "Prima Vista Lounge - Portus",
+         "terminal": "Terminal 3",
+         "hours": "05:45 - 22:45",
          "rating": 4.3,
-         "ratings_count": 5548,
-         "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe8-plaza-premium-lounge-zone-a",
+         "ratings_count": 2667,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus",
          "airside": true
         },
         {
-         "name": "Plaza Premium Lounge The Blossom  (Zone D)",
-         "terminal": "Terminal 1",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 5813,
-         "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe6-plaza-premium-lounge-zone-d",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge The Jade (Zone C)",
-         "terminal": "Terminal 1",
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3",
          "hours": "05:00 - 23:00",
-         "rating": 4.1,
-         "ratings_count": 3273,
-         "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe5-plaza-premium-lounge-zone-c",
+         "rating": 4.2,
+         "ratings_count": 6829,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco2-plaza-premium-lounge",
          "airside": true
         }
        ]
@@ -4293,9 +4470,213 @@
      }
     },
     {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1717.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-08T18:50",
+       "arrive": "2027-01-08T20:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 110
+      },
+      {
+       "origin": "DEL",
+       "destination": "FCO",
+       "depart": "2027-01-09T03:45",
+       "arrive": "2027-01-09T08:15",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 540
+      },
+      {
+       "origin": "FCO",
+       "destination": "IAD",
+       "depart": "2027-01-09T10:10",
+       "arrive": "2027-01-09T14:30",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 620
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "ITA"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 7.1h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "score": 2324.5,
+     "key": "dff2298b4de5",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1810,
+     "layovers": [
+      "DEL",
+      "FCO"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DEL",
+       "price": 77.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/del/270108/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-08/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-08"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1640.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-09"
+        }
+       ]
+      }
+     ],
+     "layover_countries": [
+      "India",
+      "Italy"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "FCO": {
+       "airport": "Rome Fiumicino",
+       "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino",
+       "count": 5,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Prima Vista Lounge - Portus",
+        "terminal": "Terminal 3",
+        "hours": "05:45 - 22:45",
+        "rating": 4.3,
+        "ratings_count": 2667,
+        "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus"
+       },
+       "lounges": [
+        {
+         "name": "Prima Vista Lounge",
+         "terminal": "Terminal 1",
+         "hours": "05:15 - 21:45",
+         "rating": 4.27,
+         "ratings_count": 871,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco7-prima-vista-lounge",
+         "airside": true
+        },
+        {
+         "name": "TAV Primeclass FCO",
+         "terminal": "Terminal 1",
+         "hours": "05:30 - 22:00",
+         "rating": 4.1,
+         "ratings_count": 5989,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco3-tav-primeclass-fco",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 1",
+         "hours": "04:30 - 21:30",
+         "rating": 4.09,
+         "ratings_count": 4332,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco4-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "Prima Vista Lounge - Portus",
+         "terminal": "Terminal 3",
+         "hours": "05:45 - 22:45",
+         "rating": 4.3,
+         "ratings_count": 2667,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 23:00",
+         "rating": 4.2,
+         "ratings_count": 6829,
+         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco2-plaza-premium-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 1789.22,
+     "price": 1789.67,
      "currency": "USD",
      "segments": [
       {
@@ -4352,7 +4733,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 2326.7,
+     "score": 2327.2,
      "key": "9d96ee311bfe",
      "origin": "AMD",
      "destination": "IAD",
@@ -4577,522 +4958,6 @@
          "rating": 4.1,
          "ratings_count": 3273,
          "url": "https://www.prioritypass.com/lounges/taiwan-region/taiwan-taoyuan-international/tpe5-plaza-premium-lounge-zone-c",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Google Flights x2",
-     "strategy": "self-transfer",
-     "price": 1721.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "HSR",
-       "destination": "DEL",
-       "depart": "2027-01-08T11:00",
-       "arrive": "2027-01-08T12:50",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 110
-      },
-      {
-       "origin": "DEL",
-       "destination": "ICN",
-       "depart": "2027-01-08T19:50",
-       "arrive": "2027-01-09T06:05",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 405
-      },
-      {
-       "origin": "ICN",
-       "destination": "IAD",
-       "depart": "2027-01-09T10:15",
-       "arrive": "2027-01-09T09:50",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 815
-      }
-     ],
-     "airlines": [
-      "Air India",
-      "Korean Air"
-     ],
-     "via": "DEL",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [],
-     "notes": [
-      "Two separate tickets with 7.0h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
-     ],
-     "also_seen": {},
-     "score": 2376.0,
-     "key": "146e5705fab1",
-     "origin": "HSR",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 2000,
-     "layovers": [
-      "DEL",
-      "ICN"
-     ],
-     "ticket_links": [
-      {
-       "leg": "HSR \u2192 DEL",
-       "price": 94.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/hsr/del/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:DEL,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/HSR-DEL/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/HSR/DEL/2027-01-08"
-        }
-       ]
-      },
-      {
-       "leg": "DEL \u2192 IAD",
-       "price": 1627.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/del/iad/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-08"
-        }
-       ]
-      }
-     ],
-     "layover_countries": [
-      "India",
-      "South Korea"
-     ],
-     "avoid": false,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "ICN": {
-       "airport": "Seoul Incheon Intl",
-       "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international",
-       "count": 10,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Asiana Business Lounge Central",
-        "terminal": "Terminal 1",
-        "hours": "06:00 - 22:00",
-        "rating": 4.5,
-        "ratings_count": 1591,
-        "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn16-asiana-business-lounge-central"
-       },
-       "lounges": [
-        {
-         "name": "Sky Hub Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 4.49,
-         "ratings_count": 1889,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn18-sky-hub-lounge",
-         "airside": true
-        },
-        {
-         "name": "Sky Hub Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 21:30",
-         "rating": 4.4,
-         "ratings_count": 2496,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn14-sky-hub-lounge",
-         "airside": true
-        },
-        {
-         "name": "Matina",
-         "terminal": "Terminal 2",
-         "hours": "06:00 - 22:00",
-         "rating": 4.4,
-         "ratings_count": 5969,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn13-matina",
-         "airside": true
-        },
-        {
-         "name": "Asiana Business Lounge Central",
-         "terminal": "Terminal 1",
-         "hours": "06:00 - 22:00",
-         "rating": 4.5,
-         "ratings_count": 1591,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn16-asiana-business-lounge-central",
-         "airside": true
-        },
-        {
-         "name": "Asiana Business Lounge West",
-         "terminal": "Terminal 1",
-         "hours": "06:00 - 00:30",
-         "rating": 4.5,
-         "ratings_count": 997,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn17-asiana-business-lounge-west",
-         "airside": true
-        },
-        {
-         "name": "Matina Lounge",
-         "terminal": "Terminal 1",
-         "hours": "06:00 - 22:00",
-         "rating": 4.1,
-         "ratings_count": 2585,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn3-matina",
-         "airside": true
-        },
-        {
-         "name": "Matina",
-         "terminal": "Terminal 1",
-         "hours": "06:00 - 22:00",
-         "rating": 4.2,
-         "ratings_count": 2427,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn2-matina",
-         "airside": true
-        },
-        {
-         "name": "Sky Hub Lounge",
-         "terminal": "Terminal 1",
-         "hours": "00:00 - 21:30",
-         "rating": 4.1,
-         "ratings_count": 2962,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn9-sky-hub-lounge",
-         "airside": true
-        },
-        {
-         "name": "Sky Hub Lounge",
-         "terminal": "Terminal 1",
-         "hours": "00:00 - 21:30",
-         "rating": 4.1,
-         "ratings_count": 1950,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn8-sky-hub-lounge",
-         "airside": true
-        },
-        {
-         "name": "Sky Hub Lounge",
-         "terminal": "Terminal 1 Concourse",
-         "hours": "06:00 - 22:00",
-         "rating": 4,
-         "ratings_count": 1407,
-         "url": "https://www.prioritypass.com/lounges/south-korea/incheon-international/icn10-sky-hub-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Google Flights x2",
-     "strategy": "self-transfer",
-     "price": 1842.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "HSR",
-       "destination": "BOM",
-       "depart": "2027-01-08T21:35",
-       "arrive": "2027-01-08T23:05",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 90
-      },
-      {
-       "origin": "BOM",
-       "destination": "LHR",
-       "depart": "2027-01-09T02:15",
-       "arrive": "2027-01-09T07:05",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 620
-      },
-      {
-       "origin": "LHR",
-       "destination": "IAD",
-       "depart": "2027-01-09T12:15",
-       "arrive": "2027-01-09T15:40",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 505
-      }
-     ],
-     "airlines": [
-      "Air India",
-      "British Airways"
-     ],
-     "via": "BOM",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [],
-     "notes": [
-      "Two separate tickets with 3.2h at BOM. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
-     ],
-     "also_seen": {},
-     "score": 2425.8,
-     "key": "31a31e70acc5",
-     "origin": "HSR",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1715,
-     "layovers": [
-      "BOM",
-      "LHR"
-     ],
-     "ticket_links": [
-      {
-       "leg": "HSR \u2192 BOM",
-       "price": 73.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDSFNScgUSA0JPTUIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/hsr/bom/270108/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:BOM,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/HSR-BOM/2027-01-08/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/HSR/BOM/2027-01-08"
-        }
-       ]
-      },
-      {
-       "leg": "BOM \u2192 IAD",
-       "price": 1769.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQk9NcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/bom/iad/270109/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:BOM,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/BOM-IAD/2027-01-09/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/BOM/IAD/2027-01-09"
-        }
-       ]
-      }
-     ],
-     "layover_countries": [
-      "India",
-      "United Kingdom"
-     ],
-     "avoid": false,
-     "lounges": {
-      "BOM": {
-       "airport": "Mumbai Chhatrapati Shivaji Intl",
-       "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international",
-       "count": 3,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Adani Silver Lounge",
-        "terminal": "Terminal 2",
-        "hours": "12:00 - 23:59",
-        "rating": 3.81,
-        "ratings_count": 17,
-        "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Aviserv Lounge - West",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": null,
-         "ratings_count": 0,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom27-aviserv-lounge-west",
-         "airside": "unknown"
-        },
-        {
-         "name": "Adani Silver Lounge",
-         "terminal": "Terminal 2",
-         "hours": "12:00 - 23:59",
-         "rating": 3.81,
-         "ratings_count": 17,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge",
-         "airside": "unknown"
-        },
-        {
-         "name": "Adani Silver International Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3.49,
-         "ratings_count": 1315,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom20-adani-lounge-east",
-         "airside": true
-        }
-       ]
-      },
-      "LHR": {
-       "airport": "Heathrow",
-       "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow",
-       "count": 10,
-       "sleep_pods": 0,
-       "best": {
-        "name": "No.1 Lounge",
-        "terminal": "Terminal 2",
-        "hours": "05:00 - 21:00",
-        "rating": 4,
-        "ratings_count": 3317,
-        "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2"
-       },
-       "lounges": [
-        {
-         "name": "No.1 Lounge",
-         "terminal": "Terminal 2",
-         "hours": "05:00 - 21:00",
-         "rating": 4,
-         "ratings_count": 3317,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 2",
-         "hours": "05:00 - 21:30",
-         "rating": 3.8,
-         "ratings_count": 11819,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr11-plaza-premium-lounge",
-         "airside": true
-        },
-        {
-         "name": "No1 Lounge Heathrow",
-         "terminal": "Terminal 3",
-         "hours": "05:00 - 22:00",
-         "rating": 3.8,
-         "ratings_count": 8338,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr25-no1-lounge-heathrow",
-         "airside": true
-        },
-        {
-         "name": "My Lounge",
-         "terminal": "Terminal 3",
-         "hours": "05:00 - 22:00",
-         "rating": 3.7,
-         "ratings_count": 8607,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr16-my-lounge",
-         "airside": true
-        },
-        {
-         "name": "Clubrooms Heathrow - Additional Fee Applies",
-         "terminal": "Terminal 3",
-         "hours": "05:00 - 21:00",
-         "rating": 4,
-         "ratings_count": 749,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr34-clubrooms-lhr-terminal-3-additional-fee-applies",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 3",
-         "hours": "06:00 - 14:00",
-         "rating": 3.48,
-         "ratings_count": 48,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr35-plaza-premium-lounge",
-         "airside": "unknown"
-        },
-        {
-         "name": "Club Aspire Lounge",
-         "terminal": "Terminal 5",
-         "hours": "05:00 - 21:00",
-         "rating": 3.2,
-         "ratings_count": 23932,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr14-club-aspire-lounge",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 5",
-         "hours": "05:30 - 21:30",
-         "rating": 2.9,
-         "ratings_count": 12285,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr30-plaza-premium-lounge-terminal-5-departures",
-         "airside": true
-        },
-        {
-         "name": "Blush Lounge by Plaza Premium Group",
-         "terminal": "Terminal 4",
-         "hours": "07:00 - 17:30",
-         "rating": 3.2,
-         "ratings_count": 2449,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr31-blush-lounge-by-plaza-premium-group",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 4",
-         "hours": "05:00 - 22:00",
-         "rating": 3.7,
-         "ratings_count": 3516,
-         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr13-plaza-premium-lounge",
          "airside": true
         }
        ]
@@ -5367,9 +5232,9 @@
      }
     },
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
-     "price": 1869.33,
+     "price": 1879.0,
      "currency": "USD",
      "segments": [
       {
@@ -5377,8 +5242,8 @@
        "destination": "BOM",
        "depart": "2027-01-08T17:30",
        "arrive": "2027-01-08T19:05",
-       "carrier": "LX",
-       "flight_number": "LX9883",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 95
       },
       {
@@ -5386,8 +5251,8 @@
        "destination": "ZRH",
        "depart": "2027-01-09T01:25",
        "arrive": "2027-01-09T06:10",
-       "carrier": "LX",
-       "flight_number": "LX155",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 555
       },
       {
@@ -5395,18 +5260,23 @@
        "destination": "IAD",
        "depart": "2027-01-09T13:15",
        "arrive": "2027-01-09T17:00",
-       "carrier": "LX",
-       "flight_number": "LX72",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 585
       }
      ],
      "airlines": [
-      "Swiss"
+      "Air India",
+      "SWISS"
      ],
      "via": "",
      "separate_tickets": false,
      "hidden_city": false,
      "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDhqBRIDQU1EcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+      },
       {
        "name": "Skyscanner",
        "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
@@ -5426,9 +5296,9 @@
      ],
      "notes": [],
      "also_seen": {
-      "Google Flights": 1879.0
+      "Skiplagged": 1879.0
      },
-     "score": 2459.3,
+     "score": 2469.0,
      "key": "bf544f1c583a",
      "origin": "AMD",
      "destination": "IAD",
@@ -5532,178 +5402,10 @@
        ]
       }
      }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1935.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-08T22:20",
-       "arrive": "2027-01-09T00:05",
-       "carrier": "AI",
-       "flight_number": "AI2620",
-       "duration_min": 105
-      },
-      {
-       "origin": "DEL",
-       "destination": "FCO",
-       "depart": "2027-01-09T03:45",
-       "arrive": "2027-01-09T08:15",
-       "carrier": "AZ",
-       "flight_number": "AZ769",
-       "duration_min": 540
-      },
-      {
-       "origin": "FCO",
-       "destination": "IAD",
-       "depart": "2027-01-09T10:10",
-       "arrive": "2027-01-09T14:30",
-       "carrier": "AZ",
-       "flight_number": "AZ618",
-       "duration_min": 620
-      }
-     ],
-     "airlines": [
-      "Air India",
-      "ITA Airways"
-     ],
-     "via": "",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270108/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-08/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-08"
-      }
-     ],
-     "notes": [
-      "Virtual interlining: separate airline tickets combined by the seller"
-     ],
-     "also_seen": {},
-     "score": 2490.0,
-     "key": "a96047008d81",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1600,
-     "layovers": [
-      "DEL",
-      "FCO"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "India",
-      "Italy"
-     ],
-     "avoid": false,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "FCO": {
-       "airport": "Rome Fiumicino",
-       "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino",
-       "count": 5,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Prima Vista Lounge - Portus",
-        "terminal": "Terminal 3",
-        "hours": "05:45 - 22:45",
-        "rating": 4.3,
-        "ratings_count": 2667,
-        "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus"
-       },
-       "lounges": [
-        {
-         "name": "Prima Vista Lounge",
-         "terminal": "Terminal 1",
-         "hours": "05:15 - 21:45",
-         "rating": 4.27,
-         "ratings_count": 871,
-         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco7-prima-vista-lounge",
-         "airside": true
-        },
-        {
-         "name": "TAV Primeclass FCO",
-         "terminal": "Terminal 1",
-         "hours": "05:30 - 22:00",
-         "rating": 4.1,
-         "ratings_count": 5989,
-         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco3-tav-primeclass-fco",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 1",
-         "hours": "04:30 - 21:30",
-         "rating": 4.09,
-         "ratings_count": 4332,
-         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco4-plaza-premium-lounge",
-         "airside": true
-        },
-        {
-         "name": "Prima Vista Lounge - Portus",
-         "terminal": "Terminal 3",
-         "hours": "05:45 - 22:45",
-         "rating": 4.3,
-         "ratings_count": 2667,
-         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco6-prima-vista-lounge-portus",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 3",
-         "hours": "05:00 - 23:00",
-         "rating": 4.2,
-         "ratings_count": 6829,
-         "url": "https://www.prioritypass.com/lounges/italy/leonardo-da-vinci-fiumicino/fco2-plaza-premium-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
     }
    ],
    "best_by_strategy": {
-    "direct": 1187.75,
+    "direct": 1229.75,
     "self-transfer": 1468.0
    },
    "hubs": {
@@ -5749,7 +5451,7 @@
     },
     "DEL": {
      "forced": null,
-     "self_transfer": 1989.0,
+     "self_transfer": null,
      "skipped": false
     },
     "BOM": {
@@ -5793,7 +5495,7 @@
      "skipped": false
     }
    },
-   "requests": 110,
+   "requests": 102,
    "errors": [],
    "cheapest_key": "50a64b985104",
    "all_time_low": 1121.74
@@ -5815,7 +5517,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 1120.0,
+     "price": 1122.0,
      "currency": "USD",
      "segments": [
       {
@@ -5875,7 +5577,7 @@
       "Virtual interlining: separate airline tickets combined by the seller"
      ],
      "also_seen": {},
-     "score": 1650.0,
+     "score": 1652.0,
      "key": "f0aa1d244bea",
      "origin": "AMD",
      "destination": "IAD",
@@ -6178,40 +5880,40 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 1347.64,
+     "price": 1487.01,
      "currency": "USD",
      "segments": [
       {
        "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-09T11:40",
-       "arrive": "2027-01-09T13:25",
-       "carrier": "QP",
-       "flight_number": "QP1204",
-       "duration_min": 105
-      },
-      {
-       "origin": "DEL",
        "destination": "DXB",
-       "depart": "2027-01-09T16:15",
-       "arrive": "2027-01-09T18:35",
-       "carrier": "EK",
-       "flight_number": "EK517",
-       "duration_min": 230
+       "depart": "2027-01-09T16:25",
+       "arrive": "2027-01-09T18:25",
+       "carrier": "SG",
+       "flight_number": "SG15",
+       "duration_min": 210
       },
       {
        "origin": "DXB",
+       "destination": "AMM",
+       "depart": "2027-01-09T22:45",
+       "arrive": "2027-01-10T01:20",
+       "carrier": "RJ",
+       "flight_number": "RJ615",
+       "duration_min": 275
+      },
+      {
+       "origin": "AMM",
        "destination": "IAD",
        "depart": "2027-01-10T02:25",
-       "arrive": "2027-01-10T08:35",
-       "carrier": "EK",
-       "flight_number": "EK231",
-       "duration_min": 910
+       "arrive": "2027-01-10T07:25",
+       "carrier": "RJ",
+       "flight_number": "RJ281",
+       "duration_min": 720
       }
      ],
      "airlines": [
-      "Emirates",
-      "Starlight Airlines"
+      "Royal Jordanian",
+      "Spicejet"
      ],
      "via": "",
      "separate_tickets": false,
@@ -6236,48 +5938,23 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 1898.9,
-     "key": "078b809747be",
+     "score": 1949.5,
+     "key": "d4bed32025d4",
      "origin": "AMD",
      "destination": "IAD",
      "stops": 2,
-     "total_minutes": 1885,
+     "total_minutes": 1530,
      "layovers": [
-      "DEL",
-      "DXB"
+      "DXB",
+      "AMM"
      ],
      "ticket_links": [],
      "layover_countries": [
-      "India",
-      "United Arab Emirates"
+      "United Arab Emirates",
+      "Jordan"
      ],
      "avoid": true,
      "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
       "DXB": {
        "airport": "Dubai Intl",
        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
@@ -6389,6 +6066,31 @@
          "rating": 3,
          "ratings_count": 2622,
          "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "AMM": {
+       "airport": "Amman Queen Alia International",
+       "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Crown Lounge",
+        "terminal": "Main Terminal",
+        "hours": "00:00 - 23:59",
+        "rating": 4.4,
+        "ratings_count": 2481,
+        "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international/amm1-crown-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Crown Lounge",
+         "terminal": "Main Terminal",
+         "hours": "00:00 - 23:59",
+         "rating": 4.4,
+         "ratings_count": 2481,
+         "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international/amm1-crown-lounge",
          "airside": true
         }
        ]
@@ -6689,275 +6391,6 @@
     {
      "source": "Google Flights x2",
      "strategy": "self-transfer",
-     "price": 1550.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DXB",
-       "depart": "2027-01-09T04:30",
-       "arrive": "2027-01-09T06:15",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 195
-      },
-      {
-       "origin": "DXB",
-       "destination": "IST",
-       "depart": "2027-01-09T09:30",
-       "arrive": "2027-01-09T13:40",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 310
-      },
-      {
-       "origin": "IST",
-       "destination": "IAD",
-       "depart": "2027-01-09T16:10",
-       "arrive": "2027-01-09T19:25",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 675
-      }
-     ],
-     "airlines": [
-      "Emirates",
-      "Turkish Airlines"
-     ],
-     "via": "DXB",
-     "separate_tickets": true,
-     "hidden_city": false,
-     "links": [],
-     "notes": [
-      "Two separate tickets with 3.2h at DXB. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
-     ],
-     "also_seen": {
-      "Skiplagged": 1914.0
-     },
-     "score": 2086.2,
-     "key": "83508300cc49",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1525,
-     "layovers": [
-      "DXB",
-      "IST"
-     ],
-     "ticket_links": [
-      {
-       "leg": "AMD \u2192 DXB",
-       "price": 680.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQU1EcgUSA0RYQkIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/amd/dxb/270109/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DXB,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/AMD-DXB/2027-01-09/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/AMD/DXB/2027-01-09"
-        }
-       ]
-      },
-      {
-       "leg": "DXB \u2192 IAD",
-       "price": 870.0,
-       "links": [
-        {
-         "name": "Google Flights",
-         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDRFhCcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
-        },
-        {
-         "name": "Skyscanner",
-         "url": "https://www.skyscanner.com/transport/flights/dxb/iad/270109/?adultsv2=1"
-        },
-        {
-         "name": "Expedia",
-         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DXB,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-        },
-        {
-         "name": "Kayak",
-         "url": "https://www.kayak.com/flights/DXB-IAD/2027-01-09/1adults?sort=price_a"
-        },
-        {
-         "name": "Skiplagged",
-         "url": "https://skiplagged.com/flights/DXB/IAD/2027-01-09"
-        }
-       ]
-      }
-     ],
-     "layover_countries": [
-      "United Arab Emirates",
-      "Turkey"
-     ],
-     "avoid": true,
-     "lounges": {
-      "DXB": {
-       "airport": "Dubai Intl",
-       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
-       "count": 11,
-       "sleep_pods": 4,
-       "best": {
-        "name": "Ahlan Business Class Lounge",
-        "terminal": "Terminal 1 Concourse D",
-        "hours": "00:00 - 23:59",
-        "rating": 4.4,
-        "ratings_count": 3871,
-        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Ahlan Lounge at B",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 5594,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 11196,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4,
-         "ratings_count": 1686,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 4852,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 5644,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge @C13",
-         "terminal": "Terminal 3 Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 4.18,
-         "ratings_count": 2379,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.2,
-         "ratings_count": 22,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Business Class Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 3871,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "SkyTeam Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "02:00 - 20:00",
-         "rating": 4.4,
-         "ratings_count": 1041,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 2692,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3,
-         "ratings_count": 2622,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "IST": {
-       "airport": "Istanbul",
-       "url": "https://www.prioritypass.com/lounges/turkey/istanbul",
-       "count": 2,
-       "sleep_pods": 1,
-       "best": {
-        "name": "IGA Lounge",
-        "terminal": "International Terminal",
-        "hours": "00:00 - 23:59",
-        "rating": 4.3,
-        "ratings_count": 32338,
-        "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international"
-       },
-       "lounges": [
-        {
-         "name": "Pop up Lounge",
-         "terminal": "International Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 3.3,
-         "ratings_count": 1169,
-         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist12-pop-up-lounge-by-iga",
-         "airside": true
-        },
-        {
-         "name": "IGA Lounge",
-         "terminal": "International Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 32338,
-         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Google Flights x2",
-     "strategy": "self-transfer",
      "price": 1484.0,
      "currency": "USD",
      "segments": [
@@ -7138,365 +6571,6 @@
          "ratings_count": 25,
          "url": "https://www.prioritypass.com/lounges/germany/frankfurt/fra15-priority-lounge",
          "airside": "unknown"
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1629.82,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DXB",
-       "depart": "2027-01-09T16:25",
-       "arrive": "2027-01-09T18:25",
-       "carrier": "SG",
-       "flight_number": "SG15",
-       "duration_min": 210
-      },
-      {
-       "origin": "DXB",
-       "destination": "AMM",
-       "depart": "2027-01-09T22:45",
-       "arrive": "2027-01-10T01:20",
-       "carrier": "RJ",
-       "flight_number": "RJ615",
-       "duration_min": 275
-      },
-      {
-       "origin": "AMM",
-       "destination": "IAD",
-       "depart": "2027-01-10T02:25",
-       "arrive": "2027-01-10T07:25",
-       "carrier": "RJ",
-       "flight_number": "RJ281",
-       "duration_min": 720
-      }
-     ],
-     "airlines": [
-      "Royal Jordanian",
-      "Spicejet"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 2092.3,
-     "key": "d4bed32025d4",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 1530,
-     "layovers": [
-      "DXB",
-      "AMM"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "United Arab Emirates",
-      "Jordan"
-     ],
-     "avoid": true,
-     "lounges": {
-      "DXB": {
-       "airport": "Dubai Intl",
-       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
-       "count": 11,
-       "sleep_pods": 4,
-       "best": {
-        "name": "Ahlan Business Class Lounge",
-        "terminal": "Terminal 1 Concourse D",
-        "hours": "00:00 - 23:59",
-        "rating": 4.4,
-        "ratings_count": 3871,
-        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Ahlan Lounge at B",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 5594,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse B",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 11196,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4,
-         "ratings_count": 1686,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Plaza Premium Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 4.1,
-         "ratings_count": 4852,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 3 Concourse A",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 5644,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge @C13",
-         "terminal": "Terminal 3 Concourse C",
-         "hours": "00:00 - 23:59",
-         "rating": 4.18,
-         "ratings_count": 2379,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.2,
-         "ratings_count": 22,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge",
-         "airside": true
-        },
-        {
-         "name": "Ahlan Business Class Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 3871,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge",
-         "airside": true
-        },
-        {
-         "name": "SkyTeam Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "02:00 - 20:00",
-         "rating": 4.4,
-         "ratings_count": 1041,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 1 Concourse D",
-         "hours": "00:00 - 23:59",
-         "rating": 3.8,
-         "ratings_count": 2692,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3,
-         "ratings_count": 2622,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "AMM": {
-       "airport": "Amman Queen Alia International",
-       "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Crown Lounge",
-        "terminal": "Main Terminal",
-        "hours": "00:00 - 23:59",
-        "rating": 4.4,
-        "ratings_count": 2481,
-        "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international/amm1-crown-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Crown Lounge",
-         "terminal": "Main Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 4.4,
-         "ratings_count": 2481,
-         "url": "https://www.prioritypass.com/lounges/jordan/queen-alia-international/amm1-crown-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1634.83,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-09T18:50",
-       "arrive": "2027-01-09T20:40",
-       "carrier": "AI",
-       "flight_number": "AI2938",
-       "duration_min": 110
-      },
-      {
-       "origin": "DEL",
-       "destination": "YUL",
-       "depart": "2027-01-10T00:30",
-       "arrive": "2027-01-10T06:10",
-       "carrier": "AC",
-       "flight_number": "AC51",
-       "duration_min": 970
-      },
-      {
-       "origin": "YUL",
-       "destination": "DCA",
-       "depart": "2027-01-10T08:30",
-       "arrive": "2027-01-10T10:29",
-       "carrier": "AC",
-       "flight_number": "AC8821",
-       "duration_min": 119
-      }
-     ],
-     "airlines": [
-      "Air Canada",
-      "Air India"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270109/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-09/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-09"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 2107.1,
-     "key": "3f8691e6b3c0",
-     "origin": "AMD",
-     "destination": "DCA",
-     "stops": 2,
-     "total_minutes": 1569,
-     "layovers": [
-      "DEL",
-      "YUL"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "India",
-      "Canada"
-     ],
-     "avoid": false,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "YUL": {
-       "airport": "Montreal Pierre E.Trudeau Intl",
-       "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international",
-       "count": 2,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Air France lounge: Montreal",
-        "terminal": "Main Terminal",
-        "hours": "05:00 - 22:00",
-        "rating": 4.19,
-        "ratings_count": 1083,
-        "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal"
-       },
-       "lounges": [
-        {
-         "name": "National Bank Lounge",
-         "terminal": "Main Terminal",
-         "hours": "04:00 - 22:00",
-         "rating": 3.44,
-         "ratings_count": 207,
-         "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul10-montreal-aspire-international-lounge",
-         "airside": true
-        },
-        {
-         "name": "Air France lounge: Montreal",
-         "terminal": "Main Terminal",
-         "hours": "05:00 - 22:00",
-         "rating": 4.19,
-         "ratings_count": 1083,
-         "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal",
-         "airside": true
         }
        ]
       }
@@ -7877,19 +6951,268 @@
      }
     },
     {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1634.83,
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1513.0,
      "currency": "USD",
      "segments": [
       {
        "origin": "AMD",
        "destination": "DEL",
-       "depart": "2027-01-09T17:15",
-       "arrive": "2027-01-09T19:00",
-       "carrier": "AI",
-       "flight_number": "AI882",
+       "depart": "2027-01-09T20:20",
+       "arrive": "2027-01-09T22:05",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "LHR",
+       "depart": "2027-01-10T03:20",
+       "arrive": "2027-01-10T07:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 590
+      },
+      {
+       "origin": "LHR",
+       "destination": "IAD",
+       "depart": "2027-01-10T12:15",
+       "arrive": "2027-01-10T15:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 505
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "British Airways"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 5.2h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "score": 2115.5,
+     "key": "07f94943b42f",
+     "origin": "AMD",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1790,
+     "layovers": [
+      "DEL",
+      "LHR"
+     ],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DEL",
+       "price": 76.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/del/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-09"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1437.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270110/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/10/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-10/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-10"
+        }
+       ]
+      }
+     ],
+     "layover_countries": [
+      "India",
+      "United Kingdom"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "LHR": {
+       "airport": "Heathrow",
+       "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow",
+       "count": 10,
+       "sleep_pods": 0,
+       "best": {
+        "name": "No.1 Lounge",
+        "terminal": "Terminal 2",
+        "hours": "05:00 - 21:00",
+        "rating": 4,
+        "ratings_count": 3317,
+        "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2"
+       },
+       "lounges": [
+        {
+         "name": "No.1 Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 21:00",
+         "rating": 4,
+         "ratings_count": 3317,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 21:30",
+         "rating": 3.8,
+         "ratings_count": 11819,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr11-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "No1 Lounge Heathrow",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 22:00",
+         "rating": 3.8,
+         "ratings_count": 8338,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr25-no1-lounge-heathrow",
+         "airside": true
+        },
+        {
+         "name": "My Lounge",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 22:00",
+         "rating": 3.7,
+         "ratings_count": 8607,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr16-my-lounge",
+         "airside": true
+        },
+        {
+         "name": "Clubrooms Heathrow - Additional Fee Applies",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 21:00",
+         "rating": 4,
+         "ratings_count": 749,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr34-clubrooms-lhr-terminal-3-additional-fee-applies",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3",
+         "hours": "06:00 - 14:00",
+         "rating": 3.48,
+         "ratings_count": 48,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr35-plaza-premium-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "Club Aspire Lounge",
+         "terminal": "Terminal 5",
+         "hours": "05:00 - 21:00",
+         "rating": 3.2,
+         "ratings_count": 23932,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr14-club-aspire-lounge",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 5",
+         "hours": "05:30 - 21:30",
+         "rating": 2.9,
+         "ratings_count": 12285,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr30-plaza-premium-lounge-terminal-5-departures",
+         "airside": true
+        },
+        {
+         "name": "Blush Lounge by Plaza Premium Group",
+         "terminal": "Terminal 4",
+         "hours": "07:00 - 17:30",
+         "rating": 3.2,
+         "ratings_count": 2449,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr31-blush-lounge-by-plaza-premium-group",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 4",
+         "hours": "05:00 - 22:00",
+         "rating": 3.7,
+         "ratings_count": 3516,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr13-plaza-premium-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1655.15,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T18:50",
+       "arrive": "2027-01-09T20:40",
+       "carrier": "AI",
+       "flight_number": "AI2938",
+       "duration_min": 110
       },
       {
        "origin": "DEL",
@@ -7937,12 +7260,12 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 2130.8,
-     "key": "e15f3fb86265",
+     "score": 2127.4,
+     "key": "3f8691e6b3c0",
      "origin": "AMD",
      "destination": "DCA",
      "stops": 2,
-     "total_minutes": 1664,
+     "total_minutes": 1569,
      "layovers": [
       "DEL",
       "YUL"
@@ -8016,147 +7339,497 @@
      }
     },
     {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1715.75,
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1514.0,
      "currency": "USD",
      "segments": [
       {
        "origin": "AMD",
-       "destination": "BOM",
-       "depart": "2027-01-09T20:05",
-       "arrive": "2027-01-09T21:30",
-       "carrier": "QP",
-       "flight_number": "QP1104",
-       "duration_min": 85
+       "destination": "DEL",
+       "depart": "2027-01-09T18:50",
+       "arrive": "2027-01-09T20:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 110
       },
       {
-       "origin": "BOM",
-       "destination": "AUH",
-       "depart": "2027-01-09T23:00",
-       "arrive": "2027-01-10T00:50",
-       "carrier": "EY",
-       "flight_number": "EY205",
-       "duration_min": 200
+       "origin": "DEL",
+       "destination": "LHR",
+       "depart": "2027-01-10T03:20",
+       "arrive": "2027-01-10T07:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 590
       },
       {
-       "origin": "AUH",
+       "origin": "LHR",
        "destination": "IAD",
-       "depart": "2027-01-10T03:15",
-       "arrive": "2027-01-10T09:00",
-       "carrier": "EY",
-       "flight_number": "EY5",
-       "duration_min": 885
+       "depart": "2027-01-10T12:15",
+       "arrive": "2027-01-10T15:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 505
       }
      ],
      "airlines": [
-      "Etihad Airways",
-      "Starlight Airlines"
+      "Air India",
+      "British Airways"
      ],
-     "via": "",
-     "separate_tickets": false,
+     "via": "DEL",
+     "separate_tickets": true,
      "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
-      }
+     "links": [],
+     "notes": [
+      "Two separate tickets with 6.7h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
      ],
-     "notes": [],
      "also_seen": {},
-     "score": 2147.0,
-     "key": "7044ab0759e4",
+     "score": 2139.0,
+     "key": "2eb659127bc1",
      "origin": "AMD",
      "destination": "IAD",
      "stops": 2,
-     "total_minutes": 1405,
+     "total_minutes": 1880,
      "layovers": [
-      "BOM",
-      "AUH"
+      "DEL",
+      "LHR"
      ],
-     "ticket_links": [],
+     "ticket_links": [
+      {
+       "leg": "AMD \u2192 DEL",
+       "price": 77.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDQU1EcgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/amd/del/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DEL,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/AMD-DEL/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/AMD/DEL/2027-01-09"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1437.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270110/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/10/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-10/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-10"
+        }
+       ]
+      }
+     ],
      "layover_countries": [
       "India",
-      "United Arab Emirates"
+      "United Kingdom"
      ],
-     "avoid": true,
+     "avoid": false,
      "lounges": {
-      "BOM": {
-       "airport": "Mumbai Chhatrapati Shivaji Intl",
-       "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international",
-       "count": 3,
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
        "sleep_pods": 0,
        "best": {
-        "name": "Adani Silver Lounge",
-        "terminal": "Terminal 2",
-        "hours": "12:00 - 23:59",
-        "rating": 3.81,
-        "ratings_count": 17,
-        "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge"
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
        },
        "lounges": [
         {
-         "name": "Aviserv Lounge - West",
-         "terminal": "Terminal 2",
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
          "hours": "00:00 - 23:59",
-         "rating": null,
-         "ratings_count": 0,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom27-aviserv-lounge-west",
-         "airside": "unknown"
-        },
-        {
-         "name": "Adani Silver Lounge",
-         "terminal": "Terminal 2",
-         "hours": "12:00 - 23:59",
-         "rating": 3.81,
-         "ratings_count": 17,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge",
-         "airside": "unknown"
-        },
-        {
-         "name": "Adani Silver International Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3.49,
-         "ratings_count": 1315,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom20-adani-lounge-east",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
          "airside": true
         }
        ]
       },
-      "AUH": {
-       "airport": "Abu Dhabi International",
-       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international",
-       "count": 1,
+      "LHR": {
+       "airport": "Heathrow",
+       "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow",
+       "count": 10,
        "sleep_pods": 0,
        "best": {
-        "name": "Pearl Lounge",
-        "terminal": "Terminal A",
-        "hours": "00:00 - 23:59",
+        "name": "No.1 Lounge",
+        "terminal": "Terminal 2",
+        "hours": "05:00 - 21:00",
         "rating": 4,
-        "ratings_count": 9093,
-        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge"
+        "ratings_count": 3317,
+        "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2"
        },
        "lounges": [
         {
-         "name": "Pearl Lounge",
-         "terminal": "Terminal A",
-         "hours": "00:00 - 23:59",
+         "name": "No.1 Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 21:00",
          "rating": 4,
-         "ratings_count": 9093,
-         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/abu-dhabi-international/auh12-pearl-lounge",
+         "ratings_count": 3317,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 21:30",
+         "rating": 3.8,
+         "ratings_count": 11819,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr11-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "No1 Lounge Heathrow",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 22:00",
+         "rating": 3.8,
+         "ratings_count": 8338,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr25-no1-lounge-heathrow",
+         "airside": true
+        },
+        {
+         "name": "My Lounge",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 22:00",
+         "rating": 3.7,
+         "ratings_count": 8607,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr16-my-lounge",
+         "airside": true
+        },
+        {
+         "name": "Clubrooms Heathrow - Additional Fee Applies",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 21:00",
+         "rating": 4,
+         "ratings_count": 749,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr34-clubrooms-lhr-terminal-3-additional-fee-applies",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3",
+         "hours": "06:00 - 14:00",
+         "rating": 3.48,
+         "ratings_count": 48,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr35-plaza-premium-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "Club Aspire Lounge",
+         "terminal": "Terminal 5",
+         "hours": "05:00 - 21:00",
+         "rating": 3.2,
+         "ratings_count": 23932,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr14-club-aspire-lounge",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 5",
+         "hours": "05:30 - 21:30",
+         "rating": 2.9,
+         "ratings_count": 12285,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr30-plaza-premium-lounge-terminal-5-departures",
+         "airside": true
+        },
+        {
+         "name": "Blush Lounge by Plaza Premium Group",
+         "terminal": "Terminal 4",
+         "hours": "07:00 - 17:30",
+         "rating": 3.2,
+         "ratings_count": 2449,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr31-blush-lounge-by-plaza-premium-group",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 4",
+         "hours": "05:00 - 22:00",
+         "rating": 3.7,
+         "ratings_count": 3516,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr13-plaza-premium-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Google Flights x2",
+     "strategy": "self-transfer",
+     "price": 1532.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "HSR",
+       "destination": "DEL",
+       "depart": "2027-01-09T20:00",
+       "arrive": "2027-01-09T21:45",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "LHR",
+       "depart": "2027-01-10T03:20",
+       "arrive": "2027-01-10T07:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 590
+      },
+      {
+       "origin": "LHR",
+       "destination": "IAD",
+       "depart": "2027-01-10T12:15",
+       "arrive": "2027-01-10T15:40",
+       "carrier": "",
+       "flight_number": "",
+       "duration_min": 505
+      }
+     ],
+     "airlines": [
+      "Air India",
+      "British Airways"
+     ],
+     "via": "DEL",
+     "separate_tickets": true,
+     "hidden_city": false,
+     "links": [],
+     "notes": [
+      "Two separate tickets with 5.6h at DEL. Book each leg separately; a delay on leg 1 is not protected. Check transit/visa rules for the hub."
+     ],
+     "also_seen": {},
+     "score": 2139.5,
+     "key": "6d128688a306",
+     "origin": "HSR",
+     "destination": "IAD",
+     "stops": 2,
+     "total_minutes": 1810,
+     "layovers": [
+      "DEL",
+      "LHR"
+     ],
+     "ticket_links": [
+      {
+       "leg": "HSR \u2192 DEL",
+       "price": 95.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMDlqBRIDSFNScgUSA0RFTEIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/hsr/del/270109/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:HSR,to:DEL,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/HSR-DEL/2027-01-09/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/HSR/DEL/2027-01-09"
+        }
+       ]
+      },
+      {
+       "leg": "DEL \u2192 IAD",
+       "price": 1437.0,
+       "links": [
+        {
+         "name": "Google Flights",
+         "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDEtMTBqBRIDREVMcgUSA0lBREIBAUgBmAEC&hl=en&curr=USD"
+        },
+        {
+         "name": "Skyscanner",
+         "url": "https://www.skyscanner.com/transport/flights/del/iad/270110/?adultsv2=1"
+        },
+        {
+         "name": "Expedia",
+         "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:DEL,to:IAD,departure:1/10/2027TANYT&passengers=adults:1&mode=search"
+        },
+        {
+         "name": "Kayak",
+         "url": "https://www.kayak.com/flights/DEL-IAD/2027-01-10/1adults?sort=price_a"
+        },
+        {
+         "name": "Skiplagged",
+         "url": "https://skiplagged.com/flights/DEL/IAD/2027-01-10"
+        }
+       ]
+      }
+     ],
+     "layover_countries": [
+      "India",
+      "United Kingdom"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "LHR": {
+       "airport": "Heathrow",
+       "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow",
+       "count": 10,
+       "sleep_pods": 0,
+       "best": {
+        "name": "No.1 Lounge",
+        "terminal": "Terminal 2",
+        "hours": "05:00 - 21:00",
+        "rating": 4,
+        "ratings_count": 3317,
+        "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2"
+       },
+       "lounges": [
+        {
+         "name": "No.1 Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 21:00",
+         "rating": 4,
+         "ratings_count": 3317,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr33-no-1-lounge-heathrow-t2",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 21:30",
+         "rating": 3.8,
+         "ratings_count": 11819,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr11-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "No1 Lounge Heathrow",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 22:00",
+         "rating": 3.8,
+         "ratings_count": 8338,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr25-no1-lounge-heathrow",
+         "airside": true
+        },
+        {
+         "name": "My Lounge",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 22:00",
+         "rating": 3.7,
+         "ratings_count": 8607,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr16-my-lounge",
+         "airside": true
+        },
+        {
+         "name": "Clubrooms Heathrow - Additional Fee Applies",
+         "terminal": "Terminal 3",
+         "hours": "05:00 - 21:00",
+         "rating": 4,
+         "ratings_count": 749,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr34-clubrooms-lhr-terminal-3-additional-fee-applies",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3",
+         "hours": "06:00 - 14:00",
+         "rating": 3.48,
+         "ratings_count": 48,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr35-plaza-premium-lounge",
+         "airside": "unknown"
+        },
+        {
+         "name": "Club Aspire Lounge",
+         "terminal": "Terminal 5",
+         "hours": "05:00 - 21:00",
+         "rating": 3.2,
+         "ratings_count": 23932,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr14-club-aspire-lounge",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 5",
+         "hours": "05:30 - 21:30",
+         "rating": 2.9,
+         "ratings_count": 12285,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr30-plaza-premium-lounge-terminal-5-departures",
+         "airside": true
+        },
+        {
+         "name": "Blush Lounge by Plaza Premium Group",
+         "terminal": "Terminal 4",
+         "hours": "07:00 - 17:30",
+         "rating": 3.2,
+         "ratings_count": 2449,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr31-blush-lounge-by-plaza-premium-group",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 4",
+         "hours": "05:00 - 22:00",
+         "rating": 3.7,
+         "ratings_count": 3516,
+         "url": "https://www.prioritypass.com/lounges/united-kingdom/heathrow/lhr13-plaza-premium-lounge",
          "airside": true
         }
        ]
@@ -8295,6 +7968,145 @@
          "rating": 4.3,
          "ratings_count": 32338,
          "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 1655.15,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "AMD",
+       "destination": "DEL",
+       "depart": "2027-01-09T17:15",
+       "arrive": "2027-01-09T19:00",
+       "carrier": "AI",
+       "flight_number": "AI882",
+       "duration_min": 105
+      },
+      {
+       "origin": "DEL",
+       "destination": "YUL",
+       "depart": "2027-01-10T00:30",
+       "arrive": "2027-01-10T06:10",
+       "carrier": "AC",
+       "flight_number": "AC51",
+       "duration_min": 970
+      },
+      {
+       "origin": "YUL",
+       "destination": "DCA",
+       "depart": "2027-01-10T08:30",
+       "arrive": "2027-01-10T10:29",
+       "carrier": "AC",
+       "flight_number": "AC8821",
+       "duration_min": 119
+      }
+     ],
+     "airlines": [
+      "Air Canada",
+      "Air India"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270109/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-09/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-09"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 2151.2,
+     "key": "e15f3fb86265",
+     "origin": "AMD",
+     "destination": "DCA",
+     "stops": 2,
+     "total_minutes": 1664,
+     "layovers": [
+      "DEL",
+      "YUL"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "India",
+      "Canada"
+     ],
+     "avoid": false,
+     "lounges": {
+      "DEL": {
+       "airport": "Indira Gandhi International",
+       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Encalm Lounge",
+        "terminal": "Terminal 3",
+        "hours": "00:00 - 23:59",
+        "rating": 3.89,
+        "ratings_count": 6498,
+        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Encalm Lounge",
+         "terminal": "Terminal 3",
+         "hours": "00:00 - 23:59",
+         "rating": 3.89,
+         "ratings_count": 6498,
+         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
+         "airside": true
+        }
+       ]
+      },
+      "YUL": {
+       "airport": "Montreal Pierre E.Trudeau Intl",
+       "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international",
+       "count": 2,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Air France lounge: Montreal",
+        "terminal": "Main Terminal",
+        "hours": "05:00 - 22:00",
+        "rating": 4.19,
+        "ratings_count": 1083,
+        "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal"
+       },
+       "lounges": [
+        {
+         "name": "National Bank Lounge",
+         "terminal": "Main Terminal",
+         "hours": "04:00 - 22:00",
+         "rating": 3.44,
+         "ratings_count": 207,
+         "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul10-montreal-aspire-international-lounge",
+         "airside": true
+        },
+        {
+         "name": "Air France lounge: Montreal",
+         "terminal": "Main Terminal",
+         "hours": "05:00 - 22:00",
+         "rating": 4.19,
+         "ratings_count": 1083,
+         "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal",
          "airside": true
         }
        ]
@@ -8581,43 +8393,43 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 1620.0,
+     "price": 1715.23,
      "currency": "USD",
      "segments": [
       {
        "origin": "AMD",
-       "destination": "JED",
-       "depart": "2027-01-09T22:40",
-       "arrive": "2027-01-10T01:40",
-       "carrier": "6E",
-       "flight_number": "6E75",
-       "duration_min": 330
+       "destination": "DXB",
+       "depart": "2027-01-09T04:30",
+       "arrive": "2027-01-09T06:15",
+       "carrier": "EK",
+       "flight_number": "EK539",
+       "duration_min": 195
       },
       {
-       "origin": "JED",
-       "destination": "IST",
-       "depart": "2027-01-10T06:35",
-       "arrive": "2027-01-10T10:45",
-       "carrier": "TK",
-       "flight_number": "TK97",
-       "duration_min": 250
+       "origin": "DXB",
+       "destination": "MUC",
+       "depart": "2027-01-09T09:20",
+       "arrive": "2027-01-09T13:05",
+       "carrier": "LH",
+       "flight_number": "LH639",
+       "duration_min": 405
       },
       {
-       "origin": "IST",
+       "origin": "MUC",
        "destination": "IAD",
-       "depart": "2027-01-10T16:10",
-       "arrive": "2027-01-10T19:25",
-       "carrier": "TK",
-       "flight_number": "TK7",
-       "duration_min": 675
+       "depart": "2027-01-09T16:50",
+       "arrive": "2027-01-09T20:05",
+       "carrier": "LH",
+       "flight_number": "LH414",
+       "duration_min": 555
       }
      ],
      "airlines": [
-      "IndiGo",
-      "Turkish Airlines"
+      "Emirates",
+      "Lufthansa"
      ],
      "via": "",
-     "separate_tickets": true,
+     "separate_tickets": false,
      "hidden_city": false,
      "links": [
       {
@@ -8637,91 +8449,170 @@
        "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
       }
      ],
-     "notes": [
-      "Virtual interlining: separate airline tickets combined by the seller"
-     ],
+     "notes": [],
      "also_seen": {},
-     "score": 2243.8,
-     "key": "8f995f82519d",
+     "score": 2186.5,
+     "key": "796fd575b899",
      "origin": "AMD",
      "destination": "IAD",
      "stops": 2,
-     "total_minutes": 1875,
+     "total_minutes": 1565,
      "layovers": [
-      "JED",
-      "IST"
+      "DXB",
+      "MUC"
      ],
      "ticket_links": [],
      "layover_countries": [
-      "Saudi Arabia",
-      "Turkey"
+      "United Arab Emirates",
+      "Germany"
      ],
      "avoid": true,
      "lounges": {
-      "JED": {
-       "airport": "Jeddah King A Aziz Intl",
-       "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international",
-       "count": 2,
-       "sleep_pods": 0,
+      "DXB": {
+       "airport": "Dubai Intl",
+       "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international",
+       "count": 11,
+       "sleep_pods": 4,
        "best": {
-        "name": "Plaza Premium Lounge (International Departures)",
-        "terminal": "Terminal 1",
+        "name": "Ahlan Business Class Lounge",
+        "terminal": "Terminal 1 Concourse D",
         "hours": "00:00 - 23:59",
-        "rating": 3.8,
-        "ratings_count": 1433,
-        "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed6-plaza-premium-lounge-international-departures"
+        "rating": 4.4,
+        "ratings_count": 3871,
+        "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge"
        },
        "lounges": [
         {
-         "name": "First Class Lounge",
-         "terminal": "North Terminal",
+         "name": "Ahlan Lounge at B",
+         "terminal": "Terminal 3 Concourse B",
          "hours": "00:00 - 23:59",
-         "rating": 3.59,
-         "ratings_count": 606,
-         "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed1-first-class-lounge",
+         "rating": 4.3,
+         "ratings_count": 5594,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb6-ahlan-lounge-at-b",
          "airside": true
         },
         {
-         "name": "Plaza Premium Lounge (International Departures)",
-         "terminal": "Terminal 1",
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 3 Concourse B",
          "hours": "00:00 - 23:59",
          "rating": 3.8,
-         "ratings_count": 1433,
-         "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international/jed6-plaza-premium-lounge-international-departures",
+         "ratings_count": 11196,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb3-marhaba-lounge",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Lounge",
+         "terminal": "Terminal 3 Concourse A",
+         "hours": "00:00 - 23:59",
+         "rating": 4,
+         "ratings_count": 1686,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb16-ahlan-lounge",
+         "airside": true
+        },
+        {
+         "name": "Plaza Premium Lounge",
+         "terminal": "Terminal 3 Concourse A",
+         "hours": "00:00 - 23:59",
+         "rating": 4.1,
+         "ratings_count": 4852,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb11-plaza-premium-lounge",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 3 Concourse A",
+         "hours": "00:00 - 23:59",
+         "rating": 3.8,
+         "ratings_count": 5644,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb4-marhaba-lounge",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Lounge @C13",
+         "terminal": "Terminal 3 Concourse C",
+         "hours": "00:00 - 23:59",
+         "rating": 4.18,
+         "ratings_count": 2379,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb13-ahlan-lounge-c13",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "00:00 - 23:59",
+         "rating": 4.2,
+         "ratings_count": 22,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb20-ahlan-lounge",
+         "airside": true
+        },
+        {
+         "name": "Ahlan Business Class Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "00:00 - 23:59",
+         "rating": 4.4,
+         "ratings_count": 3871,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb-ahlan-business-class-lounge",
+         "airside": true
+        },
+        {
+         "name": "SkyTeam Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "02:00 - 20:00",
+         "rating": 4.4,
+         "ratings_count": 1041,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb10-skyteam-lounge",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 1 Concourse D",
+         "hours": "00:00 - 23:59",
+         "rating": 3.8,
+         "ratings_count": 2692,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb8-marhaba-lounge",
+         "airside": true
+        },
+        {
+         "name": "Marhaba Lounge",
+         "terminal": "Terminal 2",
+         "hours": "00:00 - 23:59",
+         "rating": 3,
+         "ratings_count": 2622,
+         "url": "https://www.prioritypass.com/lounges/united-arab-emirates/dubai-international/dxb5-marhaba-lounge",
          "airside": true
         }
        ]
       },
-      "IST": {
-       "airport": "Istanbul",
-       "url": "https://www.prioritypass.com/lounges/turkey/istanbul",
+      "MUC": {
+       "airport": "Munich Franz-Josef Strauss",
+       "url": "https://www.prioritypass.com/lounges/germany/munich",
        "count": 2,
-       "sleep_pods": 1,
+       "sleep_pods": 0,
        "best": {
-        "name": "IGA Lounge",
-        "terminal": "International Terminal",
-        "hours": "00:00 - 23:59",
-        "rating": 4.3,
-        "ratings_count": 32338,
-        "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international"
+        "name": "Airport Lounge World",
+        "terminal": "Terminal 1 Pier",
+        "hours": "05:00 - 22:15",
+        "rating": 4.6,
+        "ratings_count": 6290,
+        "url": "https://www.prioritypass.com/lounges/germany/munich/muc2-airport-lounge-world"
        },
        "lounges": [
         {
-         "name": "Pop up Lounge",
-         "terminal": "International Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 3.3,
-         "ratings_count": 1169,
-         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist12-pop-up-lounge-by-iga",
+         "name": "Airport Lounge World",
+         "terminal": "Terminal 1 Pier",
+         "hours": "05:00 - 22:15",
+         "rating": 4.6,
+         "ratings_count": 6290,
+         "url": "https://www.prioritypass.com/lounges/germany/munich/muc2-airport-lounge-world",
          "airside": true
         },
         {
-         "name": "IGA Lounge",
-         "terminal": "International Terminal",
-         "hours": "00:00 - 23:59",
-         "rating": 4.3,
-         "ratings_count": 32338,
-         "url": "https://www.prioritypass.com/lounges/turkey/istanbul/ist9-iga-lounge-international",
+         "name": "Airport Lounge Europe",
+         "terminal": "Terminal 1",
+         "hours": "05:00 - 21:00",
+         "rating": 4,
+         "ratings_count": 3659,
+         "url": "https://www.prioritypass.com/lounges/germany/munich/mune-airport-lounge-europe",
          "airside": true
         }
        ]
@@ -10330,423 +10221,10 @@
        ]
       }
      }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1869.33,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "BOM",
-       "depart": "2027-01-09T17:30",
-       "arrive": "2027-01-09T19:05",
-       "carrier": "LX",
-       "flight_number": "LX9883",
-       "duration_min": 95
-      },
-      {
-       "origin": "BOM",
-       "destination": "ZRH",
-       "depart": "2027-01-10T01:25",
-       "arrive": "2027-01-10T06:10",
-       "carrier": "LX",
-       "flight_number": "LX155",
-       "duration_min": 555
-      },
-      {
-       "origin": "ZRH",
-       "destination": "IAD",
-       "depart": "2027-01-10T13:15",
-       "arrive": "2027-01-10T17:00",
-       "carrier": "LX",
-       "flight_number": "LX72",
-       "duration_min": 585
-      }
-     ],
-     "airlines": [
-      "Swiss"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/iad/270109/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-IAD/2027-01-09/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/IAD/2027-01-09"
-      }
-     ],
-     "notes": [],
-     "also_seen": {
-      "Google Flights": 1879.0
-     },
-     "score": 2459.3,
-     "key": "42ee855187f5",
-     "origin": "AMD",
-     "destination": "IAD",
-     "stops": 2,
-     "total_minutes": 2040,
-     "layovers": [
-      "BOM",
-      "ZRH"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "India",
-      "Switzerland"
-     ],
-     "avoid": false,
-     "lounges": {
-      "BOM": {
-       "airport": "Mumbai Chhatrapati Shivaji Intl",
-       "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international",
-       "count": 3,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Adani Silver Lounge",
-        "terminal": "Terminal 2",
-        "hours": "12:00 - 23:59",
-        "rating": 3.81,
-        "ratings_count": 17,
-        "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Aviserv Lounge - West",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": null,
-         "ratings_count": 0,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom27-aviserv-lounge-west",
-         "airside": "unknown"
-        },
-        {
-         "name": "Adani Silver Lounge",
-         "terminal": "Terminal 2",
-         "hours": "12:00 - 23:59",
-         "rating": 3.81,
-         "ratings_count": 17,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom26-adani-silver-lounge",
-         "airside": "unknown"
-        },
-        {
-         "name": "Adani Silver International Lounge",
-         "terminal": "Terminal 2",
-         "hours": "00:00 - 23:59",
-         "rating": 3.49,
-         "ratings_count": 1315,
-         "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international/bom20-adani-lounge-east",
-         "airside": true
-        }
-       ]
-      },
-      "ZRH": {
-       "airport": "Zurich",
-       "url": "https://www.prioritypass.com/lounges/switzerland/zurich",
-       "count": 3,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Primeclass Lounge",
-        "terminal": "Main Terminal",
-        "hours": "06:00 - 22:30",
-        "rating": 4.2,
-        "ratings_count": 4442,
-        "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh6-primeclass-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Marhaba Lounge",
-         "terminal": "Main Terminal",
-         "hours": "05:15 - 20:00",
-         "rating": 3.79,
-         "ratings_count": 2727,
-         "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zur-marhaba-lounge",
-         "airside": true
-        },
-        {
-         "name": "Primeclass Lounge",
-         "terminal": "Main Terminal",
-         "hours": "06:00 - 22:30",
-         "rating": 4.2,
-         "ratings_count": 4442,
-         "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh6-primeclass-lounge",
-         "airside": true
-        },
-        {
-         "name": "Aspire Lounge",
-         "terminal": "Terminal A",
-         "hours": "05:15 - 21:00",
-         "rating": 3.8,
-         "ratings_count": 9452,
-         "url": "https://www.prioritypass.com/lounges/switzerland/zurich/zrh4-aspire-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 1865.15,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-09T15:25",
-       "arrive": "2027-01-09T17:10",
-       "carrier": "AI",
-       "flight_number": "AI2646",
-       "duration_min": 105
-      },
-      {
-       "origin": "DEL",
-       "destination": "YUL",
-       "depart": "2027-01-10T00:30",
-       "arrive": "2027-01-10T06:10",
-       "carrier": "AC",
-       "flight_number": "AC51",
-       "duration_min": 970
-      },
-      {
-       "origin": "YUL",
-       "destination": "DCA",
-       "depart": "2027-01-10T13:25",
-       "arrive": "2027-01-10T15:24",
-       "carrier": "AC",
-       "flight_number": "AC8823",
-       "duration_min": 119
-      }
-     ],
-     "airlines": [
-      "Air Canada",
-      "Air India"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270109/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-09/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-09"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 2462.4,
-     "key": "d0e3796c1e1e",
-     "origin": "AMD",
-     "destination": "DCA",
-     "stops": 2,
-     "total_minutes": 2069,
-     "layovers": [
-      "DEL",
-      "YUL"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "India",
-      "Canada"
-     ],
-     "avoid": false,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      },
-      "YUL": {
-       "airport": "Montreal Pierre E.Trudeau Intl",
-       "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international",
-       "count": 2,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Air France lounge: Montreal",
-        "terminal": "Main Terminal",
-        "hours": "05:00 - 22:00",
-        "rating": 4.19,
-        "ratings_count": 1083,
-        "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal"
-       },
-       "lounges": [
-        {
-         "name": "National Bank Lounge",
-         "terminal": "Main Terminal",
-         "hours": "04:00 - 22:00",
-         "rating": 3.44,
-         "ratings_count": 207,
-         "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul10-montreal-aspire-international-lounge",
-         "airside": true
-        },
-        {
-         "name": "Air France lounge: Montreal",
-         "terminal": "Main Terminal",
-         "hours": "05:00 - 22:00",
-         "rating": 4.19,
-         "ratings_count": 1083,
-         "url": "https://www.prioritypass.com/lounges/canada/montreal-trudeau-international/yul8-air-france-lounge-montreal",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
-     "price": 2073.6,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "AMD",
-       "destination": "DEL",
-       "depart": "2027-01-09T18:50",
-       "arrive": "2027-01-09T20:40",
-       "carrier": "AI",
-       "flight_number": "AI2938",
-       "duration_min": 110
-      },
-      {
-       "origin": "DEL",
-       "destination": "EWR",
-       "depart": "2027-01-09T23:55",
-       "arrive": "2027-01-10T06:30",
-       "carrier": "UA",
-       "flight_number": "UA83",
-       "duration_min": 1025
-      },
-      {
-       "origin": "EWR",
-       "destination": "DCA",
-       "depart": "2027-01-10T08:50",
-       "arrive": "2027-01-10T10:28",
-       "carrier": "UA",
-       "flight_number": "UA4444",
-       "duration_min": 98
-      }
-     ],
-     "airlines": [
-      "Air India",
-      "United Airlines"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/amd/dca/270109/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:DCA,departure:1/9/2027TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/AMD-DCA/2027-01-09/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/AMD/DCA/2027-01-09"
-      }
-     ],
-     "notes": [],
-     "also_seen": {
-      "Google Flights": 2107.0
-     },
-     "score": 2545.6,
-     "key": "c073904744b3",
-     "origin": "AMD",
-     "destination": "DCA",
-     "stops": 2,
-     "total_minutes": 1568,
-     "layovers": [
-      "DEL",
-      "EWR"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "India",
-      "United States"
-     ],
-     "avoid": false,
-     "lounges": {
-      "DEL": {
-       "airport": "Indira Gandhi International",
-       "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Encalm Lounge",
-        "terminal": "Terminal 3",
-        "hours": "00:00 - 23:59",
-        "rating": 3.89,
-        "ratings_count": 6498,
-        "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Encalm Lounge",
-         "terminal": "Terminal 3",
-         "hours": "00:00 - 23:59",
-         "rating": 3.89,
-         "ratings_count": 6498,
-         "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international/del15-encalm-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
     }
    ],
    "best_by_strategy": {
-    "direct": 1120.0,
+    "direct": 1122.0,
     "self-transfer": 1484.0
    },
    "hubs": {
@@ -10756,12 +10234,12 @@
      "skipped": false
     },
     "DOH": {
-     "forced": null,
+     "forced": 2126.0,
      "self_transfer": null,
      "skipped": false
     },
     "AUH": {
-     "forced": null,
+     "forced": 1975.0,
      "self_transfer": null,
      "skipped": false
     },
@@ -10773,7 +10251,7 @@
     "KWI": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "MCT": {
      "forced": null,
@@ -10792,7 +10270,7 @@
     },
     "DEL": {
      "forced": null,
-     "self_transfer": 2004.0,
+     "self_transfer": null,
      "skipped": false
     },
     "BOM": {
@@ -10823,7 +10301,7 @@
     "MUC": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "ZRH": {
      "forced": null,
@@ -10836,7 +10314,7 @@
      "skipped": false
     }
    },
-   "requests": 88,
+   "requests": 73,
    "errors": [],
    "cheapest_key": "f0aa1d244bea",
    "all_time_low": 1453.0
