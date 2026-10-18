@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T14:00:46+00:00",
+ "generated_at": "2026-10-18T17:22:45+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -33,7 +33,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 103.0,
+     "price": 104.0,
      "currency": "USD",
      "segments": [
       {
@@ -72,7 +72,7 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 137.5,
+     "score": 138.5,
      "key": "1e7064c98f33",
      "origin": "PHX",
      "destination": "SFO",
@@ -1051,7 +1051,7 @@
      "lounges": {}
     },
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
      "price": 159.0,
      "currency": "USD",
@@ -1061,8 +1061,8 @@
        "destination": "LAX",
        "depart": "2026-11-24T11:21",
        "arrive": "2026-11-24T12:05",
-       "carrier": "UA",
-       "flight_number": "UA5836",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 104
       },
       {
@@ -1070,18 +1070,22 @@
        "destination": "SFO",
        "depart": "2026-11-24T13:05",
        "arrive": "2026-11-24T14:35",
-       "carrier": "UA",
-       "flight_number": "UA469",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 90
       }
      ],
      "airlines": [
-      "United Airlines"
+      "United"
      ],
      "via": "",
      "separate_tickets": false,
      "hidden_city": false,
      "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
+      },
       {
        "name": "Skyscanner",
        "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
@@ -1100,7 +1104,9 @@
       }
      ],
      "notes": [],
-     "also_seen": {},
+     "also_seen": {
+      "Skiplagged": 159.0
+     },
      "score": 262.5,
      "key": "4ea53f938ba4",
      "origin": "PHX",
@@ -1254,7 +1260,7 @@
     {
      "source": "Google Flights",
      "strategy": "direct",
-     "price": 82.0,
+     "price": 93.0,
      "currency": "USD",
      "segments": [
       {
@@ -1306,9 +1312,9 @@
      ],
      "notes": [],
      "also_seen": {
-      "Skiplagged": 82.0
+      "Skiplagged": 93.0
      },
-     "score": 271.2,
+     "score": 282.2,
      "key": "118c17311e81",
      "origin": "PHX",
      "destination": "SFO",
@@ -1326,7 +1332,7 @@
     }
    ],
    "best_by_strategy": {
-    "direct": 82.0
+    "direct": 93.0
    },
    "hubs": {
     "DXB": {
@@ -2719,7 +2725,7 @@
     "IST": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "DEL": {
      "forced": null,
@@ -2749,7 +2755,7 @@
     "AMS": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "MUC": {
      "forced": null,
