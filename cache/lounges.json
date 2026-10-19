@@ -1120,6 +1120,62 @@
    "name": "Jeddah King A Aziz Intl",
    "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international"
   },
+  "KWI": {
+   "complete": true,
+   "fetched": "2026-10-19T01:05:36+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KWI8",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Immigration, Departure Level, 1st Floor, opposite Duty Free. International flights only.",
+     "name": "Hayakom Lounge",
+     "rating": 2.4,
+     "ratings_count": 62,
+     "terminal": "Terminal  5",
+     "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international/kwi8-hayakom-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KWI6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Passport Control, turn right and the lounge is located near Gate B5. International and transit passengers.   ",
+     "name": "Al Mubarakiya Lounge",
+     "rating": 3.9,
+     "ratings_count": 1198,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international/kwi6-al-mubarakiya-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KWI5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Immigration turn right. The lounge is located opposite Gates 22 and 23.",
+     "name": "Kuwait Airways - Dasman Lounge",
+     "rating": 4.1,
+     "ratings_count": 794,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international/kwi5-kuwait-airways-dasman-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KWI4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Gate 26.",
+     "name": "Dasman Premier Lounge",
+     "rating": 3.49,
+     "ratings_count": 144,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international/kwi4-dasman-premier-lounge"
+    }
+   ],
+   "name": "Kuwait International",
+   "url": "https://www.prioritypass.com/lounges/kuwait/kuwait-international"
+  },
   "LAS": {
    "complete": true,
    "fetched": "2026-10-17T20:08:46+00:00",
