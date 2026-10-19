@@ -1395,6 +1395,106 @@
    "name": "Munich Franz-Josef Strauss",
    "url": "https://www.prioritypass.com/lounges/germany/munich"
   },
+  "SAN": {
+   "complete": true,
+   "fetched": "2026-10-19T06:06:55+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SAN10",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - after East Security Checkpoint, take an immediate left and proceed towards Gate 33. The lounge is located between Gates 33 and 23.",
+     "name": "Aspire Lounge",
+     "rating": 4,
+     "ratings_count": 9713,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international/san10-aspire-lounge"
+    }
+   ],
+   "name": "San Diego CA Int'l",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international"
+  },
+  "SGN": {
+   "complete": true,
+   "fetched": "2026-10-19T06:06:05+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "SGN10",
+     "hours": "",
+     "location": "",
+     "name": "Vietnam Airlines Lotus Premier Lounge",
+     "rating": 4.5,
+     "ratings_count": 2,
+     "terminal": "Domestic Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international/sgn10-vietnam-airlines-lotus-premier-lounge-sgn-dom-t3"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SGN9",
+     "hours": "05:00 - 23:00",
+     "location": "Airside - Domestic Departures, 4th Floor, near Gate 12.",
+     "name": "SH Premium Lounge Tan Son Nhat",
+     "rating": 4.31,
+     "ratings_count": 549,
+     "terminal": "Domestic Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international/sgn9-sh-premium-lounge-tan-son-nhat"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SGN8",
+     "hours": "04:30 - 23:30",
+     "location": "Airside - Domestic. After Security Checks,  4th Floor, near Gates 1-10.",
+     "name": "The SENS Business Lounge",
+     "rating": 4.61,
+     "ratings_count": 282,
+     "terminal": "Domestic Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international/sgn8-the-sens-business-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SGN5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, 2nd Floor, next to Gates 08 - 09.",
+     "name": "Rose Business Lounge",
+     "rating": 4,
+     "ratings_count": 4146,
+     "terminal": "International Terminal",
+     "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international/sgn5-rose-business-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SGN4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Immigration and Security Checks, turn left and the lounge is located near Gate 17.",
+     "name": "Jasmine Halal Lounge",
+     "rating": 3.6,
+     "ratings_count": 2652,
+     "terminal": "International Terminal",
+     "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international/sgn4-jasmine-halal-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SGN2",
+     "hours": "06:00 - 23:50",
+     "location": "Airside - Domestic Departures. After Security Checks, proceed to Boarding Gates 10-14. The lounge is located in front of Boarding Gate 11.",
+     "name": "Le Saigonnais Business Lounge",
+     "rating": 4.2,
+     "ratings_count": 2902,
+     "terminal": "Domestic Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international/sgn2-le-saigonnais-business-lounge"
+    }
+   ],
+   "name": "Ho Chi Minh TSN International",
+   "url": "https://www.prioritypass.com/lounges/vietnam/tan-son-nhat-international"
+  },
   "SHJ": {
    "complete": true,
    "fetched": "2026-10-17T20:00:46+00:00",
