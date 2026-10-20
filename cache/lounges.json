@@ -504,6 +504,26 @@
    "name": "Doha Hamad International",
    "url": "https://www.prioritypass.com/lounges/qatar/hamad-international"
   },
+  "DUB": {
+   "complete": true,
+   "fetched": "2026-10-20T04:37:21+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DUB",
+     "hours": "04:00 - 21:00",
+     "location": "Airside - the lounge is located next to 400 Gates. Access is via the lift or escalator directly along the Airline Lounge corridor. The lounge is not available after US Preclearance",
+     "name": "Liffey Lounge",
+     "rating": 3.7,
+     "ratings_count": 5726,
+     "terminal": "Between Terminals 1 & 2",
+     "url": "https://www.prioritypass.com/lounges/ireland/dublin/dub-liffey-lounge"
+    }
+   ],
+   "name": "Dublin",
+   "url": "https://www.prioritypass.com/lounges/ireland/dublin"
+  },
   "DXB": {
    "complete": true,
    "fetched": "2026-10-17T19:59:18+00:00",
