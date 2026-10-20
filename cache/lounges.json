@@ -344,6 +344,126 @@
    "name": "Mumbai Chhatrapati Shivaji Intl",
    "url": "https://www.prioritypass.com/lounges/india/chhatrapati-shivaji-international"
   },
+  "BOS": {
+   "complete": true,
+   "fetched": "2026-10-20T09:59:42+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOS10",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - 1st Floor, Concourse Level across from Gate C19. The lounge is not accessible from Gates 40 - 42.",
+     "name": "The Lounge",
+     "rating": 3.9,
+     "ratings_count": 10359,
+     "terminal": "Terminal C",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international/bos10-the-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BOS8",
+     "hours": "08:00 - 13:30",
+     "location": "Airside - after Security, turn right towards Gate 4. Take the dedicated lounge lift or stairs to where the lounge is located.",
+     "name": "Air France Lounge",
+     "rating": 3.6,
+     "ratings_count": 6592,
+     "terminal": "Terminal E",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international/bos8-air-france-lounge"
+    }
+   ],
+   "name": "Boston MA Logan International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/logan-international"
+  },
+  "CCU": {
+   "complete": true,
+   "fetched": "2026-10-20T09:59:27+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CCU8",
+     "hours": "07:00 - 22:00",
+     "location": "Airside - Domestic Departures, Mezzanine Level, after Security Checks turn left. ",
+     "name": "Travel Club Lounge Anex",
+     "rating": 3.89,
+     "ratings_count": 762,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/kolkata-netaji-subhash-chandra-bose-intl/ccu8-travel-club-lounge-anex"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CCU6",
+     "hours": "04:00 - 00:00",
+     "location": "Airside - Domestic Departures. Mezzanine Level. After Security Checks, when still inside the Security Area, turn left where the lounge is located. ",
+     "name": "Travel Club",
+     "rating": 3.7,
+     "ratings_count": 527,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/kolkata-netaji-subhash-chandra-bose-intl/ccu6-travel-club"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CCU7",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Mezzanine Level. After Security Checks, the lounge is located on the right hand side. ",
+     "name": "Travel Club",
+     "rating": 4,
+     "ratings_count": 627,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/kolkata-netaji-subhash-chandra-bose-intl/ccu7-travel-club"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CCU9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Security Checks, the lounge is located opposite Gate 10.",
+     "name": "Travel Club",
+     "rating": 3.4,
+     "ratings_count": 405,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/kolkata-netaji-subhash-chandra-bose-intl/ccu9-travel-club"
+    }
+   ],
+   "name": "Kolkata Netaji Subhash Chandra Bose Intl",
+   "url": "https://www.prioritypass.com/lounges/india/kolkata-netaji-subhash-chandra-bose-intl"
+  },
+  "CMN": {
+   "complete": true,
+   "fetched": "2026-10-20T09:59:13+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CMN8",
+     "hours": "04:00 - 22:00",
+     "location": "Airside - the lounge is located on the right hand side on the 1st Floor. The lounge can also be reached from the 2nd Floor via their dedicated lift or from the entrance opposite Gate F4. International and in transit flights only.",
+     "name": "Casablanca Aspire Lounge",
+     "rating": 3.32,
+     "ratings_count": 238,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl/cmn8-casablanca-aspire-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CMN7",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located on the 1st Floor. The lounge can also be reached from the 2nd Floor via their dedicated lift or from the entrance opposite Gate A8. International and in transit flights only.",
+     "name": "Aspire Executive Lounge Casablanca",
+     "rating": 3.2,
+     "ratings_count": 222,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl/cmn7-aspire-executive-lounge-casablanca"
+    }
+   ],
+   "name": "Casablanca Mohammed V Intl",
+   "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl"
+  },
   "DEL": {
    "complete": true,
    "fetched": "2026-10-17T20:00:13+00:00",
