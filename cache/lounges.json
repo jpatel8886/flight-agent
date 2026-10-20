@@ -1260,6 +1260,134 @@
    "name": "Jeddah King A Aziz Intl",
    "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-abdulaziz-international"
   },
+  "JFK": {
+   "complete": true,
+   "fetched": "2026-10-20T19:11:24+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "JFK33",
+     "hours": "08:00 - 22:30",
+     "location": "",
+     "name": "Air India Lounge",
+     "rating": 4.29,
+     "ratings_count": 14,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk33-air-india-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JFK22",
+     "hours": "05:00 - 13:30",
+     "location": "Airside - the lounge is located above Boarding Gates A4 and A5.",
+     "name": "Virgin Atlantic Clubhouse",
+     "rating": 3.79,
+     "ratings_count": 3791,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk22-virgin-atlantic-clubhouse"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JFK10",
+     "hours": "07:00 - 00:00",
+     "location": "Airside - near the Air France Boarding Area by Gate 1. ",
+     "name": "Air France Lounge",
+     "rating": 4.3,
+     "ratings_count": 2925,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk10-air-france-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JFK16",
+     "hours": "17:30 - 22:30",
+     "location": "Airside - after Security Checkpoint on the left hand side. International and in-transit flights only.",
+     "name": "Lufthansa Business Lounge",
+     "rating": 4.3,
+     "ratings_count": 692,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk16-lufthansa-business-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "JFK25",
+     "hours": "08:00 - 00:00",
+     "location": "Landside - Departure Level. The lounge is located behind counters E and F next to the TSA Check Point. International flights only.",
+     "name": "VIP ONE Lounge",
+     "rating": 4.4,
+     "ratings_count": 2039,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk25-vip-one-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JFK21",
+     "hours": "09:00 - 00:00",
+     "location": "Airside - after TSA Security Checks, the lounge is located between Gates 2 and 3. International flights only.",
+     "name": "Turkish Airlines Lounge",
+     "rating": 4.2,
+     "ratings_count": 3195,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk21-turkish-airlines-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JFK14",
+     "hours": "09:00 - 23:59",
+     "location": "Airside - after Security, next to Gates 8 and 9. International flights only.",
+     "name": "Primeclass Lounge",
+     "rating": 4.3,
+     "ratings_count": 3662,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk14-primeclass-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JFK",
+     "hours": "21:30 - 00:50",
+     "location": "Airside - after Security Checkpoint, the lounge is located on the right hand side, across Gate 3.  All passengers must hold a boarding pass departing from Terminal 1.",
+     "name": "Korean Air Lounge",
+     "rating": 3.8,
+     "ratings_count": 1050,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk-korean-air-lounge"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "JFK17",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 4.5,
+     "ratings_count": 105,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk17-minute-suites"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "JFK31R",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 4.1,
+     "ratings_count": 60,
+     "terminal": "Terminal 8",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international/jfk31r-minute-suites"
+    }
+   ],
+   "name": "New York NY JFK International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/john-f-kennedy-international"
+  },
   "KWI": {
    "complete": true,
    "fetched": "2026-10-19T01:05:36+00:00",
