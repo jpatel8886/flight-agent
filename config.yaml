@@ -4,16 +4,38 @@ adults: 1
 cabin: economy            # economy | premium-economy | business | first
 
 searches:
-  - name: Rajkot/Ahmedabad to Washington DC, Jan 8
-    origin: [HSR, AMD]       # DEL/BOM connections are covered via hubs below
+  - name: HSR to Washington DC, Jan 8
+    origin: [HSR]
     destination: [IAD, DCA]
     date: 2027-01-08
-    # target_price: 750    # optional: alert whenever price is at/below this
-  - name: Rajkot/Ahmedabad to Washington DC, Jan 9
-    origin: [HSR, AMD]       # DEL/BOM connections are covered via hubs below
+  - name: AMD to Washington DC, Jan 8
+    origin: [AMD]
+    destination: [IAD, DCA]
+    date: 2027-01-08
+  - name: DEL to Washington DC, Jan 8
+    origin: [DEL]
+    destination: [IAD, DCA]
+    date: 2027-01-08
+  - name: BOM to Washington DC, Jan 8
+    origin: [BOM]
+    destination: [IAD, DCA]
+    date: 2027-01-08
+  - name: HSR to Washington DC, Jan 9
+    origin: [HSR]
     destination: [IAD, DCA]
     date: 2027-01-09
-    # target_price: 750
+  - name: AMD to Washington DC, Jan 9
+    origin: [AMD]
+    destination: [IAD, DCA]
+    date: 2027-01-09
+  - name: DEL to Washington DC, Jan 9
+    origin: [DEL]
+    destination: [IAD, DCA]
+    date: 2027-01-09
+  - name: BOM to Washington DC, Jan 9
+    origin: [BOM]
+    destination: [IAD, DCA]
+    date: 2027-01-09
 # Layover cities tried for forced-hub and self-transfer combinations.
 hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
 
