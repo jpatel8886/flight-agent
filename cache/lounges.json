@@ -1496,6 +1496,74 @@
    "name": "Helsinki Vantaa",
    "url": "https://www.prioritypass.com/lounges/finland/helsinki-vantaa"
   },
+  "HKG": {
+   "complete": true,
+   "fetched": "2026-10-21T01:35:59+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HKG18",
+     "hours": "05:30 - 23:59",
+     "location": "Airside - International Departures, Level 6, near Gate 23. ",
+     "name": "Kyra Lounge",
+     "rating": 4.6,
+     "ratings_count": 9263,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok/hkg18-kyra-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "HKG19",
+     "hours": "06:00 - 23:59",
+     "location": "",
+     "name": "Kyra Lounge",
+     "rating": 4.25,
+     "ratings_count": 358,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok/hkg19-kyra-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HKG10",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Level 7, Departures Level, near Gate 60.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.9,
+     "ratings_count": 2937,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok/hkg10-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HKG5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. East Hall, Level 6, Departures Level, near Gate 1.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.6,
+     "ratings_count": 6841,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok/hkg5-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HKG4",
+     "hours": "06:00 - 01:00",
+     "location": "Airside - Level 6, Departure Level, near Gate 35. \r\n\r\n\r\n ",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.7,
+     "ratings_count": 3011,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok/hkg4-plaza-premium-lounge"
+    }
+   ],
+   "name": "Hong Kong International (Chek Lap Kok)",
+   "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok"
+  },
   "ICN": {
    "complete": true,
    "fetched": "2026-10-17T19:58:46+00:00",
@@ -2210,6 +2278,26 @@
    ],
    "name": "Chicago IL O Hare Intl",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/ohare-international"
+  },
+  "PHL": {
+   "complete": true,
+   "fetched": "2026-10-21T01:45:30+00:00",
+   "lounges": [
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "PHL9",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 4,
+     "ratings_count": 423,
+     "terminal": "Terminal B",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/philadelphia-international/phl9-minute-suites"
+    }
+   ],
+   "name": "Philadelphia PA International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/philadelphia-international"
   },
   "SAN": {
    "complete": true,
