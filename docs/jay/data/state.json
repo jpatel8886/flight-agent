@@ -19,16 +19,16 @@
   "lowest_price": 1443.0
  },
  "AMD-IADDCA-2027-01-08": {
-  "best_score": 1667.7,
-  "best_summary": "1124, 30h, 2 stops",
-  "best_seen_at": "2026-10-21T00:37:42+00:00",
-  "lowest_price": 1123.92
+  "best_score": 1664.8,
+  "best_summary": "1121, 30h, 2 stops",
+  "best_seen_at": "2026-10-21T13:39:34+00:00",
+  "lowest_price": 1121.04
  },
  "DEL-IADDCA-2027-01-08": {
-  "best_score": 1548.2,
-  "best_summary": "1127, 22h, 2 stops",
-  "best_seen_at": "2026-10-21T01:26:04+00:00",
-  "lowest_price": 1127.0
+  "best_score": 1516.8,
+  "best_summary": "982, 30h, 2 stops",
+  "best_seen_at": "2026-10-21T13:39:34+00:00",
+  "lowest_price": 982.05
  },
  "BOM-IADDCA-2027-01-08": {
   "best_score": 1659.2,
@@ -43,21 +43,21 @@
   "lowest_price": 1476.0
  },
  "AMD-IADDCA-2027-01-09": {
-  "best_score": 1996.2,
-  "best_summary": "1449, 26h, 2 stops",
-  "best_seen_at": "2026-10-21T01:26:04+00:00",
-  "lowest_price": 1448.0
+  "best_score": 1680.2,
+  "best_summary": "1131, 31h, 2 stops",
+  "best_seen_at": "2026-10-21T13:39:34+00:00",
+  "lowest_price": 1131.47
  },
  "DEL-IADDCA-2027-01-09": {
-  "best_score": 1688.2,
-  "best_summary": "1267, 22h, 2 stops",
-  "best_seen_at": "2026-10-21T00:37:42+00:00",
-  "lowest_price": 1267.0
+  "best_score": 1520.5,
+  "best_summary": "982, 30h, 2 stops",
+  "best_seen_at": "2026-10-21T13:39:34+00:00",
+  "lowest_price": 982.05
  },
  "BOM-IADDCA-2027-01-09": {
-  "best_score": 1899.4,
-  "best_summary": "1431, 25h, 2 stops",
-  "best_seen_at": "2026-10-21T00:37:42+00:00",
+  "best_score": 1897.9,
+  "best_summary": "1430, 25h, 2 stops",
+  "best_seen_at": "2026-10-21T13:39:34+00:00",
   "lowest_price": 1429.61
  }
 }

@@ -1564,6 +1564,134 @@
    "name": "Hong Kong International (Chek Lap Kok)",
    "url": "https://www.prioritypass.com/lounges/hong-kong/hong-kong-international-chek-lap-kok"
   },
+  "HND": {
+   "complete": true,
+   "fetched": "2026-10-21T13:47:17+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "HND22",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Airport Cafe Lounge NODOKA",
+     "rating": 4.34,
+     "ratings_count": 74,
+     "terminal": "Haneda Airport Garden",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd22-airport-cafe-lounge-nodoka"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND20",
+     "hours": "06:30 - 23:59",
+     "location": "Airside - International Departures, 3rd Floor, next to the International flight immigration gate area.",
+     "name": "Power Lounge Premium",
+     "rating": 4.3,
+     "ratings_count": 3378,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd20-power-lounge-premium"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "HND16",
+     "hours": "09:00 - 16:00",
+     "location": "Landside - 3rd Floor. The lounge is located in the restaurant and shop area.",
+     "name": "Power Lounge Central",
+     "rating": 3.48,
+     "ratings_count": 72,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd16-power-lounge-central"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND14",
+     "hours": "09:00 - 16:00",
+     "location": "Airside - Domestic Departures. North Pier, 3rd Floor, near Gate 52.",
+     "name": "POWER LOUNGE NORTH",
+     "rating": 3,
+     "ratings_count": 294,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd14-power-lounge-north"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND13",
+     "hours": "09:00 - 16:00",
+     "location": "Airside - Domestic Departures. South Pier, 2nd Floor, near Gate 65.",
+     "name": "AIRPORT LOUNGE SOUTH",
+     "rating": 2.92,
+     "ratings_count": 296,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd13-airport-lounge-south"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND18",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, 3rd Floor, near Gate 108.",
+     "name": "Sky Lounge South",
+     "rating": 3.9,
+     "ratings_count": 12674,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd18-sky-lounge-south"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND10",
+     "hours": "01:00 - 05:00",
+     "location": "Airside - International Departures, 4th Floor, centre of the Departure Hall.",
+     "name": "TIAT Lounge",
+     "rating": 3.9,
+     "ratings_count": 3388,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd10-tiat-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND15",
+     "hours": "09:00 - 16:00",
+     "location": "Airside - Domestic Departures. South Wing, 2nd Floor, near Gate 9.",
+     "name": "POWER LOUNGE SOUTH",
+     "rating": 3.2,
+     "ratings_count": 285,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd15-power-lounge-south"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HND11",
+     "hours": "09:00 - 16:00",
+     "location": "Airside - Domestic Departures. North Wing, 2nd Floor, near Gate 16. ",
+     "name": "POWER LOUNGE NORTH",
+     "rating": 3.2,
+     "ratings_count": 410,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd11-power-lounge-north"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "HND12",
+     "hours": "09:00 - 16:00",
+     "location": "Landside - 1st Floor, Arrivals Lobby. ",
+     "name": "POWER LOUNGE CENTRAL",
+     "rating": 3.43,
+     "ratings_count": 50,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/japan/haneda/hnd12-power-lounge-central"
+    }
+   ],
+   "name": "Tokyo Haneda Intl",
+   "url": "https://www.prioritypass.com/lounges/japan/haneda"
+  },
   "ICN": {
    "complete": true,
    "fetched": "2026-10-17T19:58:46+00:00",
