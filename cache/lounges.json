@@ -2331,6 +2331,50 @@
    "name": "Muscat International",
    "url": "https://www.prioritypass.com/lounges/oman/muscat-international"
   },
+  "MIA": {
+   "complete": true,
+   "fetched": "2026-10-22T22:32:24+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MIA17",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located post Security, opposite Gate J6.",
+     "name": "AV/TAP VIP Lounge",
+     "rating": 4.29,
+     "ratings_count": 1784,
+     "terminal": "South Terminal Concourse H and J",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/miami-international/mia17-av-tap-vip-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MIA15",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge lift lobby is located midway between Concourses H and J. Take the lift to the 3rd Floor, keep to the left until you reach the lounge entrance.",
+     "name": "Turkish Airlines Lounge",
+     "rating": 4.3,
+     "ratings_count": 9242,
+     "terminal": "South Terminal Concourse H and J",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/miami-international/mia15-turkish-airlines-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MIA14",
+     "hours": "05:00 - 22:00",
+     "location": "Airside - after TSA Check Point in Concourse E. The lounge is located on Level 2, past the escalator on the left hand side. Access from Terminal D - pass through the connector to the Central Terminal (E Gates Concourse) and the lounge is located directly ahead.",
+     "name": "Turkish Airlines Lounge",
+     "rating": 3.6,
+     "ratings_count": 15820,
+     "terminal": "North Terminal Concourse D and E",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/miami-international/mia14-turkish-airlines-lounge"
+    }
+   ],
+   "name": "Miami International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/miami-international"
+  },
   "MUC": {
    "complete": true,
    "fetched": "2026-10-17T21:31:02+00:00",
