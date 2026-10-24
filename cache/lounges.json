@@ -2407,6 +2407,74 @@
    "name": "Munich Franz-Josef Strauss",
    "url": "https://www.prioritypass.com/lounges/germany/munich"
   },
+  "NRT": {
+   "complete": true,
+   "fetched": "2026-10-24T05:45:05+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "NRT12",
+     "hours": "07:30 - 21:00",
+     "location": "Airside - International Departures, 3rd Floor, next to Gate 26.",
+     "name": "NOA Lounge",
+     "rating": 4.1,
+     "ratings_count": 9937,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/japan/narita-international/nrt12-i-a-s-s-superior-lounge-noa"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "TOK",
+     "hours": "07:00 - 21:00",
+     "location": "Landside - Arrival, Departure and Domestic transit only. Enter the main building (the center building between the north&south Check-in Bldgs) from 4th Floor (Departure Floor) & take center escalator up to 5th Floor. The lounge is located on the right hand side of the North Wing. ",
+     "name": "Executive Lounge 1",
+     "rating": 3.1,
+     "ratings_count": 1063,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/japan/narita-international/tok-executive-lounge-1"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "NRT13",
+     "hours": "07:30 - 21:00",
+     "location": "Airside - International Departures, 4th Floor.",
+     "name": "KoCoo Lounge",
+     "rating": 4.2,
+     "ratings_count": 5776,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/narita-international/nrt13-i-a-s-s-superior-lounge-kocoo"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "TYO",
+     "hours": "07:00 - 21:00",
+     "location": "Landside - Arrival, Departure and Domestic transit only. Enter the main building from the 3rd Floor (Departure Floor) and take the escalator next to 'G' Check-in counter (North Side of building) to the 4th Floor, turn left. Signboard indicates the entrance to the lounge. ",
+     "name": "EXECUTIVE LOUNGE 2",
+     "rating": 3,
+     "ratings_count": 1117,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/narita-international/tyo-executive-lounge-2"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "NRT11",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "9h nine hours Narita Airport",
+     "rating": 4.3,
+     "ratings_count": 49,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/japan/narita-international/nrt11-9h-nine-hours-narita-airport"
+    }
+   ],
+   "name": "Narita International",
+   "url": "https://www.prioritypass.com/lounges/japan/narita-international"
+  },
   "ORD": {
    "complete": true,
    "fetched": "2026-10-21T00:49:38+00:00",
