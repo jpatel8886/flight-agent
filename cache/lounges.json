@@ -372,6 +372,86 @@
    "name": "Bangkok Suvarnabhumi Intl",
    "url": "https://www.prioritypass.com/lounges/thailand/suvarnabhumi"
   },
+  "BLR": {
+   "complete": true,
+   "fetched": "2026-10-24T23:17:14+00:00",
+   "lounges": [
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "BLR17",
+     "hours": "00:00 - 23:59",
+     "location": "Landside - the lounge is located outside Terminal 1 Arrivals, near Arrivals Gate 13.",
+     "name": "T1 Lounge (Kerbside)",
+     "rating": 2.89,
+     "ratings_count": 10,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/kempegowda-international/blr17-t1-lounge-kerbside"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BLR11",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. After Security Checks, Level 1, opposite Gate 34 and next to Starbucks.",
+     "name": "080 Domestic Lounge",
+     "rating": 4.21,
+     "ratings_count": 690,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/kempegowda-international/blr11-080-domestic-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BLR8",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic and in transit Departures. Level 2, above Swarovski, opposite Fossil.",
+     "name": "080 Domestic Lounge",
+     "rating": 4.4,
+     "ratings_count": 2668,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/kempegowda-international/blr8-080-domestic-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BLR10",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Immigration and Security Checks, Level 3.",
+     "name": "080 International Lounge",
+     "rating": 4.2,
+     "ratings_count": 1863,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/kempegowda-international/blr10-080-international-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "BLR12",
+     "hours": "00:00 - 23:59",
+     "location": "Landside - Ground Level, Arrivals Hall, Level 0. Follow signs to the lounge.",
+     "name": "080 Arrival Lounge",
+     "rating": 4.3,
+     "ratings_count": 376,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/kempegowda-international/blr12-080-arrival-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "BLR9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic and in transit Departures. After Security Checks, Level 4.",
+     "name": "080 Lounge (Domestic T2)",
+     "rating": 4.4,
+     "ratings_count": 1165,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/kempegowda-international/blr9-080-lounge-domestic-t2"
+    }
+   ],
+   "name": "Kempegowda International",
+   "url": "https://www.prioritypass.com/lounges/india/kempegowda-international"
+  },
   "BOM": {
    "complete": true,
    "fetched": "2026-10-17T20:00:51+00:00",
