@@ -1772,6 +1772,38 @@
    "name": "Tokyo Haneda Intl",
    "url": "https://www.prioritypass.com/lounges/japan/haneda"
   },
+  "HYD": {
+   "complete": true,
+   "fetched": "2026-10-26T17:29:06+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HYD8",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures, after Security Checks, opposite Domestic Transfers, Level E.",
+     "name": "Encalm Lounge",
+     "rating": 4.1,
+     "ratings_count": 1955,
+     "terminal": "Terminal",
+     "url": "https://www.prioritypass.com/lounges/india/rajiv-gandhi-international/hyd8-encalm-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "HYD4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, Level E, near Gate 23.",
+     "name": "Encalm Lounge",
+     "rating": 4,
+     "ratings_count": 1824,
+     "terminal": "Terminal",
+     "url": "https://www.prioritypass.com/lounges/india/rajiv-gandhi-international/hyd4-encalm-lounge"
+    }
+   ],
+   "name": "Rajiv Gandhi International",
+   "url": "https://www.prioritypass.com/lounges/india/rajiv-gandhi-international"
+  },
   "ICN": {
    "complete": true,
    "fetched": "2026-10-17T19:58:46+00:00",
