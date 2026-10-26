@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T21:54:48+00:00",
+ "generated_at": "2026-10-26T00:20:24+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -1452,7 +1452,7 @@
    "target_price": null,
    "options": [
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
      "price": 114.0,
      "currency": "USD",
@@ -1462,18 +1462,22 @@
        "destination": "PHX",
        "depart": "2026-11-29T16:43",
        "arrive": "2026-11-29T19:49",
-       "carrier": "F9",
-       "flight_number": "F91192",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 126
       }
      ],
      "airlines": [
-      "Frontier Airlines"
+      "Frontier"
      ],
      "via": "",
      "separate_tickets": false,
      "hidden_city": false,
      "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDU0ZPcgUSA1BIWEIBAUgBmAEC&hl=en&curr=USD"
+      },
       {
        "name": "Skyscanner",
        "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
@@ -1492,7 +1496,9 @@
       }
      ],
      "notes": [],
-     "also_seen": {},
+     "also_seen": {
+      "Skiplagged": 114.0
+     },
      "score": 145.5,
      "key": "4ec62475e39f",
      "origin": "SFO",
@@ -1802,7 +1808,7 @@
      "lounges": {}
     },
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
      "price": 244.0,
      "currency": "USD",
@@ -1812,18 +1818,22 @@
        "destination": "PHX",
        "depart": "2026-11-29T11:00",
        "arrive": "2026-11-29T14:05",
-       "carrier": "UA",
-       "flight_number": "UA2765",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 125
       }
      ],
      "airlines": [
-      "United Airlines"
+      "United"
      ],
      "via": "",
      "separate_tickets": false,
      "hidden_city": false,
      "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDU0ZPcgUSA1BIWEIBAUgBmAEC&hl=en&curr=USD"
+      },
       {
        "name": "Skyscanner",
        "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
@@ -1842,7 +1852,9 @@
       }
      ],
      "notes": [],
-     "also_seen": {},
+     "also_seen": {
+      "Skiplagged": 244.0
+     },
      "score": 275.2,
      "key": "a69d9fc97c43",
      "origin": "SFO",
@@ -2148,7 +2160,7 @@
      "lounges": {}
     },
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
      "price": 269.0,
      "currency": "USD",
@@ -2158,18 +2170,22 @@
        "destination": "PHX",
        "depart": "2026-11-29T11:57",
        "arrive": "2026-11-29T15:03",
-       "carrier": "AA",
-       "flight_number": "AA2114",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 126
       }
      ],
      "airlines": [
-      "American Airlines"
+      "American"
      ],
      "via": "",
      "separate_tickets": false,
      "hidden_city": false,
      "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDU0ZPcgUSA1BIWEIBAUgBmAEC&hl=en&curr=USD"
+      },
       {
        "name": "Skyscanner",
        "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
@@ -2188,7 +2204,9 @@
       }
      ],
      "notes": [],
-     "also_seen": {},
+     "also_seen": {
+      "Skiplagged": 269.0
+     },
      "score": 300.5,
      "key": "edae466ca05c",
      "origin": "SFO",
@@ -2202,7 +2220,7 @@
      "lounges": {}
     },
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
      "price": 198.0,
      "currency": "USD",
@@ -2212,8 +2230,8 @@
        "destination": "LAS",
        "depart": "2026-11-29T19:11",
        "arrive": "2026-11-29T20:49",
-       "carrier": "F9",
-       "flight_number": "F94402",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 98
       },
       {
@@ -2221,18 +2239,22 @@
        "destination": "PHX",
        "depart": "2026-11-29T22:17",
        "arrive": "2026-11-30T00:33",
-       "carrier": "F9",
-       "flight_number": "F92258",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 76
       }
      ],
      "airlines": [
-      "Frontier Airlines"
+      "Frontier"
      ],
      "via": "",
      "separate_tickets": false,
      "hidden_city": false,
      "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDU0ZPcgUSA1BIWEIBAUgBmAEC&hl=en&curr=USD"
+      },
       {
        "name": "Skyscanner",
        "url": "https://www.skyscanner.com/transport/flights/sfo/phx/261129/?adultsv2=1"
@@ -2251,7 +2273,9 @@
       }
      ],
      "notes": [],
-     "also_seen": {},
+     "also_seen": {
+      "Skiplagged": 198.0
+     },
      "score": 303.5,
      "key": "2dfb23e94f99",
      "origin": "SFO",
@@ -2757,7 +2781,7 @@
     "DEL": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "BOM": {
      "forced": null,
