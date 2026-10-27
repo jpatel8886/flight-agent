@@ -864,6 +864,38 @@
    "name": "Casablanca Mohammed V Intl",
    "url": "https://www.prioritypass.com/lounges/morocco/casablanca-mohammed-v-intl"
   },
+  "COK": {
+   "complete": true,
+   "fetched": "2026-10-27T02:02:07+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "COK5",
+     "hours": "00:01 - 13:30",
+     "location": "",
+     "name": "Travel Club Lounge",
+     "rating": null,
+     "ratings_count": 0,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/cochin-international/cok5-travel-club-lounge-cok-domestic"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "COK2",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Security Checks and Passport Control, take the escalator on the right hand side to the 3rd Floor. The lounge is located on the left hand side of the Food Court area.",
+     "name": "Earth Lounge",
+     "rating": 3.8,
+     "ratings_count": 1705,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/india/cochin-international/cok2-earth-lounge"
+    }
+   ],
+   "name": "Cochin International",
+   "url": "https://www.prioritypass.com/lounges/india/cochin-international"
+  },
   "DEL": {
    "complete": true,
    "fetched": "2026-10-17T20:00:13+00:00",
