@@ -108,6 +108,74 @@
    "name": "Amsterdam Schiphol",
    "url": "https://www.prioritypass.com/lounges/netherlands/amsterdam-schiphol"
   },
+  "ATL": {
+   "complete": true,
+   "fetched": "2026-10-27T14:28:27+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ATL10",
+     "hours": "06:00 - 22:00",
+     "location": "Airside - Mezzanine Level, next to the Chapel.",
+     "name": "The Club ATL",
+     "rating": 3.6,
+     "ratings_count": 20705,
+     "terminal": "Concourse F",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/hartsfield-jackson-atlanta-international/atl10-the-club-atl"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ATL24",
+     "hours": "11:00 - 22:00",
+     "location": "Airside - Mezzanine Level, next to The Club ATL.",
+     "name": "Poppin",
+     "rating": 3.31,
+     "ratings_count": 298,
+     "terminal": "Concourse F",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/hartsfield-jackson-atlanta-international/atl24-the-club-atl"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "ATL17",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 4.4,
+     "ratings_count": 73,
+     "terminal": "Concourse F",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/hartsfield-jackson-atlanta-international/atl17-minute-suites"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "ATL18",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 4.5,
+     "ratings_count": 146,
+     "terminal": "Concourse E",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/hartsfield-jackson-atlanta-international/atl18-minute-suites"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "ATL13",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Minute Suites",
+     "rating": 4.5,
+     "ratings_count": 169,
+     "terminal": "Concourse B",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/hartsfield-jackson-atlanta-international/atl13-minute-suites"
+    }
+   ],
+   "name": "Atlanta GA International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/hartsfield-jackson-atlanta-international"
+  },
   "AUH": {
    "complete": true,
    "fetched": "2026-10-17T20:00:07+00:00",
@@ -1099,6 +1167,26 @@
    ],
    "name": "Doha Hamad International",
    "url": "https://www.prioritypass.com/lounges/qatar/hamad-international"
+  },
+  "DTW": {
+   "complete": true,
+   "fetched": "2026-10-27T14:40:29+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DTW5",
+     "hours": "06:00 - 12:00",
+     "location": "Airside - after Security Checks turn left, the lounge is located next to Gate D8. \r\n\r\n",
+     "name": "Lufthansa Business Lounge",
+     "rating": 3.69,
+     "ratings_count": 3805,
+     "terminal": "Warren C. Evans Terminal",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/detroit-metropolitan-wayne-county/dtw5-lufthansa-business-lounge"
+    }
+   ],
+   "name": "Detroit MI Metropolitan Wayne County",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/detroit-metropolitan-wayne-county"
   },
   "DUB": {
    "complete": true,
