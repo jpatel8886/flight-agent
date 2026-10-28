@@ -1044,6 +1044,13 @@
    "name": "Indira Gandhi International",
    "url": "https://www.prioritypass.com/lounges/india/indira-gandhi-international"
   },
+  "DEN": {
+   "complete": true,
+   "fetched": "2026-10-28T15:29:04+00:00",
+   "lounges": [],
+   "name": "Denver CO International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/denver-international"
+  },
   "DMM": {
    "complete": true,
    "fetched": "2026-10-21T00:57:18+00:00",
@@ -2549,6 +2556,62 @@
    ],
    "name": "Lisbon Portela",
    "url": "https://www.prioritypass.com/lounges/portugal/lisbon-portela"
+  },
+  "MAA": {
+   "complete": true,
+   "fetched": "2026-10-28T15:25:08+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MAA12",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. After Security Checks, inside the Security Hold Area. The lounge is located opposite Gate 17.",
+     "name": "Travel Club",
+     "rating": 4.11,
+     "ratings_count": 365,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/india/chennai-international/maa12-travel-club"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MAA11",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, post Immigration and Security Checks, 3rd Floor.\r\n",
+     "name": "Travel Club",
+     "rating": 3.9,
+     "ratings_count": 1761,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/chennai-international/maa11-travel-club"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MAA6",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures, inside the Security Hold Area, take the lift opposite Gate 5 to the 3rd Floor and the lounge is located approximately 10 metres straight ahead. ",
+     "name": "Travel Club",
+     "rating": 3.5,
+     "ratings_count": 954,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/chennai-international/maa6-travel-club"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MAA10",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. After Security Checks, turn right towards Gate 1. The lounge is located on the 3rd Floor.    ",
+     "name": "Travel Club",
+     "rating": 3.6,
+     "ratings_count": 1054,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/india/chennai-international/maa10-travel-club"
+    }
+   ],
+   "name": "Chennai International",
+   "url": "https://www.prioritypass.com/lounges/india/chennai-international"
   },
   "MCT": {
    "complete": true,
