@@ -3030,6 +3030,26 @@
    "name": "Vienna International",
    "url": "https://www.prioritypass.com/lounges/austria/vienna-international"
   },
+  "YTZ": {
+   "complete": true,
+   "fetched": "2026-10-28T05:22:19+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "YTZ",
+     "hours": "06:30 - 20:00",
+     "location": "Airside - after Security, take the escalator to the Passenger Terminal, turn right and the lounge is located between Door A and the washrooms. Domestic flights only.",
+     "name": "Aspire Lounge",
+     "rating": 4.59,
+     "ratings_count": 456,
+     "terminal": "Terminal",
+     "url": "https://www.prioritypass.com/lounges/canada/billy-bishop-toronto-city-toronto-island/ytz-aspire-lounge"
+    }
+   ],
+   "name": "Toronto Billy Bishop City",
+   "url": "https://www.prioritypass.com/lounges/canada/billy-bishop-toronto-city-toronto-island"
+  },
   "YUL": {
    "complete": true,
    "fetched": "2026-10-17T21:30:50+00:00",
