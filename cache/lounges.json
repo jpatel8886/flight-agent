@@ -3093,6 +3093,26 @@
    "name": "Vienna International",
    "url": "https://www.prioritypass.com/lounges/austria/vienna-international"
   },
+  "YOW": {
+   "complete": true,
+   "fetched": "2026-10-28T23:24:15+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "YOW2",
+     "hours": "05:00 - 20:00",
+     "location": "Airside - after Security, turn left and follow the signs leading to Gate 20. The lounge entrance is on the right hand side just after Gate 18. The lounge is not accessible to passengers departing on US Transborder flights.",
+     "name": "Aspire Salon Lounge",
+     "rating": 4.2,
+     "ratings_count": 947,
+     "terminal": "Terminal",
+     "url": "https://www.prioritypass.com/lounges/canada/ottawa-macdonald-cartier-international/yow2-aspire-salon-lounge"
+    }
+   ],
+   "name": "Ottawa Macdonald\u2013Cartier International",
+   "url": "https://www.prioritypass.com/lounges/canada/ottawa-macdonald-cartier-international"
+  },
   "YTZ": {
    "complete": true,
    "fetched": "2026-10-28T05:22:19+00:00",
