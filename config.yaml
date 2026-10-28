@@ -72,7 +72,6 @@ self_transfer:
 
 providers:
   google_flights: true
-  skiplagged: true
   serpapi: auto           # 'auto' = use if SERPAPI_KEY env var is set
 
 alerts:
