@@ -11,10 +11,9 @@ from .models import Link
 def search_links(origin: str, dest: str, day: str, adults: int = 1, google_url: str | None = None) -> list[Link]:
     d = Date.fromisoformat(day)
     o, t = quote(origin), quote(dest)
-    links = []
-    if google_url:
-        links.append(Link("Google Flights", google_url))
-    links += [
+    g_url = google_url or f"https://www.google.com/travel/flights?q=Flights%20from%20{o}%20to%20{t}%20on%20{day}"
+    links = [
+        Link("Google Flights", g_url),
         Link("Skyscanner", f"https://www.skyscanner.com/transport/flights/{o.lower()}/{t.lower()}/{d:%y%m%d}/?adultsv2={adults}"),
         Link(
             "Expedia",

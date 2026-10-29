@@ -28,18 +28,6 @@ searches:
     origin: [BOM]
     destination: [IAD, DCA]
     date: 2027-01-09
-  - name: AMD to Washington DC, Jan 10
-    origin: [AMD]
-    destination: [IAD]
-    date: 2027-01-10
-  - name: DEL to Washington DC, Jan 10
-    origin: [DEL]
-    destination: [IAD]
-    date: 2027-01-10
-  - name: BOM to Washington DC, Jan 10
-    origin: [BOM]
-    destination: [IAD]
-    date: 2027-01-10
 # Layover cities tried for forced-hub and self-transfer combinations.
 hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
 
