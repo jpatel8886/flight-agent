@@ -79,7 +79,7 @@ class Searcher:
         self._lock = threading.Lock()
 
     def _call(self, provider, origin, dest, day, **kw) -> list[Itinerary]:
-        ck = (provider.NAME, origin, dest, day, tuple(kw.get("via") or ()))
+        ck = (provider.NAME, origin, dest, day, tuple(kw.get("via") or ()), tuple(kw.get("airlines") or ()), kw.get("max_stops"))
         if ck in self._cache:
             return self._cache[ck]
         with self._limits.get(provider.NAME, threading.Semaphore(1)):
@@ -158,6 +158,40 @@ class Searcher:
                 found += self._self_transfer(o, d, day, hubs, best_score=best[0].score if best else float("inf"))
 
         return self.ranker.rank(merge(found)), self.stats
+
+    def track(self, t: dict) -> dict:
+        """Price one specific itinerary (by flight number) across every source that sells it.
+
+        Skiplagged reports per-seller prices for the exact flights (Gotogate, Mytrip, ...).
+        Google Flights prices each separately-sold ticket at the airline, matched by
+        departure time since its results carry no flight numbers.
+        """
+        self.stats = RunStats()
+        day = str(t["date"])
+        flights = t["flights"]
+        numbers = [f["number"].upper() for f in flights]
+        sellers: dict[str, float] = {}
+        links: list[dict] = []
+        for it in self._call(skiplagged, flights[0]["from"], flights[-1]["to"], day):
+            if [s.flight_number.upper() for s in it.segments] == numbers:
+                sellers.update(it.sellers or {skiplagged.NAME: it.price})
+                links = [l.__dict__ for l in it.links]
+        by_num = {f["number"].upper(): f for f in flights}
+        legs = []
+        for group in t.get("tickets") or [numbers]:
+            fs = [by_num[n.upper()] for n in group]
+            res = self._call(google_flights, fs[0]["from"], fs[-1]["to"], day,
+                             via=tuple(f["to"] for f in fs[:-1]), airlines=tuple(sorted({f["number"][:2] for f in fs})),
+                             max_stops=len(fs) - 1)
+            match = [i for i in res if [(s.origin, s.destination, s.depart[11:16]) for s in i.segments]
+                     == [(f["from"], f["to"], f["depart"]) for f in fs]]
+            legs.append({"flights": [f["number"] for f in fs], "price": min((i.price for i in match), default=None),
+                         "url": match[0].links[0].url if match and match[0].links else None})
+        if legs and all(l["price"] for l in legs):
+            sellers["Airlines direct (Google Flights)"] = sum(l["price"] for l in legs)
+        best = min(sellers.items(), key=lambda kv: kv[1], default=None)
+        return {"sellers": dict(sorted(sellers.items(), key=lambda kv: kv[1])), "best": best and {"seller": best[0], "price": best[1]},
+                "google_tickets": legs, "links": links, "requests": self.stats.requests, "errors": self.stats.errors}
 
     def _fits(self, items: list[Itinerary], slack_min: float = 0, slack_stops: int = 0) -> list[Itinerary]:
         """Drop itineraries over max_trip_hours / max_layovers, minus what a later leg will add."""

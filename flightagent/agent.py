@@ -27,7 +27,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-EDITABLE = ["config.yaml", "docs/index.html", "README.md"]
+EDITABLE = ["config.yaml", "config-bhaarat.yaml", "docs/jay/index.html", "docs/bhaarat/index.html", "README.md"]
 EDITABLE_GLOBS = ["flightagent/*.py", "flightagent/providers/*.py", "tests/*.py"]
 PROTECTED = {"flightagent/agent.py"}
 MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]  # free-tier models, first to answer wins
@@ -45,9 +45,12 @@ def _log(msg: str) -> None:
     print(f"[agent {int(time.monotonic() - _START):4d}s] {msg}", file=sys.stderr, flush=True)
 
 SYSTEM = """You maintain a small flight-price monitor. Python (flightagent/) searches Google Flights
-and Skiplagged hourly in GitHub Actions and writes docs/data/latest.json; docs/index.html is a
-static dashboard (vanilla JS, no build step) that renders that JSON. config.yaml holds the searches
-and filters. Your change is opened as a pull request for the owner to review.
+and Skiplagged hourly in GitHub Actions and writes docs/<person>/data/latest.json. There are two
+people: jay (config.yaml, docs/jay/index.html) and bhaarat (config-bhaarat.yaml,
+docs/bhaarat/index.html). The two index.html files are the same static dashboard (vanilla JS, no
+build step); keep them identical: when you change one, make the same edit to the other.
+config.yaml holds the searches, filters, and `tracked:` (specific flights priced per seller).
+Your change is opened as a pull request.
 
 Make the smallest change that does what the owner asks. Rules:
 - Only edit the files provided. Prefer config.yaml when a setting already exists for the request.
@@ -211,11 +214,11 @@ def check(changed: list[str]) -> str | None:
         errors.append(f"python compile failed:\n{err}")
     if err := _run([sys.executable, "-m", "unittest", "discover", "-s", "tests"]):
         errors.append(f"unit tests failed:\n{err}")
-    if "docs/index.html" in changed:
-        html = (ROOT / "docs/index.html").read_text()
+    for page in [p for p in changed if p.endswith("index.html")]:
+        html = (ROOT / page).read_text()
         scripts = re.findall(r"<script>(.*?)</script>", html, re.S)
         if not scripts or "</html>" not in html:
-            errors.append("docs/index.html: missing <script> or </html>")
+            errors.append(f"{page}: missing <script> or </html>")
         elif subprocess.run(["which", "node"], capture_output=True).returncode == 0:
             with tempfile.NamedTemporaryFile("w", suffix=".js", delete=False) as t:
                 t.write("\n".join(scripts))

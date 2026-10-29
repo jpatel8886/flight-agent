@@ -6,6 +6,7 @@ sites don't sell.
 
 from __future__ import annotations
 
+import json
 import logging
 import time
 
@@ -69,6 +70,14 @@ def search(origin: str, dest: str, day: str, *, currency: str, adults: int, cabi
             if idx is None:
                 continue
             segs = segs[: idx + 1]
+        sellers = {}
+        try:  # "data" is "<id>|<json>" with per-seller prices (in cents) for this exact itinerary
+            meta = json.loads(it.get("data", "").split("|", 1)[1])
+            for src in meta.get("source", []):
+                for seller, val in (src.get("source") or {}).items():
+                    sellers[seller] = min(val[1] / 100.0, sellers.get(seller, float("inf")))
+        except (IndexError, ValueError, TypeError, KeyError):
+            pass
         notes = []
         if it.get("vi"):
             notes.append("Virtual interlining: separate airline tickets combined by the seller")
@@ -86,6 +95,7 @@ def search(origin: str, dest: str, day: str, *, currency: str, adults: int, cabi
                 hidden_city=hidden,
                 links=search_links(origin, dest, day, adults),
                 notes=notes,
+                sellers=sellers,
             )
         )
     return out

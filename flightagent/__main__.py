@@ -171,6 +171,22 @@ def main() -> None:
         st["lowest_price"] = entry["all_time_low"]
         digest.append({**meta, "options": pref, "change": change_note(best, low, s, st), "st": st})
 
+    # Tracked flights: one specific itinerary, priced across every seller we can see.
+    latest["tracked"] = []
+    for t in cfg.get("tracked", []):
+        if Date.fromisoformat(str(t["date"])) < now.date():
+            continue
+        key = "track-" + re.sub(r"[^A-Za-z0-9]+", "-", "-".join(f["number"] for f in t["flights"]) + "-" + str(t["date"])).strip("-")
+        log.info("tracking %s", t.get("name", key))
+        res = searcher.track(t)
+        entry = {"key": key, "name": t.get("name", key), "date": str(t["date"]), "flights": t["flights"],
+                 "manual_links": t.get("manual_links", []), **res}
+        if res["best"]:
+            hist = history.setdefault(key, [])
+            hist.append({"t": latest["generated_at"], "best": res["best"]["price"], "sellers": res["sellers"]})
+            del hist[:-HISTORY_POINTS]
+        latest["tracked"].append(entry)
+
     # Emails go out at most once per send window (default 4/day), however often the search runs.
     slot = email_slot(now, alerts)
     mail = state.setdefault("_email", {})

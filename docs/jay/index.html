@@ -50,6 +50,20 @@
   .ov { padding: 16px 18px; text-decoration: none; color: inherit; position: relative; transition: transform .12s ease; }
   .ov:hover { transform: translateY(-2px); }
   .ov.active { border: 2px solid var(--accent); padding: 15px 17px; }
+  /* tracked-flight tabs: their own color */
+  :root { --track: #6250d6; --track-soft: #efedfc; }
+  @media (prefers-color-scheme: dark) { :root { --track: #9085e9; --track-soft: #25223d; } }
+  .ov.tracked { background: var(--track-soft); border-color: var(--track); }
+  .ov.tracked.active { border: 2px solid var(--track); }
+  .ov.tracked .k { color: var(--track); font-weight: 600; }
+  .trk h2 { margin: 0 0 4px; font-size: 20px; }
+  .trk .legs { margin: 10px 0 16px; font-size: 14px; }
+  .trk .legs div { padding: 3px 0; font-variant-numeric: tabular-nums; }
+  .trk .legs b { display: inline-block; min-width: 64px; }
+  .trk .now { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; border-left: 4px solid var(--track); padding: 6px 0 6px 14px; margin-bottom: 18px; }
+  .trk .now .price { font-size: 38px; font-weight: 750; letter-spacing: -.02em; }
+  .trk table td.p { font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .trk .up { color: #d03b3b; } .trk .down { color: var(--good); }
   .ov:not(.active) { opacity: .8; }
   .ov:not(.active):hover { opacity: 1; }
   .ov .k { color: var(--text-2); font-size: 13px; }
@@ -374,6 +388,40 @@ function renderSearch(s, history) {
   return sec;
 }
 
+// One specific itinerary, priced per seller. Deliberately plain: price, sellers, history.
+function renderTracked(t, history) {
+  const sec = $("section", { class: "search card trk", id: `s-${t.key}` });
+  const pts = (history[t.key] || []).filter(p => p.best != null);
+  const prev = pts.length > 1 ? pts[pts.length - 2] : null;
+  sec.append($("h2", { text: t.name }), $("div", { class: "muted", text: longDate(t.date, { weekday: "long", month: "long", day: "numeric", year: "numeric" }) }));
+  sec.append($("div", { class: "legs" }, ...t.flights.map(f => $("div", {}, $("b", { text: f.number }), `${f.from} ${f.depart} → ${f.to} ${f.arrive || ""}`))));
+  if (!t.best) {
+    sec.append($("div", { class: "empty", text: "No seller returned this exact itinerary on the last check." }));
+  } else {
+    const delta = prev ? t.best.price - prev.best : 0;
+    sec.append($("div", { class: "now" }, $("span", { class: "price num", text: money(t.best.price) }),
+      $("span", { text: `lowest, on ${t.best.seller}` }),
+      Math.abs(delta) >= 1 ? $("span", { class: delta > 0 ? "up" : "down", text: `${delta > 0 ? "▲" : "▼"} ${money(Math.abs(delta))} since last check` }) : null));
+    const tb = $("table", {}, $("tr", {}, $("th", { text: "Seller" }), $("th", { text: "Price" }), $("th", { text: "Change" })));
+    for (const [seller, price] of Object.entries(t.sellers)) {
+      const was = prev && prev.sellers ? prev.sellers[seller] : null;
+      const d = was != null ? price - was : 0;
+      const name = $("td", { text: seller });
+      if (seller.startsWith("Airlines direct")) {
+        name.append($("div", { class: "muted" }, ...t.google_tickets.flatMap((g, i) => [i ? " + " : "",
+          safeUrl(g.url) ? $("a", { href: safeUrl(g.url), target: "_blank", rel: "noopener noreferrer", text: `${g.flights.join("+")} ${money(g.price)}` }) : `${g.flights.join("+")} ${money(g.price)}`])));
+      }
+      tb.append($("tr", {}, name, $("td", { class: "p", text: money(price) }),
+        $("td", { class: Math.abs(d) >= 1 ? (d > 0 ? "up" : "down") : "muted", text: Math.abs(d) >= 1 ? `${d > 0 ? "+" : "−"}${money(Math.abs(d))}` : "–" })));
+    }
+    sec.append(tb);
+  }
+  sec.append($("h3", { text: "Lowest price over time" }), chart(pts));
+  const manual = [...(t.links || []).filter(l => /skiplagged|skyscanner/i.test(l.name)), ...(t.manual_links || [])];
+  if (manual.length) sec.append($("h3", { text: "Check by hand" }), $("div", { class: "book" }, ...manual.map(l => link(l))));
+  return sec;
+}
+
 function render(latest, history) {
   CUR = latest.currency || "USD";
   const searches = latest.searches;
@@ -392,12 +440,19 @@ function render(latest, history) {
 
   const ov = document.getElementById("overview");
   const app = document.getElementById("app");
-  if (!searches.length) { ov.replaceChildren(); app.replaceChildren($("div", { class: "card empty", text: "No active searches." })); return; }
+  if (!searches.length && !(latest.tracked || []).length) { ov.replaceChildren(); app.replaceChildren($("div", { class: "card empty", text: "No active searches." })); return; }
   const withBest = searches.filter(s => visible(s).length);
   const top = withBest.reduce((a, b) => (!a || visible(b)[0].score < visible(a)[0].score) ? b : a, null);
+  const tracked = latest.tracked || [];
   const show = key => {
-    const sel = searches.find(s => s.key === key) || top || searches[0];
-    ov.replaceChildren(...searches.map(s => {
+    const trk = tracked.find(t => t.key === key);
+    const sel = trk ? null : (searches.find(s => s.key === key) || top || searches[0]);
+    ov.replaceChildren(...tracked.map(t => $("a", { class: "ov card tracked" + (t === trk ? " active" : ""), href: `#${t.key}`, "aria-current": t === trk ? "page" : null },
+      $("div", { class: "k", text: "Tracked flight" }),
+      $("div", { class: "price num", text: t.best ? money(t.best.price) : "–" }),
+      $("div", { class: "rl", text: t.name }),
+      $("div", { class: "meta", text: `${longDate(t.date, { month: "short", day: "numeric" })}${t.best ? ` · lowest on ${t.best.seller}` : ""}` }))),
+    ...searches.map(s => {
       const b = visible(s)[0];
       return $("a", { class: "ov card" + (s === sel ? " active" : ""), href: `#${s.key}`, "aria-current": s === sel ? "page" : null },
         top === s && withBest.length > 1 ? $("span", { class: "ribbon", text: "Best overall" }) : null,
@@ -406,9 +461,12 @@ function render(latest, history) {
         b ? $("div", { class: "rl", text: routeLay(b) }) : null,
         $("div", { class: "meta", text: b ? `${fmtMin(b.total_minutes)} total · ${stopsText(b.stops)}` : "No fares found" }));
     }));
-    app.replaceChildren(renderSearch(sel, history));
+    app.replaceChildren(trk ? renderTracked(trk, history) : renderSearch(sel, history));
   };
-  const fromHash = () => { const h = decodeURIComponent(location.hash.slice(1)); show((searches.find(s => s.key === h || s.date === h) || {}).key); };
+  const fromHash = () => {
+    const h = decodeURIComponent(location.hash.slice(1));
+    show(tracked.some(t => t.key === h) ? h : (searches.find(s => s.key === h || s.date === h) || {}).key);
+  };
   window.onhashchange = fromHash;
   fromHash();
 }

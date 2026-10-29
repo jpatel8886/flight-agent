@@ -24,9 +24,12 @@ def search(
     cabin: str,
     via: list[str] | tuple[str, ...] | None = None,
     strategy: str = "direct",
+    airlines: tuple[str, ...] | None = None,
+    max_stops: int | None = None,
 ) -> list[Itinerary]:
     q = create_query(
-        flights=[FlightQuery(date=day, from_airport=origin, to_airport=dest, connecting_airports=list(via) if via else None)],
+        flights=[FlightQuery(date=day, from_airport=origin, to_airport=dest, connecting_airports=list(via) if via else None,
+                             airlines=list(airlines) if airlines else None, max_stops=max_stops)],
         trip="one-way",
         seat=cabin,
         passengers=Passengers(adults=adults),

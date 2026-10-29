@@ -49,6 +49,16 @@ you can check the fare there and book.
 > anyone with the URL can see the route and date you're watching. On a free plan,
 > Pages requires a public repo, so the config is public too. Secrets stay private.
 
+## Tracked flights
+
+`tracked:` in `config.yaml` pins one exact itinerary by flight number and prices it
+across every seller the monitor can see, in its own (purple) tab: per-seller prices
+from Skiplagged's data (e.g. Gotogate, Mytrip, Skyscanner) and the airline-direct
+price for each separately sold ticket from Google Flights. Sites that can't be
+checked automatically (Kayak, Expedia, Orbitz, CheapOair, Booking.com, Trip.com, ...)
+are listed as one-tap links under "Check by hand". The Middle East filter doesn't
+apply to tracked flights.
+
 ## Ranking
 
 Options are ranked by **best value**, not raw price: price + `value_per_hour` for
