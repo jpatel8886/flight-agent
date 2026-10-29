@@ -16,6 +16,10 @@ searches:
     origin: [BOM]
     destination: [IAD, DCA]
     date: 2027-01-08
+  - name: BOM to IAD, Jan 8 (MCT, CAI)
+    origin: [BOM]
+    destination: [IAD]
+    date: 2027-01-08
   - name: AMD to Washington DC, Jan 9
     origin: [AMD]
     destination: [IAD, DCA]
@@ -29,7 +33,7 @@ searches:
     destination: [IAD, DCA]
     date: 2027-01-09
 # Layover cities tried for forced-hub and self-transfer combinations.
-hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE]
+hubs: [DXB, DOH, AUH, JED, KWI, MCT, BAH, IST, DEL, BOM, LHR, CDG, FRA, AMS, MUC, ZRH, VIE, CAI]
 
 # Layovers in these countries are still searched, but hidden on the dashboard (toggle
 # "Avoid Middle East layovers") and left out of emails. Remove one to allow it again.
