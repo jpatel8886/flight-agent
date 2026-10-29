@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T17:55:20+00:00",
+ "generated_at": "2026-10-29T18:32:37+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -89,7 +89,7 @@
      "lounges": {}
     },
     {
-     "source": "Google Flights",
+     "source": "Skiplagged",
      "strategy": "direct",
      "price": 106.0,
      "currency": "USD",
@@ -99,13 +99,13 @@
        "destination": "SFO",
        "depart": "2026-11-24T22:20",
        "arrive": "2026-11-24T23:31",
-       "carrier": "",
-       "flight_number": "",
+       "carrier": "AA",
+       "flight_number": "AA2427",
        "duration_min": 131
       }
      ],
      "airlines": [
-      "American"
+      "American Airlines"
      ],
      "via": "",
      "separate_tickets": false,
@@ -113,7 +113,7 @@
      "links": [
       {
        "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
       },
       {
        "name": "Skyscanner",
@@ -133,9 +133,7 @@
       }
      ],
      "notes": [],
-     "also_seen": {
-      "Skiplagged": 106.0
-     },
+     "also_seen": {},
      "score": 138.8,
      "key": "29a012c1cdea",
      "origin": "PHX",
@@ -207,64 +205,6 @@
      "lounges": {}
     },
     {
-     "source": "Google Flights",
-     "strategy": "direct",
-     "price": 129.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "PHX",
-       "destination": "SFO",
-       "depart": "2026-11-24T22:45",
-       "arrive": "2026-11-24T23:55",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 130
-      }
-     ],
-     "airlines": [
-      "Southwest"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 161.5,
-     "key": "d083b1892541",
-     "origin": "PHX",
-     "destination": "SFO",
-     "stops": 0,
-     "total_minutes": 130,
-     "layovers": [],
-     "ticket_links": [],
-     "layover_countries": [],
-     "avoid": false,
-     "lounges": {}
-    },
-    {
      "source": "Skiplagged",
      "strategy": "hidden-city",
      "price": 94.0,
@@ -311,9 +251,7 @@
      "notes": [
       "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
      ],
-     "also_seen": {
-      "Google Flights": 213.0
-     },
+     "also_seen": {},
      "score": 176.2,
      "key": "454bc778d8ce",
      "origin": "PHX",
@@ -373,9 +311,7 @@
      "notes": [
       "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
      ],
-     "also_seen": {
-      "Google Flights": 213.0
-     },
+     "also_seen": {},
      "score": 176.2,
      "key": "737ef30d96ef",
      "origin": "PHX",
@@ -435,73 +371,13 @@
      "notes": [
       "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
      ],
-     "also_seen": {
-      "Google Flights": 213.0
-     },
+     "also_seen": {},
      "score": 177.8,
      "key": "8ba22346d6fc",
      "origin": "PHX",
      "destination": "SFO",
      "stops": 0,
      "total_minutes": 135,
-     "layovers": [],
-     "ticket_links": [],
-     "layover_countries": [],
-     "avoid": false,
-     "lounges": {}
-    },
-    {
-     "source": "Google Flights",
-     "strategy": "direct",
-     "price": 148.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "PHX",
-       "destination": "SFO",
-       "depart": "2026-11-24T07:50",
-       "arrive": "2026-11-24T09:00",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 130
-      }
-     ],
-     "airlines": [
-      "Southwest"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 180.5,
-     "key": "8b9c30345bf0",
-     "origin": "PHX",
-     "destination": "SFO",
-     "stops": 0,
-     "total_minutes": 130,
      "layovers": [],
      "ticket_links": [],
      "layover_countries": [],
@@ -555,75 +431,13 @@
      "notes": [
       "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
      ],
-     "also_seen": {
-      "Google Flights": 213.0
-     },
+     "also_seen": {},
      "score": 183.8,
      "key": "ff43135e3feb",
      "origin": "PHX",
      "destination": "SFO",
      "stops": 0,
      "total_minutes": 127,
-     "layovers": [],
-     "ticket_links": [],
-     "layover_countries": [],
-     "avoid": false,
-     "lounges": {}
-    },
-    {
-     "source": "Google Flights",
-     "strategy": "direct",
-     "price": 154.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "PHX",
-       "destination": "SFO",
-       "depart": "2026-11-24T18:20",
-       "arrive": "2026-11-24T19:30",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 130
-      }
-     ],
-     "airlines": [
-      "American"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
-      }
-     ],
-     "notes": [],
-     "also_seen": {
-      "Skiplagged": 154.0
-     },
-     "score": 186.5,
-     "key": "677fb74735d5",
-     "origin": "PHX",
-     "destination": "SFO",
-     "stops": 0,
-     "total_minutes": 130,
      "layovers": [],
      "ticket_links": [],
      "layover_countries": [],
@@ -689,7 +503,7 @@
      "lounges": {}
     },
     {
-     "source": "Google Flights",
+     "source": "Skiplagged",
      "strategy": "direct",
      "price": 154.0,
      "currency": "USD",
@@ -697,15 +511,15 @@
       {
        "origin": "PHX",
        "destination": "SFO",
-       "depart": "2026-11-24T08:40",
-       "arrive": "2026-11-24T10:09",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 149
+       "depart": "2026-11-24T18:20",
+       "arrive": "2026-11-24T19:30",
+       "carrier": "AA",
+       "flight_number": "AA2234",
+       "duration_min": 130
       }
      ],
      "airlines": [
-      "American"
+      "American Airlines"
      ],
      "via": "",
      "separate_tickets": false,
@@ -713,7 +527,7 @@
      "links": [
       {
        "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
       },
       {
        "name": "Skyscanner",
@@ -733,9 +547,65 @@
       }
      ],
      "notes": [],
-     "also_seen": {
-      "Skiplagged": 154.0
-     },
+     "also_seen": {},
+     "score": 186.5,
+     "key": "677fb74735d5",
+     "origin": "PHX",
+     "destination": "SFO",
+     "stops": 0,
+     "total_minutes": 130,
+     "layovers": [],
+     "ticket_links": [],
+     "layover_countries": [],
+     "avoid": false,
+     "lounges": {}
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 154.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "PHX",
+       "destination": "SFO",
+       "depart": "2026-11-24T08:40",
+       "arrive": "2026-11-24T10:09",
+       "carrier": "AA",
+       "flight_number": "AA6276",
+       "duration_min": 149
+      }
+     ],
+     "airlines": [
+      "American Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
      "score": 191.2,
      "key": "23213441ecc9",
      "origin": "PHX",
@@ -795,73 +665,13 @@
      "notes": [
       "Hidden-city fare: ticket is to a further city; carry-on only, don't check bags"
      ],
-     "also_seen": {
-      "Google Flights": 213.0
-     },
+     "also_seen": {},
      "score": 198.0,
      "key": "997ac94412a9",
      "origin": "PHX",
      "destination": "SFO",
      "stops": 0,
      "total_minutes": 132,
-     "layovers": [],
-     "ticket_links": [],
-     "layover_countries": [],
-     "avoid": false,
-     "lounges": {}
-    },
-    {
-     "source": "Google Flights",
-     "strategy": "direct",
-     "price": 201.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "PHX",
-       "destination": "SFO",
-       "depart": "2026-11-24T14:20",
-       "arrive": "2026-11-24T15:30",
-       "carrier": "",
-       "flight_number": "",
-       "duration_min": 130
-      }
-     ],
-     "airlines": [
-      "Southwest"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 233.5,
-     "key": "aa5356fd5e81",
-     "origin": "PHX",
-     "destination": "SFO",
-     "stops": 0,
-     "total_minutes": 130,
      "layovers": [],
      "ticket_links": [],
      "layover_countries": [],
@@ -940,7 +750,7 @@
      "lounges": {}
     },
     {
-     "source": "Google Flights",
+     "source": "Skiplagged",
      "strategy": "direct",
      "price": 213.0,
      "currency": "USD",
@@ -950,13 +760,13 @@
        "destination": "SFO",
        "depart": "2026-11-24T17:40",
        "arrive": "2026-11-24T18:59",
-       "carrier": "",
-       "flight_number": "",
+       "carrier": "UA",
+       "flight_number": "UA6030",
        "duration_min": 139
       }
      ],
      "airlines": [
-      "United"
+      "United Airlines"
      ],
      "via": "",
      "separate_tickets": false,
@@ -964,7 +774,7 @@
      "links": [
       {
        "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjRqBRIDUEhYcgUSA1NGT0IBAUgBmAEC&hl=en&curr=USD"
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
       },
       {
        "name": "Skyscanner",
@@ -984,9 +794,7 @@
       }
      ],
      "notes": [],
-     "also_seen": {
-      "Skiplagged": 213.0
-     },
+     "also_seen": {},
      "score": 247.8,
      "key": "e8c562868055",
      "origin": "PHX",
@@ -1308,6 +1116,219 @@
      ],
      "avoid": false,
      "lounges": {}
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 136.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "PHX",
+       "destination": "LAX",
+       "depart": "2026-11-24T15:05",
+       "arrive": "2026-11-24T15:33",
+       "carrier": "AA",
+       "flight_number": "AA2291",
+       "duration_min": 88
+      },
+      {
+       "origin": "LAX",
+       "destination": "SFO",
+       "depart": "2026-11-24T18:00",
+       "arrive": "2026-11-24T19:42",
+       "carrier": "AA",
+       "flight_number": "AA6317",
+       "duration_min": 102
+      }
+     ],
+     "airlines": [
+      "American Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 260.2,
+     "key": "7bb8cd77ef9b",
+     "origin": "PHX",
+     "destination": "SFO",
+     "stops": 1,
+     "total_minutes": 337,
+     "layovers": [
+      "LAX"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "United States"
+     ],
+     "avoid": false,
+     "lounges": {}
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 136.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "PHX",
+       "destination": "LAX",
+       "depart": "2026-11-24T08:15",
+       "arrive": "2026-11-24T08:52",
+       "carrier": "AA",
+       "flight_number": "AA484",
+       "duration_min": 97
+      },
+      {
+       "origin": "LAX",
+       "destination": "SFO",
+       "depart": "2026-11-24T11:39",
+       "arrive": "2026-11-24T13:22",
+       "carrier": "AA",
+       "flight_number": "AA6326",
+       "duration_min": 103
+      }
+     ],
+     "airlines": [
+      "American Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 267.8,
+     "key": "77f0c3561631",
+     "origin": "PHX",
+     "destination": "SFO",
+     "stops": 1,
+     "total_minutes": 367,
+     "layovers": [
+      "LAX"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "United States"
+     ],
+     "avoid": false,
+     "lounges": {}
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 116.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "PHX",
+       "destination": "ONT",
+       "depart": "2026-11-24T12:25",
+       "arrive": "2026-11-24T12:45",
+       "carrier": "AA",
+       "flight_number": "AA3016",
+       "duration_min": 80
+      },
+      {
+       "origin": "LAX",
+       "destination": "SFO",
+       "depart": "2026-11-24T18:00",
+       "arrive": "2026-11-24T19:42",
+       "carrier": "AA",
+       "flight_number": "AA6317",
+       "duration_min": 102
+      }
+     ],
+     "airlines": [
+      "American Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 280.2,
+     "key": "7948ec5a8fb2",
+     "origin": "PHX",
+     "destination": "SFO",
+     "stops": 1,
+     "total_minutes": 497,
+     "layovers": [
+      "ONT"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "United States"
+     ],
+     "avoid": false,
+     "lounges": {}
     }
    ],
    "best_by_strategy": {
@@ -1315,11 +1336,6 @@
     "hidden-city": 94.0
    },
    "hubs": {
-    "DXB": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": false
-    },
     "DOH": {
      "forced": null,
      "self_transfer": null,
@@ -1330,26 +1346,6 @@
      "self_transfer": null,
      "skipped": true
     },
-    "JED": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": false
-    },
-    "KWI": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": false
-    },
-    "MCT": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": false
-    },
-    "BAH": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": false
-    },
     "IST": {
      "forced": null,
      "self_transfer": null,
@@ -1359,11 +1355,6 @@
      "forced": null,
      "self_transfer": null,
      "skipped": true
-    },
-    "BOM": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": false
     },
     "LHR": {
      "forced": null,
@@ -1401,7 +1392,7 @@
      "skipped": true
     }
    },
-   "requests": 36,
+   "requests": 19,
    "errors": [],
    "cheapest_key": "1e7064c98f33",
    "all_time_low": 19.0
@@ -2488,7 +2479,7 @@
      "lounges": {}
     },
     {
-     "source": "Skiplagged",
+     "source": "Google Flights",
      "strategy": "direct",
      "price": 299.0,
      "currency": "USD",
@@ -2498,13 +2489,13 @@
        "destination": "PHX",
        "depart": "2026-11-29T20:59",
        "arrive": "2026-11-30T00:01",
-       "carrier": "AA",
-       "flight_number": "AA1865",
+       "carrier": "",
+       "flight_number": "",
        "duration_min": 122
       }
      ],
      "airlines": [
-      "American Airlines"
+      "American"
      ],
      "via": "",
      "separate_tickets": false,
@@ -2512,7 +2503,7 @@
      "links": [
       {
        "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20PHX%20on%202026-11-29"
+       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTEtMjlqBRIDU0ZPcgUSA1BIWEIBAUgBmAEC&hl=en&curr=USD"
       },
       {
        "name": "Skyscanner",
@@ -2533,7 +2524,7 @@
      ],
      "notes": [],
      "also_seen": {
-      "Google Flights": 336.0
+      "Skiplagged": 299.0
      },
      "score": 329.5,
      "key": "17211aa6a2ee",
@@ -2794,7 +2785,7 @@
     "IST": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "DEL": {
      "forced": null,

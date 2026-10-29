@@ -77,5 +77,11 @@
   "best_summary": "1208, 28h, 2 stops",
   "best_seen_at": "2026-10-28T18:44:49+00:00",
   "lowest_price": 1208.0
+ },
+ "BOM-IAD-2027-01-08": {
+  "best_score": 1893.8,
+  "best_summary": "1426, 25h, 2 stops",
+  "best_seen_at": "2026-10-29T18:18:24+00:00",
+  "lowest_price": 1416.0
  }
 }
