@@ -31,10 +31,10 @@
   "lowest_price": 982.05
  },
  "BOM-IADDCA-2027-01-08": {
-  "best_score": 1651.2,
-  "best_summary": "1225, 23h, 2 stops",
-  "best_seen_at": "2026-10-28T18:44:49+00:00",
-  "lowest_price": 1225.0
+  "best_score": 1602.2,
+  "best_summary": "1171, 26h, 1 stop",
+  "best_seen_at": "2026-10-30T08:26:43+00:00",
+  "lowest_price": 1171.0
  },
  "HSR-IADDCA-2027-01-09": {
   "best_score": 1932.0,
@@ -55,10 +55,10 @@
   "lowest_price": 982.05
  },
  "BOM-IADDCA-2027-01-09": {
-  "best_score": 1750.2,
-  "best_summary": "1220, 30h, 2 stops",
-  "best_seen_at": "2026-10-29T17:38:33+00:00",
-  "lowest_price": 1220.25
+  "best_score": 1629.2,
+  "best_summary": "1198, 26h, 1 stop",
+  "best_seen_at": "2026-10-30T08:26:43+00:00",
+  "lowest_price": 1198.0
  },
  "AMD-IAD-2027-01-10": {
   "best_score": 1784.0,
