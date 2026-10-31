@@ -30,17 +30,17 @@ searches:
     date: 2027-01-09
 # Specific itineraries to price-track across sellers (shown in their own tab).
 tracked:
-  - name: BOM → MCT → CAI → IAD
+  - name: AMD → DEL → IST → IAD
     date: 2027-01-08
     flights:                    # departure times are local, used to match Google results
-      - {number: WY202, from: BOM, to: MCT, depart: "10:35", arrive: "12:00"}
-      - {number: WY405, from: MCT, to: CAI, depart: "14:30", arrive: "17:15"}
-      - {number: MS981, from: CAI, to: IAD, depart: "23:55", arrive: "05:00 +1"}
-    tickets: [[WY202, WY405], [MS981]]   # how the airlines sell it separately
+      - {number: 6E2112, from: AMD, to: DEL, depart: "00:20", arrive: "01:55"}
+      - {number: TK717, from: DEL, to: IST, depart: "06:15", arrive: "10:35"}
+      - {number: TK7, from: IST, to: IAD, depart: "15:15", arrive: "19:10"}
+    tickets: [[6E2112], [TK717, TK7]]   # how the airlines sell it separately
     manual_links:               # sites that can't be checked automatically
-      - {name: Kayak, url: "https://www.kayak.com/flights/BOM-IAD/2027-01-08?sort=price_a"}
-      - {name: Expedia, url: "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:BOM,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"}
-      - {name: Orbitz, url: "https://www.orbitz.com/Flights-Search?trip=oneway&leg1=from:BOM,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"}
+      - {name: Kayak, url: "https://www.kayak.com/flights/AMD-IAD/2027-01-08?sort=price_a"}
+      - {name: Expedia, url: "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"}
+      - {name: Orbitz, url: "https://www.orbitz.com/Flights-Search?trip=oneway&leg1=from:AMD,to:IAD,departure:1/8/2027TANYT&passengers=adults:1&mode=search"}
       - {name: CheapOair, url: "https://www.cheapoair.com/"}
       - {name: Booking.com, url: "https://flights.booking.com/"}
       - {name: Trip.com, url: "https://www.trip.com/flights/"}
