@@ -43,10 +43,10 @@
   "lowest_price": 1325.0
  },
  "AMD-IADDCA-2027-01-09": {
-  "best_score": 1590.8,
-  "best_summary": "1067, 29h, 2 stops",
-  "best_seen_at": "2026-10-30T15:46:19+00:00",
-  "lowest_price": 1067.0
+  "best_score": 1586.0,
+  "best_summary": "1062, 29h, 2 stops",
+  "best_seen_at": "2026-11-01T09:01:45+00:00",
+  "lowest_price": 1062.3
  },
  "DEL-IADDCA-2027-01-09": {
   "best_score": 1520.5,
