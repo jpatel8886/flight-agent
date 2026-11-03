@@ -2821,6 +2821,86 @@
    "name": "Chicago IL O Hare Intl",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/ohare-international"
   },
+  "PEK": {
+   "complete": true,
+   "fetched": "2026-11-03T01:36:32+00:00",
+   "lounges": [
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "PEK6",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Joy Rest Lounge",
+     "rating": 2.28,
+     "ratings_count": 92,
+     "terminal": "Terminal 3E",
+     "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international/pek6-business-travelers-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "PEK4",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. The lounge is located near Gate E19.  ",
+     "name": "BGS Premier Lounge",
+     "rating": 3.9,
+     "ratings_count": 3106,
+     "terminal": "Terminal 3E",
+     "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international/pek4-bgs-premier-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "PEK5",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. The lounge is located next to Gate 5.",
+     "name": "BGS Premier Lounge",
+     "rating": 3.69,
+     "ratings_count": 660,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international/pek5-bgs-premier-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "PEK18",
+     "hours": "",
+     "location": "Airside - Domestic Departures, 3rd Floor, opposite Security Checks No. 2. The lounge is only accessible when flying with China Eastern Airlines (MU), Shanghai Airlines (FM), China United Airlines (KN) and SkyTeam Alliance Airlines for Domestic Departure passengers only.",
+     "name": "China Eastern Airlines V2 Lounge",
+     "rating": 4.33,
+     "ratings_count": 32,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international/pek18-china-eastern-airlines-v2-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "PEK14",
+     "hours": "",
+     "location": "Airside - Domestic Departures. After Security Checks, the lounge is located on the 2nd Floor, near Gate 33.",
+     "name": "Fortune Wings Lounge",
+     "rating": 4.2,
+     "ratings_count": 504,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international/pek14-fortune-wings-lounge"
+    },
+    {
+     "airside": "unknown",
+     "category": "LOUNGE",
+     "code": "BJS1",
+     "hours": "09:00 - 21:00",
+     "location": "",
+     "name": "Air China First And Business Class Lounge",
+     "rating": 4.1,
+     "ratings_count": 297,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international/bjs1-air-china-first-and-business-class-lounge"
+    }
+   ],
+   "name": "Beijing Capital International",
+   "url": "https://www.prioritypass.com/lounges/china/beijing-capital-international"
+  },
   "PHL": {
    "complete": true,
    "fetched": "2026-10-21T01:45:30+00:00",
