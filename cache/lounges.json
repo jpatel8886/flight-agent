@@ -900,6 +900,38 @@
    "name": "Charlotte NC Douglas Intl",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/charlotte-douglas-international"
   },
+  "CMB": {
+   "complete": true,
+   "fetched": "2026-11-05T02:13:06+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "CMB",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Passport and Security Checks, take the escalator near Duty Free to the 1st Floor. Turn left and proceed for approximately 20 metres and the lounge is located on the right hand side.    ",
+     "name": "Palm Strip Lounge",
+     "rating": 2.9,
+     "ratings_count": 1275,
+     "terminal": "Terminal",
+     "url": "https://www.prioritypass.com/lounges/sri-lanka/colombo-bandaranaike-intl/cmb-palm-strip-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "COL",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - 1st Floor, at the Pier located adjacent to Gates 6 and 7.",
+     "name": "Lotus First Class Lounge",
+     "rating": 3.8,
+     "ratings_count": 2739,
+     "terminal": "Terminal",
+     "url": "https://www.prioritypass.com/lounges/sri-lanka/colombo-bandaranaike-intl/col-lotus-first-class-lounge"
+    }
+   ],
+   "name": "Colombo Bandaranaike Intl",
+   "url": "https://www.prioritypass.com/lounges/sri-lanka/colombo-bandaranaike-intl"
+  },
   "CMN": {
    "complete": true,
    "fetched": "2026-10-20T09:59:13+00:00",
