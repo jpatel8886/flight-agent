@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T22:55:13+00:00",
+ "generated_at": "2026-11-08T02:30:37+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -1386,7 +1386,7 @@
     "DOH": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "AUH": {
      "forced": null,
@@ -2832,7 +2832,7 @@
     "DEL": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "BOM": {
      "forced": null,
