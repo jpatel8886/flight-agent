@@ -2235,6 +2235,26 @@
    "name": "Istanbul",
    "url": "https://www.prioritypass.com/lounges/turkey/istanbul"
   },
+  "JAI": {
+   "complete": true,
+   "fetched": "2026-11-09T18:51:29+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "JAI1",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Domestic Departures. The lounge is located on the 1st Floor, next to the Pranam Lounge, opposite Gate M1.",
+     "name": "Adani Lounge",
+     "rating": 3.41,
+     "ratings_count": 461,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/india/jaipur-international/jai1-adani-lounge"
+    }
+   ],
+   "name": "Jaipur International",
+   "url": "https://www.prioritypass.com/lounges/india/jaipur-international"
+  },
   "JED": {
    "complete": true,
    "fetched": "2026-10-18T00:01:50+00:00",
