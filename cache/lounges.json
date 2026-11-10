@@ -3213,6 +3213,134 @@
    "name": "Sharjah International",
    "url": "https://www.prioritypass.com/lounges/united-arab-emirates/sharjah-international"
   },
+  "SIN": {
+   "complete": true,
+   "fetched": "2026-11-10T17:49:06+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN0",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - North Departure Transit Hall, Mezzanine Level (Level 3). The lounge is located next to Ambassador Transit Hotel and Movie Theatre.\r\n\r\nAs a precautionary measure in line with prevention efforts taking place across Singapore, the lounge is only accessible when satisfying the local prevention",
+     "name": "Ambassador Transit Lounge",
+     "rating": 3.5,
+     "ratings_count": 4072,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin0-ambassador-transit-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN14",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - turn left after passing through the departure Immigration. Take the first escalator leading to the airline lounges.",
+     "name": "SATS Premier Lounge",
+     "rating": 4,
+     "ratings_count": 10483,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin14-sats-premier-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN9",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - after Passport Control, the lounge is located opposite the Singapore Food Street on the 3rd Floor in the Departure Hall.",
+     "name": "Marhaba Lounge",
+     "rating": 3.7,
+     "ratings_count": 6602,
+     "terminal": "Terminal 3",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin9-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN8",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Departure Transit Lounge, Mezzanine Level (Level 3). The lounge is located next to the Sunflower Garden.",
+     "name": "Ambassador Transit Lounge",
+     "rating": 3.7,
+     "ratings_count": 4731,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin8-ambassador-transit-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN13",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - turn left after passing through the departure Immigration. Take the first escalator behind the Information counter leading to the airline lounges.",
+     "name": "SATS Premier Lounge",
+     "rating": 4.1,
+     "ratings_count": 12543,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin13-sats-premier-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN12",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - turn left after passing through the departure Immigration. Take the first escalator leading to the airline lounges.",
+     "name": "SATS Premier Lounge",
+     "rating": 4.1,
+     "ratings_count": 12657,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin12-sats-premier-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN17",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - the lounge is located directly above the Departure Immigration Area of the Departure Transit Hall. Proceed through Departure Immigration, take the escalator to one level above and the lounge is opposite the 'Crystal Jade La Mian Xiao Long Bao' Restaurant. The lounge is not accessible to tr",
+     "name": "Marhaba Lounge",
+     "rating": 4,
+     "ratings_count": 6095,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin17-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN16",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Level 3, Departure/Transit Lounge West. ",
+     "name": "Plaza Premium Lounge",
+     "rating": 4,
+     "ratings_count": 6134,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin16-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "SIN20",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. The lounge is located in the Heritage Zone on the Mezzanine Floor.",
+     "name": "Blossom Lounge",
+     "rating": 4,
+     "ratings_count": 6885,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin20-blossom-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "SIN21",
+     "hours": "06:00 - 22:00",
+     "location": "Landside - the lounge is located after Arrival Immigration on Level 1, near Lift Lobby E, opposite the early Check-in counters. Please allow sufficient time to reach the Departure Gate, as when leaving the lounge you will need to go through Security/Immigration.    ",
+     "name": "Changi Lounge",
+     "rating": 4.29,
+     "ratings_count": 2929,
+     "terminal": "Jewel",
+     "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport/sin21-changi-lounge"
+    }
+   ],
+   "name": "Singapore Changi Airport",
+   "url": "https://www.prioritypass.com/lounges/singapore/singapore-changi-airport"
+  },
   "TPE": {
    "complete": true,
    "fetched": "2026-10-17T21:26:27+00:00",
