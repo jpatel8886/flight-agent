@@ -1667,6 +1667,62 @@
    "name": "Frankfurt",
    "url": "https://www.prioritypass.com/lounges/germany/frankfurt"
   },
+  "GVA": {
+   "complete": true,
+   "fetched": "2026-11-11T02:46:24+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "GVA2",
+     "hours": "07:00 - 18:00",
+     "location": "Airside - the lounge is located in the Main Building above Gates C53 & C54. The lounge is only accessible for Non-Schengen flights departing from C Gates.",
+     "name": "Crystal Lounge by Aspire",
+     "rating": 3.99,
+     "ratings_count": 871,
+     "terminal": "East Wing Building",
+     "url": "https://www.prioritypass.com/lounges/switzerland/geneva/gva2-crystal-lounge-by-aspire"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "GVA3",
+     "hours": "06:30 - 20:30",
+     "location": "Airside - East Wing Building. The lounge is located in the Main Building. After Security, proceed towards Gate C54 and take the lift or stairs to the 1st Floor. The lounge is only accessible for Non-Schengen flights departing from C Gates.",
+     "name": "Marhaba Lounge",
+     "rating": 4.19,
+     "ratings_count": 615,
+     "terminal": "East Wing Building",
+     "url": "https://www.prioritypass.com/lounges/switzerland/geneva/gva3-marhaba-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "GVA",
+     "hours": "06:00 - 20:30",
+     "location": "Airside - take the stairs on the right hand side of the Transit Area to the Mezzanine Level where the lounge is located.",
+     "name": "Horizon Lounge",
+     "rating": 3.2,
+     "ratings_count": 3799,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/switzerland/geneva/gva-horizon-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "GVAJET",
+     "hours": "09:00 - 18:00",
+     "location": "Airside - after X-ray Control, turn left and take the escalator up to the Mezzanine Level and turn right. The lounge is located on the left hand side.",
+     "name": "Marhaba Lounge",
+     "rating": 3.49,
+     "ratings_count": 2010,
+     "terminal": "Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/switzerland/geneva/gvajet-marhaba-lounge"
+    }
+   ],
+   "name": "Geneva International",
+   "url": "https://www.prioritypass.com/lounges/switzerland/geneva"
+  },
   "GYD": {
    "complete": true,
    "fetched": "2026-10-21T00:56:58+00:00",
