@@ -2973,6 +2973,38 @@
    "name": "Narita International",
    "url": "https://www.prioritypass.com/lounges/japan/narita-international"
   },
+  "ONT": {
+   "complete": true,
+   "fetched": "2026-11-12T18:17:21+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ONT1",
+     "hours": "04:00 - 18:00",
+     "location": "Airside - 2nd Floor, between Gates 410 and 411, exit Security and turn left.  ",
+     "name": "Aspire Lounge",
+     "rating": 4.5,
+     "ratings_count": 2755,
+     "terminal": "Terminal 4",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/ontario-international/ont1-aspire-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "ONT",
+     "hours": "05:00 - 00:00",
+     "location": "Airside - 2nd Floor, between Gates 209 and 210, exit Security and turn left.",
+     "name": "Aspire Lounge",
+     "rating": 4.2,
+     "ratings_count": 2834,
+     "terminal": "Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/ontario-international/ont-aspire-lounge"
+    }
+   ],
+   "name": "Ontario CA International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/ontario-international"
+  },
   "ORD": {
    "complete": true,
    "fetched": "2026-10-21T00:49:38+00:00",
