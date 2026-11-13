@@ -2873,6 +2873,38 @@
    "name": "Miami International",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/miami-international"
   },
+  "MLE": {
+   "complete": true,
+   "fetched": "2026-11-13T15:20:55+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "MLE4",
+     "hours": "06:00 - 17:30",
+     "location": "Airside - after Security Checks, Ground Floor.",
+     "name": "Huvandhumaa lounge NEW Seaplane Terminal",
+     "rating": 4.5,
+     "ratings_count": 2,
+     "terminal": "Maldivian Seaplane Terminal",
+     "url": "https://www.prioritypass.com/lounges/maldives/ibrahim-nasir-international/mle4-huvandhumaa-lounge-new-seaplane-terminal"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "MLE2",
+     "hours": "06:00 - 23:00",
+     "location": "Landside - the lounge is located outside and to the right of the main entrance to the terminal building, before Check-in and Security Control. The lounge is accessible for both International and Domestic flights. Please note International passengers must visit the lounge prior to check-in and should",
+     "name": "Moonimaa Lounge",
+     "rating": 3.49,
+     "ratings_count": 861,
+     "terminal": "Domestic Terminal",
+     "url": "https://www.prioritypass.com/lounges/maldives/ibrahim-nasir-international/mle2-moonimaa-lounge"
+    }
+   ],
+   "name": "Male International",
+   "url": "https://www.prioritypass.com/lounges/maldives/ibrahim-nasir-international"
+  },
   "MUC": {
    "complete": true,
    "fetched": "2026-10-17T21:31:02+00:00",
