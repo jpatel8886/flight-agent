@@ -3081,6 +3081,26 @@
    "name": "Chicago IL O Hare Intl",
    "url": "https://www.prioritypass.com/lounges/united-states-of-america/ohare-international"
   },
+  "PDX": {
+   "complete": true,
+   "fetched": "2026-11-16T01:57:31+00:00",
+   "lounges": [
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "PDX10",
+     "hours": "04:30 - 23:59",
+     "location": "Airside - proceed through TSA, turn right and follow the signs to the D Gates. The lounge is located on the left, between Gates D8-10.",
+     "name": "Escape Lounge PDX",
+     "rating": 4.8,
+     "ratings_count": 3880,
+     "terminal": "Concourse D",
+     "url": "https://www.prioritypass.com/lounges/united-states-of-america/portland-international/pdx10-escape-lounges"
+    }
+   ],
+   "name": "Portland International",
+   "url": "https://www.prioritypass.com/lounges/united-states-of-america/portland-international"
+  },
   "PEK": {
    "complete": true,
    "fetched": "2026-11-03T01:36:32+00:00",
