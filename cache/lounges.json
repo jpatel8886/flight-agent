@@ -1229,7 +1229,7 @@
   },
   "DOH": {
    "complete": true,
-   "fetched": "2026-10-18T17:22:36+00:00",
+   "fetched": "2026-11-17T21:44:41+00:00",
    "lounges": [
     {
      "airside": true,
@@ -1239,7 +1239,7 @@
      "location": "Airside - proceed towards C-Gates. The lounge is located on the 1st Floor, near Gates C1 - 4. International and in transit flights only.",
      "name": "Al Maha Lounge (Southeast)",
      "rating": 4,
-     "ratings_count": 455,
+     "ratings_count": 471,
      "terminal": "Main Terminal",
      "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh7-al-maha-lounge-southeast"
     },
@@ -1250,8 +1250,8 @@
      "hours": "00:00 - 23:59",
      "location": "Airside - Level 1, near Gate C14. International and in transit flights only. ",
      "name": "Al Maha Lounge (North/Orchard)",
-     "rating": 4.1,
-     "ratings_count": 2028,
+     "rating": 4.09,
+     "ratings_count": 2070,
      "terminal": "Main Terminal",
      "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh6-al-maha-lounge-north-node"
     },
@@ -1263,7 +1263,7 @@
      "location": "Airside - Level 2 of Duty Free South. From the Teddy Bear Area, walk straight ahead and take the lift or escalator on the left. The lounge is located near Gates A, B and C.\r\n\r\n",
      "name": "Al Maha Lounge (South Node)",
      "rating": 4,
-     "ratings_count": 29078,
+     "ratings_count": 29100,
      "terminal": "Main Terminal",
      "url": "https://www.prioritypass.com/lounges/qatar/hamad-international/doh2-al-maha-lounge-south-node"
     },
@@ -1283,7 +1283,7 @@
      "airside": null,
      "category": "REST",
      "code": "DOH3",
-     "hours": "00:00 - 23:59",
+     "hours": "08:00 - 22:00",
      "location": "",
      "name": "Sleepover (South Node)",
      "rating": 4.4,
@@ -1295,7 +1295,7 @@
      "airside": null,
      "category": "REST",
      "code": "DOH8R",
-     "hours": "20:00 - 23:59",
+     "hours": "00:00 - 23:59",
      "location": "",
      "name": "Sleepover Doha North Node, Gate C40",
      "rating": null,
@@ -2489,6 +2489,182 @@
    "lounges": [],
    "name": "Reykjavik Keflavik International",
    "url": "https://www.prioritypass.com/lounges/iceland/keflavik-international"
+  },
+  "KUL": {
+   "complete": true,
+   "fetched": "2026-11-17T21:40:12+00:00",
+   "lounges": [
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "KUL11",
+     "hours": "07:00 - 23:00",
+     "location": "Landside - connected to the terminal via Skybridge with a complimentary 24 hour buggy service.",
+     "name": "Sphere Lounge",
+     "rating": 4.6,
+     "ratings_count": 531,
+     "terminal": "KLIA Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul11-sphere-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KUL28",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, Satellite Building, Mezzanine Level, near Gates C 11 - C17.",
+     "name": "Travel Club Lounge",
+     "rating": 4.09,
+     "ratings_count": 2855,
+     "terminal": "KLIA Terminal 1 (Satellite)",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul28-travel-club-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KUL7",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. After Check-in and Immigration, take the Aerotrain to the Satellite A Building. The lounge is located on the Mezzanine Level, next to Gate C5. ",
+     "name": "Sky Suite Airport Lounge",
+     "rating": 4.21,
+     "ratings_count": 2130,
+     "terminal": "KLIA Terminal 1 (Satellite)",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul7-sky-suite-airport-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "KUL40",
+     "hours": "00:00 - 23:59",
+     "location": "Landside - take the escalator near 'Verrona Bakery' to Level 2M. The lounge is located opposite the escalator.",
+     "name": "Capsule Transit MAX",
+     "rating": 4.39,
+     "ratings_count": 336,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul40-capsule-transit-max"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KUL21",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures. Sector 6, Satellite Building, next to the Sama Sama Hotel.",
+     "name": "Travel Club Lounge",
+     "rating": 4.09,
+     "ratings_count": 2483,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul21-travel-club-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KUL20",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, next to Gate L8.",
+     "name": "Travel Club Lounge",
+     "rating": 3.6,
+     "ratings_count": 1521,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul20-travel-club-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "KUL8",
+     "hours": "00:00 - 23:59",
+     "location": "Landside - Level 3, Departure Hall, next to airline check-in counters (Row S).",
+     "name": "Sky Suite Airport Lounge",
+     "rating": 4.7,
+     "ratings_count": 1149,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul8-sky-suite-airport-lounge"
+    },
+    {
+     "airside": false,
+     "category": "LOUNGE",
+     "code": "KUL5",
+     "hours": "00:00 - 23:59",
+     "location": "Landside - take the travellator next to 'Hometown Hainan Coffee' on the Arrival Hall to Level 2M.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4,
+     "ratings_count": 858,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul5-plaza-premium-lounge"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "KUL27",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - International Departures, Contact Pier, near Gate G2.",
+     "name": "Plaza Premium Lounge",
+     "rating": 3.7,
+     "ratings_count": 3048,
+     "terminal": "KLIA Terminal 1 (Contact Pier)",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul27-plaza-premium-lounge"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "KUL41",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Kepler Club",
+     "rating": 4.6,
+     "ratings_count": 45,
+     "terminal": "KLIA Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul41-kepler-club"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "KUL37",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Capsule Transit Sleep Lounge",
+     "rating": 4.1,
+     "ratings_count": 13,
+     "terminal": "KLIA Terminal 1",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul37-capsule-transit-sleep-lounge"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "KUL42",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Kepler Club",
+     "rating": 4.6,
+     "ratings_count": 63,
+     "terminal": "KLIA Terminal 1 (Satellite)",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul42-kepler-club"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "KUL39",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Capsule Transit (Airside)",
+     "rating": 4.1,
+     "ratings_count": 39,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul39-capsule-transit-airside"
+    },
+    {
+     "airside": null,
+     "category": "REST",
+     "code": "KUL38",
+     "hours": "00:00 - 23:59",
+     "location": "",
+     "name": "Capsule Transit (Landside)",
+     "rating": 4.3,
+     "ratings_count": 27,
+     "terminal": "KLIA Terminal 2",
+     "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international/kul38-capsule-transit-landside"
+    }
+   ],
+   "name": "Kuala Lumpur Intl",
+   "url": "https://www.prioritypass.com/lounges/malaysia/kuala-lumpur-international"
   },
   "KWI": {
    "complete": true,
