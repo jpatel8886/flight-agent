@@ -3367,7 +3367,7 @@
   },
   "SAN": {
    "complete": true,
-   "fetched": "2026-10-19T06:06:55+00:00",
+   "fetched": "2026-11-18T13:09:39+00:00",
    "lounges": [
     {
      "airside": true,
@@ -3377,7 +3377,7 @@
      "location": "Airside - after East Security Checkpoint, take an immediate left and proceed towards Gate 33. The lounge is located between Gates 33 and 23.",
      "name": "Aspire Lounge",
      "rating": 4,
-     "ratings_count": 9713,
+     "ratings_count": 9723,
      "terminal": "Terminal 2",
      "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international/san10-aspire-lounge"
     }
