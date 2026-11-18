@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T21:47:13+00:00",
+ "generated_at": "2026-11-18T03:43:07+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -33,7 +33,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 138.0,
+     "price": 110.0,
      "currency": "USD",
      "segments": [
       {
@@ -76,9 +76,9 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 172.5,
+     "score": 144.5,
      "sellers": {
-      "FAST": 138.0
+      "FAST": 110.0
      },
      "key": "1e7064c98f33",
      "origin": "PHX",
@@ -845,7 +845,7 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 193.0,
+     "price": 188.0,
      "currency": "USD",
      "segments": [
       {
@@ -897,15 +897,115 @@
      ],
      "notes": [],
      "also_seen": {},
-     "score": 289.0,
+     "score": 284.0,
      "sellers": {
-      "FAST": 193.0
+      "FAST": 188.0
      },
      "key": "403ef5eefe24",
      "origin": "PHX",
      "destination": "SFO",
      "stops": 1,
      "total_minutes": 224,
+     "layovers": [
+      "SAN"
+     ],
+     "ticket_links": [],
+     "layover_countries": [
+      "United States"
+     ],
+     "avoid": false,
+     "lounges": {
+      "SAN": {
+       "airport": "San Diego CA Int'l",
+       "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international",
+       "count": 1,
+       "sleep_pods": 0,
+       "best": {
+        "name": "Aspire Lounge",
+        "terminal": "Terminal 2",
+        "hours": "05:00 - 22:00",
+        "rating": 4,
+        "ratings_count": 9713,
+        "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international/san10-aspire-lounge"
+       },
+       "lounges": [
+        {
+         "name": "Aspire Lounge",
+         "terminal": "Terminal 2",
+         "hours": "05:00 - 22:00",
+         "rating": 4,
+         "ratings_count": 9713,
+         "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international/san10-aspire-lounge",
+         "airside": true
+        }
+       ]
+      }
+     }
+    },
+    {
+     "source": "Skiplagged",
+     "strategy": "direct",
+     "price": 188.0,
+     "currency": "USD",
+     "segments": [
+      {
+       "origin": "PHX",
+       "destination": "SAN",
+       "depart": "2026-11-24T17:31",
+       "arrive": "2026-11-24T17:55",
+       "carrier": "AS",
+       "flight_number": "AS3088",
+       "duration_min": 84
+      },
+      {
+       "origin": "SAN",
+       "destination": "SFO",
+       "depart": "2026-11-24T18:59",
+       "arrive": "2026-11-24T20:45",
+       "carrier": "AS",
+       "flight_number": "AS503",
+       "duration_min": 106
+      }
+     ],
+     "airlines": [
+      "Alaska Airlines"
+     ],
+     "via": "",
+     "separate_tickets": false,
+     "hidden_city": false,
+     "links": [
+      {
+       "name": "Google Flights",
+       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
+      },
+      {
+       "name": "Skyscanner",
+       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
+      },
+      {
+       "name": "Expedia",
+       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
+      },
+      {
+       "name": "Kayak",
+       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
+      },
+      {
+       "name": "Skiplagged",
+       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
+      }
+     ],
+     "notes": [],
+     "also_seen": {},
+     "score": 291.5,
+     "sellers": {
+      "FAST": 188.0
+     },
+     "key": "6bc756912ebf",
+     "origin": "PHX",
+     "destination": "SFO",
+     "stops": 1,
+     "total_minutes": 254,
      "layovers": [
       "SAN"
      ],
@@ -1202,106 +1302,6 @@
     {
      "source": "Skiplagged",
      "strategy": "direct",
-     "price": 236.0,
-     "currency": "USD",
-     "segments": [
-      {
-       "origin": "PHX",
-       "destination": "SAN",
-       "depart": "2026-11-24T17:31",
-       "arrive": "2026-11-24T17:55",
-       "carrier": "AS",
-       "flight_number": "AS3088",
-       "duration_min": 84
-      },
-      {
-       "origin": "SAN",
-       "destination": "SFO",
-       "depart": "2026-11-24T18:59",
-       "arrive": "2026-11-24T20:45",
-       "carrier": "AS",
-       "flight_number": "AS503",
-       "duration_min": 106
-      }
-     ],
-     "airlines": [
-      "Alaska Airlines"
-     ],
-     "via": "",
-     "separate_tickets": false,
-     "hidden_city": false,
-     "links": [
-      {
-       "name": "Google Flights",
-       "url": "https://www.google.com/travel/flights?q=Flights%20from%20PHX%20to%20SFO%20on%202026-11-24"
-      },
-      {
-       "name": "Skyscanner",
-       "url": "https://www.skyscanner.com/transport/flights/phx/sfo/261124/?adultsv2=1"
-      },
-      {
-       "name": "Expedia",
-       "url": "https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:PHX,to:SFO,departure:11/24/2026TANYT&passengers=adults:1&mode=search"
-      },
-      {
-       "name": "Kayak",
-       "url": "https://www.kayak.com/flights/PHX-SFO/2026-11-24/1adults?sort=price_a"
-      },
-      {
-       "name": "Skiplagged",
-       "url": "https://skiplagged.com/flights/PHX/SFO/2026-11-24"
-      }
-     ],
-     "notes": [],
-     "also_seen": {},
-     "score": 339.5,
-     "sellers": {
-      "FAST": 236.0
-     },
-     "key": "6bc756912ebf",
-     "origin": "PHX",
-     "destination": "SFO",
-     "stops": 1,
-     "total_minutes": 254,
-     "layovers": [
-      "SAN"
-     ],
-     "ticket_links": [],
-     "layover_countries": [
-      "United States"
-     ],
-     "avoid": false,
-     "lounges": {
-      "SAN": {
-       "airport": "San Diego CA Int'l",
-       "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international",
-       "count": 1,
-       "sleep_pods": 0,
-       "best": {
-        "name": "Aspire Lounge",
-        "terminal": "Terminal 2",
-        "hours": "05:00 - 22:00",
-        "rating": 4,
-        "ratings_count": 9713,
-        "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international/san10-aspire-lounge"
-       },
-       "lounges": [
-        {
-         "name": "Aspire Lounge",
-         "terminal": "Terminal 2",
-         "hours": "05:00 - 22:00",
-         "rating": 4,
-         "ratings_count": 9713,
-         "url": "https://www.prioritypass.com/lounges/united-states-of-america/san-diego-international/san10-aspire-lounge",
-         "airside": true
-        }
-       ]
-      }
-     }
-    },
-    {
-     "source": "Skiplagged",
-     "strategy": "direct",
      "price": 228.0,
      "currency": "USD",
      "segments": [
@@ -1449,16 +1449,26 @@
     }
    ],
    "best_by_strategy": {
-    "direct": 138.0,
+    "direct": 110.0,
     "hidden-city": 183.0
    },
    "hubs": {
+    "DXB": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": true
+    },
     "IST": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
     },
-    "LHR": {
+    "DEL": {
+     "forced": null,
+     "self_transfer": null,
+     "skipped": true
+    },
+    "BOM": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
@@ -1468,12 +1478,7 @@
      "self_transfer": null,
      "skipped": true
     },
-    "AMS": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": true
-    },
-    "MUC": {
+    "VIE": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
@@ -2780,12 +2785,12 @@
     "DXB": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "DOH": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "AUH": {
      "forced": null,
@@ -2795,7 +2800,7 @@
     "JED": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "KWI": {
      "forced": null,
@@ -2810,12 +2815,12 @@
     "BAH": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "IST": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "DEL": {
      "forced": null,
@@ -2825,12 +2830,12 @@
     "BOM": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "LHR": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "CDG": {
      "forced": null,
@@ -2845,17 +2850,17 @@
     "AMS": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "MUC": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "ZRH": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "VIE": {
      "forced": null,
