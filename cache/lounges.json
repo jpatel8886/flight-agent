@@ -90,7 +90,7 @@
   },
   "AMS": {
    "complete": true,
-   "fetched": "2026-10-21T00:45:58+00:00",
+   "fetched": "2026-11-20T11:17:20+00:00",
    "lounges": [
     {
      "airside": true,
@@ -100,7 +100,7 @@
      "location": "Airside - follow signs for 'Lounge 41', located on the Panorama Deck on the 3rd Floor. The lounge is not accessible to passengers departing from Gate M. Non-Schengen flights only.  ",
      "name": "Aspire Lounge (No.41)",
      "rating": 3.5,
-     "ratings_count": 13309,
+     "ratings_count": 13331,
      "terminal": "Departure Hall 2",
      "url": "https://www.prioritypass.com/lounges/netherlands/amsterdam-schiphol/ams-aspire-lounge-no-41"
     },
@@ -112,7 +112,7 @@
      "location": "Airside - after Security Control, turn right and follow signs for 'Lounge 26'. The lounge is not accessible to passengers departing from Gate M. Schengen flights only.",
      "name": "Aspire Lounge (No.26)",
      "rating": 3.6,
-     "ratings_count": 15792,
+     "ratings_count": 15832,
      "terminal": "Departure Hall 1",
      "url": "https://www.prioritypass.com/lounges/netherlands/amsterdam-schiphol/ams2-aspire-lounge-no-26"
     }
@@ -1173,7 +1173,7 @@
   },
   "DMM": {
    "complete": true,
-   "fetched": "2026-10-21T00:57:18+00:00",
+   "fetched": "2026-11-20T11:18:19+00:00",
    "lounges": [
     {
      "airside": true,
@@ -1198,6 +1198,18 @@
      "ratings_count": 35,
      "terminal": "Main Terminal",
      "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-fahd-international/dmm4-wellcome-lounge-dmm"
+    },
+    {
+     "airside": true,
+     "category": "LOUNGE",
+     "code": "DMM2",
+     "hours": "00:00 - 23:59",
+     "location": "Airside - Departure Level, opposite 'Al Dawa Pharmacy' and next to 'Alinma Bank'. International and in transit flights only.",
+     "name": "Plaza Premium Lounge",
+     "rating": 4,
+     "ratings_count": 618,
+     "terminal": "Main Terminal",
+     "url": "https://www.prioritypass.com/lounges/saudi-arabia/king-fahd-international/dmm2-plaza-premium-lounge"
     },
     {
      "airside": true,
