@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T20:34:35+00:00",
+ "generated_at": "2026-11-20T02:24:30+00:00",
  "currency": "USD",
  "avoid_countries": [
   "United Arab Emirates",
@@ -1415,7 +1415,7 @@
     "DXB": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "DOH": {
      "forced": null,
@@ -1450,27 +1450,27 @@
     "IST": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "DEL": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "BOM": {
      "forced": null,
      "self_transfer": null,
-     "skipped": true
+     "skipped": false
     },
     "LHR": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "CDG": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "FRA": {
      "forced": null,
@@ -1480,7 +1480,7 @@
     "AMS": {
      "forced": null,
      "self_transfer": null,
-     "skipped": false
+     "skipped": true
     },
     "MUC": {
      "forced": null,
@@ -2844,37 +2844,32 @@
     "direct": 209.0
    },
    "hubs": {
-    "KWI": {
+    "DXB": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
     },
-    "BOM": {
+    "DOH": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
     },
-    "LHR": {
+    "AUH": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
     },
-    "FRA": {
+    "MCT": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
     },
-    "AMS": {
+    "IST": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
     },
     "MUC": {
-     "forced": null,
-     "self_transfer": null,
-     "skipped": true
-    },
-    "ZRH": {
      "forced": null,
      "self_transfer": null,
      "skipped": true
