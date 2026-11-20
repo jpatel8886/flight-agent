@@ -782,7 +782,7 @@
   },
   "CCU": {
    "complete": true,
-   "fetched": "2026-10-20T09:59:27+00:00",
+   "fetched": "2026-11-20T19:57:30+00:00",
    "lounges": [
     {
      "airside": true,
@@ -792,7 +792,7 @@
      "location": "Airside - Domestic Departures, Mezzanine Level, after Security Checks turn left. ",
      "name": "Travel Club Lounge Anex",
      "rating": 3.89,
-     "ratings_count": 762,
+     "ratings_count": 764,
      "terminal": "Terminal 1",
      "url": "https://www.prioritypass.com/lounges/india/kolkata-netaji-subhash-chandra-bose-intl/ccu8-travel-club-lounge-anex"
     },
