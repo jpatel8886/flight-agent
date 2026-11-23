@@ -646,7 +646,7 @@
   },
   "BRU": {
    "complete": true,
-   "fetched": "2026-10-21T00:49:49+00:00",
+   "fetched": "2026-11-23T00:13:50+00:00",
    "lounges": [
     {
      "airside": true,
@@ -656,7 +656,7 @@
      "location": "Airside - 2nd Floor, opposite Gate A42. Schengen flights only.",
      "name": "Diamond Lounge",
      "rating": 4.2,
-     "ratings_count": 6663,
+     "ratings_count": 6695,
      "terminal": "Terminal A",
      "url": "https://www.prioritypass.com/lounges/belgium/brussels-zaventem/bru1-diamond-lounge"
     },
@@ -668,7 +668,7 @@
      "location": "Airside - take the lift or stairs located near Gate B04 to the 4th Floor and the lounge is located on the left hand side. Non-Schengen flights only.",
      "name": "The View Lounge",
      "rating": 4.7,
-     "ratings_count": 936,
+     "ratings_count": 953,
      "terminal": "Terminal B",
      "url": "https://www.prioritypass.com/lounges/belgium/brussels-zaventem/bru3-the-view-lounge"
     }
@@ -838,7 +838,7 @@
   },
   "CDG": {
    "complete": true,
-   "fetched": "2026-10-21T00:39:07+00:00",
+   "fetched": "2026-11-23T00:13:45+00:00",
    "lounges": [
     {
      "airside": true,
@@ -848,7 +848,7 @@
      "location": "Airside - Non-Schengen departing and transit passengers only. Take the Shuttle train to Gate L. Follow signs for Instant Paris/YOTEL. Passengers travelling from Gates K and M can access the lounge via the Shuttle train but must allow time to return to the gates.",
      "name": "YotelAir Paris Charles de Gaulle",
      "rating": 2.2,
-     "ratings_count": 7754,
+     "ratings_count": 7765,
      "terminal": "Terminal 2E",
      "url": "https://www.prioritypass.com/lounges/france/paris-charles-de-gaulle/cdg8-yotelair-paris-charles-de-gaulle"
     }
@@ -2748,7 +2748,7 @@
   },
   "LAS": {
    "complete": true,
-   "fetched": "2026-10-17T20:08:46+00:00",
+   "fetched": "2026-11-23T00:22:52+00:00",
    "lounges": [
     {
      "airside": true,
@@ -2758,7 +2758,7 @@
      "location": "Airside - Level 2. After passing through Security Checkpoint D, take the Blue Line train to D Gates - Level 0. Take the escalator and head West or right towards Gate D33. \r\n\r\nAccess from Terminal 3 - Level 0. After passing through Security Checkpoint D and E, take the Red Line train to the D Gates-L",
      "name": "The Club LAS",
      "rating": 4.2,
-     "ratings_count": 19269,
+     "ratings_count": 19295,
      "terminal": "Terminal 1",
      "url": "https://www.prioritypass.com/lounges/united-states-of-america/harry-reid-international/las4-the-club-las"
     },
@@ -2770,7 +2770,7 @@
      "location": "Airside - the lounge is located across from Gate E2.",
      "name": "The Club LAS",
      "rating": 4.2,
-     "ratings_count": 9149,
+     "ratings_count": 9165,
      "terminal": "Terminal 3",
      "url": "https://www.prioritypass.com/lounges/united-states-of-america/harry-reid-international/las3-the-club-las"
     }
@@ -2923,7 +2923,7 @@
   },
   "LIS": {
    "complete": true,
-   "fetched": "2026-10-21T00:46:11+00:00",
+   "fetched": "2026-11-23T00:15:50+00:00",
    "lounges": [
     {
      "airside": true,
@@ -2933,7 +2933,7 @@
      "location": "Airside - Schengen Area. After Security Checks, the lounge is located above Pra\u00e7a Lisboa ('Lisbon Square') on the 6th Floor, near Gate 22. Schengen and Non-Schengen flights.",
      "name": "ANA Lounge",
      "rating": 4.1,
-     "ratings_count": 11503,
+     "ratings_count": 11536,
      "terminal": "Terminal 1",
      "url": "https://www.prioritypass.com/lounges/portugal/lisbon-portela/lis6-ana-lounge-lisbon"
     }
@@ -3359,7 +3359,7 @@
   },
   "PHL": {
    "complete": true,
-   "fetched": "2026-10-21T01:45:30+00:00",
+   "fetched": "2026-11-23T00:15:48+00:00",
    "lounges": [
     {
      "airside": null,
