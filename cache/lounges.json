@@ -1309,7 +1309,7 @@
   },
   "DTW": {
    "complete": true,
-   "fetched": "2026-10-27T14:40:29+00:00",
+   "fetched": "2026-11-27T08:00:19+00:00",
    "lounges": [
     {
      "airside": true,
@@ -1319,7 +1319,7 @@
      "location": "Airside - after Security Checks turn left, the lounge is located next to Gate D8. \r\n\r\n",
      "name": "Lufthansa Business Lounge",
      "rating": 3.69,
-     "ratings_count": 3805,
+     "ratings_count": 3811,
      "terminal": "Warren C. Evans Terminal",
      "url": "https://www.prioritypass.com/lounges/united-states-of-america/detroit-metropolitan-wayne-county/dtw5-lufthansa-business-lounge"
     }
